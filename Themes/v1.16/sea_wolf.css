@@ -4,17 +4,11 @@
 body {
     font-size: 0.8rem;
 }
-
-/* ProtonMail logo
-   -Useful for clear themes.
-*/
-
 #sidebar a img {
     background: #DC3522;
     padding: 0.5rem;
     border-radius: 5px;
 }
-
 /* Main Backgrounds */
 #sidebar, #main footer .wrap, body #mainHeader, footer .wrap, #sidebar .storage, #footer, body.outside #mainHeader {
     background: #1E1E20;
