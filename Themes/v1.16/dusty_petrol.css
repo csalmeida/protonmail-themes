@@ -54,7 +54,7 @@ p.hello {
 /* Sidebar Number */
 #sidebar .number, #sidebar .active .number {
     background: #F2E6B6;
-    color: #FFF;
+    color: #CCC;
 }
 
 #sidebar ul.menu li a:hover .number {
