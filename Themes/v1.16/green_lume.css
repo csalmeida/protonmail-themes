@@ -1,13 +1,9 @@
-* {
+*:not(.fa) {
     font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
 }
 
-*:not(.fa) {
-font-family: monospace;
-}
-
 body {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 /* =============
    == Sidebar == 
@@ -138,6 +134,18 @@ a:hover {
 }
 
 /* ICONS AND MAIL */
+#primaryHeader #titleBar h1 {
+    font-size: 0.9rem;
+}
+#page-m .pmlabel {
+    padding: 0.1rem 1.2rem;
+    padding-left: 0.6rem;
+    border-radius: 0.2rem;
+}
+span.bubble {
+    padding: 0.1rem 0.5rem;
+}
+
 body table#messages tr.starred td {
     /*background: rgba(216,18,32,0.0);*/
 }
