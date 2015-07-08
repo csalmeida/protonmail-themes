@@ -1,0 +1,52 @@
+*:not(.fa) {
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+}
+body {
+    font-size: 0.8rem;
+}
+
+/* Header Search Bar */
+#mainHeader .search.dark input {
+    font-weight: bold;
+}
+#mainHeader .search input {
+    border-radius: 0.3rem;
+}
+
+p.hello {
+    opacity:0.6;
+}
+
+/*Sidebar Dividers */
+.divider {
+    opacity: 0.2;
+}
+
+/*Mail Commandbar */
+#messages tbody {
+    font-size: 0.8rem !important;
+}
+
+/* Labels */
+#listing .pmlabel {
+    border-radius: 0.2rem;
+    padding: 0.1rem 0.7rem;
+}
+/*Reading Mail*/
+#primaryHeader #titleBar h1 {
+    font-size: 0.9rem;
+}
+#page-m .pmlabel {
+    padding: 0.1rem 1.2rem;
+    padding-left: 0.6rem;
+    border-radius: 0.2rem;
+}
+span.bubble {
+    padding: 0.1rem 0.5rem;
+}
+
+#dkim .verified {
+    color:#8CC63F;
+}
+
+
