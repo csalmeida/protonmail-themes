@@ -132,7 +132,10 @@ body a {
 a:hover {
     color: #e01b2a;
 }
-
+/* Reading Mail*/
+#messages tbody {
+    font-size: 0.8rem;
+}
 /* ICONS AND MAIL */
 #primaryHeader #titleBar h1 {
     font-size: 0.9rem;
