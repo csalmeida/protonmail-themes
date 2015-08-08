@@ -6,5 +6,5 @@ Simply pick one from the themes folder and copy the code over to ProtonMail by h
 
 
 ### Like to build themes?
-Then why not contribute? [Send your themes over to us](http://www.csalmeida.com/) and be part of this project. Either if you are a beginner or advanced in CSS or Git we would like to colaborate!
+I would gladly post any themes made by you in order to make this repository grow so please feel free to [send your themes over to us](http://www.csalmeida.com/) and be part of this project.
 
