@@ -1,0 +1,281 @@
+/* =========================================== *
+ * BLUEGOLD 2.0 THEME BY CRISTIANO ALMEIDA
+ * 
+ * http://www.csalmeida.com
+ * https://www.behance.net/_csalmeida 
+ * =========================================== */
+
+/* +++++++++++++
+   ++ GENERAL ++ 
+   +++++++++++++ */
+body {
+    font-size: 13px;
+}
+
+/* +++++++++++++++++
+   ++ COLOR FRAME ++ 
+   +++++++++++++++++ */
+
+/* Sidebar background */
+#sidebar {
+    background: #192C3B none repeat scroll 0% 0%;
+}
+
+/* Storage background */
+#sidebar .storage {
+    background-color: #192C3B;
+}
+
+/* Top Navigation Bar */
+body .navbar-inverse {
+    background: #264258 none repeat scroll 0% 0%;
+}
+/* ++++++++++++
+   ++ TABLET ++ 
+   ++++++++++++ */
+
+/* Top Navigation Bar */
+#header #navbar.navbar-inverse {
+    background-color: #264258;
+}
+
+/* Search Button */
+#header #navbar.navbar-inverse #searchMob {
+    background-color: #6D808E;
+}
+/* Magnifying Glass */
+#header #searchMob {
+    color: #fff;
+    border-radius: 0px;
+}
+/* ++++++++++++
+   ++ MOBILE ++ 
+   ++++++++++++ */
+
+/* Menu Icon Color */
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #E3E8EB;
+}
+
+/* Icons Color */
+html .btn-dark {
+    color: #E3E8EB;
+}
+/* Dropdown Menu */
+#header .list-group .list-group-item {
+    background: #264258 none repeat scroll 0% 0%;
+    border-color: #6D808E;
+}
+
+
+/* +++++++++++++
+   ++ SIDEBAR ++ 
+   +++++++++++++ */
+
+/* Compose background and font color */
+#sidebar #compose_button a {
+    background: transparent linear-gradient(#5E4955, #4a3943) repeat scroll 0% 0%;
+    color: #fff;
+    font-weight: bolder;
+    /*transition: background .2s ease-out;*/
+}
+/* Compose background on hover */
+#sidebar #compose_button:hover a {
+    background: transparent linear-gradient(#5E4955, #4a3943) repeat scroll 0% 0%;
+}
+
+#sidebar #compose_button:active a {
+    background: transparent linear-gradient(#B68F40, #9d7b37) repeat scroll 0% 0%;
+}
+
+/* Active Section Background i.e Inbox */ 
+#sidebar .list-group-item .btn.active {
+    /*background: #111F2A;*/
+    background: transparent linear-gradient(rgba(0,0,0,0), #11222f) repeat scroll 0% 0%;
+}
+
+/* Active section when clicked. */
+#sidebar .list-group-item .btn.active:active {
+    /*background:#111F2A;*/
+    background: transparent linear-gradient(rgba(0,0,0,0), #11222f) repeat scroll 0% 0%;
+}
+/* Color of link while active section. */
+#sidebar a, #sidebar a.active {
+    color: #E3E8EB;
+    transition: color .2s ease-out;
+}
+
+#sidebar a:hover {
+    color: #548F99;
+}
+
+/* Number of messages */
+#sidebar .label {
+    background-color: #E3E8EB !important;
+    transition: background-color .2s ease-out, color .2s ease-out;
+}
+
+
+#sidebar .list-group-item .btn:hover .label {
+    background-color: #548F99 !important;
+    color: #E3E8EB;
+}
+
+#sidebar .list-group-item .btn.active .label {
+    color: #264258;
+}
+
+/* Storage Fill bar Color */
+#sidebar .storage .sizeBar .fill {
+    background: none repeat scroll 0px 0px, none repeat scroll center bottom, none repeat scroll 0px center, #548F99 none repeat scroll 100% center;
+}
+
+/* Top Links */
+body .navbar-inverse .navbar-nav > li > a {
+    color: #E3E8EB;
+    transition: color .4s ease-in;
+}
+body .navbar-inverse .navbar-nav > li > a:hover {
+    color: #548F99;
+}
+
+#sidebar .list-group-item .btn:hover .label {
+    background: #548F99 none repeat scroll 0% 0%;
+}
+
+#header .navbar .dropdown-menu li a:active, 
+#header .navbar .dropdown-menu li a:focus, 
+#header .navbar .dropdown-menu li a:hover {
+    color: #548F99;
+}
+
+#header .navbar .dropdown-menu li a {
+    color: #E3E8EB;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    color: #548F99;
+}
+
+#header .navbar .dropdown-menu {
+    background-color: #264258;
+}
+
+/* Search bar */
+#search-form input {
+    background: #192C3B none repeat scroll 0% 0%;
+    border-radius: 0.5rem 0 0.5rem 0;
+    border: 3px solid #E3E8EB !important;
+    color: #E3E8EB;
+    font-size: 12px;
+}
+
+#search-form button {
+    color: #E3E8EB;
+}
+
+#search-form button:hover {
+    color: #548F99;
+}
+
+/* EMAIL LIST */
+table.message-list tr.unread h4, table.message-list tr.unread td {
+    color: #1c1c1c;
+}
+
+table.message-list tr.starred, table.message-list tr.starred i.fa-clock-o, table.message-list tr.starred span.labels, 
+table.message-list tr.starred td {
+    background-color: rgba(182, 143, 64, 0.1);
+    transition: background-color .2s ease-out;
+}
+
+table.message-list tr.starred:active i.fa-clock-o, table.message-list tr.starred:active i.fa-paperclip, table.message-list tr.starred:active span.labels, table.message-list tr.starred:active td, table.message-list tr.starred:hover i.fa-clock-o, table.message-list tr.starred:hover i.fa-paperclip, table.message-list tr.starred:hover td {
+    background-color: rgba(182, 143, 64, 0.2);
+}
+
+table.message-list tr.starred span.labels, 
+table.message-list tr.starred:hover span.labels {
+    background: transparent;
+}
+
+table.message-list tr.unread.hovered span.labels, 
+table.message-list tr.unread span.labels, 
+table.message-list tr.starred.hovered i.fa-paperclip, 
+table.message-list tr.starred i.fa-paperclip{
+    background-color: transparent !important;
+}
+
+table.message-list tr td.actions .fa-star {
+    color: #B68F40;
+}
+
+table.message-list tr.starred.hovered i.fa-clock-o, table.message-list tr.starred.hovered i.fa-paperclip, table.message-list tr.starred.hovered td, table.message-list tr.starred:active i.fa-clock-o, table.message-list tr.starred:active i.fa-paperclip, table.message-list tr.starred:active span.labels, table.message-list tr.starred:active td {
+    background-color: rgba(38, 66, 88, 0.3);
+}
+
+/* EMAIL AND ATTACHMENT TAG */
+.message-metadata ul.infos .email {}
+
+.message-metadata ul.infos .email:hover,
+.preview-template {
+    background: rgba(182, 143, 64, 0.3);
+    border-color: #B68F40;
+    color: #5E4955;
+}
+
+/* LABELS */
+table.message-list tr td .label {
+    padding: 0.4rem;
+    top: -4px;
+}
+
+/* SETTINGS TABS */
+
+.nav-tabs li.active a {
+    box-shadow: 0px 2px 0px #B68F40 inset;
+}
+
+/* SETTINGS TABS MOBILE */
+#mobileSettingsMenu li.active {
+    background: #B68F40;
+}
+
+
+/* BIG BUTTONS */
+html .btn-primary {
+    background: transparent linear-gradient(#5E4955, #4a3943) repeat scroll 0% 0%;
+    color: #fff;
+}
+
+html .btn-primary:hover, .toggle-switch .switch-left {
+    background: transparent linear-gradient(#B68F40, #9d7b37) repeat scroll 0% 0%;
+    color: #fff;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: #192C3B;
+    border: #192C3B;
+}
+
+.message-toolbar > ul > li a:hover {
+    background-color: rgba(182, 143, 64, 0.3);
+}
+
+/* REPLY, REPLY ALL AND FOCUS */
+#messageActionGroup .btn:active, 
+#messageActionGroup .btn:focus, 
+#messageActionGroup .btn:hover {
+    background: transparent linear-gradient(#B68F40, #9d7b37) repeat scroll 0% 0%;
+}
+
+/* POP UP USER FEEDBACK */
+
+.proton-notification-template {
+    background: transparent linear-gradient(#5E4955, #4a3943) repeat scroll 0% 0%;
+    color: #fff;
+}
+
+/* SMALL LINKS A-Z */
+.text-purple {
+    color: #B68F40;
+}

@@ -1,0 +1,270 @@
+/* ============================================ *
+ * DEUTERA ONE 2.0 THEME BY CRISTIANO ALMEIDA
+ * 
+ * http://www.csalmeida.com
+ * https://www.behance.net/_csalmeida 
+ * ============================================ */
+
+/* +++++++++++++
+   ++ GENERAL ++ 
+   +++++++++++++ */
+body {
+    font-size: 13px;
+}
+
+/* +++++++++++++++++
+   ++ COLOR FRAME ++ 
+   +++++++++++++++++ */
+
+/* Sidebar background */
+#sidebar {
+    background: #08426b none repeat scroll 0% 0%;
+}
+
+/* Storage background */
+#sidebar .storage {
+    background-color: #08426b;
+}
+
+/* Top Navigation Bar */
+body .navbar-inverse {
+    background: #08426b none repeat scroll 0% 0%;
+}
+/* ++++++++++++
+   ++ TABLET ++ 
+   ++++++++++++ */
+
+/* Top Navigation Bar */
+#header #navbar.navbar-inverse {
+    background-color: #08426b;
+}
+
+/* Search Button */
+#header #navbar.navbar-inverse #searchMob {
+    background-color: #053150;
+}
+/* Magnifying Glass */
+#header #searchMob {
+    color: #fff;
+    border-radius: 0px;
+}
+/* ++++++++++++
+   ++ MOBILE ++ 
+   ++++++++++++ */
+
+/* Menu Icon Color */
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #ffed00;
+}
+
+/* Icons Color */
+html .btn-dark {
+    color: #ffed00;
+}
+/* Dropdown Menu */
+#header .list-group .list-group-item {
+    background: #08426b none repeat scroll 0% 0%;
+    border-color: #555;
+}
+
+
+/* +++++++++++++
+   ++ SIDEBAR ++ 
+   +++++++++++++ */
+
+/* Compose background and font color */
+#sidebar #compose_button a {
+    background: #ffed00;
+    color: #000;
+    font-weight: bolder;
+    transition: all .2s ease-out;
+}
+/* Compose background on hover */
+#sidebar #compose_button:hover a {
+    background: #fff;
+    color: #08426b;
+}
+/* Active Section Background i.e Inbox */ 
+#sidebar .list-group-item .btn.active {
+    background: #053150;
+}
+
+/* Active section when clicked. i.e Inbox */
+#sidebar .list-group-item .btn.active:active {
+    background:#08426b; 
+}
+/* Color of link while active section. */
+#sidebar a, #sidebar a.active {
+    color: #fff;
+}
+
+#sidebar a:hover {
+    color: #ffed00;
+}
+
+/* Number of messages */
+#sidebar .label {
+    background-color: #fff !important;
+}
+
+
+#sidebar .list-group-item .btn:hover .label {
+    background-color: #ffed00 !important;
+}
+
+#sidebar .list-group-item .btn.active .label {
+    color: #000;
+}
+
+/* Storage Fill bar Color */
+#sidebar .storage .sizeBar .fill {
+    background: none repeat scroll 0px 0px, none repeat scroll center bottom, none repeat scroll 0px center, #ffed00 none repeat scroll 100% center;
+}
+
+/* Top Links */
+body .navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    transition: color .4s ease-in;
+}
+body .navbar-inverse .navbar-nav > li > a:hover {
+    color: #ffed00;
+}
+
+#sidebar .list-group-item .btn:hover .label {
+    background: #ffed00 none repeat scroll 0% 0%;
+}
+
+#header .navbar .dropdown-menu li a:active, 
+#header .navbar .dropdown-menu li a:focus, 
+#header .navbar .dropdown-menu li a:hover {
+    color: #ffed00;
+}
+
+#header .navbar .dropdown-menu li a {
+    color: #fff;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    color: #ffed00;
+}
+
+#header .navbar .dropdown-menu {
+    background-color: #08426b;
+}
+
+/* Search bar */
+#search-form input {
+    background: #08426b none repeat scroll 0% 0%;
+    border-radius: 0.5rem;
+    border: 2px solid #fff !important;
+    color: #fff;
+    font-size: 12px;
+}
+
+#search-form button {
+    color: #fff;
+}
+
+/* EMAIL LIST */
+table.message-list tr.unread h4, table.message-list tr.unread td {
+    color: #1c1c1c;
+}
+
+table.message-list tr.starred, table.message-list tr.starred i.fa-clock-o, table.message-list tr.starred span.labels, 
+table.message-list tr.starred td {
+    background-color: rgba(8,66,107,0.2);
+    transition: background-color .2s ease-out;
+}
+
+table.message-list tr.starred:active i.fa-clock-o, table.message-list tr.starred:active i.fa-paperclip, table.message-list tr.starred:active span.labels, table.message-list tr.starred:active td, table.message-list tr.starred:hover i.fa-clock-o, table.message-list tr.starred:hover i.fa-paperclip, table.message-list tr.starred:hover td {
+    background-color: rgba(8,66,107,0.4);
+}
+
+table.message-list tr.starred span.labels, 
+table.message-list tr.starred:hover span.labels {
+    background: transparent;
+}
+
+table.message-list tr.unread.hovered span.labels, 
+table.message-list tr.unread span.labels, 
+table.message-list tr.starred.hovered i.fa-paperclip, 
+table.message-list tr.starred i.fa-paperclip{
+    background-color: transparent !important;
+}
+
+table.message-list tr td.actions .fa-star {
+    color: #ffed00;
+}
+
+table.message-list tr.starred.hovered i.fa-clock-o, table.message-list tr.starred.hovered i.fa-paperclip, table.message-list tr.starred.hovered td, table.message-list tr.starred:active i.fa-clock-o, table.message-list tr.starred:active i.fa-paperclip, table.message-list tr.starred:active span.labels, table.message-list tr.starred:active td {
+    background-color: rgba(8,66,107,0.4);
+}
+
+/* EMAIL AND ATTACHMENT TAG */
+.message-metadata ul.infos .email {}
+
+.message-metadata ul.infos .email:hover,
+.preview-template {
+    background: rgba(8,66,107,1);
+    border-color: #053150;
+    color: #fff;
+}
+
+/* LABELS */
+table.message-list tr td .label {
+    padding: 0.4rem;
+    top: -4px;
+}
+
+/* SETTINGS TABS */
+
+.nav-tabs li.active a {
+    box-shadow: 0px 2px 0px #08426b inset;
+}
+
+/* SETTINGS TABS MOBILE */
+#mobileSettingsMenu li.active {
+    background: #08426b;
+}
+
+
+/* BIG BUTTONS */
+html .btn-primary {
+    background: transparent linear-gradient(#08426b, #053150) repeat scroll 0% 0%;
+    color: #fff;
+}
+
+html .btn-primary:hover, .toggle-switch .switch-left {
+    background: transparent linear-gradient(#ffed00, #dfcf04) repeat scroll 0% 0%;
+    color: #1c1c1c;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: #ffed00;
+    border: #dfcf04;
+    color: #1c1c1c;
+}
+
+.message-toolbar > ul > li a:hover {
+    background-color: rgba(8,66,107,0.2)
+;
+}
+
+/* REPLY, REPLY ALL AND FOCUS */
+#messageActionGroup .btn:active, 
+#messageActionGroup .btn:focus, 
+#messageActionGroup .btn:hover {
+    background: transparent linear-gradient(#ffed00, #dfcf04) repeat scroll 0% 0%;
+}
+
+/* POP UP USER FEEDBACK */
+
+.proton-notification-template {
+    background-color: #ffed00;
+    color: #000;
+}
+
+/* SMALL LINKS A-Z */
+.text-purple {
+    color: #ffed00; 
+}
