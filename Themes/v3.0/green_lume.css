@@ -258,6 +258,10 @@ body #conversation-list-rows .conversation.read {
     color: #8cc63f;
 }
 
+#pm_conversations.rows .list .message.selected {
+    border-left: 5px solid #8cc63f;
+}
+
 /* Composing e-mail */
 #pm_composer .composer header {
     background: #2c2b2b;
