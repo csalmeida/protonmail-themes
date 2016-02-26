@@ -9,7 +9,7 @@
 
 /* Frame (topbar and sidebar.) */
 
-header#pm_header {
+header#pm_header-desktop {
     background: #1a1a1a;
 }
 
@@ -17,30 +17,33 @@ body section.sidebar {
     background: #1a1a1a;
 }
 
-header#pm_header .logo {
+header#pm_header-desktop a.logo {
     background: #1a1a1a;
 }
 
 /* Search bar */
-header#pm_header form.searchForm fieldset {
-    background-color: #1a1a1a;
+form.searchForm fieldset {
     border-radius: 2px;
+    background-color: #1a1a1a;
 }
 
-header#pm_header form.searchForm fieldset button[type="button"] {
-    background-color: #1a1a1a;
+form.searchForm fieldset button[type="button"] {
     color: #8cc63f;
+    background-color: #1a1a1a;
     border-radius: 2px 0 0 2px;
 }
 
-header#pm_header form.searchForm fieldset button[type="button"]:hover {
-    background-color: #8cc63f;
-    color: #fff;
+form.searchForm fieldset #closeAdvSearch, form.searchForm fieldset button[type="submit"] {
+    color: #8cc63f;
 }
 
-header#pm_header form.searchForm fieldset #closeAdvSearch, header#pm_header form.searchForm fieldset button[type="submit"] {
-    color: #8cc63f;
-    border-radius: 0 2px 2px 0;
+form.searchForm fieldset button[type="button"]:hover {
+    background-color: #8cc63f;
+}
+
+form.searchForm.adv fieldset #closeAdvSearch, form.searchForm.adv fieldset button[type="submit"] {
+    background-color: #1a1a1a;
+    border-radius: 2px 0 0 2px;
 }
 
 .pm_form .input-icon .fa {
@@ -49,24 +52,26 @@ header#pm_header form.searchForm fieldset #closeAdvSearch, header#pm_header form
 
 /* Top Navigation */
 
-header#pm_header ul.navigation li.active a, header#pm_header ul.navigation li:hover a {
-   border-top-color: #8cc63f !important;
+.pm_button.primary {
+    background-color: #8cc63f;
+    border-color: #8cc63f;
 }
 
-header#pm_header ul.navigation li a strong {
+.pm_button.primary:hover {
+    background-color: #8cc63f;
+    border-color: #8cc63f;
+}
+
+header#pm_header-desktop ul.navigation li a .fa {
+    color: #fff;   
+}
+
+header#pm_header-desktop ul.navigation li a strong {
     color: #fff;
-}
-
-header#pm_header ul.navigation li a .fa {
-    color: #fff;
-}
-
-header#pm_header ul.navigation li a strong:hover {
-    color: #8cc63f;
 }
 
 /* TN Dropdown Menu */
-header#pm_header .pm_buttons .pm_button.primary, header#pm_header .pm_buttons .pm_button.primary:hover {
+header#pm_header-desktop .pm_buttons .pm_button.primary {
     background-color: #8cc63f !important;
     border-color: #8cc63f !important;
 }
@@ -89,48 +94,37 @@ header#pm_header-desktop ul.navigation li.active a strong, header#pm_header-desk
 }
 
 /* Sidebar Navigation */
-section.sidebar a.compose {
-    background-color: #8cc63f;
-    border-color: #8cc63f;
-}
-
-section.sidebar a.compose:hover {
-    background-color: #75ba1a;
-    border-color: #75ba1a;
-}
-
-section.sidebar ul.menu li.active a i.fa {
+body section.sidebar ul.menu li.active a i.fa {
     color: #8cc63f;
 }
 
-section.sidebar ul.menu li a i.fa {
-    color: #373737;
-}
-
-section.sidebar ul.menu li a {
+body section.sidebar ul.menu li a {
     color: #fff;
 }
 
-section.sidebar ul.menu li a:hover {
+body section.sidebar ul.menu li a:hover {
     color: #8cc63f;
 }
 
-/* Storage */
+body section.sidebar div.footer div.link a {
+    color: #8cc63f;
+}
 
-section.sidebar div.footer .bar em {
+body section.sidebar div.footer .bar em {
     background-color: #8cc63f;
 }
 
-section.sidebar div.footer div.storage strong {
+body section.sidebar div.footer div.storage strong {
+    color: #8cc63f;
+}
+/* Label Navigation */
+
+body section.sidebar div.labels ul li a:hover {
     color: #8cc63f;
 }
 
-section.sidebar div.footer a.version {
+body section.sidebar div.labels ul li a {
     color: #fff;
-}
-
-section.sidebar div.footer a.version:hover {
-    color: #8cc63f;
 }
 
 /* Settings Navigation */
@@ -155,26 +149,6 @@ section.sidebar div.footer a.version:hover {
     background: #474747;
 }
 
-/* Accounts Settings */
-.pm_button.primary {
-    background-color: #373737;
-    border-color: #373737;
-}
-
-.pm_button.primary:hover {
-    background-color: #8cc63f;
-    border-color: #8cc63f;
-}
-
-.pm_button.primary.disabled, .pm_button.primary[disabled] {
-    background-color: #373737;
-    border-color: #373737;
-}
-
-.pm_sort ul li .fa.fa-check {
-    color: #1c1c1c;
-}
-
 /* Dashboard Settings */
 
 #pm_settings #plans header .link {
@@ -188,6 +162,10 @@ section.sidebar div.footer a.version:hover {
 
 #pm_settings #plans .plans .plan .price, #pm_settings #plans .plans .plan h3 {
     color: #1c1c1c;
+}
+
+.pm_button.primary.disabled, .pm_button.primary[disabled] {
+    background: #8cc63f;
 }
 
 .pm_button.primary:active, .pm_button.primary:focus {
@@ -258,10 +236,6 @@ body #conversation-list-rows .conversation.read {
     color: #8cc63f;
 }
 
-#pm_conversations.rows .list .message.selected {
-    border-left: 5px solid #8cc63f;
-}
-
 /* Composing e-mail */
 #pm_composer .composer header {
     background: #2c2b2b;
@@ -273,15 +247,6 @@ body #conversation-list-rows .conversation.read {
 
 #pm_composer .composer footer .pm_button.primary {
     background: #8cc63f;
-    border-color: #8cc63f;
-}
-
-#pm_view article.message .toggleDetails {
-    color: #8cc63f;
-}
-
-#pm_view article.message a.compose {
-    color: #1c1c1c;
 }
 
 /* Notifications */
@@ -297,36 +262,24 @@ div.tooltip.inner {
     background: #2c2b2b !important;
 }*/
 
-/* Mobile 1030px */
-header#pm_header a.logoMobile {
-    color: #fff;
+/* Mobile */
+
+header#pm_header-mobile {
+    background: #1a1a1a;
 }
 
-header#pm_header .compose {
-    background-color: #8cc63f;
+body.mobileMode #pm_sidebar section.sidebar {
+    background: #2c2b2b;
 }
 
-body.secure section#pm_sidebarMobile {
-    background-color: #1c1c1c;
-}
-
-section#pm_sidebarMobile .pm_button.round {
-    background-color: #373737;
-}
-
-section#pm_sidebarMobile .pm_button.round .fa {
+body.mobileMode #pm_sidebar section.sidebar .pm_button.round .fa {
     color: #8cc63f;
 }
 
-/* Mobile 500px */
-header#pm_header .compose {
+header#pm_header-mobile a.compose {
     color: #8cc63f;
 }
 
-header#pm_header > a.logoMobile {
-    color: #fff;
-}
-
-header#pm_header > a {
+body.mobileMode #body #pm_main .fa-check-square, body.mobileMode #body #pm_main .fa-square-o {
     color: #8cc63f;
 }
