@@ -1,0 +1,332 @@
+/* =========================================== *
+ * GREEN LUME 3.0 THEME BY CRISTIANO ALMEIDA
+ * 
+ * @_csalmeida
+ * http://www.csalmeida.com
+ * https://www.behance.net/_csalmeida
+ *
+ * =========================================== */
+
+/* Frame (topbar and sidebar.) */
+
+header#pm_header {
+    background: #1a1a1a;
+}
+
+body section.sidebar {
+    background: #1a1a1a;
+}
+
+header#pm_header .logo {
+    background: #1a1a1a;
+}
+
+/* Search bar */
+header#pm_header form.searchForm fieldset {
+    background-color: #1a1a1a;
+    border-radius: 2px;
+}
+
+header#pm_header form.searchForm fieldset button[type="button"] {
+    background-color: #1a1a1a;
+    color: #8cc63f;
+    border-radius: 2px 0 0 2px;
+}
+
+header#pm_header form.searchForm fieldset button[type="button"]:hover {
+    background-color: #8cc63f;
+    color: #fff;
+}
+
+header#pm_header form.searchForm fieldset #closeAdvSearch, header#pm_header form.searchForm fieldset button[type="submit"] {
+    color: #8cc63f;
+    border-radius: 0 2px 2px 0;
+}
+
+.pm_form .input-icon .fa {
+    color: #8cc63f;
+}
+
+/* Top Navigation */
+
+header#pm_header ul.navigation li.active a, header#pm_header ul.navigation li:hover a {
+   border-top-color: #8cc63f !important;
+}
+
+header#pm_header ul.navigation li a strong {
+    color: #fff;
+}
+
+header#pm_header ul.navigation li a .fa {
+    color: #fff;
+}
+
+header#pm_header ul.navigation li a strong:hover {
+    color: #8cc63f;
+}
+
+/* TN Dropdown Menu */
+header#pm_header .pm_buttons .pm_button.primary, header#pm_header .pm_buttons .pm_button.primary:hover {
+    background-color: #8cc63f !important;
+    border-color: #8cc63f !important;
+}
+
+/* TN Links Hover */
+header#pm_header-desktop ul.navigation li.active a, header#pm_header-desktop ul.navigation li:hover a {
+    border-top-color: #8cc63f !important;
+}
+
+header#pm_header-desktop ul.navigation li.active a strong, header#pm_header-desktop ul.navigation li:hover a strong {
+    color: #8cc63f;
+}
+
+header#pm_header-desktop ul.navigation li.active a .fa, header#pm_header-desktop ul.navigation li:hover a .fa {
+    color: #8cc63f;
+}
+
+header#pm_header-desktop ul.navigation li.active a strong, header#pm_header-desktop ul.navigation li:hover a strong {
+    color: #8cc63f;
+}
+
+/* Sidebar Navigation */
+section.sidebar a.compose {
+    background-color: #8cc63f;
+    border-color: #8cc63f;
+}
+
+section.sidebar a.compose:hover {
+    background-color: #75ba1a;
+    border-color: #75ba1a;
+}
+
+section.sidebar ul.menu li.active a i.fa {
+    color: #8cc63f;
+}
+
+section.sidebar ul.menu li a i.fa {
+    color: #373737;
+}
+
+section.sidebar ul.menu li a {
+    color: #fff;
+}
+
+section.sidebar ul.menu li a:hover {
+    color: #8cc63f;
+}
+
+/* Storage */
+
+section.sidebar div.footer .bar em {
+    background-color: #8cc63f;
+}
+
+section.sidebar div.footer div.storage strong {
+    color: #8cc63f;
+}
+
+section.sidebar div.footer a.version {
+    color: #fff;
+}
+
+section.sidebar div.footer a.version:hover {
+    color: #8cc63f;
+}
+
+/* Settings Navigation */
+
+#pm_settings .pm_tabs li.active a.pm_button {
+    background: #fff !important;
+    color: #1c1c1c;
+}
+
+#pm_settings .pm_tabs li a.pm_button {
+    border-color: #1c1c1c;
+    background: #1c1c1c;
+    color: #fff;
+}
+
+#pm_settings .pm_tabs li a.pm_button:hover {
+    background: #373737;
+}
+
+#pm_settings .pm_tabs {
+    /*background: #2f2e2e;*/
+    background: #474747;
+}
+
+/* Accounts Settings */
+.pm_button.primary {
+    background-color: #373737;
+    border-color: #373737;
+}
+
+.pm_button.primary:hover {
+    background-color: #8cc63f;
+    border-color: #8cc63f;
+}
+
+.pm_button.primary.disabled, .pm_button.primary[disabled] {
+    background-color: #373737;
+    border-color: #373737;
+}
+
+.pm_sort ul li .fa.fa-check {
+    color: #1c1c1c;
+}
+
+/* Dashboard Settings */
+
+#pm_settings #plans header .link {
+    color: #8cc63f;
+}
+
+#pm_settings #plans .plans .plan header {
+    background: #1c1c1c;
+    border: 1px solid #1c1c1c;
+}
+
+#pm_settings #plans .plans .plan .price, #pm_settings #plans .plans .plan h3 {
+    color: #1c1c1c;
+}
+
+.pm_button.primary:active, .pm_button.primary:focus {
+    background: #8cc63f;
+    border-color: #8cc63f;
+}
+
+html.protonmail .text-purple {
+    color: #8cc63f;
+}
+
+/* Label Settings */
+
+.pm_button.round {
+    border-radius: 2px;
+    border: 1px solid #7b7b7b;
+}
+
+.pm_button.round .fa {
+    color: #8cc63f;
+}
+
+/* Security Settings */
+.pm_button {
+    color: #1c1c1c;
+}
+
+.pm_table td {
+    color: #1c1c1c;
+}
+
+/* Contacts */
+.pm_table th a {
+    color: #1c1c1c;
+}
+
+.pm_table th .fa {
+    color: #1c1c1c;
+}
+
+/* Report Bug */
+.pm_toggle.off .off {
+    background: #8cc63f;
+}
+
+p a {
+    color: #8cc63f;
+}
+
+/* Links */
+
+.pm_button.link {
+    color: #8cc63f;
+}
+
+/* Inbox */
+
+.pm_buttons a {
+    color: #1c1c1c;
+}
+
+body #conversation-list-rows .conversation.read {
+    color: #1c1c1c !important;
+}
+
+/* Reading e-mail. */
+#conversation-view .message .toggleDetails {
+    color: #8cc63f;
+}
+
+#pm_conversations.rows .list .message.selected {
+    border-left: 5px solid #8cc63f;
+}
+
+/* Composing e-mail */
+#pm_composer .composer header {
+    background: #2c2b2b;
+}
+
+#pm_composer .composer header .pm_button {
+    color: #8cc63f; 
+}
+
+#pm_composer .composer footer .pm_button.primary {
+    background: #8cc63f;
+    border-color: #8cc63f;
+}
+
+#pm_view article.message .toggleDetails {
+    color: #8cc63f;
+}
+
+#pm_view article.message a.compose {
+    color: #1c1c1c;
+}
+
+/* Notifications */
+body .cg-notify-message.notification-success {
+    background-color: #8cc63f;
+    border-color: #8cc63f;
+}
+
+/* Tootips */
+
+/*
+div.tooltip.inner {
+    background: #2c2b2b !important;
+}*/
+
+/* Mobile 1030px */
+header#pm_header a.logoMobile {
+    color: #fff;
+}
+
+header#pm_header .compose {
+    background-color: #8cc63f;
+}
+
+body.secure section#pm_sidebarMobile {
+    background-color: #1c1c1c;
+}
+
+section#pm_sidebarMobile .pm_button.round {
+    background-color: #373737;
+}
+
+section#pm_sidebarMobile .pm_button.round .fa {
+    color: #8cc63f;
+}
+
+/* Mobile 500px */
+header#pm_header .compose {
+    color: #8cc63f;
+}
+
+header#pm_header > a.logoMobile {
+    color: #fff;
+}
+
+header#pm_header > a {
+    color: #8cc63f;
+}
