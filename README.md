@@ -1,7 +1,7 @@
 # ProtonMail Themes
-Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), the encrypted mail service now allows themes using the Cascading Style Sheets! So feel free to pick one and use it. Now with [v3.5.16](https://blog.protonmail.ch/protonmail-beta-v2-0-release-notes/) comes updated theme goodness.
+Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), the encrypted mail service now allows themes using the Cascading Style Sheets! So feel free to pick one and use it. Now with v3.7.3 comes updated theme goodness.
 
-## Version v3.5.16  of ProtonMail is here!
+## Version v3.7.3  of ProtonMail is here!
 
 
 ### How to use a theme.
@@ -20,11 +20,11 @@ You like the themes in this repository but you have found a bug? Have awesome id
 ### Available themes.
 Check out some of the available themes you can choose from.
 
-####[Green Lume v3.5.16](https://raw.githubusercontent.com/csalmeida/protonmail-themes/master/Themes/v3.5.16/green_lume/green_lume.min.css)
+####[Green Lume v3.7.3](https://raw.githubusercontent.com/csalmeida/protonmail-themes/master/Themes/v3.7.3/green_lume/green_lume.min.css)
 ![Screenshot of Green Lume theme.](screenshots/green_lume_3.5.16.png)
 
-####[Dark Bubble Gum v3.5.16](https://raw.githubusercontent.com/csalmeida/protonmail-themes/master/Themes/v3.5.16/dark_bubble_gum/dark_bubble_gum.min.css)
+####[Dark Bubble Gum v3.7.3](https://raw.githubusercontent.com/csalmeida/protonmail-themes/master/Themes/v3.7.3/dark_bubble_gum/dark_bubble_gum.min.css)
 ![Screenshot of Dark Bubble Gum theme.](screenshots/dark_bubble_gum_3.5.16.png)
 
-####[Blue and Orange v3.5.16](https://raw.githubusercontent.com/csalmeida/protonmail-themes/master/Themes/v3.5.16/blue_and_orange/blue_and_orange.min.css)
+####[Blue and Orange v3.7.3](https://raw.githubusercontent.com/csalmeida/protonmail-themes/master/Themes/v3.7.3/blue_and_orange/blue_and_orange.min.css)
 ![Screenshot of Blue and Orange theme.](screenshots/blue_and_orange_3.5.16.png)
