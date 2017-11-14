@@ -30,8 +30,11 @@ Check out some of the available themes you can choose from.
 No. All themes listed here will always style existing elements from ProtonMail's UI and not import any third party files from anywhere.
 At the time I created these themes I received a few directions from ProtonMail's co-founder [Jason Stockman](https://twitter.com/jasonstockman) in order to avoid breaking layout and security issues.
 
-#### Web References
-* The [Greenlume theme got featured on ProtonMail's website](https://protonmail.com/blog/protonmail-themes/)
-
 ### Feedback and fixes.
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
+
+#### Where can I find more themes?
+* [ProtonMail's Official Themes](http://protonmail.tumblr.com/)
+
+#### Web References
+* The [Greenlume theme got featured on ProtonMail's website](https://protonmail.com/blog/protonmail-themes/)
