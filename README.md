@@ -26,5 +26,12 @@ Check out some of the available themes you can choose from.
 #### [Blue and Orange v3.7.3](Themes/blue_and_orange/blue_and_orange.min.css)
 ![Screenshot of Blue and Orange theme.](screenshots/blue_and_orange_3.5.16.png)
 
+### Do these themes compromise security?
+No. All themes listed here will always style existing elements from ProtonMail's UI and not import any third party files from anywhere.
+At the time I created these themes I received a few directions from ProtonMail's co-founder [Jason Stockman](https://twitter.com/jasonstockman) in order to avoid breaking layout and security issues.
+
+#### Web References
+* The [Greenlume theme got featured on ProtonMail's website](https://protonmail.com/blog/protonmail-themes/)
+
 ### Feedback and fixes.
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
