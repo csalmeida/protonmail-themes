@@ -37,4 +37,4 @@ If you notice something's missing feel free to make a pull request. If you have 
 * [ProtonMail's Official Themes](http://protonmail.tumblr.com/)
 
 #### Web References
-* The [Greenlume theme got featured on ProtonMail's website](https://protonmail.com/blog/protonmail-themes/)
+* [The Greenlume theme got featured on ProtonMail's website](https://protonmail.com/blog/protonmail-themes/)
