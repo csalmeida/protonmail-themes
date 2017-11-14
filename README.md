@@ -27,7 +27,7 @@ Check out some of the available themes you can choose from.
 ![Screenshot of Blue and Orange theme.](screenshots/blue_and_orange_3.5.16.png)
 
 ### Do these themes compromise security?
-No. All themes listed here will always style existing elements from ProtonMail's UI and not import any third party files from anywhere.
+In short, no. All themes listed here will always style existing elements from ProtonMail's UI and not import any third party files from anywhere.
 At the time I created these themes I received a few directions from ProtonMail's co-founder [Jason Stockman](https://twitter.com/jasonstockman) in order to avoid breaking layout and security issues.
 
 ### Feedback and fixes.
