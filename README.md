@@ -28,7 +28,7 @@ Check out some of the available themes you can choose from.
 
 ### Do these themes compromise security?
 In short, no. All themes listed here will always style existing elements from ProtonMail's UI and not import any third party files from anywhere.
-At the time I created these themes I received a few directions from ProtonMail's co-founder [Jason Stockman](https://twitter.com/jasonstockman) in order to avoid breaking layout and security issues.
+At the time I created these themes I've received a few directions from ProtonMail's co-founder [Jason Stockman](https://twitter.com/jasonstockman) in order to avoid breaking layout and security issues.
 
 ### Feedback and fixes.
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
