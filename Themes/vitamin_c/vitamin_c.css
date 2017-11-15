@@ -1,0 +1,380 @@
+/* =========================================== *
+ * VITAMIN C THEME
+ * Version: 3.12.0
+ * Author: Cristiano Almeida
+ * Website: www.csalmeida.com
+ * Tweets @_csalmeida
+ * =========================================== */
+.headerDesktop-container {
+  background-color: #004358;
+}
+
+.search-form-fieldset {
+  background: #1F8A70;
+}
+
+[class*="searchForm-action-button-"] {
+  color: #FFE11A;
+}
+
+.searchForm-action-button-advanced:hover, .searchForm-action-button-toggle:hover {
+  background: #FD7400;
+}
+
+.customRadio-input:checked + .customRadio-mask {
+  box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 10px #FD7400;
+  border-color: #FD7400;
+}
+
+.pm_button.primary, .pm_button.primary:active {
+  color: #FFE11A;
+  background-color: #004358;
+  border-color: #004358;
+}
+
+.pm_button.primary:hover, .pm_button.primary:focus {
+  background-color: rgba(31, 138, 112, 0.7);
+  border-color: rgba(31, 138, 112, 0.7);
+}
+
+.navigation > li.active, .navigation > li:hover {
+  box-shadow: 0 5px 0 0 #FD7400 inset;
+}
+
+.navigation-link {
+  color: #FFE11A;
+}
+
+.navigation-title:hover {
+  color: #FD7400;
+}
+
+.pm_dropdown .navigationUser-logout {
+  background-color: #004358 !important;
+  border-color: #004358 !important;
+  color: #FFE11A !important;
+}
+
+.pm_dropdown .navigationUser-logout:hover {
+  background-color: #1F8A70 !important;
+  border-color: #1F8A70 !important;
+  color: #FFE11A !important;
+}
+
+.sidebar-btn-compose, .sidebar-btn-compose:active {
+  color: #FFE11A !important;
+  background: #FD7400 !important;
+  border: none !important;
+}
+
+.sidebar-btn-compose:hover {
+  color: #FFE11A !important;
+  background: #FD7400 !important;
+  border: none !important;
+  box-shadow: inset 0 400px 400px rgba(0, 0, 0, 0.1);
+}
+
+.headerDesktop-logo {
+  background-color: #004358;
+}
+
+body section.sidebar {
+  background: #004358;
+}
+
+body section.sidebar a.compose {
+  background: #FD7400;
+  color: #FFE11A;
+}
+
+body section.sidebar a.compose:hover {
+  background: #FFE11A;
+  border-color: #FFE11A;
+  color: #004358;
+}
+
+body section.sidebar ul.menu li a {
+  color: #FFE11A;
+}
+
+body section.sidebar ul.menu li a:hover {
+  color: #FD7400;
+}
+
+body section.sidebar ul.menu li.active a, body section.sidebar ul.menu li.active a {
+  color: #FFE11A;
+}
+
+body section.sidebar ul.menu li.active a i.fa, body section.sidebar ul.menu li.active a i.fa:hover {
+  color: #FD7400 !important;
+  opacity: 1;
+}
+
+body section.sidebar ul.menu li a .fa-repeat {
+  color: #FFE11A;
+  opacity: 1;
+}
+
+body section.sidebar ul.menu li a i.fa {
+  color: #FFE11A;
+  opacity: 0.5;
+}
+
+body section.sidebar ul.menu li a i.fa:hover, body section.sidebar ul.menu li a:hover i.fa {
+  color: #FFE11A;
+  opacity: 1;
+}
+
+body section.sidebar ul.menu li a em {
+  color: #FFE11A;
+  opacity: 0.5;
+}
+
+body section.sidebar div.labels ul li a {
+  color: #FFE11A;
+  opacity: 0.5;
+}
+
+body section.sidebar div.labels ul li a:hover {
+  color: #FFE11A;
+  opacity: 1;
+}
+
+body section.sidebar div.footer div.link a, body section.sidebar a.version {
+  color: #FFE11A;
+  opacity: 0.5;
+}
+
+body section.sidebar div.footer div.link a:hover, body section.sidebar a.version:hover {
+  color: #FD7400;
+  opacity: 1;
+}
+
+body section.sidebar div.footer div.storage strong {
+  color: #FFE11A;
+  opacity: 0.5;
+}
+
+.conversationPlaceholder #storageStatus .wrap span strong {
+  color: #FD7400;
+}
+
+.storageBar {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.storageBar .storageBar-progress {
+  background-color: #FD7400;
+}
+
+.pm_buttons, .pm_buttons a {
+  color: #0d0d0d;
+}
+
+.pm_buttons a:hover, .pm_buttons .pm_buttons-child:hover {
+  color: #FD7400;
+}
+
+.readUnread-container-ur .readUnread-btn-read,
+.pm_buttons .pm_buttons:not(:first-of-type), .pm_buttons > *,
+.pm_buttons, .pm_buttons a {
+  border-color: #004358 !important;
+}
+
+.dropdown-folder-search .fa.dropdown-folder-search-icon,
+.dropdown-label-search .fa.dropdown-label-search-icon {
+  color: #FD7400;
+}
+
+.dropdown-folder-create-button,
+.createLabel-button {
+  color: #FD7400;
+}
+
+.customCheckbox-container:hover .customCheckbox-mask,
+.customMaskInput-container:hover .customCheckbox-mask {
+  border-color: #FD7400 !important;
+}
+
+.customCheckbox-input:checked + .customCheckbox-mask {
+  background-color: #FD7400;
+  border-color: #FD7400;
+  color: #004358;
+}
+
+.conversation.marked::before {
+  background: #FD7400;
+  width: 5px;
+}
+
+#pm_composer .composer header {
+  background: #004358;
+  color: #FFE11A;
+}
+
+p a {
+  color: #FD7400;
+}
+
+#pm_composer .composer footer .pm_button {
+  background: #FFE11A;
+  color: #004358;
+}
+
+#pm_composer .composer footer .pm_button:hover {
+  background: #FFE11A;
+  color: #004358;
+}
+
+#pm_composer .composer footer .pm_button.primary {
+  background: #004358;
+  color: #FFE11A;
+}
+
+#pm_composer .composer footer .pm_button.primary:hover {
+  background: #FD7400;
+  color: #FFE11A;
+}
+
+#pm_settings .pm_tabs {
+  background: #e6eaf0;
+}
+
+#pm_settings .pm_tabs li a.pm_button {
+  color: #004358;
+  border-color: #e6eaf0;
+}
+
+#pm_settings .pm_tabs li a.pm_button:hover {
+  color: #FD7400;
+}
+
+#pm_settings .pm_tabs li.active a.pm_button {
+  color: #FD7400;
+}
+
+.pm_button.link {
+  color: #FD7400;
+}
+
+.pm_toggle.off .off, .pm_toggle.on .on {
+  background: #004358;
+  color: #FFE11A;
+}
+
+.pm_toggle {
+  box-shadow: 0 0 0 1px #e6eaf0;
+}
+
+.alert.alert-info {
+  background: rgba(230, 234, 240, 0.7);
+  color: #0d0d0d;
+}
+
+.alert.alert-warning {
+  background: rgba(255, 170, 0, 0.7);
+  color: #0d0d0d;
+}
+
+.pm_button.error:focus, .pm_button.error:hover {
+  background-color: #d62646;
+  border-color: rgba(214, 38, 70, 0.7);
+}
+
+.pm_button.error {
+  background-color: rgba(214, 38, 70, 0.7);
+  border-color: #d62646;
+}
+
+html.protonmail .text-purple,
+.settingsUsers-link-signatures {
+  color: #FD7400 !important;
+}
+
+html.protonmail .text-red {
+  color: #d62646 !important;
+}
+
+.pm_button.link {
+  color: #0d0d0d !important;
+}
+
+.overviewSection-container .topUp-button {
+  color: #FD7400;
+}
+
+.settingsDashboard-plans [class*="Column-container"] .isCurrent {
+  background: #004358;
+  box-shadow: 0 0 8px #004358, 0 0 0 2px #004358;
+  border-bottom: 1px solid #004358;
+}
+
+.settingsDashboard-plans.free-active .freeColumn-container,
+.settingsDashboard-plans.plus-active .plusColumn-container,
+.settingsDashboard-plans.professional-active .professionalColumn-container,
+.settingsDashboard-plans.visionary-active .visionaryColumn-container {
+  border-color: #004358;
+  box-shadow: 0 0 8px #004358, 0 0 0 2px #004358;
+}
+
+[class*="settingsDashboard-arrowToScroll"] .arrowsToScroll-button {
+  background: rgba(253, 116, 0, 0.7);
+}
+
+[class*="settingsDashboard-arrowToScroll"] .arrowsToScroll-button:hover {
+  background: #fd7400;
+}
+
+.vpnRow-add {
+  background-color: rgba(253, 116, 0, 0.7);
+}
+
+.vpnRow-add:hover {
+  background: #fd7400;
+}
+
+.settingsDashboard-plans .freeColumn-free,
+.totalRows-monthly-price,
+.totalRows-yearly-price {
+  color: #0d0d0d;
+}
+
+.totalRows-discount {
+  border-color: transparent #FD7400;
+}
+
+.pm_modal .modal-dialog {
+  border-color: #004358;
+}
+
+.pm_modal .modal-dialog .close {
+  color: #FFE11A;
+  background: #004358;
+}
+
+.pm_badge {
+  color: #FFE11A;
+}
+
+.pm_badge.primary {
+  background: #004358;
+  color: #FFE11A;
+}
+
+.pm_badge.success {
+  background: #FD7400;
+  color: #FFE11A;
+}
+
+.pm_table table th a, .pm_table table th .fa {
+  color: #FD7400;
+}
+
+body .cg-notify-message.notification-success {
+  background-color: #FD7400;
+  color: #FFE11A;
+}
+
+.appConfigBody-is-mobile .sidebarApp-container {
+  background: #004358;
+}

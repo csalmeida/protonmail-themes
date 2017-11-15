@@ -1,321 +1,381 @@
-/*
-built by tripscripts
-
-using Cristiano Almeida's "Theme Generator"
-http://www.csalmeida.com/demos/quark/
-
-this theme is based off of 
-Sublime Text's "Monokai" color scheme
-*/
-
+/* =========================================== *
+ * MONOKAI THEME
+ * Version: 3.12.0
+ * Author: tripscripts
+ * Website: N/A
+ * Tweets N/A
+ * Updated by: csalmeida
+ * =========================================== */
 .headerDesktop-container {
-    background-color: #1D1E1A
+  background-color: #1D1E1A;
 }
 
 .search-form-fieldset {
-    background: #615C4C
+  background: #5B26D6;
 }
 
 [class*="searchForm-action-button-"] {
-    color: #9376D6
+  color: #FFF;
 }
 
-.searchForm-action-button-advanced:hover,
-.searchForm-action-button-toggle:hover {
-    background: #89C62A
+.searchForm-action-button-advanced:hover, .searchForm-action-button-toggle:hover {
+  background: #89C62A;
 }
 
-.customRadio-input:checked+.customRadio-mask {
-    box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 10px #89C62A;
-    border-color: #89C62A
+.customRadio-input:checked + .customRadio-mask {
+  box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 10px #89C62A;
+  border-color: #89C62A;
 }
 
-.pm_button.primary,
-.pm_button.primary:active {
-    color: #fff;
-    background-color: #1D1E1A;
-    border-color: #1D1E1A
+.pm_button.primary, .pm_button.primary:active {
+  color: #FFF;
+  background-color: #1D1E1A;
+  border-color: #1D1E1A;
 }
 
-.pm_button.primary:hover,
-.pm_button.primary:focus {
-    background-color: #615C4C;
-    border-color: #615C4C
+.pm_button.primary:hover, .pm_button.primary:focus {
+  background-color: rgba(91, 38, 214, 0.7);
+  border-color: rgba(91, 38, 214, 0.7);
 }
 
-.navigation>li.active,
-.navigation>li:hover {
-    box-shadow: 0 5px 0 0 #89C62A inset
+.navigation > li.active, .navigation > li:hover {
+  box-shadow: 0 5px 0 0 #89C62A inset;
 }
 
 .navigation-link {
-    color: #9376D6
+  color: #FFF;
 }
 
 .navigation-title:hover {
-    color: #89C62A
+  color: #89C62A;
 }
 
 .pm_dropdown .navigationUser-logout {
-    background-color: #1D1E1A !important;
-    border-color: #1D1E1A !important;
-    color: #9376D6 !important
+  background-color: #1D1E1A !important;
+  border-color: #1D1E1A !important;
+  color: #FFF !important;
 }
 
 .pm_dropdown .navigationUser-logout:hover {
-    background-color: #615C4C !important;
-    border-color: #615C4C !important;
-    color: #9376D6 !important
+  background-color: #5B26D6 !important;
+  border-color: #5B26D6 !important;
+  color: #FFF !important;
 }
 
-.sidebar-btn-compose,
-.sidebar-btn-compose:active {
-    color: #fff !important;
-    background: #89C62A !important;
-    border: none !important
+.sidebar-btn-compose, .sidebar-btn-compose:active {
+  color: #FFF !important;
+  background: #89C62A !important;
+  border: none !important;
 }
 
 .sidebar-btn-compose:hover {
-    color: #fff !important;
-    background: #89C62A !important;
-    border: none !important;
-    box-shadow: inset 0 400px 400px rgba(0, 0, 0, 0.1)
+  color: #FFF !important;
+  background: #89C62A !important;
+  border: none !important;
+  box-shadow: inset 0 400px 400px rgba(0, 0, 0, 0.1);
 }
 
 .headerDesktop-logo {
-    background-color: #1D1E1A
+  background-color: #1D1E1A;
 }
 
 body section.sidebar {
-    background: #1D1E1A
+  background: #1D1E1A;
 }
 
 body section.sidebar a.compose {
-    background: #89C62A;
-    color: #9376D6
+  background: #89C62A;
+  color: #FFF;
 }
 
 body section.sidebar a.compose:hover {
-    background: #9376D6;
-    border-color: #9376D6;
-    color: #1D1E1A
+  background: #FFF;
+  border-color: #FFF;
+  color: #1D1E1A;
 }
 
 body section.sidebar ul.menu li a {
-    color: #9376D6
+  color: #FFF;
 }
 
 body section.sidebar ul.menu li a:hover {
-    color: #89C62A
+  color: #89C62A;
 }
 
-body section.sidebar ul.menu li.active a,
-body section.sidebar ul.menu li.active a {
-    color: #9376D6
+body section.sidebar ul.menu li.active a, body section.sidebar ul.menu li.active a {
+  color: #FFF;
 }
 
-body section.sidebar ul.menu li.active a i.fa,
-body section.sidebar ul.menu li.active a i.fa:hover {
-    color: #89C62A !important;
-    opacity: 1
+body section.sidebar ul.menu li.active a i.fa, body section.sidebar ul.menu li.active a i.fa:hover {
+  color: #89C62A !important;
+  opacity: 1;
 }
 
 body section.sidebar ul.menu li a .fa-repeat {
-    color: #9376D6;
-    opacity: 1
+  color: #FFF;
+  opacity: 1;
 }
 
 body section.sidebar ul.menu li a i.fa {
-    color: #9376D6;
-    opacity: 0.5
+  color: #FFF;
+  opacity: 0.5;
 }
 
-body section.sidebar ul.menu li a i.fa:hover,
-body section.sidebar ul.menu li a:hover i.fa {
-    color: #9376D6;
-    opacity: 1
+body section.sidebar ul.menu li a i.fa:hover, body section.sidebar ul.menu li a:hover i.fa {
+  color: #FFF;
+  opacity: 1;
 }
 
 body section.sidebar ul.menu li a em {
-    color: #9376D6;
-    opacity: 0.5
+  color: #FFF;
+  opacity: 0.5;
 }
 
 body section.sidebar div.labels ul li a {
-    color: #9376D6;
-    opacity: 0.5
+  color: #FFF;
+  opacity: 0.5;
 }
 
 body section.sidebar div.labels ul li a:hover {
-    color: #9376D6;
-    opacity: 1
+  color: #FFF;
+  opacity: 1;
 }
 
-body section.sidebar div.footer div.link a,
-body section.sidebar a.version {
-    color: #9376D6;
-    opacity: 0.5
+body section.sidebar div.footer div.link a, body section.sidebar a.version {
+  color: #FFF;
+  opacity: 0.5;
 }
 
-body section.sidebar div.footer div.link a:hover,
-body section.sidebar a.version:hover {
-    color: #89C62A;
-    opacity: 1
+body section.sidebar div.footer div.link a:hover, body section.sidebar a.version:hover {
+  color: #89C62A;
+  opacity: 1;
 }
 
 body section.sidebar div.footer div.storage strong {
-    color: #9376D6;
-    opacity: 0.5
+  color: #FFF;
+  opacity: 0.5;
 }
 
-body section.sidebar div.footer .bar em {
-    background: #89C62A;
-    height: 3px
+.conversationPlaceholder #storageStatus .wrap span strong {
+  color: #89C62A;
 }
 
-body section.sidebar div.footer .bar {
-    background: #9376D6;
-    height: 3px
+.storageBar {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.pm_buttons,
-.pm_buttons a {
-    color: #1D1E1A
+.storageBar .storageBar-progress {
+  background-color: #89C62A;
+}
+
+.pm_buttons, .pm_buttons a {
+  color: #0d0d0d;
+}
+
+.pm_buttons a:hover, .pm_buttons .pm_buttons-child:hover {
+  color: #89C62A;
+}
+
+.readUnread-container-ur .readUnread-btn-read,
+.pm_buttons .pm_buttons:not(:first-of-type), .pm_buttons > *,
+.pm_buttons, .pm_buttons a {
+  border-color: #1D1E1A !important;
+}
+
+.dropdown-folder-search .fa.dropdown-folder-search-icon,
+.dropdown-label-search .fa.dropdown-label-search-icon {
+  color: #89C62A;
+}
+
+.dropdown-folder-create-button,
+.createLabel-button {
+  color: #89C62A;
+}
+
+.customCheckbox-container:hover .customCheckbox-mask,
+.customMaskInput-container:hover .customCheckbox-mask {
+  border-color: #89C62A !important;
+}
+
+.customCheckbox-input:checked + .customCheckbox-mask {
+  background-color: #89C62A;
+  border-color: #89C62A;
+  color: #1D1E1A;
 }
 
 .conversation.marked::before {
-    background: #89C62A;
-    width: 5px
+  background: #89C62A;
+  width: 5px;
 }
 
 #pm_composer .composer header {
-    background: #1D1E1A;
-    color: #9376D6
+  background: #1D1E1A;
+  color: #FFF;
 }
 
 p a {
-    color: #89C62A
+  color: #89C62A;
 }
 
 #pm_composer .composer footer .pm_button {
-    background: #9376D6;
-    color: #1D1E1A
+  background: #FFF;
+  color: #1D1E1A;
 }
 
 #pm_composer .composer footer .pm_button:hover {
-    background: #9376D6;
-    color: #1D1E1A
+  background: #FFF;
+  color: #1D1E1A;
 }
 
 #pm_composer .composer footer .pm_button.primary {
-    background: #1D1E1A;
-    color: #9376D6
+  background: #1D1E1A;
+  color: #FFF;
 }
 
 #pm_composer .composer footer .pm_button.primary:hover {
-    background: #89C62A;
-    color: #9376D6
+  background: #89C62A;
+  color: #FFF;
 }
 
 #pm_settings .pm_tabs {
-    background: #e6eaf0
+  background: #e6eaf0;
 }
 
 #pm_settings .pm_tabs li a.pm_button {
-    color: #1D1E1A;
-    border-color: #e6eaf0
+  color: #1D1E1A;
+  border-color: #e6eaf0;
 }
 
 #pm_settings .pm_tabs li a.pm_button:hover {
-    color: #89C62A
+  color: #89C62A;
 }
 
 #pm_settings .pm_tabs li.active a.pm_button {
-    color: #89C62A
+  color: #89C62A;
 }
 
 .pm_button.link {
-    color: #89C62A
+  color: #89C62A;
 }
 
-.pm_toggle.off .off,
-.pm_toggle.on .on {
-    background: #1D1E1A;
-    color: #9376D6
+.pm_toggle.off .off, .pm_toggle.on .on {
+  background: #1D1E1A;
+  color: #FFF;
+}
+
+.pm_toggle {
+  box-shadow: 0 0 0 1px #e6eaf0;
 }
 
 .alert.alert-info {
-    background: #e6eaf0;
-    color: #000
+  background: rgba(230, 234, 240, 0.7);
+  color: #0d0d0d;
 }
 
-html.protonmail .text-purple {
-    color: #89C62A
+.alert.alert-warning {
+  background: rgba(255, 170, 0, 0.7);
+  color: #0d0d0d;
 }
 
-#pm_settings .bar em {
-    background: #89C62A;
-    height: 4px
+.pm_button.error:focus, .pm_button.error:hover {
+  background-color: #d62646;
+  border-color: rgba(214, 38, 70, 0.7);
 }
 
-#pm_settings .bar {
-    background: #1D1E1A;
-    opacity: 0.5;
-    height: 4px
+.pm_button.error {
+  background-color: rgba(214, 38, 70, 0.7);
+  border-color: #d62646;
 }
 
-#plans .plans .plan h3 {
-    background: #1D1E1A;
-    color: #9376D6
+html.protonmail .text-purple,
+.settingsUsers-link-signatures {
+  color: #89C62A !important;
 }
 
-#plans .plans .plan.plus-plan h3 span,
-#plans .plans .plan.visionary-plan h3 span,
-#plans .plans .plan.visionary-plan header {
-    color: #9376D6
+html.protonmail .text-red {
+  color: #d62646 !important;
 }
 
-#plans .plans .plan footer .cycle strong {
-    color: #89C62A
+.pm_button.link {
+  color: #0d0d0d !important;
 }
 
-#plans .plans .plan footer .cycle .discount {
-    border-color: transparent #89C62A transparent transparent
+.overviewSection-container .topUp-button {
+  color: #89C62A;
 }
 
-#plans .plans .plan footer .cycle .discount span {
-    color: #9376D6
+.settingsDashboard-plans [class*="Column-container"] .isCurrent {
+  background: #1D1E1A;
+  box-shadow: 0 0 8px #1D1E1A, 0 0 0 2px #1D1E1A;
+  border-bottom: 1px solid #1D1E1A;
+}
+
+.settingsDashboard-plans.free-active .freeColumn-container,
+.settingsDashboard-plans.plus-active .plusColumn-container,
+.settingsDashboard-plans.professional-active .professionalColumn-container,
+.settingsDashboard-plans.visionary-active .visionaryColumn-container {
+  border-color: #1D1E1A;
+  box-shadow: 0 0 8px #1D1E1A, 0 0 0 2px #1D1E1A;
+}
+
+[class*="settingsDashboard-arrowToScroll"] .arrowsToScroll-button {
+  background: rgba(137, 198, 42, 0.7);
+}
+
+[class*="settingsDashboard-arrowToScroll"] .arrowsToScroll-button:hover {
+  background: #89c62a;
+}
+
+.vpnRow-add {
+  background-color: rgba(137, 198, 42, 0.7);
+}
+
+.vpnRow-add:hover {
+  background: #89c62a;
+}
+
+.settingsDashboard-plans .freeColumn-free,
+.totalRows-monthly-price,
+.totalRows-yearly-price {
+  color: #0d0d0d;
+}
+
+.totalRows-discount {
+  border-color: transparent #89C62A;
 }
 
 .pm_modal .modal-dialog {
-    border-color: #1D1E1A
+  border-color: #1D1E1A;
 }
 
 .pm_modal .modal-dialog .close {
-    color: #9376D6;
-    background: #1D1E1A
+  color: #FFF;
+  background: #1D1E1A;
 }
 
 .pm_badge {
-    color: #9376D6
+  color: #FFF;
 }
 
 .pm_badge.primary {
-    background: #1D1E1A;
-    color: #9376D6
+  background: #1D1E1A;
+  color: #FFF;
 }
 
 .pm_badge.success {
-    background: #89C62A;
-    color: #9376D6
+  background: #89C62A;
+  color: #FFF;
 }
 
-.pm_table table th a,
-.pm_table table th .fa {
-    color: #89C62A
+.pm_table table th a, .pm_table table th .fa {
+  color: #89C62A;
 }
 
 body .cg-notify-message.notification-success {
-    background-color: #89C62A;
-    color: #9376D6
+  background-color: #89C62A;
+  color: #FFF;
+}
+
+.appConfigBody-is-mobile .sidebarApp-container {
+  background: #1D1E1A;
 }
