@@ -17,11 +17,11 @@ The theme should be applied and you should see the changes immediately.
 ### Available themes.
 Check out some of the available themes you can choose from.
 
+#### [Green Lume v3.7.3](Themes/green_lume/green_lume.css)
+![Screenshot of Green Lume theme.](screenshots/green_lume_3.12.0.gif)
+
 #### [Vitamin C v3.12.0](Themes/vitamin_c/vitamin_c.css)
 ![Screenshot of Vitamin C theme.](screenshots/vitamin_c_3.12.0.gif)
-
-#### [Green Lume v3.7.3](Themes/green_lume/green_lume.min.css)
-![Screenshot of Green Lume theme.](screenshots/green_lume_3.5.16.png)
 
 #### [Dark Bubble Gum v3.7.3](Themes/dark_bubble_gum/dark_bubble_gum.min.css)
 ![Screenshot of Dark Bubble Gum theme.](screenshots/dark_bubble_gum_3.5.16.png)
