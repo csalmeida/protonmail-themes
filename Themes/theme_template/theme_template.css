@@ -1,5 +1,6 @@
 /* =========================================== *
- * Template 3.7.3 THEME
+ * Template THEME
+ * Version: 3.12.0
  * Author: You name here
  * Website: Your website here
  * Tweets Your twitter handle
@@ -372,4 +373,8 @@ html.protonmail .text-red {
 body .cg-notify-message.notification-success {
   background-color: #2FBF71;
   color: #fff;
+}
+
+.appConfigBody-is-mobile .sidebarApp-container {
+  background: #1C1C1C;
 }
