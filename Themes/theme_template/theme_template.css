@@ -261,9 +261,19 @@ p a {
   color: #fff;
 }
 
-.alert.alert-info {
-  background: #e6eaf0;
-  color: #000;
+.alert.alert-warning {
+  background: rgba(255, 170, 0, 0.7);
+  color: #0d0d0d;
+}
+
+.pm_button.error:focus, .pm_button.error:hover {
+  background-color: #d62646;
+  border-color: rgba(214, 38, 70, 0.7);
+}
+
+.pm_button.error {
+  background-color: rgba(214, 38, 70, 0.7);
+  border-color: #d62646;
 }
 
 html.protonmail .text-purple,
