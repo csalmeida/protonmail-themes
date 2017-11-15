@@ -355,11 +355,17 @@ p a {
   color: $navigation;
 }
 
-// .alert.alert-info {
-//   background: $extra_color;
-//   color: #000;
-// }
+.pm_toggle {
+  box-shadow: 0 0 0 1px $extra_color;
+}
 
+// Neutral content box.
+.alert.alert-info {
+  background: rgba($extra_color, 0.7);
+  color: $text_color;
+}
+
+// Warning content box.
 .alert.alert-warning {
   background: rgba($warning_color, 0.7);
   color: $text_color;
