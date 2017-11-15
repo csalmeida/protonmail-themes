@@ -316,7 +316,11 @@ html.protonmail .text-red {
 .settingsDashboard-plans .freeColumn-free,
 .totalRows-monthly-price,
 .totalRows-yearly-price {
-  color: #2FBF71;
+  color: #0d0d0d;
+}
+
+.totalRows-discount {
+  border-color: transparent #2FBF71;
 }
 
 .pm_modal .modal-dialog {

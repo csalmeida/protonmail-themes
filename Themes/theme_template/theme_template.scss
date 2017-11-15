@@ -416,7 +416,12 @@ html.protonmail .text-red {
 .settingsDashboard-plans .freeColumn-free,
 .totalRows-monthly-price,
 .totalRows-yearly-price {
-  color: $highlight;
+  color: $text_color;
+}
+
+// Plans and prices - Discount triangle.
+.totalRows-discount {
+  border-color: transparent $highlight;
 }
 
 // Modal color.
