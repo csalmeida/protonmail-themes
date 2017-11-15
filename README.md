@@ -1,7 +1,7 @@
 # ProtonMail Themes
 Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), the encrypted mail service allows the use of themes with Cascading Style Sheets. You can pick a theme from the [Themes](Themes/) folder or create a custom one yourself using CSS. Feel free to [use the theme template provided](Themes/theme_template) as a starting point.
 
-> These themes were developed for **[v3.12.0](/releases)** of ProtonMail.
+> These themes were developed for **[v3.12.0](./releases)** of ProtonMail.
 
 ### How to use a theme.
 1. Pick one from the themes folder in the repository.
