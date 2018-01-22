@@ -257,6 +257,15 @@ p a {
   color: #EF2D56;
 }
 
+.pm_button.link.composerHeader-btn {
+  color: #FFF !important;
+}
+
+.pm_button.link.composerHeader-btn:hover {
+  color: #EF2D56 !important;
+}
+
+
 .pm_toggle.off .off, .pm_toggle.on .on {
   background: #1C1C1C;
   color: #FFF;
