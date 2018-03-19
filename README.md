@@ -37,7 +37,8 @@ If you notice something's missing feel free to make a pull request. If you have 
 
 #### Where can I find more themes?
 * [ProtonMail's Official Themes](http://protonmail.tumblr.com/)
-* [Austin Delamar's ProtonMail Themes on Github](https://github.com/amdelamar/pm-theme)
+* [Austin Delamar's ProtonMail Themes](https://github.com/amdelamar/pm-theme)
+* [Jérémie Cook's ProtonMail Theme](https://github.com/jeremiecook/protonmail-theme)
 
 #### Web References
 * [The Greenlume theme got featured on ProtonMail's website](https://protonmail.com/blog/protonmail-themes/)
