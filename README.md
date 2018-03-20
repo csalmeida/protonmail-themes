@@ -36,7 +36,7 @@ At the time I created these themes I've received a few directions from ProtonMai
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
 
 ### Supporting and maintaining the project.
-ProtonMail is a great email client, I enjoy working on this project and provide themes for free but please consider getting me a coffee as it goes a long way to help me maintain this project! Thank you 🙇🏻
+ProtonMail is a great email client, I enjoy working on this project and provide themes for free but please consider getting me a coffee as it goes a long way to help me maintain it! Thank you 🙇🏻
 
 <a href='https://ko-fi.com/P5P8AWC4'>
 <img src='https://az743702.vo.msecnd.net/cdn/kofi5.png?v=0' alt='Buy Me a Coffee' width='160' />
