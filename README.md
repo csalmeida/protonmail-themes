@@ -39,6 +39,7 @@ If you notice something's missing feel free to make a pull request. If you have 
 * [ProtonMail's Official Themes](http://protonmail.tumblr.com/)
 * [Austin Delamar's ProtonMail Themes](https://github.com/amdelamar/pm-theme)
 * [Jérémie Cook's ProtonMail Theme](https://github.com/jeremiecook/protonmail-theme)
+* [Quark, a theme creator for ProtonMail](https://github.com/csalmeida/quark)
 
 #### Web References
 * [The Greenlume theme got featured on ProtonMail's website](https://protonmail.com/blog/protonmail-themes/)
