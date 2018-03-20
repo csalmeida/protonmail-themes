@@ -39,7 +39,7 @@ If you notice something's missing feel free to make a pull request. If you have 
 ProtonMail is a great email client and I love working on this project and provide themes for free but please consider buying me a coffee as it goes a long way to help me maintain this project! Thank you 🙇🏻
 
 <a href='https://ko-fi.com/P5P8AWC4'>
-<img src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' alt='Buy Me a Coffee' width='100' />
+<img src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' alt='Buy Me a Coffee' width='160' />
 </a>
 
 #### Where can I find more themes?
