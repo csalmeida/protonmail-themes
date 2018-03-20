@@ -35,6 +35,13 @@ At the time I created these themes I've received a few directions from ProtonMai
 ### Feedback and fixes.
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
 
+### Supporting and maintaining the project.
+ProtonMail is a great email client and I love working on this project and provide themes for free but please consider buying me a coffee as it goes a long way to help me maintain this project! Thank you 🙇🏻
+
+<a href='https://ko-fi.com/P5P8AWC4'>
+<img src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' alt='Buy Me a Coffee' />
+</a>
+
 #### Where can I find more themes?
 * [ProtonMail's Official Themes](http://protonmail.tumblr.com/)
 * [Austin Delamar's ProtonMail Themes](https://github.com/amdelamar/pm-theme)
