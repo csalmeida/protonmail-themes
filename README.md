@@ -39,7 +39,7 @@ cd protonmail-themes
 npm install
 ```
 
-Create a `.env` file from the example. Then you can either create as many themes in with `SCSS` on the `/themes` folder and run `npm run theme-build-all` when you're done or create a theme using the `theme-template.scss` and running `npm run theme-build` which will create a single theme.
+Create a `.env` file from the example. Then you can either create as many themes in with `SCSS` on the `/templates` folder and run `npm run theme-build-all` when you're done or create a theme using the `theme-template.scss` and running `npm run theme-build` which will create a single theme.
 
 ### Feedback and fixes.
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
