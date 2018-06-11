@@ -4,7 +4,7 @@ const fs = require('fs');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const setEntryPoints = (themes = {}) => {
-  fs.readdirSync(path.join(__dirname, 'src')).forEach(file => {
+  fs.readdirSync(path.join(__dirname, 'templates')).forEach(file => {
     themes[file.slice(0, -5)] = path.join(__dirname, 'src', file)
   })
   return themes
