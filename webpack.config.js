@@ -16,7 +16,7 @@ module.exports = {
   mode: process.env.MODE,
   entry: themes,
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
     path: path.join(__dirname, 'themes')
   },
   module: {
