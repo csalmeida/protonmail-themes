@@ -7,7 +7,7 @@ const setThemeName = (extension = ".css") => {
   return process.env.THEME_NAME + extension
 };
 
-const templatePath = path.join(__dirname, process.env.TEMPLATE_PATH);
+const templatePath = path.join(__dirname, process.env.TEMPLATE_PATH, `theme_template.scss`);
 const themeName = setThemeName();
 
 console.log("Theme name: ", themeName);
