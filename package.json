@@ -4,8 +4,10 @@
   "description": "Customise ProtonMail with themes and enhance your encrypted email experience.",
   "main": "index.js",
   "scripts": {
-    "theme-build-all": "webpack --config webpack.config.js  && rm themes/*.js",
-    "theme-build": "webpack --config webpack.template.config.js && rm themes/*.js",
+    "theme-build-all": "webpack --config webpack.config.js  && npm run remove-js && npm run remove-compiled-template",
+    "theme-build": "webpack --config webpack.template.config.js && npm run remove-js",
+    "remove-js": "rm themes/*.js",
+    "remove-compiled-template": "rm themes/theme_template.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
