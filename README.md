@@ -32,14 +32,25 @@ Check out some of the available themes you can choose from.
 In short, no. All themes listed here will always style existing elements from ProtonMail's UI and not import any third party files from anywhere.
 At the time I created these themes I've received a few directions from ProtonMail's co-founder [Jason Stockman](https://twitter.com/jasonstockman) in order to avoid breaking layout and security issues.
 
-## Setup for development
-The project uses npm and webpack to build files. Start by forking this repository and installing dependencies:
+## Quick setup guide
+*Required for theme creation only*
+Install NodeJS, after forking/cloning this repository install dependencies:
 ```
 cd protonmail-themes
 npm install
 ```
 
-Create a `.env` file from the example. Then you can either create as many themes in with `SCSS` on the `/templates` folder and run `npm run theme-build-all` when you're done or create a theme using the `theme-template.scss` and running `npm run theme-build` which will create a single theme.
+Create a `.env` file from the example. You can choose between creating as many themes in with `SCSS` on the `/templates` folder or a single theme from the `theme-template.scss`. When you're done convert them into `CSS` by running the following commands:
+
+```
+*// Transpiles multiple themes at once.*
+npm run theme-build-all
+
+*// Transpiles a single theme from theme_template.scss*
+npm run theme-build
+```
+
+The setup and transpile steps are [explained in slightly more detail on a wiki page](https://github.com/csalmeida/protonmail-themes/wiki/Project-setup-and-theme-compilation).
 
 ### Feedback and fixes.
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
