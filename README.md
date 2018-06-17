@@ -56,10 +56,10 @@ The setup and transpile steps are [explained in slightly more detail on a wiki p
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
 
 ### Supporting and maintaining the project.
-ProtonMail is a great email client, I enjoy working on this project and provide themes for all. Please consider getting me a coffee as *it goes a long way* to help me maintain it and keep adding color to your private email experience! Thank you 🙇🏻
+ProtonMail is a great email service, I enjoy working on the project and provide themes for all. Please consider making a small donation, just the price of a cup of coffee *goes a long way* to help me maintain it and keep adding color to your private email experience! Thank you 🙇🏻
 
-<a href='https://ko-fi.com/P5P8AWC4'>
-<img src='https://az743702.vo.msecnd.net/cdn/kofi5.png?v=0' alt='Buy Me a Coffee' width='160' />
+<a href='https://www.paypal.me/csalmeida/5'>
+<img src='https://getflywheel.com/wp-content/uploads/2015/10/paypal-donate-button-large.png' alt='PayPal Me' width='160' />
 </a>
 
 #### Where can I find more themes?
