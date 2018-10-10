@@ -255,7 +255,7 @@
  }
 
  .pm_button.link {
-   color: #2FBF71;
+   color: #2FBF71 !important;
  }
 
  .pm_toggle.off .off, .pm_toggle.on .on {
@@ -294,10 +294,6 @@
 
  html.protonmail .text-red {
    color: #d62646 !important;
- }
-
- .pm_button.link {
-   color: #0d0d0d !important;
  }
 
  .overviewSection-container .topUp-button {
