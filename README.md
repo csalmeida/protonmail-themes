@@ -1,7 +1,7 @@
 # ProtonMail Themes
-Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), the encrypted mail service allows the use of themes with Cascading Style Sheets. You can pick a theme from the [Themes](Themes/) folder or create a custom one yourself using CSS. Feel free to [use the theme template provided](Themes/theme_template) as a starting point.
+Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), the encrypted mail service allows the use of themes with Cascading Style Sheets. You can pick a theme from the [Themes](Themes/) folder or create a custom one yourself using CSS. Feel free to [use the theme template provided](templates/theme_example) as a starting point.
 
-> These themes were developed for **[v3.12.x](https://github.com/csalmeida/protonmail-themes/releases)** of ProtonMail.
+> These themes were developed for **[v3.14.x](https://github.com/csalmeida/protonmail-themes/releases)** of ProtonMail.
 
 ### How to use a theme.
 1. Pick one from the themes folder in the repository.
@@ -40,17 +40,16 @@ cd protonmail-themes
 npm install
 ```
 
-Create a `.env` file from the example. You can choose between creating as many themes in with `SCSS` on the `/templates` folder or a single theme from the `theme-template.scss`. When you're done convert them into `CSS` by running the following commands:
+Themes can be created by duplicating and renaming the [example theme folder](templates/theme_example) and its `.scss` file to the theme name. Then edit that file by chaging the color variables. You can also extend the theme by editing the `_styles.css` partial or by creating a custom one.
 
+Two commands are available to compile themes:
 ```
-*// Transpiles multiple themes at once.*
-npm run theme-build-all
+*// Compiles themes as changes are made.*
+npm run watch
 
-*// Transpiles a single theme from theme_template.scss*
-npm run theme-build
+*// Compiles all themes.*
+npm run build
 ```
-
-The setup and transpile steps are [explained in slightly more detail on a wiki page](https://github.com/csalmeida/protonmail-themes/wiki/Project-setup-and-theme-compilation).
 
 ### Feedback and fixes.
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
