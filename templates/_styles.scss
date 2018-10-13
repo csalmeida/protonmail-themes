@@ -40,8 +40,8 @@
 }
 
 .navigation > li.active, .navigation > li:hover {
-  box-shadow: 0 5px 0 0 $highlight inset;
-} // Navigation top  color shadow
+  border-color: $highlight;
+} // Navigation items top border
 
 .navigation-link {
   color: $navigation;
@@ -299,6 +299,16 @@ p a {
   color: $navigation;
 }
 
+// Minimize, expand and close buttons.
+.pm_button.link.composerHeader-btn {
+  color: $navigation !important;
+}
+
+.pm_button.link.composerHeader-btn:hover {
+  color: $highlight !important;
+}
+
+
 // ================================= \\
 // =========== SETTINGS =========== \\
 // ============ PANEL ============ \\
@@ -327,8 +337,9 @@ p a {
 
 // Links in settings.
 .pm_button.link {
-  color: $highlight !important;
+  color: $highlight;
 }
+
 
 // Pill switch buttons.
 .pm_toggle.off .off, .pm_toggle.on .on {
@@ -372,6 +383,11 @@ html.protonmail .text-purple,
 
 html.protonmail .text-red {
   color: $danger_color !important;
+}
+
+// Links
+.pm_button.link {
+  color: $text_color !important;
 }
 
 // Topup link.
