@@ -4,20 +4,12 @@
   "description": "Customise ProtonMail with themes and enhance your encrypted email experience.",
   "main": "index.js",
   "scripts": {
-    "theme-build-all": "webpack --config webpack.config.js  && npm run remove-js && npm run remove-compiled-template",
-    "theme-build": "webpack --config webpack.template.config.js && npm run remove-js",
-    "remove-js": "rm themes/*.js",
-    "remove-compiled-template": "rm themes/theme_template.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "gulp watch",
+    "build": "gulp build"
   },
   "devDependencies": {
-    "css-loader": "^0.28.11",
-    "dotenv": "^6.0.0",
-    "mini-css-extract-plugin": "^0.4.0",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.3",
-    "webpack": "^4.12.0",
-    "webpack-cli": "^3.0.3"
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.1"
   },
   "repository": {
     "type": "git",
