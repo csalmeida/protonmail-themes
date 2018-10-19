@@ -1,0 +1,318 @@
+/*! =========================================== *
+ * OCHIN
+ * Version: 3.14.0
+ * Author: Cristiano Almeida
+ * Website: https://www.csalmeida.com
+ * Tweets @_csalmeida
+ * =========================================== */
+.headerDesktop-container {
+  background-color: #333E4C; }
+
+.search-form-fieldset {
+  background: #1A2533; }
+
+[class*="searchForm-action-button-"] {
+  color: #C2C5CA; }
+
+.searchForm-action-button-advanced:hover, .searchForm-action-button-toggle:hover {
+  background: #A8E576; }
+
+.customRadio-input:checked + .customRadio-mask {
+  box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 10px #A8E576;
+  border-color: #A8E576; }
+
+.pm_button.primary, .pm_button.primary:active {
+  color: #C2C5CA;
+  background-color: #333E4C;
+  border-color: #333E4C; }
+
+.pm_button.primary:hover, .pm_button.primary:focus {
+  background-color: rgba(26, 37, 51, 0.7);
+  border-color: rgba(26, 37, 51, 0.7); }
+
+.navigation > li.active, .navigation > li:hover {
+  border-color: #A8E576; }
+
+.navigation-link {
+  color: #C2C5CA; }
+
+.navigation-title:hover {
+  color: #A8E576; }
+
+.pm_dropdown .navigationUser-logout {
+  background-color: #333E4C !important;
+  border-color: #333E4C !important;
+  color: #C2C5CA !important; }
+
+.pm_dropdown .navigationUser-logout:hover {
+  background-color: #1A2533 !important;
+  border-color: #1A2533 !important;
+  color: #C2C5CA !important; }
+
+.sidebar-btn-compose, .sidebar-btn-compose:active {
+  color: #C2C5CA !important;
+  background: #A8E576 !important;
+  border: none !important; }
+
+.sidebar-btn-compose:hover {
+  color: #C2C5CA !important;
+  background: #A8E576 !important;
+  border: none !important;
+  box-shadow: inset 0 400px 400px rgba(0, 0, 0, 0.1); }
+
+.headerDesktop-logo {
+  background-color: #333E4C; }
+
+body section.sidebar {
+  background: #333E4C; }
+
+body section.sidebar a.compose {
+  background: #A8E576;
+  color: #C2C5CA; }
+
+body section.sidebar a.compose:hover {
+  background: #C2C5CA;
+  border-color: #C2C5CA;
+  color: #333E4C; }
+
+body section.sidebar ul.menu li a {
+  color: #C2C5CA; }
+
+body section.sidebar ul.menu li a:hover {
+  color: #A8E576; }
+
+body section.sidebar ul.menu li.active a, body section.sidebar ul.menu li.active a {
+  color: #C2C5CA; }
+
+body section.sidebar ul.menu li.active a i.fa, body section.sidebar ul.menu li.active a i.fa:hover {
+  color: #A8E576 !important;
+  opacity: 1; }
+
+body section.sidebar ul.menu li a .fa-repeat {
+  color: #C2C5CA;
+  opacity: 1; }
+
+body section.sidebar ul.menu li a i.fa {
+  color: #C2C5CA;
+  opacity: 0.5; }
+
+body section.sidebar ul.menu li a i.fa:hover, body section.sidebar ul.menu li a:hover i.fa {
+  color: #C2C5CA;
+  opacity: 1; }
+
+body section.sidebar ul.menu li a em {
+  color: #C2C5CA;
+  opacity: 0.5; }
+
+body section.sidebar div.labels ul li a {
+  color: #C2C5CA;
+  opacity: 0.5; }
+
+body section.sidebar div.labels ul li a:hover {
+  color: #C2C5CA;
+  opacity: 1; }
+
+body section.sidebar div.footer div.link a, body section.sidebar a.version {
+  color: #C2C5CA;
+  opacity: 0.5; }
+
+body section.sidebar div.footer div.link a:hover, body section.sidebar a.version:hover {
+  color: #A8E576;
+  opacity: 1; }
+
+body section.sidebar div.footer div.storage strong {
+  color: #C2C5CA;
+  opacity: 0.5; }
+
+.conversationPlaceholder #storageStatus .wrap span strong {
+  color: #A8E576; }
+
+.storageBar {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.storageBar .storageBar-progress {
+  background-color: #A8E576; }
+
+.pm_buttons, .pm_buttons a {
+  color: #0d0d0d; }
+
+.pm_buttons a:hover, .pm_buttons .pm_buttons-child:hover {
+  color: #A8E576; }
+
+.readUnread-container-ur .readUnread-btn-read,
+.pm_buttons .pm_buttons:not(:first-of-type), .pm_buttons > *,
+.pm_buttons, .pm_buttons a {
+  border-color: #333E4C !important; }
+
+.dropdown-folder-search .fa.dropdown-folder-search-icon,
+.dropdown-label-search .fa.dropdown-label-search-icon {
+  color: #A8E576; }
+
+.dropdown-folder-create-button,
+.createLabel-button {
+  color: #A8E576; }
+
+.customCheckbox-container:hover .customCheckbox-mask,
+.customMaskInput-container:hover .customCheckbox-mask {
+  border-color: #A8E576 !important; }
+
+.customCheckbox-input:checked + .customCheckbox-mask {
+  background-color: #A8E576;
+  border-color: #A8E576;
+  color: #333E4C; }
+
+.conversation.marked::before {
+  background: #A8E576;
+  width: 5px; }
+
+#pm_composer .composer header {
+  background: #333E4C;
+  color: #C2C5CA; }
+
+p a {
+  color: #A8E576; }
+
+#pm_composer .composer footer .pm_button {
+  background: #C2C5CA;
+  color: #333E4C; }
+
+#pm_composer .composer footer .pm_button:hover {
+  background: #C2C5CA;
+  color: #333E4C; }
+
+#pm_composer .composer footer .pm_button.primary {
+  background: #333E4C;
+  color: #C2C5CA; }
+
+#pm_composer .composer footer .pm_button.primary:hover {
+  background: #A8E576;
+  color: #C2C5CA; }
+
+.pm_button.link.composerHeader-btn {
+  color: #C2C5CA !important; }
+
+.pm_button.link.composerHeader-btn:hover {
+  color: #A8E576 !important; }
+
+#pm_settings .pm_tabs {
+  background: #e6eaf0; }
+
+#pm_settings .pm_tabs li a.pm_button {
+  color: #333E4C;
+  border-color: #e6eaf0; }
+
+#pm_settings .pm_tabs li a.pm_button:hover {
+  color: #A8E576; }
+
+#pm_settings .pm_tabs li.active a.pm_button {
+  color: #A8E576; }
+
+.pm_button.link {
+  color: #A8E576; }
+
+.pm_toggle.off .off, .pm_toggle.on .on {
+  background: #333E4C;
+  color: #C2C5CA; }
+
+.pm_toggle {
+  box-shadow: 0 0 0 1px #e6eaf0; }
+
+.alert.alert-info {
+  background: rgba(230, 234, 240, 0.7);
+  color: #0d0d0d; }
+
+.alert.alert-warning {
+  background: rgba(255, 170, 0, 0.7);
+  color: #0d0d0d; }
+
+.pm_button.error:focus, .pm_button.error:hover {
+  background-color: #d62646;
+  border-color: rgba(214, 38, 70, 0.7); }
+
+.pm_button.error {
+  background-color: rgba(214, 38, 70, 0.7);
+  border-color: #d62646; }
+
+html.protonmail .text-purple,
+.settingsUsers-link-signatures {
+  color: #A8E576 !important; }
+
+html.protonmail .text-red {
+  color: #d62646 !important; }
+
+.pm_button.link {
+  color: #0d0d0d !important; }
+
+.overviewSection-container .topUp-button {
+  color: #A8E576; }
+
+.settingsDashboard-plans [class*="Column-container"] .isCurrent {
+  background: #333E4C;
+  box-shadow: 0 0 8px #333E4C, 0 0 0 2px #333E4C;
+  border-bottom: 1px solid #333E4C; }
+
+.settingsDashboard-plans.free-active .freeColumn-container,
+.settingsDashboard-plans.plus-active .plusColumn-container,
+.settingsDashboard-plans.professional-active .professionalColumn-container,
+.settingsDashboard-plans.visionary-active .visionaryColumn-container {
+  border-color: #333E4C;
+  box-shadow: 0 0 8px #333E4C, 0 0 0 2px #333E4C; }
+
+[class*="settingsDashboard-arrowToScroll"] .arrowsToScroll-button {
+  background: rgba(168, 229, 118, 0.7); }
+
+[class*="settingsDashboard-arrowToScroll"] .arrowsToScroll-button:hover {
+  background: #a8e576; }
+
+.vpnRow-add {
+  background-color: rgba(168, 229, 118, 0.7); }
+
+.vpnRow-add:hover {
+  background: #a8e576; }
+
+.settingsDashboard-plans .freeColumn-free,
+.totalRows-monthly-price,
+.totalRows-yearly-price {
+  color: #0d0d0d; }
+
+.totalRows-discount {
+  border-color: transparent #A8E576; }
+
+.pm_modal .modal-dialog {
+  border-color: #333E4C; }
+
+.pm_modal .modal-dialog .close {
+  color: #C2C5CA;
+  background: #333E4C; }
+
+.pm_badge {
+  color: #C2C5CA; }
+
+.pm_badge.primary {
+  background: #333E4C;
+  color: #C2C5CA; }
+
+.pm_badge.success {
+  background: #A8E576;
+  color: #C2C5CA; }
+
+.pm_table table th a, .pm_table table th .fa {
+  color: #A8E576; }
+
+body .cg-notify-message.notification-success {
+  background-color: #A8E576;
+  color: #C2C5CA; }
+
+.appConfigBody-is-mobile .sidebarApp-container {
+  background: #333E4C; }
+
+.sidebar-btn-compose, .sidebar-btn-compose:active {
+  color: #FFF !important;
+  background: #7297C4 !important;
+  border: none !important; }
+
+.sidebar-btn-compose:hover {
+  color: #FFF !important;
+  background: #3d6493 !important;
+  border: none !important;
+  box-shadow: inset 0 400px 400px rgba(0, 0, 0, 0.1); }
