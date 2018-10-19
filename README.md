@@ -17,16 +17,19 @@ The theme should be applied and you should see the changes immediately.
 Check out some of the available themes you can choose from.
 
 #### [Green Lume](Themes/green_lume/green_lume.css)
-![Screenshot of Green Lume theme.](screenshots/green_lume_3.12.0.gif)
+![Screenshot of Green Lume theme.](screenshots/green_lume.gif)
 
 #### [Vitamin C](Themes/vitamin_c/vitamin_c.css)
-![Screenshot of Vitamin C theme.](screenshots/vitamin_c_3.12.0.gif)
+![Screenshot of Vitamin C theme.](screenshots/vitamin_c.gif)
 
-#### [Dark Bubble Gum](Themes/dark_bubble_gum/dark_bubble_gum.min.css)
-![Screenshot of Dark Bubble Gum theme.](screenshots/dark_bubble_gum_3.5.16.png)
+#### [Dark Bubble Gum](Themes/dark_bubble_gum/dark_bubble_gum.css)
+![Screenshot of Dark Bubble Gum theme.](screenshots/dark_bubble_gum.png)
 
-#### [Blue and Orange](Themes/blue_and_orange/blue_and_orange.min.css)
-![Screenshot of Blue and Orange theme.](screenshots/blue_and_orange_3.5.16.png)
+#### [Blue and Orange](Themes/blue_and_orange/blue_and_orange.css)
+![Screenshot of Blue and Orange theme.](screenshots/blue_and_orange.png)
+
+#### [Ochin](Themes/ochin/ochin.css)
+![Screenshot of Ochin theme.](screenshots/ochin.png)
 
 ### Do these themes compromise security?
 In short, no. All themes listed here will always style existing elements from ProtonMail's UI and not import any third party files from anywhere.
