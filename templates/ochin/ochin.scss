@@ -1,16 +1,18 @@
 /*! =========================================== *
- * Template THEME
- * Version: 3.15.0
- * Author: You name here
- * Website: Your website here
- * Tweets Your twitter handle
+ * OCHIN
+ * Version: 3.14.0
+ * Author: Cristiano Almeida
+ * Website: https://www.csalmeida.com
+ * Tweets @_csalmeida
  * =========================================== */
 
 // Change colors here and they will change everywhere.
-$base: #1C1C1C;
-$search: #000;
-$highlight: #2FBF71;
-$navigation: #fff;
+$base: #333E4C;
+$search: #1A2533;
+$highlight: #A8E576;
+$navigation: #C2C5CA;
+$compose: #7297C4;
+$compose_text: #FFF;
 
 $text_color: #0d0d0d;
 $extra_color: #e6eaf0;
@@ -18,3 +20,4 @@ $danger_color: #d62646;
 $warning_color: #ffaa00;
 
 @import '../styles';
+@import 'override';

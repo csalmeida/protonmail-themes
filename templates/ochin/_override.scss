@@ -1,0 +1,19 @@
+// ================================= \\
+// ========== HORIZONTAL =========== \\
+// ========== NAVIGATION =========== \\
+// ============= BAR =============== \\
+// ================================= \\
+
+.sidebar-btn-compose, .sidebar-btn-compose:active  {
+  color: $compose_text !important;
+  background: $compose !important;
+  border: none !important;
+} // compose button
+
+.sidebar-btn-compose:hover {
+  color: $compose_text !important;
+  background: darken($compose, 20%) !important;
+  border: none !important;
+  // Covers button with darker hue of highlight
+  box-shadow: inset 0 400px 400px rgba(0,0,0,0.1);
+} // compose button
