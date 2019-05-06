@@ -67,6 +67,7 @@
   color: $navigation !important;
   background: $highlight !important;
   border: none !important;
+  transition: background-color .2s ease-in-out;
 } // compose button
 
 .sidebar-btn-compose:hover {
@@ -250,12 +251,12 @@ body section.sidebar div.footer div.storage strong {
 
 // Unread message background.
 body #conversation-list-rows .conversation {
-
+  background: #fff;
 }
 
 // Read message background.
 body #conversation-list-rows .conversation.read {
-
+  background: #fff;
 }
 
 // ================================= \\
@@ -340,6 +341,19 @@ p a {
   color: $highlight;
 }
 
+// Toggle rectangle checkboxes.
+.pm_toggle-label {
+  background: $base;
+}
+
+.pm_toggle-checkbox:focus + .pm_toggle-label, .pm_toggle-label:hover {
+  background: lighten($base, 5%);
+}
+
+.pm_toggle-checkbox:checked + .pm_toggle-label:hover, .pm_toggle-checkbox:checked:focus + .pm_toggle-label {
+  background: $highlight;
+}
+
 
 // Pill switch buttons.
 .pm_toggle.off .off, .pm_toggle.on .on {
@@ -421,11 +435,11 @@ html.protonmail .text-red {
 
 // Plans and prices VPN buttons.
 .vpnRow-add {
-  background-color: rgba($highlight, 0.7);
+  background-color:  lighten($base, 5%);
 }
 
 .vpnRow-add:hover {
-  background: rgba($highlight, 1);
+  background: $base;
 }
 
 // Plans and prices - prices.
