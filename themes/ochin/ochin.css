@@ -52,7 +52,8 @@
 .sidebar-btn-compose, .sidebar-btn-compose:active {
   color: #C2C5CA !important;
   background: #A8E576 !important;
-  border: none !important; }
+  border: none !important;
+  transition: background-color .2s ease-in-out; }
 
 .sidebar-btn-compose:hover {
   color: #C2C5CA !important;
@@ -165,6 +166,12 @@ body section.sidebar div.footer div.storage strong {
   background: #A8E576;
   width: 5px; }
 
+body #conversation-list-rows .conversation {
+  background: #fff; }
+
+body #conversation-list-rows .conversation.read {
+  background: #fff; }
+
 #pm_composer .composer header {
   background: #333E4C;
   color: #C2C5CA; }
@@ -209,6 +216,15 @@ p a {
 
 .pm_button.link {
   color: #A8E576; }
+
+.pm_toggle-label {
+  background: #333E4C; }
+
+.pm_toggle-checkbox:focus + .pm_toggle-label, .pm_toggle-label:hover {
+  background: #3d4a5b; }
+
+.pm_toggle-checkbox:checked + .pm_toggle-label:hover, .pm_toggle-checkbox:checked:focus + .pm_toggle-label {
+  background: #A8E576; }
 
 .pm_toggle.off .off, .pm_toggle.on .on {
   background: #333E4C;
@@ -265,10 +281,10 @@ html.protonmail .text-red {
   background: #a8e576; }
 
 .vpnRow-add {
-  background-color: rgba(168, 229, 118, 0.7); }
+  background-color: #3d4a5b; }
 
 .vpnRow-add:hover {
-  background: #a8e576; }
+  background: #333E4C; }
 
 .settingsDashboard-plans .freeColumn-free,
 .totalRows-monthly-price,
