@@ -1,0 +1,145 @@
+// ================================= \\
+// ========== HORIZONTAL =========== \\
+// ========== NAVIGATION =========== \\
+// ============= BAR =============== \\
+// ================================= \\
+
+.searchForm-action-button-advanced:hover, .searchForm-action-button-toggle:hover {
+  background: $highlight;
+  color: $base;
+} // Search bar buttons hover.
+
+.customRadio-input:checked + .customRadio-mask {
+  box-shadow: inset 0 0 0 3px #fff,inset 0 0 0 10px $base;
+  border-color: $base;
+} // Advanced search menu.
+
+// ================================= \\
+// =========== VERTICAL ============ \\
+// ========== NAVIGATION =========== \\
+// ============= BAR =============== \\
+// ================================= \\
+
+.sidebar-btn-compose, .sidebar-btn-compose:active  {
+  color: $navigation !important;
+  background: $search !important;
+  border: none !important;
+  transition: color .2s ease-in-out,
+              background-color .2s ease-in-out;
+} // compose button
+
+.sidebar-btn-compose:hover {
+  color: $highlight !important;
+  background: darken($search, 5%) !important;
+  border: none !important;
+  // Covers button with darker hue of highlight
+  box-shadow: inset 0 400px 400px rgba(0,0,0,0.1);
+} // compose button
+
+
+// ================================= \\
+// =========== MESSAGE ============ \\
+// ========== NAVIGATION =========== \\
+// ================================= \\
+
+// Toolbar icons.
+.pm_buttons, .pm_buttons a {
+  color: $base;
+}
+
+.pm_buttons a:hover, .pm_buttons .pm_buttons-child:hover {
+  color: lighten($base, 5%);
+}
+
+body #conversation-list-rows .conversation .fa-star {
+  color: $search;
+} // star icon
+
+// Left border of message title.
+.conversation.marked::before {
+  background: darken($search, 5%);
+}
+
+// Checkbox next to message title.
+.customCheckbox-container:hover .customCheckbox-mask,
+.customMaskInput-container:hover .customCheckbox-mask {
+  border-color: $base !important;
+} // message checkbox
+
+.customCheckbox-input:checked+.customCheckbox-mask {
+  background-color: $base;
+  border-color: $base;
+  color: $extra_color;
+}
+
+// ================================= \\
+// =========== COMPOSING =========== \\
+// ============ MESSAGE ============ \\
+// ============= WINDOW ============= \\
+// ================================= \\
+
+// Links in general.
+p a {
+  color: lighten($base, 10%);
+}
+
+// ================================= \\
+// =========== SETTINGS =========== \\
+// ============ PANEL ============ \\
+// ================================= \\
+
+// Small icons in settings.
+html.protonmail .text-purple,
+.settingsUsers-link-signatures  {
+  color: $base !important;
+}
+
+// Topup link.
+.overviewSection-container .topUp-button {
+  color: $base;
+}
+
+// Toggle rectangle checkboxes.
+.pm_toggle-label {
+  background: $base;
+}
+
+.pm_toggle-checkbox:focus + .pm_toggle-label, .pm_toggle-label:hover {
+  background: lighten($base, 5%);
+}
+
+.pm_toggle-checkbox:checked + .pm_toggle-label:hover, .pm_toggle-checkbox:checked:focus + .pm_toggle-label {
+  background: $highlight;
+}
+
+.pm_toggle-label {
+  &::before {
+    color: #fff;
+  }
+
+  &::after {
+    background: #fff;
+  }
+}
+
+.pm_toggle-checkbox:checked + .pm_toggle-label:hover, .pm_toggle-checkbox:checked:focus + .pm_toggle-label {
+  &::before {
+    color: $base;
+  }
+
+  &::after {
+    background: $base;
+  }
+}
+
+// ================================= \\
+// ============= OTHER ============= \\
+// ================================= \\
+
+//Top pop up notifications.
+body .cg-notify-message.notification-success {
+  background-color: darken($search, 5%);
+  color: #fff;
+}
+
+
