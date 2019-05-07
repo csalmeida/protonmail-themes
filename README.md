@@ -1,7 +1,7 @@
 # ProtonMail Themes
 Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), the encrypted mail service allows the use of themes with Cascading Style Sheets. You can pick a theme from the [Themes](Themes/) folder or create a custom one yourself using CSS. Feel free to [use the theme template provided](templates/theme_example) as a starting point.
 
-> These themes were developed for **[v3.14.x](https://github.com/csalmeida/protonmail-themes/releases)** of ProtonMail.
+> These themes were developed for **[v3.15.30](https://github.com/csalmeida/protonmail-themes/releases)** of ProtonMail.
 
 ### How to use a theme.
 1. Pick one from the themes folder in the repository.
@@ -16,20 +16,23 @@ The theme should be applied and you should see the changes immediately.
 ### Available themes.
 Check out some of the available themes you can choose from.
 
-#### [Green Lume](Themes/green_lume/green_lume.css)
+#### [Green Lume](themes/green_lume/green_lume.css)
 ![Screenshot of Green Lume theme.](screenshots/green_lume.gif)
 
-#### [Vitamin C](Themes/vitamin_c/vitamin_c.css)
+#### [Vitamin C](themes/vitamin_c/vitamin_c.css)
 ![Screenshot of Vitamin C theme.](screenshots/vitamin_c.gif)
 
-#### [Dark Bubble Gum](Themes/dark_bubble_gum/dark_bubble_gum.css)
+#### [Dark Bubble Gum](themes/dark_bubble_gum/dark_bubble_gum.css)
 ![Screenshot of Dark Bubble Gum theme.](screenshots/dark_bubble_gum.png)
 
-#### [Blue and Orange](Themes/blue_and_orange/blue_and_orange.css)
+#### [Blue and Orange](themes/blue_and_orange/blue_and_orange.css)
 ![Screenshot of Blue and Orange theme.](screenshots/blue_and_orange.png)
 
-#### [Ochin](Themes/ochin/ochin.css)
+#### [Ochin](themes/ochin/ochin.css)
 ![Screenshot of Ochin theme.](screenshots/ochin.png)
+
+#### [Deutera One](themes/deutera_one/deutera_one.css)
+![Screenshot of Deutera One theme.](screenshots/deutera_one.gif)
 
 ### Do these themes compromise security?
 In short, no. All themes listed here will always style existing elements from ProtonMail's UI and not import any third party files from anywhere.
