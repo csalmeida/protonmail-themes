@@ -350,7 +350,7 @@ p a {
   background: lighten($base, 5%);
 }
 
-.pm_toggle-checkbox:checked + .pm_toggle-label:hover, .pm_toggle-checkbox:checked:focus + .pm_toggle-label {
+ .pm_toggle-checkbox:checked + .pm_toggle-label, .pm_toggle-checkbox:checked + .pm_toggle-label:hover, .pm_toggle-checkbox:checked:focus + .pm_toggle-label {
   background: $highlight;
 }
 
