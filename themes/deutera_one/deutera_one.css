@@ -223,7 +223,7 @@ p a {
 .pm_toggle-checkbox:focus + .pm_toggle-label, .pm_toggle-label:hover {
   background: #000090; }
 
-.pm_toggle-checkbox:checked + .pm_toggle-label:hover, .pm_toggle-checkbox:checked:focus + .pm_toggle-label {
+.pm_toggle-checkbox:checked + .pm_toggle-label, .pm_toggle-checkbox:checked + .pm_toggle-label:hover, .pm_toggle-checkbox:checked:focus + .pm_toggle-label {
   background: #ffed00; }
 
 .pm_toggle.off .off, .pm_toggle.on .on {
@@ -334,7 +334,7 @@ body .cg-notify-message.notification-success {
   color: #fff !important;
   background: #08426b !important;
   border: none !important;
-  transition: color .2s ease-in-out, background-color .2s ease-in-out; }
+  transition: color .2s ease-in-out, background-color .2s ease-in-out; }
 
 .sidebar-btn-compose:hover {
   color: #ffed00 !important;
