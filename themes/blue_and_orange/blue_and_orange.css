@@ -223,7 +223,7 @@ p a {
 .pm_toggle-checkbox:focus + .pm_toggle-label, .pm_toggle-label:hover {
   background: #135e72; }
 
-.pm_toggle-checkbox:checked + .pm_toggle-label:hover, .pm_toggle-checkbox:checked:focus + .pm_toggle-label {
+.pm_toggle-checkbox:checked + .pm_toggle-label, .pm_toggle-checkbox:checked + .pm_toggle-label:hover, .pm_toggle-checkbox:checked:focus + .pm_toggle-label {
   background: #ED7D3A; }
 
 .pm_toggle.off .off, .pm_toggle.on .on {
