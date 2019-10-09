@@ -1,0 +1,323 @@
+/*! =========================================== *
+ * DRACULA Theme
+ * Version: 3.14.0
+ * Author: Mike Barkmin
+ * Website: www.barkmin.eu
+ * Tweets @mikebarkmin
+ * =========================================== */
+.headerDesktop-container {
+  background-color: #282a36; }
+
+.search-form-fieldset {
+  background: #000; }
+
+[class*="searchForm-action-button-"] {
+  color: #D8D8D8; }
+
+.searchForm-action-button-advanced:hover, .searchForm-action-button-toggle:hover {
+  background: #FF79C6; }
+
+.customRadio-input:checked + .customRadio-mask {
+  box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 10px #FF79C6;
+  border-color: #FF79C6; }
+
+.pm_button.primary, .pm_button.primary:active {
+  color: #D8D8D8;
+  background-color: #282a36;
+  border-color: #282a36; }
+
+.pm_button.primary:hover, .pm_button.primary:focus {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7); }
+
+.navigation > li.active, .navigation > li:hover {
+  border-color: #FF79C6; }
+
+.navigation-link {
+  color: #D8D8D8; }
+
+.navigation-title:hover {
+  color: #FF79C6; }
+
+.pm_dropdown .navigationUser-logout {
+  background-color: #282a36 !important;
+  border-color: #282a36 !important;
+  color: #D8D8D8 !important; }
+
+.pm_dropdown .navigationUser-logout:hover {
+  background-color: #000 !important;
+  border-color: #000 !important;
+  color: #D8D8D8 !important; }
+
+.sidebar-btn-compose, .sidebar-btn-compose:active {
+  color: #D8D8D8 !important;
+  background: #FF79C6 !important;
+  border: none !important;
+  transition: background-color .2s ease-in-out; }
+
+.sidebar-btn-compose:hover {
+  color: #D8D8D8 !important;
+  background: #FF79C6 !important;
+  border: none !important;
+  box-shadow: inset 0 400px 400px rgba(0, 0, 0, 0.1); }
+
+.headerDesktop-logo {
+  background-color: #282a36; }
+
+body section.sidebar {
+  background: #282a36; }
+
+body section.sidebar a.compose {
+  background: #FF79C6;
+  color: #D8D8D8; }
+
+body section.sidebar a.compose:hover {
+  background: #D8D8D8;
+  border-color: #D8D8D8;
+  color: #282a36; }
+
+body section.sidebar ul.menu li a {
+  color: #D8D8D8; }
+
+body section.sidebar ul.menu li a:hover {
+  color: #FF79C6; }
+
+body section.sidebar ul.menu li.active a, body section.sidebar ul.menu li.active a {
+  color: #D8D8D8; }
+
+body section.sidebar ul.menu li.active a i.fa, body section.sidebar ul.menu li.active a i.fa:hover {
+  color: #FF79C6 !important;
+  opacity: 1; }
+
+body section.sidebar ul.menu li a .fa-repeat {
+  color: #D8D8D8;
+  opacity: 1; }
+
+body section.sidebar ul.menu li a i.fa {
+  color: #D8D8D8;
+  opacity: 0.5; }
+
+body section.sidebar ul.menu li a i.fa:hover, body section.sidebar ul.menu li a:hover i.fa {
+  color: #D8D8D8;
+  opacity: 1; }
+
+body section.sidebar ul.menu li a em {
+  color: #D8D8D8;
+  opacity: 0.5; }
+
+body section.sidebar div.labels ul li a {
+  color: #D8D8D8;
+  opacity: 0.5; }
+
+body section.sidebar div.labels ul li a:hover {
+  color: #D8D8D8;
+  opacity: 1; }
+
+body section.sidebar div.footer div.link a, body section.sidebar a.version {
+  color: #D8D8D8;
+  opacity: 0.5; }
+
+body section.sidebar div.footer div.link a:hover, body section.sidebar a.version:hover {
+  color: #FF79C6;
+  opacity: 1; }
+
+body section.sidebar div.footer div.storage strong {
+  color: #D8D8D8;
+  opacity: 0.5; }
+
+.conversationPlaceholder #storageStatus .wrap span strong {
+  color: #FF79C6; }
+
+.storageBar {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.storageBar .storageBar-progress {
+  background-color: #FF79C6; }
+
+.pm_buttons, .pm_buttons a {
+  color: #0d0d0d; }
+
+.pm_buttons a:hover, .pm_buttons .pm_buttons-child:hover {
+  color: #FF79C6; }
+
+.readUnread-container-ur .readUnread-btn-read,
+.pm_buttons .pm_buttons:not(:first-of-type), .pm_buttons > *,
+.pm_buttons, .pm_buttons a {
+  border-color: #282a36 !important; }
+
+.dropdown-folder-search .fa.dropdown-folder-search-icon,
+.dropdown-label-search .fa.dropdown-label-search-icon {
+  color: #FF79C6; }
+
+.dropdown-folder-create-button,
+.createLabel-button {
+  color: #FF79C6; }
+
+.customCheckbox-container:hover .customCheckbox-mask,
+.customMaskInput-container:hover .customCheckbox-mask {
+  border-color: #FF79C6 !important; }
+
+.customCheckbox-input:checked + .customCheckbox-mask {
+  background-color: #FF79C6;
+  border-color: #FF79C6;
+  color: #282a36; }
+
+.conversation.marked::before {
+  background: #FF79C6;
+  width: 5px; }
+
+body #conversation-list-rows .conversation {
+  background: #fff; }
+
+body #conversation-list-rows .conversation.read {
+  background: #fff; }
+
+#pm_composer .composer header {
+  background: #282a36;
+  color: #D8D8D8; }
+
+p a {
+  color: #FF79C6; }
+
+#pm_composer .composer footer .pm_button {
+  background: #D8D8D8;
+  color: #282a36; }
+
+#pm_composer .composer footer .pm_button:hover {
+  background: #D8D8D8;
+  color: #282a36; }
+
+#pm_composer .composer footer .pm_button.primary {
+  background: #282a36;
+  color: #D8D8D8; }
+
+#pm_composer .composer footer .pm_button.primary:hover {
+  background: #FF79C6;
+  color: #D8D8D8; }
+
+.pm_button.link.composerHeader-btn {
+  color: #D8D8D8 !important; }
+
+.pm_button.link.composerHeader-btn:hover {
+  color: #FF79C6 !important; }
+
+#pm_settings .pm_tabs {
+  background: #50fa7b; }
+
+#pm_settings .pm_tabs li a.pm_button {
+  color: #282a36;
+  border-color: #50fa7b; }
+
+#pm_settings .pm_tabs li a.pm_button:hover {
+  color: #FF79C6; }
+
+#pm_settings .pm_tabs li.active a.pm_button {
+  color: #FF79C6; }
+
+.pm_button.link {
+  color: #FF79C6; }
+
+.pm_toggle-label {
+  background: #282a36; }
+
+.pm_toggle-checkbox:focus + .pm_toggle-label, .pm_toggle-label:hover {
+  background: #333545; }
+
+.pm_toggle-checkbox:checked + .pm_toggle-label, .pm_toggle-checkbox:checked + .pm_toggle-label:hover, .pm_toggle-checkbox:checked:focus + .pm_toggle-label {
+  background: #FF79C6; }
+
+.pm_toggle.off .off, .pm_toggle.on .on {
+  background: #282a36;
+  color: #D8D8D8; }
+
+.pm_toggle {
+  box-shadow: 0 0 0 1px #50fa7b; }
+
+.alert.alert-info {
+  background: rgba(80, 250, 123, 0.7);
+  color: #0d0d0d; }
+
+.alert.alert-warning {
+  background: rgba(255, 184, 108, 0.7);
+  color: #0d0d0d; }
+
+.pm_button.error:focus, .pm_button.error:hover {
+  background-color: #ff5555;
+  border-color: rgba(255, 85, 85, 0.7); }
+
+.pm_button.error {
+  background-color: rgba(255, 85, 85, 0.7);
+  border-color: #ff5555; }
+
+html.protonmail .text-purple,
+.settingsUsers-link-signatures {
+  color: #FF79C6 !important; }
+
+html.protonmail .text-red {
+  color: #ff5555 !important; }
+
+.pm_button.link {
+  color: #0d0d0d !important; }
+
+.overviewSection-container .topUp-button {
+  color: #FF79C6; }
+
+.settingsDashboard-plans [class*="Column-container"] .isCurrent {
+  background: #282a36;
+  box-shadow: 0 0 8px #282a36, 0 0 0 2px #282a36;
+  border-bottom: 1px solid #282a36; }
+
+.settingsDashboard-plans.free-active .freeColumn-container,
+.settingsDashboard-plans.plus-active .plusColumn-container,
+.settingsDashboard-plans.professional-active .professionalColumn-container,
+.settingsDashboard-plans.visionary-active .visionaryColumn-container {
+  border-color: #282a36;
+  box-shadow: 0 0 8px #282a36, 0 0 0 2px #282a36; }
+
+[class*="settingsDashboard-arrowToScroll"] .arrowsToScroll-button {
+  background: rgba(255, 121, 198, 0.7); }
+
+[class*="settingsDashboard-arrowToScroll"] .arrowsToScroll-button:hover {
+  background: #ff79c6; }
+
+.vpnRow-add {
+  background-color: #333545; }
+
+.vpnRow-add:hover {
+  background: #282a36; }
+
+.settingsDashboard-plans .freeColumn-free,
+.totalRows-monthly-price,
+.totalRows-yearly-price {
+  color: #0d0d0d; }
+
+.totalRows-discount {
+  border-color: transparent #FF79C6; }
+
+.pm_modal .modal-dialog {
+  border-color: #282a36; }
+
+.pm_modal .modal-dialog .close {
+  color: #D8D8D8;
+  background: #282a36; }
+
+.pm_badge {
+  color: #D8D8D8; }
+
+.pm_badge.primary {
+  background: #282a36;
+  color: #D8D8D8; }
+
+.pm_badge.success {
+  background: #FF79C6;
+  color: #D8D8D8; }
+
+.pm_table table th a, .pm_table table th .fa {
+  color: #FF79C6; }
+
+body .cg-notify-message.notification-success {
+  background-color: #FF79C6;
+  color: #D8D8D8; }
+
+.appConfigBody-is-mobile .sidebarApp-container {
+  background: #282a36; }
