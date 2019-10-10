@@ -321,3 +321,15 @@ body .cg-notify-message.notification-success {
 
 .appConfigBody-is-mobile .sidebarApp-container {
   background: #282a36; }
+
+.sidebar-btn-compose, .sidebar-btn-compose:active {
+  color: #3d3d3d !important; }
+
+.sidebar-btn-compose:hover {
+  color: #3d3d3d !important; }
+
+body .cg-notify-message.notification-success {
+  color: #3d3d3d !important; }
+
+.pm_badge.success {
+  color: #3d3d3d !important; }
