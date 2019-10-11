@@ -35,6 +35,7 @@ Check out some of the available themes you can choose from.
 ![Screenshot of Deutera One theme.](screenshots/deutera_one.gif)
 
 #### [Dracula](themes/dracula/dracula.css)
+![Screenshot of Dracula theme.](screenshots/dracula.gif)
 
 ### Do these themes compromise security?
 In short, no. All themes listed here will always style existing elements from ProtonMail's UI and not import any third party files from anywhere.
