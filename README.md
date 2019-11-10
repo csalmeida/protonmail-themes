@@ -1,13 +1,13 @@
 # ProtonMail Themes
 Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), the encrypted mail service allows the use of themes with Cascading Style Sheets. You can pick a theme from the [Themes](Themes/) folder or create a custom one yourself using CSS. Feel free to [use the theme template provided](templates/theme_example) as a starting point.
 
-> These themes were developed for **[v3.16.x](https://github.com/csalmeida/protonmail-themes/releases)** of ProtonMail.
+> These themes were developed for **[v4.0.x](https://github.com/csalmeida/protonmail-themes/releases)** of ProtonMail.
 
 ### How to use a theme.
 1. Pick one from the themes folder in the repository.
 2. Select the theme and select the raw view to see all the code.
 3. Select all and copy the code.
-4. At ProtonMail's website head over to **Settings**, click the **Appearance** tab.
+4. At ProtonMail's website head over to **Settings**, click Themes under the **Appearance** section.
 5. Paste the code under the *Custom Theme* section and press save.
 > *In order to remove a theme, press clear.*
 
@@ -17,10 +17,10 @@ The theme should be applied and you should see the changes immediately.
 Check out some of the available themes you can choose from.
 
 #### [Green Lume](themes/green_lume/green_lume.css)
-![Screenshot of Green Lume theme.](screenshots/green_lume.gif)
+![Screenshot of Green Lume theme.](screenshots/green_lume.png)
 
 #### [Vitamin C](themes/vitamin_c/vitamin_c.css)
-![Screenshot of Vitamin C theme.](screenshots/vitamin_c.gif)
+![Screenshot of Vitamin C theme.](screenshots/vitamin_c.png)
 
 #### [Dark Bubble Gum](themes/dark_bubble_gum/dark_bubble_gum.css)
 ![Screenshot of Dark Bubble Gum theme.](screenshots/dark_bubble_gum.png)
@@ -31,11 +31,8 @@ Check out some of the available themes you can choose from.
 #### [Ochin](themes/ochin/ochin.css)
 ![Screenshot of Ochin theme.](screenshots/ochin.png)
 
-#### [Deutera One](themes/deutera_one/deutera_one.css)
-![Screenshot of Deutera One theme.](screenshots/deutera_one.gif)
-
 #### [Dracula](themes/dracula/dracula.css)
-![Screenshot of Dracula theme.](screenshots/dracula.gif)
+![Screenshot of Dracula theme.](screenshots/dracula.png)
 
 ### Do these themes compromise security?
 In short, no. All themes listed here will always style existing elements from ProtonMail's UI and not import any third party files from anywhere.
