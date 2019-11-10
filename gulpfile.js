@@ -2,22 +2,21 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 
 const themesPath = './templates/*/*.scss'
-const blueprintPath = './templates/*.scss'
-const ignoredFiles = '!./templates/theme_example/*.scss'
+const ignoredFiles = ['!./templates/theme_example/*.scss', '!./templates/deutera_one/*.scss']
 
 
 /*
   Compiles SCSS themes into CSS
 */
 gulp.task('styles', () => {
-  return gulp.src([themesPath, ignoredFiles])
+  return gulp.src([themesPath, ...ignoredFiles])
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('themes'))
 })
 
 /* Registers changes in scrips and sass files. */
 gulp.task('watch', () => {
-  gulp.watch([themesPath, blueprintPath, ignoredFiles], gulp.series('styles'));
+  gulp.watch([themesPath, ...ignoredFiles], gulp.series('styles'));
 })
 
 /* Compiles all files. */
