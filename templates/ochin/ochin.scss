@@ -1,12 +1,11 @@
 /*! =========================================== *
  * OCHIN
- * Version: 3.16.0
+ * Version: 4.0.0
  * Author: Cristiano Almeida
  * Website: https://www.csalmeida.com
- * Tweets @_csalmeida
+ * Twitter: @_csalmeida
  * =========================================== */
 
-// Change colors here and they will change everywhere.
 $base: #333E4C;
 $search: #1A2533;
 $highlight: #A8E576;
@@ -18,6 +17,7 @@ $text_color: #0d0d0d;
 $extra_color: #e6eaf0;
 $danger_color: #d62646;
 $warning_color: #ffaa00;
+$info_color: #1b68c6;
 
-@import '../styles';
+@import "../@theme-base/styles";
 @import 'override';
