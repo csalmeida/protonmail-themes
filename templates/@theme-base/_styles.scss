@@ -1,0 +1,123 @@
+// Styles defined by Protonmail see https://design-system-beta.netlify.com/sass-variables/ ->
+
+@import "../@theme-base/reusable-components/design-system-config";
+
+$main-bg-color: $base;
+$secondary-bg-color: darken($base, 5%);
+$bgcolor-searchbox-field: $search;
+$bgcolor-spacebar: rgba(255, 255, 255, 0.1);
+$bgcolor-aside-link: rgba(0, 0, 0, 0.3);
+$bgcolor-toolbar: lighten($base, 5%);
+$fillcolor-logo: $pm-global-light;
+$fillcolor-icons: $white;
+$color-nav-link: $navigation;
+$color-nav-active: $highlight;
+$color-standard-text: $white;
+$boxshadow-main: none;
+
+@import "../@theme-base/pm-styles/pm-theme-config";
+
+
+// Theme template styles ->
+
+// Compose button
+.pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
+  color: #fff;
+  background-color: $highlight;
+  border: 1px solid $highlight;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+.is-hover.pm-button--error, .is-hover.pm-button--primary, .is-hover.pm-button--warning, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover {
+  color: $navigation;
+  box-shadow: 0 0 .35714em 0 rgba(0,0,0,.2);
+  background: darken($highlight, 5%);
+  border: 1px solid darken($highlight, 5%);
+}
+
+// Aside links (other products)
+.aside-link {
+  background: $secondary-bg-color;
+}
+
+.aside-link:active .aside-linkIcon, .aside-link:focus .aside-linkIcon, .aside-link:hover .aside-linkIcon, .aside-link[aria-current="true"] .aside-linkIcon {
+  fill: $secondary-bg-color;
+  background: none;
+}
+
+// Storage indicator
+.storageProgress-container {
+  .circle-chart__circle {
+    stroke: $highlight;
+  }
+}
+
+// Top navigation
+.topnav-link, .topnav-link > .topnav-icon {
+  color: $navigation;
+  transition: color .2s ease-in-out;
+}
+
+.topnav-link:active, .topnav-link:focus, 
+.topnav-link:hover, .topnav-link[aria-current="true"] {
+  color: $highlight;
+}
+
+.topnav-link:active > .topnav-icon, .topnav-link:focus > .topnav-icon, 
+.topnav-link:hover > .topnav-icon, .topnav-link[aria-current=true] > .topnav-icon {
+  color: $highlight;
+}
+
+// Conversation items
+.conversation {
+  &.marked::before {
+    background: $highlight;
+  }
+
+  .item-checkbox:checked + .item-icon {
+    background-color: $highlight;
+    border-color: $highlight;
+  }
+
+  .item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
+    fill: $highlight;
+  }
+
+  .item-checkbox:checked + .item-icon:hover .item-icon-fakecheck-icon {
+    fill: $navigation;
+  }
+}
+
+// Highlighted text (seen when multiple messages are selected)
+.color-pm-blue {
+  color: $highlight;
+}
+
+// Radio buttons
+.pm-radio:checked + .pm-radio-fakeradio::before {
+  background: $highlight;
+}
+
+
+// Information blocks
+.block-info-standard {
+  border-color: $info_color;
+}
+
+.block-info-standard-warning {
+  border-color: $warning_color;
+}
+
+.block-info-standard-error {
+  border-color: $danger_color;
+}
+
+// Links across the site:
+.link, a {
+  color: $base;
+  transition: color .2s ease-in-out;
+}
+
+.link:active, .link:focus, .link:hover, a:active, a:focus, a:hover {
+  color: darken($highlight, 10%);
+}
