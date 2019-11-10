@@ -1,12 +1,11 @@
 /*! =========================================== *
  * DRACULA Theme
- * Version: 3.16.0
+ * Version: 4.0.0
  * Author: Mike Barkmin
  * Website: www.barkmin.eu
- * Tweets @mikebarkmin
+ * Twitter: @mikebarkmin
  * =========================================== */
 
-// Change colors here and they will change everywhere.
 $base: #282a36;
 $search: #000;
 $highlight: #FF79C6;
@@ -14,8 +13,8 @@ $navigation: #D8D8D8;
 
 $text_color: #0d0d0d;
 $extra_color: #50fa7b;
-$danger_color: #ff5555;
+$danger_color:  #ff5555;
 $warning_color: #ffb86c;
+$info_color: #1b68c6;
 
-@import '../styles';
-@import 'override';
+@import "../@theme-base/styles";
