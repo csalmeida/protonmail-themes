@@ -1,0 +1,44 @@
+/*
+ * tables
+ */
+.pm-simple-table {
+  @extend .border-collapse;
+  @extend .noborder;
+  @extend .w100;
+  caption {
+    transform: scale(0);
+  }
+}
+.pm-simple-table td,
+.pm-simple-table th {
+  padding: em(9);
+  border-bottom: 1px solid $pm-global-border;
+}
+.pm-simple-table th:not(.pm-simple-table-row-th) {
+  @extend .uppercase;
+  @extend .alignleft;
+  &.aligncenter {
+    @extend .aligncenter;
+  }
+  &.alignright {
+    @extend .alignright;
+  }
+}
+
+
+.pm-simple-table--has-actions {
+  td:last-child,
+  th:last-child {
+    text-align: right;
+  }
+}
+
+/* simple dirty fix */
+.pm-simple-table button svg {
+  @extend .relative;
+  top: -0.25em;
+}
+.pm-simple-table a svg {
+  @extend .relative;
+  top: -0.15em;
+}

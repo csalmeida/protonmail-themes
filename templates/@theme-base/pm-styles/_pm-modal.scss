@@ -1,0 +1,243 @@
+/*
+ * Modals
+ */
+/* overlay covers everything */
+$modal-width: 50% !default;
+$modal-max-width: 70rem;
+
+$modal-breakpoint-width: 52em !default;
+$modal-breakpoint-height: 22em !default;
+
+$modal-max-height: 80% !default;
+
+$modal-wider-width: 70% !default;
+$modal-wider-max-width: 100rem;
+
+$modal-smaller-width: 28em !default;
+
+.pm-modalOverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba( 0, 0, 0, .4 );
+  z-index: 666;
+  cursor: pointer;
+  animation: pm-modalOverlayIn ease .5s 1 normal ;
+}
+
+.pm-modalContainer {
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 666;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+.pm-modalContainer--inBackground {
+  z-index: 600;
+}
+
+.pm-modalOverlayOut {
+  animation: pm-modalOverlayOut ease .5s 1  normal ;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes pm-modalOverlayIn {
+  0% {
+    background: rgba( 0, 0, 0, 0 );
+  }
+  100% {
+    background: rgba( 0, 0, 0, .4 );
+  }
+}
+
+@keyframes pm-modalOverlayOut {
+  0% {
+    background: rgba( 0, 0, 0, .4 );
+  }
+  100% {
+    background: rgba( 0, 0, 0, 0 );
+  }
+}
+
+.pm-modal {
+  position: relative;
+  width: $modal-width;
+  max-height: $modal-max-height;
+  max-width: $modal-max-width;
+  background: $white;
+  color: $pm-global-grey;
+  padding: 0;
+  overflow: hidden;
+  border-radius: $global-border-radius;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
+  animation: pm-modalIn ease .15s 1 normal;
+  animation-fill-mode: both;
+  animation-delay: .1s; // stupid fix for Safari crazy display bug
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+@keyframes pm-modalIn {
+  0% {
+    opacity: 0;
+	  transform: scale(.8);
+  }
+  100% {
+    opacity: 1;
+	  transform: scale(1);
+  }
+}
+
+@keyframes pm-modalOut {
+  0% {
+    opacity: 1;
+	  transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+	  transform: scale(.8);
+  }
+}
+
+.pm-modalOut {
+  animation: pm-modalOut ease .15s 1 normal ;
+  animation-fill-mode: both;
+}
+
+.pm-modal--smaller {
+  width: $modal-smaller-width;
+}
+.pm-modal--wider {
+  width: $modal-wider-width;
+  max-width: $modal-wider-max-width;
+}
+
+
+
+
+.pm-modalClose {
+  position: absolute;
+  right: .5rem;
+  top: .2rem;
+  background: transparent;
+  border-radius: 1em;
+  color: $pm-global-grey;
+  border: 0;
+  font-size: 2em;
+  padding: 0;
+  line-height: 1;
+  cursor: pointer;
+}
+// not defined, left this in case of
+// .pm-modalClose:focus,
+// .pm-modalClose:hover,
+// .pm-modalClose:active {
+// }
+// .pm-modalClose:hover,
+// .pm-modalClose:active {
+// }
+@if $rtl-option == true {
+  [dir="rtl"] {
+    .pm-modalClose {
+      left: .5rem;
+      right: auto;
+    }
+  }
+}
+
+.pm-modalContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.pm-modalHeader {
+  padding: rem(30) rem(30) rem(15) rem(30);
+  flex: 0;
+}
+.pm-modalTitle {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+  padding-right: 1em;
+}
+.pm-modalFooter {
+  padding: rem(15) rem(30) rem(30);
+  flex: 0;
+  [class*="pm-button"] { // only for Safari the ugly
+    min-height: 3.4rem;
+  }
+}
+
+.pm-modalContentInner {
+  position: relative;
+  overflow: auto;
+  flex: 1 1 auto;
+  padding: 0 rem(30);
+
+  background: $white no-repeat;
+  background-image: radial-gradient(farthest-side at 50% 0,#acb0bf,transparent),radial-gradient(farthest-side at 50% 100%,#acb0bf,transparent);
+  background-position: 50% 0, 0 100%;
+  background-size: calc(100% - 20px) 3px;
+}
+.pm-modalContentInner {
+  &::before,
+  &::after {
+    content: '';
+    position: relative;
+    display: block;
+    z-index: 1;
+    background: $white;
+    height: 10px;
+  }
+}
+.pm-modalContentInner > p:first-child {
+  margin-top: 0;
+}
+.pm-modalContentInner > p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+// adaptation for labels
+$pm-label-shorter-width: 10em !default;
+.pm-modal--shorterLabels .pm-label {
+  width: var(--label-shorter-width, $pm-label-shorter-width);
+}
+
+// single button on right
+.pm-modalFooter [class*="pm-button"]:only-child {
+  margin-left: auto;
+}
+@if $rtl-option == true {
+  [dir="rtl"] {
+    .pm-modalFooter [class*="pm-button"]:only-child {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+}
+
+// small viewports
+@media (max-width: $modal-breakpoint-width) {
+  .pm-modal {
+    margin: 1%;
+    min-width: 0;
+    width: 98%;
+    max-width: 98%;
+    max-height: 98%;
+    align-self: center;
+  }
+}
+

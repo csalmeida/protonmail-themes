@@ -1,0 +1,101 @@
+.topnav-link {
+  border: 1px solid transparent;
+  padding: 1rem;
+  color: var(--color-nav-link, $white);
+  &:focus,
+  &:hover,
+  &:active,
+  &[aria-current="true"] {
+    color: var(--color-nav-active, $pm-primary);
+    text-decoration: none;
+    
+    > .topnav-icon {
+      fill: var(--color-nav-active, $pm-primary);
+    }
+  }
+  &[aria-current="true"] {
+    font-weight: bold;
+  }
+  & > svg {
+  fill: var(--fillcolor-icons, $white);
+  }
+}
+
+@if $rtl-option == true {
+  [dir="rtl"] {
+    .topnav-list { 
+      margin-left: 0;
+      margin-right: 1em;
+    }
+    .topnav-icon { 
+      margin-right: 0;
+      margin-left: .5em;
+    }
+  }
+}
+
+/* Decrease margins (was 1em) */
+@include respond-to(1500) {
+
+  .topnav-list {
+      > li {
+          margin-right: 1px;
+      }
+  }
+
+}
+
+
+@include respond-to(1300) {
+
+  .topnav-list--four-elements {
+      .navigation-title {
+      // equivalent of .sr-only, but impossible to extend in a breakpoint
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      }
+      .topnav-icon {
+          margin-right: 0;
+          &.expand-caret {
+              margin-left: .25em;
+          }
+      }
+  }
+
+
+}
+
+
+@include respond-to(1100) {
+
+  .navigation-title {
+      // equivalent of .sr-only, but impossible to extend in a breakpoint
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+  }
+  .topnav-icon {
+      margin-right: 0;
+  }
+
+}
+
+
+
+@include respond-to($breakpoint-small) {
+  .topnav-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
