@@ -60,6 +60,9 @@ npm run build
 ### Feedback and fixes.
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
 
+### Contributors
+[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/0)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/0)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/1)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/1)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/2)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/2)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/3)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/3)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/4)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/4)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/5)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/5)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/6)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/6)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/7)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/7)
+
 ### Supporting and maintaining the project.
 ProtonMail is a great email service, I enjoy working on the project and provide themes for all. Please consider making a small donation, just the price of a cup of coffee *goes a long way* to help me maintain it and keep adding color to your private email experience! Thank you 🙇🏻
 
