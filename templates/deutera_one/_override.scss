@@ -1,145 +1,88 @@
-// ================================= \\
-// ========== HORIZONTAL =========== \\
-// ========== NAVIGATION =========== \\
-// ============= BAR =============== \\
-// ================================= \\
-
-.searchForm-action-button-advanced:hover, .searchForm-action-button-toggle:hover {
-  background: $highlight;
-  color: $base;
-} // Search bar buttons hover.
-
-.customRadio-input:checked + .customRadio-mask {
-  box-shadow: inset 0 0 0 3px #fff,inset 0 0 0 10px $base;
-  border-color: $base;
-} // Advanced search menu.
-
-// ================================= \\
-// =========== VERTICAL ============ \\
-// ========== NAVIGATION =========== \\
-// ============= BAR =============== \\
-// ================================= \\
-
-.sidebar-btn-compose, .sidebar-btn-compose:active  {
-  color: $navigation !important;
-  background: $search !important;
-  border: none !important;
-  transition: color .2s ease-in-out,
-              background-color .2s ease-in-out;
-} // compose button
-
-.sidebar-btn-compose:hover {
-  color: $highlight !important;
-  background: darken($search, 5%) !important;
-  border: none !important;
-  // Covers button with darker hue of highlight
-  box-shadow: inset 0 400px 400px rgba(0,0,0,0.1);
-} // compose button
-
-
-// ================================= \\
-// =========== MESSAGE ============ \\
-// ========== NAVIGATION =========== \\
-// ================================= \\
-
-// Toolbar icons.
-.pm_buttons, .pm_buttons a {
-  color: $base;
+// Compose button
+.pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
+  color: #fff;
+  background-color: $search;
+  border: 1px solid $search;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
 }
 
-.pm_buttons a:hover, .pm_buttons .pm_buttons-child:hover {
-  color: lighten($base, 5%);
-}
-
-body #conversation-list-rows .conversation .fa-star {
-  color: $search;
-} // star icon
-
-// Left border of message title.
-.conversation.marked::before {
+.is-hover.pm-button--error, .is-hover.pm-button--primary, .is-hover.pm-button--warning, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover {
+  color: $navigation;
+  box-shadow: 0 0 .35714em 0 rgba(0,0,0,.2);
   background: darken($search, 5%);
+  border: 1px solid darken($search, 5%);
 }
 
-// Checkbox next to message title.
-.customCheckbox-container:hover .customCheckbox-mask,
-.customMaskInput-container:hover .customCheckbox-mask {
-  border-color: $base !important;
-} // message checkbox
+// Conversation items
+.conversation {
+  &.marked::before {
+    background: $search;
+  }
 
-.customCheckbox-input:checked+.customCheckbox-mask {
-  background-color: $base;
-  border-color: $base;
-  color: $extra_color;
+  .item-checkbox:checked + .item-icon {
+    background-color: $base;
+    border-color: $base;
+  }
+
+  .item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
+    fill: $base;
+  }
+
+  .item-checkbox:checked + .item-icon:hover .item-icon-fakecheck-icon {
+    fill: #fff;
+  }
 }
 
-// ================================= \\
-// =========== COMPOSING =========== \\
-// ============ MESSAGE ============ \\
-// ============= WINDOW ============= \\
-// ================================= \\
-
-// Links in general.
-p a {
-  color: lighten($base, 10%);
-}
-
-// ================================= \\
-// =========== SETTINGS =========== \\
-// ============ PANEL ============ \\
-// ================================= \\
-
-// Small icons in settings.
-html.protonmail .text-purple,
-.settingsUsers-link-signatures  {
-  color: $base !important;
-}
-
-// Topup link.
-.overviewSection-container .topUp-button {
+// Highlighted text (seen when multiple messages are selected)
+.color-pm-blue {
   color: $base;
 }
 
-// Toggle rectangle checkboxes.
-.pm_toggle-label {
-  background: $base;
+// Radio buttons
+.pm-radio:checked + .pm-radio-fakeradio::before {
+  background: $search;
 }
 
-.pm_toggle-checkbox:focus + .pm_toggle-label, .pm_toggle-label:hover {
-  background: lighten($base, 5%);
+// Information blocks
+.block-info-standard {
+  border-color: $info_color;
 }
 
-.pm_toggle-checkbox:checked + .pm_toggle-label:hover, .pm_toggle-checkbox:checked:focus + .pm_toggle-label {
-  background: $highlight;
+.block-info-standard-warning {
+  border-color: darken($info_color, 10%);
 }
 
-.pm_toggle-label {
-  &::before {
-    color: #fff;
-  }
-
-  &::after {
-    background: #fff;
-  }
+.block-info-standard-error {
+  border-color: black;
 }
 
-.pm_toggle-checkbox:checked + .pm_toggle-label:hover, .pm_toggle-checkbox:checked:focus + .pm_toggle-label {
-  &::before {
-    color: $base;
-  }
-
-  &::after {
-    background: $base;
-  }
+// Links
+.link:active, .link:focus, .link:hover, a:active, a:focus, a:hover {
+  color: darken($highlight, 30%);
 }
 
-// ================================= \\
-// ============= OTHER ============= \\
-// ================================= \\
-
-//Top pop up notifications.
-body .cg-notify-message.notification-success {
-  background-color: darken($search, 5%);
+// Top notifications
+.notification-success {
+  background: $search;
   color: #fff;
 }
 
+.notification-warning {
+  background: $highlight;
+  color: $base;
+}
 
+.notification-info {
+  background: $base;
+  color: #fff;
+}
+
+// Toggle button
+.pm-toggle-checkbox:checked+.pm-toggle-label:before {
+  background: $base;
+  border-color: $base;
+}
+
+.pm-toggle-checkbox:checked+.pm-toggle-label>.pm-toggle-label-text:last-child {
+  fill: #fff;
+}
