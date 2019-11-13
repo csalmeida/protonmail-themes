@@ -98,7 +98,6 @@ $boxshadow-main: none;
   background: $highlight;
 }
 
-
 // Information blocks
 .block-info-standard {
   border-color: $info_color;
@@ -120,4 +119,10 @@ $boxshadow-main: none;
 
 .link:active, .link:focus, .link:hover, a:active, a:focus, a:hover {
   color: darken($highlight, 10%);
+}
+
+// Settings toggle button
+.pm-toggle-checkbox:checked+.pm-toggle-label:before {
+  background: $highlight;
+  border-color: $highlight;
 }
