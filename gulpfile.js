@@ -2,7 +2,7 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 
 const themesPath = './templates/*/*.scss'
-const ignoredFiles = ['!./templates/theme_example/*.scss', '!./templates/deutera_one/*.scss']
+const ignoredFiles = ['!./templates/theme_example/*.scss']
 
 
 /*
