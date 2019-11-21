@@ -16,6 +16,9 @@ The theme should be applied and you should see the changes immediately.
 ### Available themes.
 Check out some of the available themes you can choose from.
 
+<details>
+<summary><b>Expand theme list</b> 👩🏻‍🎨</summary>
+
 #### [Green Lume](themes/green_lume/green_lume.css)
 ![Screenshot of Green Lume theme.](screenshots/green_lume.png)
 
@@ -33,6 +36,7 @@ Check out some of the available themes you can choose from.
 
 #### [Dracula](themes/dracula/dracula.css)
 ![Screenshot of Dracula theme.](screenshots/dracula.png)
+</details>
 
 ### Do these themes compromise security?
 In short, no. All themes listed here will always style existing elements from ProtonMail's UI and not import any third party files from anywhere.
