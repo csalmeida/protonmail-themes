@@ -4,6 +4,7 @@
   "description": "Customise ProtonMail with themes and enhance your encrypted email experience.",
   "main": "index.js",
   "scripts": {
+    "start": "npm run watch",
     "watch": "gulp watch",
     "build": "gulp build"
   },
