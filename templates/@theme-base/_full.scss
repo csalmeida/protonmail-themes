@@ -1,0 +1,208 @@
+// Applies theme styles across as many areas of the layout as possible.
+
+// Message items
+.conversation {
+  border-color: lighten($base, 10%);
+}
+
+.main-area,
+.main-area--noHeader, 
+.main-area--withToolbar,
+.main-area--withToolbar--noHeader {
+  color: $text_color;
+}
+
+.fill-global-grey {
+  fill: $highlight;
+}
+
+.starbutton {
+  fill: $extra_color;
+}
+
+// Read message
+.bg-global-light, kbd {
+  background: $base;
+}
+
+// Unread, not active
+.conversation:not(.read):not(.active) {
+  background: lighten($base, 5%);
+}
+
+// Active
+.item-container.active, .item-is-selected {
+  background: darken($base, 2%);
+  .flex-item-fluid {
+    color: $highlight;
+  }
+}
+
+// Selected message checkbox
+.item-icon {
+  background-color: $base;
+  border: 1px solid darken($text_color, 5%);
+}
+
+.selectBoxElement-container:hover .item-icon {
+  background-color: $base;
+  border: 1px solid darken($highlight, 5%);
+
+  .item-icon-fakecheck-icon {
+    fill: darken($highlight, 5%);
+  }
+}
+
+.selectBoxElement-container {
+  color: $text_color;
+}
+
+.selectBoxElement-container:hover .item-checkbox:checked + .item-icon {
+  background-color: darken($highlight, 5%);
+  border-color: darken($highlight, 5%);
+}
+
+// Message list background area
+.items-column-list {
+  background-color: $base;
+}
+
+// Current message panel
+.message-header {
+  background-color: lighten($base, 5%);
+}
+
+.view-column-detail {
+  background-color: $base;
+}
+
+.items-column-list,
+.message-container, 
+.message-attachments {
+  border-color: lighten($base, 10%);
+}
+
+.message-container:not(.sent):not(.draft) .message-header.message-summary::before, 
+.message-header.is-inbound::before {
+  border-top: 1px solid lighten($base, 10%);
+  border-left: 1px solid lighten($base, 10%);
+  background-color: lighten($base, 5%);
+}
+
+// Attachment button
+.pm-button, .pm-button--info, .pm-button--redborder {
+  background: $base;
+  border-color: lighten($base, 10%);
+  color: $text_color;
+}
+
+.message-attachmentInfo {
+  border-color: lighten($base, 10%);
+}
+
+.is-hover.pm-button--info, .is-hover.pm-button--redborder,
+.pm-button--info:focus, .pm-button--info:focus-within,
+.pm-button--info:hover, .pm-button--redborder:focus,
+.pm-button--redborder:focus-within, .pm-button--redborder:hover,
+.pm-button.is-hover, .pm-button:focus, 
+.pm-button:focus-within, .pm-button:hover {
+  color: $highlight;
+}
+
+// Dropdowns
+.dropDown-content, {
+  background: $base;
+  color: $text_color;
+
+  &::before {
+    border-bottom-color: $base;
+  }
+
+  .elementsSelector-btn-action,
+  .dropDown-item:hover {
+    color: $text_color;
+  }
+
+  .dropDown-item:hover {
+    background: lighten($base, 5%) !important;
+  }
+
+  .dropDown-item + .dropDown-item {
+    border-top: 1px solid lighten($base, 10%);
+  }
+}
+
+.pm-field-icon-container[type="search"], .pm-field[type="search"] {
+  background-color: lighten($base, 5%);
+}
+
+.dropDown-contentInner {
+  background-color: $base;
+
+  &::before, &::after {
+    background-color: $base;
+  }
+
+  .dropDown-item span {
+    color: $text_color !important;
+  }
+}
+
+.searchbox-field[type="search"]:not(#global_search) {
+  background: $text_color;
+  color: $base;
+}
+
+// Links
+.link, a {
+  color: $highlight;
+}
+
+.link:active, .link:focus, .link:hover, a:active, a:focus, a:hover {
+  color: lighten($highlight, 5%);
+}
+
+
+
+// Modal
+.pm-modal, .pm-modalContentInner {
+  background-color: $base;
+  color: $text_color;
+
+  &::before, &::after {
+    background-color: $base;
+  }
+  
+  .labelColorSelector-item-mask {
+    border: 2px solid lighten($base, 15%);
+  }
+}
+
+.pm-button--primaryborder, .pm-button-blueborder {
+  border-color: $highlight;
+  color: $highlight;
+  background-color: lighten($base, 5%);
+  transition: background-color .2s ease-in-out;
+}
+
+.is-hover.pm-button--primaryborder, .pm-button--primaryborder:focus,
+.pm-button--primaryborder:focus-within, .pm-button--primaryborder:hover,
+.pm-button-blueborder.is-hover, .pm-button-blueborder:focus,
+.pm-button-blueborder:focus-within, .pm-button-blueborder:hover {
+  border-color: $highlight;
+  color: $highlight;
+  background-color: darken($base, 1%);
+}
+
+// Input fields
+.pm-field, .pm-field-icon-container,
+.focus.pm-field-icon-container, .pm-field-icon-container:focus,
+.pm-field-icon-container:focus-within, .pm-field.focus,
+.pm-field:focus, .pm-field:focus-within {
+  color: $text_color;
+  background-color: lighten($base, 5%);
+
+  &::placeholder {
+    color: darken($text_color, 5%);
+  }
+}
