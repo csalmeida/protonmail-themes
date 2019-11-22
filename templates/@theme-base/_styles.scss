@@ -152,3 +152,19 @@ $boxshadow-main: none;
 .message-attachmentIcon .file-outer-icon.is-embedded {
   fill: $highlight;
 }
+
+// Subscription plans
+.pm-table--highlight[data-plan-number="1"] tr th:nth-child(2) {
+  border-color: $highlight;
+  color: $highlight;
+
+  &::before {
+    background-color: $highlight;
+  }
+}
+
+.pm-table--highlight[data-plan-number="1"] tr td:nth-child(2), 
+.pm-table--highlight[data-plan-number="1"] tr th:nth-child(2),
+.pm-table--highlight[data-plan-number="1"] tr:last-child td:nth-child(2) {
+  border-color: $highlight;
+}
