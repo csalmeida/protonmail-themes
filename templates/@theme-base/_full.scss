@@ -8,7 +8,8 @@
 .main-area,
 .main-area--noHeader, 
 .main-area--withToolbar,
-.main-area--withToolbar--noHeader {
+.main-area--withToolbar--noHeader,
+[class*="block-info-"] {
   color: $text_color;
 }
 
@@ -105,17 +106,40 @@
 .pm-button--info:hover, .pm-button--redborder:focus,
 .pm-button--redborder:focus-within, .pm-button--redborder:hover,
 .pm-button.is-hover, .pm-button:focus, 
-.pm-button:focus-within, .pm-button:hover {
+.pm-button:focus-within, .pm-button:hover:not(.pm-button--primary) {
+  color: $highlight;
+}
+
+.is-disabled.pm-button--info,
+.is-disabled.pm-button--redborder,
+.pm-button--info[disabled],
+.pm-button--redborder[disabled],
+.pm-button.is-disabled,
+.pm-button[disabled] {
+  background: lighten($base, 10%);
+}
+
+.is-active.pm-button--info,
+.is-active.pm-button--redborder,
+.pm-button--info:not(div):active,
+.pm-button--redborder:not(div):active,
+.pm-button.is-active, .pm-button:not(div):active {
+  background: lighten($base, 10%);
   color: $highlight;
 }
 
 // Dropdowns
-.dropDown-content, {
+.dropDown-content {
   background: $base;
   color: $text_color;
 
-  &::before {
+  &::before, &::after {
     border-bottom-color: $base;
+    background: $base;
+  }
+
+  button {
+    color: $text_color;
   }
 
   .elementsSelector-btn-action,
@@ -130,6 +154,16 @@
   .dropDown-item + .dropDown-item {
     border-top: 1px solid lighten($base, 10%);
   }
+}
+
+.dropDown--bottom-left::before, 
+.dropDown--bottom-right::before, 
+.dropDown--bottom::before {
+  border-bottom-color: lighten($base, 10%);
+}
+
+.dropDown--bottom-right {
+  border: 1px solid lighten($base, 10%);
 }
 
 .pm-field-icon-container[type="search"], .pm-field[type="search"] {
@@ -161,8 +195,6 @@
 .link:active, .link:focus, .link:hover, a:active, a:focus, a:hover {
   color: lighten($highlight, 5%);
 }
-
-
 
 // Modal
 .pm-modal, .pm-modalContentInner {
@@ -204,5 +236,50 @@
 
   &::placeholder {
     color: darken($text_color, 5%);
+  }
+}
+
+select.pm-field, select.pm-field-icon-container {
+  background-color: lighten($base, 5%);
+  color: $text_color;
+}
+
+// Storage progress modal
+.storageProgress-content.dropDown-content--rightbottom {
+  &::before {
+    border-right-color: $base;
+  }
+}
+
+// Settings panel
+.main-area, .main-area-content {
+  background-color: $base;
+
+  .p1 {
+    background-color: lighten($base, 5%);
+  }
+}
+
+.subnav {
+  .link, a {
+    color: $highlight;
+  }
+  
+  .link:active, .link:focus, .link:hover, a:active, a:focus, a:hover {
+    color: lighten($highlight, 5%);
+  }
+}
+
+// Toggle button
+.pm-toggle-label {
+  border-color: lighten($base, 10%);
+  background: lighten($base, 5%);
+
+  &::before {
+    background: $base;
+  }
+
+  .pm-toggle-label-img {
+    fill: $text_color;
   }
 }
