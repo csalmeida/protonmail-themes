@@ -46,10 +46,9 @@ $boxshadow-main: none;
 }
 
 // Storage indicator
-.storageProgress-container {
-  .circle-chart__circle {
-    stroke: $highlight;
-  }
+
+.circle-chart__circle {
+  stroke: $highlight;
 }
 
 // Top navigation
