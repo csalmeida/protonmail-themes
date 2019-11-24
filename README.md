@@ -3,7 +3,23 @@ Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), 
 
 > These themes were developed for **[v4.0.x](https://github.com/csalmeida/protonmail-themes/releases)** of ProtonMail.
 
-### How to use a theme.
+## Table of contents
+
+<details>
+<summary>Click to expand contents</summary>
+
+- [How to use a theme](#how-to-use-a-theme)
+- [Available themes](#available-themes)
+  - [Do these themes compromise security?](#do-these-themes-compromise-security)
+- [Quick setup guide](#quick-setup-guide)
+- [Feedback and fixes](#feedback-and-fixes)
+- [Contributors](#contributors)
+- [Supporting and maintaining the project](#supporting-and-maintaining-the-project)
+- [Where can I find more themes?](#where-can-i-find-more-themes)
+- [Web References](#web-references)
+</details>
+
+### How to use a theme
 1. Pick one from the themes folder in the repository.
 2. Select the theme and select the raw view to see all the code.
 3. Select all and copy the code.
@@ -13,7 +29,7 @@ Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), 
 
 The theme should be applied and you should see the changes immediately.
 
-### Available themes.
+### Available themes
 Check out some of the available themes you can choose from.
 
 > There is also a `full` version available, that applies to the messages panel and more elements.
@@ -87,13 +103,13 @@ npm run watch
 npm run build
 ```
 
-### Feedback and fixes.
+### Feedback and fixes
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
 
 ### Contributors
 [![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/0)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/0)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/1)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/1)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/2)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/2)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/3)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/3)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/4)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/4)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/5)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/5)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/6)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/6)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/7)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/7)
 
-### Supporting and maintaining the project.
+### Supporting and maintaining the project
 ProtonMail is a great email service, I enjoy working on the project and provide themes for all. Please consider making a small donation, just the price of a cup of coffee *goes a long way* to help me maintain it and keep adding color to your private email experience! Thank you 🙇🏻
 
 <a href='https://www.paypal.me/csalmeida/5'>
