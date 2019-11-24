@@ -9,33 +9,57 @@ Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), 
 3. Select all and copy the code.
 4. At ProtonMail's website head over to **Settings**, click Themes under the **Appearance** section.
 5. Paste the code under the *Custom Theme* section and press save.
-> *In order to remove a theme, press clear.*
+> *In order to remove a theme, switch to default or remove Custom Theme contents and press save.*
 
 The theme should be applied and you should see the changes immediately.
 
 ### Available themes.
 Check out some of the available themes you can choose from.
 
+> There is also a `full` version available, that applies to the messages panel and more elements.
+
 <details>
 <summary><b>Expand theme list</b> 👩🏻‍🎨</summary>
 
-#### [Green Lume](themes/green_lume/green_lume.css)
+#### [Green Lume](themes/green_lume)
 ![Screenshot of Green Lume theme.](screenshots/green_lume.png)
 
-#### [Vitamin C](themes/vitamin_c/vitamin_c.css)
+![Screenshot of Green Lume theme.](screenshots/green_lume_full.png)
+
+#### [Vitamin C](themes/vitamin_c)
 ![Screenshot of Vitamin C theme.](screenshots/vitamin_c.png)
 
-#### [Dark Bubble Gum](themes/dark_bubble_gum/dark_bubble_gum.css)
+![Screenshot of Vitamin C theme.](screenshots/vitamin_c_full.png)
+
+#### [Dark Bubble Gum](themes/dark_bubble_gum)
 ![Screenshot of Dark Bubble Gum theme.](screenshots/dark_bubble_gum.png)
 
-#### [Blue and Orange](themes/blue_and_orange/blue_and_orange.css)
+![Screenshot of Dark Bubble Gum theme.](screenshots/dark_bubble_gum_full.png)
+
+#### [Blue and Orange](themes/blue_and_orange)
 ![Screenshot of Blue and Orange theme.](screenshots/blue_and_orange.png)
 
-#### [Ochin](themes/ochin/ochin.css)
+![Screenshot of Blue and Orange theme.](screenshots/blue_and_orange_full.png)
+
+#### [Ochin](themes/ochin)
 ![Screenshot of Ochin theme.](screenshots/ochin.png)
 
-#### [Dracula](themes/dracula/dracula.css)
+![Screenshot of Ochin theme.](screenshots/ochin_full.png)
+
+#### [Dracula](themes/dracula)
 ![Screenshot of Dracula theme.](screenshots/dracula.png)
+
+![Screenshot of Dracula theme.](screenshots/dracula_full.png)
+
+#### [Monokai](themes/monokai)
+![Screenshot of Dracula theme.](screenshots/monokai.png)
+
+![Screenshot of Dracula theme.](screenshots/monokai_full.png)
+
+#### [Deutera One](themes/deutera_one)
+![Screenshot of Dracula theme.](screenshots/deutera_one.png)
+
+![Screenshot of Dracula theme.](screenshots/deutera_one_full.png)
 </details>
 
 ### Do these themes compromise security?
@@ -43,7 +67,9 @@ In short, no. All themes listed here will always style existing elements from Pr
 At the time I created these themes I've received a few directions from ProtonMail's co-founder [Jason Stockman](https://twitter.com/jasonstockman) in order to avoid breaking layout and security issues.
 
 ## Quick setup guide
-*Required for theme creation only*
+
+> **Required for theme creation only**
+
 Install NodeJS, after forking/cloning this repository install dependencies:
 ```
 cd protonmail-themes
