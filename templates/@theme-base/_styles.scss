@@ -129,12 +129,14 @@ $boxshadow-main: none;
 }
 
 // Links across the site:
-.link, a {
+.link, a, .pm-button--link {
   color: $base;
   transition: color .2s ease-in-out;
 }
 
-.link:active, .link:focus, .link:hover, a:active, a:focus, a:hover {
+.link:active, .link:focus, .link:hover, 
+a:active, a:focus, a:hover,
+.pm-button--link:hover {
   color: darken($highlight, 10%);
 }
 
@@ -166,4 +168,13 @@ $boxshadow-main: none;
 .pm-table--highlight[data-plan-number="1"] tr th:nth-child(2),
 .pm-table--highlight[data-plan-number="1"] tr:last-child td:nth-child(2) {
   border-color: $highlight;
+}
+
+// Contacts
+.progress-contact {
+  color: $highlight;
+
+  &::-moz-progress-bar {
+    background: $highlight;
+  }
 }
