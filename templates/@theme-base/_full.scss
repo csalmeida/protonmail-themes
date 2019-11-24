@@ -173,6 +173,12 @@ details:first-child {
   .dropDown-item + .dropDown-item {
     border-top: 1px solid lighten($base, 10%);
   }
+
+  .dropDown-item {
+    .color-global-grey {
+      color: $text_color;
+    }
+  }
 }
 
 .dropDown {
