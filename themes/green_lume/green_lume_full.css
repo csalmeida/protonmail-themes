@@ -252,6 +252,8 @@ details:first-child {
     background: #292929 !important; }
   .dropDown-content .dropDown-item + .dropDown-item {
     border-top: 1px solid #363636; }
+  .dropDown-content .dropDown-item .color-global-grey {
+    color: #d6d6d6; }
 
 .dropDown .dropDown-content::before, .dropDown .dropDown-content::after {
   border-bottom-color: #1C1C1C; }
