@@ -77,6 +77,10 @@
   background-color: $base;
 }
 
+details:first-child {
+  border-color: lighten($base, 10%);
+}
+
 .items-column-list,
 .message-container, 
 .message-attachments {
@@ -88,6 +92,26 @@
   border-top: 1px solid lighten($base, 10%);
   border-left: 1px solid lighten($base, 10%);
   background-color: lighten($base, 5%);
+}
+
+// Mailing list block
+.bg-white {
+  background-color: $base;
+}
+
+.bordered, .bordered-container, .breadcrumb-container {
+  border-color: lighten($base, 10%);
+}
+
+.email.message-body-container {
+  [bgcolor], [style*="background"] {
+    background-color: transparent !important;
+    div, p, 
+    h1, h2, h3,
+    h4, h5, h6 {
+      color: $text_color !important;
+    }
+  }
 }
 
 // Attachment button
@@ -133,11 +157,6 @@
   background: $base;
   color: $text_color;
 
-  &::before, &::after {
-    border-bottom-color: $base;
-    background: $base;
-  }
-
   button {
     color: $text_color;
   }
@@ -153,6 +172,34 @@
 
   .dropDown-item + .dropDown-item {
     border-top: 1px solid lighten($base, 10%);
+  }
+}
+
+.dropDown {
+  .dropDown-content {
+    &::before, &::after {
+      border-bottom-color: $base;
+    }
+  }
+}
+
+.dropDown--right-bottom {
+  &::before {
+    border-right-color: $base;
+  }
+
+  .dropDown-content {
+    &::before, &::after {
+      background: $base;
+    }
+  }
+}
+
+.dropDown--bottom-right {
+  .dropDown-content {
+    &::before, &::after {
+      background: $base;
+    }
   }
 }
 
@@ -188,11 +235,13 @@
 }
 
 // Links
-.link, a {
+.link, a, .pm-button--link {
   color: $highlight;
 }
 
-.link:active, .link:focus, .link:hover, a:active, a:focus, a:hover {
+.link:active, .link:focus, .link:hover, 
+a:active, a:focus, a:hover,
+.pm-button--link:hover {
   color: lighten($highlight, 5%);
 }
 
