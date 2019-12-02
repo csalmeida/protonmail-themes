@@ -86,13 +86,13 @@ At the time I created these themes I've received a few directions from ProtonMai
 
 > **Required for theme creation only**
 
-Install NodeJS, after forking/cloning this repository install dependencies:
+Install [NodeJS](https://nodejs.org/en/), after forking/cloning this repository install dependencies:
 ```
 cd protonmail-themes
 npm install
 ```
 
-Themes can be created by duplicating and renaming the [example theme folder](templates/theme_example) and its `.scss` file to the theme name. Then edit that file by chaging the color variables. You can also extend the theme by editing the `_styles.css` partial or by creating a custom one.
+Themes can be created by duplicating and renaming the [example theme folder](templates/theme_example) and its `.scss` file to the theme name. Then edit that file by changing the color variables. You can also extend the theme by editing the `_styles.css` partial or by creating a custom one.
 
 Two commands are available to compile themes:
 ```
