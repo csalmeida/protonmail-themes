@@ -27,7 +27,7 @@
 }
 
 // Unread, not active
-.conversation:not(.read):not(.active) {
+.conversation.item-container:not(.item-contact):not(.read):not(.active) {
   background: lighten($base, 5%);
 }
 
