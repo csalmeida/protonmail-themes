@@ -78,6 +78,13 @@
   .conversation .selectBoxElement-container:hover .item-icon .item-icon-fakecheck-icon {
     fill: #ff60bb; }
 
+.starbutton {
+  fill: #FF79C6 !important;
+  opacity: 0.7; }
+
+.starbutton:focus, .starbutton:hover {
+  fill: #FF79C6; }
+
 .color-pm-blue {
   color: #FF79C6; }
 

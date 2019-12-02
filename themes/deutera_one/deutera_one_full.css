@@ -78,6 +78,13 @@
   .conversation .selectBoxElement-container:hover .item-icon .item-icon-fakecheck-icon {
     fill: #e6d500; }
 
+.starbutton {
+  fill: #ffed00 !important;
+  opacity: 0.7; }
+
+.starbutton:focus, .starbutton:hover {
+  fill: #ffed00; }
+
 .color-pm-blue {
   color: #ffed00; }
 
@@ -145,7 +152,7 @@ a:active, a:focus, a:hover,
 .bg-global-light, kbd {
   background: #000076; }
 
-.conversation:not(.read):not(.active) {
+.conversation.item-container:not(.item-contact):not(.read):not(.active) {
   background: #000090; }
 
 .item-container.active, .item-is-selected {
