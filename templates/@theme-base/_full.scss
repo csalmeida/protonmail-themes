@@ -1,5 +1,10 @@
 // Applies theme styles across as many areas of the layout as possible.
 
+// Scrollbar
+body {
+  scrollbar-color: lighten($base, 10%) lighten($base, 2%);
+}
+
 // Message items
 .conversation {
   border-color: lighten($base, 10%);
@@ -27,7 +32,8 @@
 }
 
 // Unread, not active
-.conversation.item-container:not(.item-contact):not(.read):not(.active) {
+.conversation.item-container:not(.item-contact):not(.read):not(.active),
+.conversation.item-container-row:not(.item-contact):not(.read):not(.active) {
   background: lighten($base, 5%);
 }
 
@@ -64,7 +70,8 @@
 }
 
 // Message list background area
-.items-column-list {
+.items-column-list,
+.elementList-container-row {
   background-color: $base;
 }
 
@@ -103,14 +110,20 @@ details:first-child {
   border-color: lighten($base, 10%);
 }
 
+// Email body background, text and links
 .email.message-body-container {
   [bgcolor], [style*="background"] {
     background-color: transparent !important;
-    div, p, 
-    h1, h2, h3,
-    h4, h5, h6 {
+
+    * {
       color: $text_color !important;
     }
+    a, a * {
+      color: $highlight !important;
+    }
+    a:active, a:focus, a:hover, a:active *, a:focus *, a:hover * {
+      color: lighten($highlight, 5%) !important;
+    } 
   }
 }
 

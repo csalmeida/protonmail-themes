@@ -12,6 +12,7 @@
   --bgcolor-spacebar: rgba(255, 255, 255, 0.1);
   --bgcolor-aside-link: rgba(0, 0, 0, 0.3);
   --bgcolor-toolbar: #3d4a5b;
+  --bgcolor-subnav: #3d4a5b;
   --fillcolor-logo: #f6f7fa;
   --fillcolor-icons: #fff;
   --color-nav-link: #C2C5CA;
@@ -133,6 +134,9 @@ a:active, a:focus, a:hover,
   .progress-contact::-moz-progress-bar {
     background: #A8E576; }
 
+body {
+  scrollbar-color: #47576b #374352; }
+
 .conversation {
   border-color: #47576b; }
 
@@ -152,7 +156,8 @@ a:active, a:focus, a:hover,
 .bg-global-light, kbd {
   background: #333E4C; }
 
-.conversation.item-container:not(.item-contact):not(.read):not(.active) {
+.conversation.item-container:not(.item-contact):not(.read):not(.active),
+.conversation.item-container-row:not(.item-contact):not(.read):not(.active) {
   background: #3d4a5b; }
 
 .item-container.active, .item-is-selected {
@@ -177,7 +182,8 @@ a:active, a:focus, a:hover,
   background-color: #9ae161;
   border-color: #9ae161; }
 
-.items-column-list {
+.items-column-list,
+.elementList-container-row {
   background-color: #333E4C; }
 
 .message-header {
@@ -208,12 +214,12 @@ details:first-child {
 
 .email.message-body-container [bgcolor], .email.message-body-container [style*="background"] {
   background-color: transparent !important; }
-  .email.message-body-container [bgcolor] div, .email.message-body-container [bgcolor] p,
-  .email.message-body-container [bgcolor] h1, .email.message-body-container [bgcolor] h2, .email.message-body-container [bgcolor] h3,
-  .email.message-body-container [bgcolor] h4, .email.message-body-container [bgcolor] h5, .email.message-body-container [bgcolor] h6, .email.message-body-container [style*="background"] div, .email.message-body-container [style*="background"] p,
-  .email.message-body-container [style*="background"] h1, .email.message-body-container [style*="background"] h2, .email.message-body-container [style*="background"] h3,
-  .email.message-body-container [style*="background"] h4, .email.message-body-container [style*="background"] h5, .email.message-body-container [style*="background"] h6 {
+  .email.message-body-container [bgcolor] *, .email.message-body-container [style*="background"] * {
     color: #e6eaf0 !important; }
+  .email.message-body-container [bgcolor] a, .email.message-body-container [bgcolor] a *, .email.message-body-container [style*="background"] a, .email.message-body-container [style*="background"] a * {
+    color: #A8E576 !important; }
+  .email.message-body-container [bgcolor] a:active, .email.message-body-container [bgcolor] a:focus, .email.message-body-container [bgcolor] a:hover, .email.message-body-container [bgcolor] a:active *, .email.message-body-container [bgcolor] a:focus *, .email.message-body-container [bgcolor] a:hover *, .email.message-body-container [style*="background"] a:active, .email.message-body-container [style*="background"] a:focus, .email.message-body-container [style*="background"] a:hover, .email.message-body-container [style*="background"] a:active *, .email.message-body-container [style*="background"] a:focus *, .email.message-body-container [style*="background"] a:hover * {
+    color: #b6e98b !important; }
 
 .pm-button, .pm-button--info, .pm-button--redborder {
   background: #333E4C;
