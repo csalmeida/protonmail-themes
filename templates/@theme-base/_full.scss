@@ -1,6 +1,6 @@
 // Applies theme styles across as many areas of the layout as possible.
 
-// Scrollbar
+// Scrollbar (PM currently does not style this element)
 body {
   scrollbar-color: lighten($base, 10%) lighten($base, 2%);
 }
