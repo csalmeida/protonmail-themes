@@ -12,7 +12,6 @@
   --bgcolor-spacebar: rgba(255, 255, 255, 0.1);
   --bgcolor-aside-link: rgba(0, 0, 0, 0.3);
   --bgcolor-toolbar: #135e72;
-  --bgcolor-subnav: #135e72;
   --fillcolor-logo: #f6f7fa;
   --fillcolor-icons: #fff;
   --color-nav-link: #fff;
@@ -136,6 +135,15 @@ a:active, a:focus, a:hover,
 
 body {
   scrollbar-color: #167088 #105365; }
+
+::-webkit-scrollbar {
+  width: 16px; }
+  ::-webkit-scrollbar-track {
+    background: #105365; }
+  ::-webkit-scrollbar-thumb {
+    background: #167088;
+    box-shadow: inset 0 0 0 4px #105365;
+    border-radius: 16px; }
 
 .conversation {
   border-color: #167088; }
@@ -356,11 +364,12 @@ select.pm-field, select.pm-field-icon-container {
   .main-area .p1, .main-area-content .p1 {
     background-color: #135e72; }
 
-.subnav .link, .subnav a {
-  color: #ED7D3A; }
-
-.subnav .link:active, .subnav .link:focus, .subnav .link:hover, .subnav a:active, .subnav a:focus, .subnav a:hover {
-  color: #ef8c51; }
+.subnav {
+  background: #135e72; }
+  .subnav .link, .subnav a {
+    color: #ED7D3A; }
+  .subnav .link:active, .subnav .link:focus, .subnav .link:hover, .subnav a:active, .subnav a:focus, .subnav a:hover {
+    color: #ef8c51; }
 
 .pm-toggle-label {
   border-color: #167088;
