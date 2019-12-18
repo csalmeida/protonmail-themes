@@ -365,3 +365,9 @@ select.pm-field, select.pm-field-icon-container {
     fill: $text_color;
   }
 }
+
+
+// Plans table
+.pm-plans-table-row--highlighted {
+  background-color: $base;
+}
