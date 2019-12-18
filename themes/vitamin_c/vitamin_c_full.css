@@ -133,6 +133,18 @@ a:active, a:focus, a:hover,
   .progress-contact::-moz-progress-bar {
     background: #FD7400; }
 
+body {
+  scrollbar-color: #006a8b #004b62; }
+
+::-webkit-scrollbar {
+  width: 16px; }
+  ::-webkit-scrollbar-track {
+    background: #004b62; }
+  ::-webkit-scrollbar-thumb {
+    background: #006a8b;
+    box-shadow: inset 0 0 0 4px #004b62;
+    border-radius: 16px; }
+
 .conversation {
   border-color: #006a8b; }
 
@@ -152,7 +164,8 @@ a:active, a:focus, a:hover,
 .bg-global-light, kbd {
   background: #004358; }
 
-.conversation.item-container:not(.item-contact):not(.read):not(.active) {
+.conversation.item-container:not(.item-contact):not(.read):not(.active),
+.conversation.item-container-row:not(.item-contact):not(.read):not(.active) {
   background: #005672; }
 
 .item-container.active, .item-is-selected {
@@ -177,7 +190,8 @@ a:active, a:focus, a:hover,
   background-color: #e46800;
   border-color: #e46800; }
 
-.items-column-list {
+.items-column-list,
+.elementList-container-row {
   background-color: #004358; }
 
 .message-header {
@@ -208,12 +222,12 @@ details:first-child {
 
 .email.message-body-container [bgcolor], .email.message-body-container [style*="background"] {
   background-color: transparent !important; }
-  .email.message-body-container [bgcolor] div, .email.message-body-container [bgcolor] p,
-  .email.message-body-container [bgcolor] h1, .email.message-body-container [bgcolor] h2, .email.message-body-container [bgcolor] h3,
-  .email.message-body-container [bgcolor] h4, .email.message-body-container [bgcolor] h5, .email.message-body-container [bgcolor] h6, .email.message-body-container [style*="background"] div, .email.message-body-container [style*="background"] p,
-  .email.message-body-container [style*="background"] h1, .email.message-body-container [style*="background"] h2, .email.message-body-container [style*="background"] h3,
-  .email.message-body-container [style*="background"] h4, .email.message-body-container [style*="background"] h5, .email.message-body-container [style*="background"] h6 {
+  .email.message-body-container [bgcolor] *, .email.message-body-container [style*="background"] * {
     color: #e6eaf0 !important; }
+  .email.message-body-container [bgcolor] a, .email.message-body-container [bgcolor] a *, .email.message-body-container [style*="background"] a, .email.message-body-container [style*="background"] a * {
+    color: #FD7400 !important; }
+  .email.message-body-container [bgcolor] a:active, .email.message-body-container [bgcolor] a:focus, .email.message-body-container [bgcolor] a:hover, .email.message-body-container [bgcolor] a:active *, .email.message-body-container [bgcolor] a:focus *, .email.message-body-container [bgcolor] a:hover *, .email.message-body-container [style*="background"] a:active, .email.message-body-container [style*="background"] a:focus, .email.message-body-container [style*="background"] a:hover, .email.message-body-container [style*="background"] a:active *, .email.message-body-container [style*="background"] a:focus *, .email.message-body-container [style*="background"] a:hover * {
+    color: #ff8218 !important; }
 
 .pm-button, .pm-button--info, .pm-button--redborder {
   background: #004358;
@@ -350,11 +364,12 @@ select.pm-field, select.pm-field-icon-container {
   .main-area .p1, .main-area-content .p1 {
     background-color: #005672; }
 
-.subnav .link, .subnav a {
-  color: #FD7400; }
-
-.subnav .link:active, .subnav .link:focus, .subnav .link:hover, .subnav a:active, .subnav a:focus, .subnav a:hover {
-  color: #ff8218; }
+.subnav {
+  background: #005672; }
+  .subnav .link, .subnav a {
+    color: #FD7400; }
+  .subnav .link:active, .subnav .link:focus, .subnav .link:hover, .subnav a:active, .subnav a:focus, .subnav a:hover {
+    color: #ff8218; }
 
 .pm-toggle-label {
   border-color: #006a8b;
