@@ -87,8 +87,6 @@ $boxshadow-main: none;
     background: rgba($highlight, 0.1);
   }
 
-
-
   .item-checkbox:checked + .item-icon {
     background-color: $highlight;
     border-color: $highlight;
@@ -102,12 +100,19 @@ $boxshadow-main: none;
     fill: $navigation;
   }
 
-  .selectBoxElement-container:hover .item-icon {
-    // background-color: transparent;
-    border: 1px solid darken($highlight, 5%);
+  .selectBoxElement-container:hover {
+    .item-icon {
+      background-color: transparent;
+      border: 1px solid darken($highlight, 5%);
 
-    .item-icon-fakecheck-icon {
-      fill: darken($highlight, 5%);
+      .item-icon-fakecheck-icon {
+        fill: darken($highlight, 5%);
+      }
+    }
+
+   .item-checkbox:checked + .item-icon {
+      background-color: darken($highlight, 5%);
+      border-color: darken($highlight, 5%);
     }
   }
 }
