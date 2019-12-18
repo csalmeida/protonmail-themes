@@ -79,7 +79,7 @@ $boxshadow-main: none;
 
   &.item-container {
     &:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
-      
+      background: $color-standard-text;
     }
   }
 
