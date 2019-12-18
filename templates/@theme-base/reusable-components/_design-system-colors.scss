@@ -36,6 +36,11 @@
   background-color: $pm-blue-light;
 }
 
+.bg-global-highlight {
+  background-color: var(--bgcolor-input, $pm-global-light);
+}
+
+
 .bg-pv-green {
   background-color: $pv-green;
 }
@@ -51,6 +56,10 @@
 }
 .bg-black {
   background-color: $black;
+}
+
+.bg-white-dm {
+  background-color: var(--bgcolor-main-area, $white);
 }
 
 .bg-visionary {
@@ -70,6 +79,9 @@
 }
 .bg-primary {
   background-color: $pm-primary;
+}
+.bg-inherit {
+  background: inherit;
 }
 
 .fill-global-grey {

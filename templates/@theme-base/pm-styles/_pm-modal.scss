@@ -3,15 +3,18 @@
  */
 /* overlay covers everything */
 $modal-width: 50% !default;
-$modal-max-width: 70rem;
+$modal-max-width: 70rem !default;
 
 $modal-breakpoint-width: 52em !default;
 $modal-breakpoint-height: 22em !default;
+$breakpoint-low-height-modal: em(500, 16) !default;
 
 $modal-max-height: 80% !default;
 
 $modal-wider-width: 70% !default;
-$modal-wider-max-width: 100rem;
+$modal-wider-max-width: 100rem !default;
+
+$modal-full-dimension: 98% !default;
 
 $modal-smaller-width: 28em !default;
 
@@ -23,7 +26,6 @@ $modal-smaller-width: 28em !default;
   left: 0;
   background: rgba( 0, 0, 0, .4 );
   z-index: 666;
-  cursor: pointer;
   animation: pm-modalOverlayIn ease .5s 1 normal ;
 }
 
@@ -33,7 +35,6 @@ $modal-smaller-width: 28em !default;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  cursor: pointer;
   z-index: 666;
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 }
@@ -68,11 +69,11 @@ $modal-smaller-width: 28em !default;
 
 .pm-modal {
   position: relative;
-  width: $modal-width;
+  width: $modal-max-width;
   max-height: $modal-max-height;
   max-width: $modal-max-width;
-  background: $white;
-  color: $pm-global-grey;
+  background: var(--bgcolor-main-area, $white);
+  color: var(--color-main-area, $pm-global-grey);
   padding: 0;
   overflow: hidden;
   border-radius: $global-border-radius;
@@ -120,14 +121,22 @@ $modal-smaller-width: 28em !default;
   width: $modal-wider-width;
   max-width: $modal-wider-max-width;
 }
+.pm-modal--full {
+  width: $modal-full-dimension;
+  max-width: $modal-full-dimension;
+  height: $modal-full-dimension;
+  max-height: $modal-full-dimension;
+  margin: 1%;
+}
 
 
 
 
 .pm-modalClose {
   position: absolute;
+  @extend .flex;
   right: .5rem;
-  top: .2rem;
+  top: 1rem;
   background: transparent;
   border-radius: 1em;
   color: $pm-global-grey;
@@ -136,6 +145,9 @@ $modal-smaller-width: 28em !default;
   padding: 0;
   line-height: 1;
   cursor: pointer;
+}
+.pm-modalClose-icon {
+  fill: $pm-global-grey;
 }
 // not defined, left this in case of
 // .pm-modalClose:focus,
@@ -185,8 +197,8 @@ $modal-smaller-width: 28em !default;
   flex: 1 1 auto;
   padding: 0 rem(30);
 
-  background: $white no-repeat;
-  background-image: radial-gradient(farthest-side at 50% 0,#acb0bf,transparent),radial-gradient(farthest-side at 50% 100%,#acb0bf,transparent);
+  background: var(--bgcolor-main-area, $white) no-repeat;
+  background-image: radial-gradient(farthest-side at 50% 0,var(--bordercolor-input, #acb0bf),transparent),radial-gradient(farthest-side at 50% 100%,var(--bordercolor-input, #acb0bf),transparent); 
   background-position: 50% 0, 0 100%;
   background-size: calc(100% - 20px) 3px;
 }
@@ -197,7 +209,7 @@ $modal-smaller-width: 28em !default;
     position: relative;
     display: block;
     z-index: 1;
-    background: $white;
+    background: var(--bgcolor-main-area, $white);
     height: 10px;
   }
 }
@@ -216,6 +228,12 @@ $pm-label-shorter-width: 10em !default;
   width: var(--label-shorter-width, $pm-label-shorter-width);
 }
 
+@include respond-to($breakpoint-small) {
+  .pm-modal--shorterLabels .onmobile-flex-column .pm-label {
+    width: 100%;
+  }
+}
+
 // single button on right
 .pm-modalFooter [class*="pm-button"]:only-child {
   margin-left: auto;
@@ -229,6 +247,21 @@ $pm-label-shorter-width: 10em !default;
   }
 }
 
+
+@media (max-height: $breakpoint-low-height-modal) {
+  .pm-modal {
+    max-height: $modal-full-dimension;
+  }
+  .pm-modalFooter {
+    padding-bottom: 1rem;
+  }
+  .pm-modalHeader {
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+  }
+}
+
+
 // small viewports
 @media (max-width: $modal-breakpoint-width) {
   .pm-modal {
@@ -240,4 +273,5 @@ $pm-label-shorter-width: 10em !default;
     align-self: center;
   }
 }
+
 
