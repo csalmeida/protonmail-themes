@@ -168,6 +168,10 @@ a:active, a:focus, a:hover,
     background-color: $highlight;
     border-color: $highlight;
   }
+
+  &--link, &.pm-button--link {
+    color: $highlight;
+  }
 }
 
 .pm-button--error, .pm-button--error.pm-button--info, .pm-button--error.pm-button--redborder, .pm-button--primary, .pm-button--primary.pm-button--info, .pm-button--primary.pm-button--redborder, .pm-button--warning, .pm-button--warning.pm-button--info, .pm-button--warning.pm-button--redborder, .pm-button-blue, .pm-button-blue.pm-button--info, .pm-button-blue.pm-button--redborder, .pm-button.pm-button--error, .pm-button.pm-button--primary, .pm-button.pm-button--warning, .pm-button.pm-button-blue {
@@ -208,6 +212,12 @@ a:active, a:focus, a:hover,
 .pm-table--highlight[data-plan-number="1"] tr th:nth-child(2),
 .pm-table--highlight[data-plan-number="1"] tr:last-child td:nth-child(2) {
   border-color: $highlight;
+}
+
+.pm-simple-table-row-th {
+  .fill-primary {
+    fill: $highlight;
+  }
 }
 
 // Contacts
