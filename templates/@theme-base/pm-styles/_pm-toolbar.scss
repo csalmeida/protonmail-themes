@@ -7,7 +7,8 @@
   border-radius: 4px 4px 0 0;
   box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2);
 }
-.toolbar-button {
+.toolbar-button,
+.pm-button.toolbar-button { // to avoid issues in darkmode
   // resets to avoid pm-button styles
   padding: unset;
   background: unset;
@@ -56,6 +57,9 @@
   padding-right: em(16, $base-font);
   color: var(--fillcolor-icons, $white);
   background: url("#{$path-images}sprite-for-css-only.svg#css-caret-white") calc(100% - 6px) 50% no-repeat;
+}
+.toolbar-select option {
+  color: $black; // for Chrome bug
 }
 
 

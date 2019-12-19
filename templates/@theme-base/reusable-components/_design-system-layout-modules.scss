@@ -130,6 +130,9 @@ svg {
 .alignbaseline {
   vertical-align: baseline;
 }
+.alignsub {
+  vertical-align: sub;
+}
 
 /* block */
 .bl {
@@ -200,6 +203,10 @@ svg {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 /* hardware-acceleration activation */
 .hardware-accelerated {
   @include vendor-prefix(transform, translateZ(0));
@@ -268,6 +275,9 @@ svg {
 }
 .w90 {
   width: 90%;
+}
+.w95 {
+  width: 95%;
 }
 .w100 {
   width: 100%;
@@ -533,6 +543,11 @@ $list-paddings-values: 0, 0.25, 0.5, 0.75, 1, 1.25, 2, 3 !default; // specify 2.
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+.flex-justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .flex-nowrap {
   -ms-flex-wrap: nowrap;

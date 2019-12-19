@@ -44,7 +44,7 @@ body {
 }
 
 // Unread, not active
-.conversation.item-container:not(.item-contact):not(.read):not(.active),
+.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active),
 .conversation.item-container-row:not(.item-contact):not(.read):not(.active) {
   background: lighten($base, 5%);
 }
@@ -114,7 +114,7 @@ details:first-child {
 }
 
 // Mailing list block
-.bg-white {
+.message-infobox {
   background-color: $base;
 }
 
@@ -364,4 +364,9 @@ select.pm-field, select.pm-field-icon-container {
   .pm-toggle-label-img {
     fill: $text_color;
   }
+}
+
+// Plans table
+.pm-plans-table-row--highlighted {
+  background-color: $base;
 }

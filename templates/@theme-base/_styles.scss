@@ -13,10 +13,9 @@ $fillcolor-icons: $white;
 $color-nav-link: $navigation;
 $color-nav-active: $highlight;
 $color-standard-text: $white;
-$boxshadow-main: none;
+$boxshadow-main: none; 
 
 @import "../@theme-base/pm-styles/pm-theme-config";
-
 
 // Theme template styles ->
 
@@ -78,6 +77,12 @@ $boxshadow-main: none;
     background: $highlight;
   }
 
+  &.item-container {
+    &:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
+      background: $color-standard-text;
+    }
+  }
+
   &.item-container.active, &.item-is-selected {
     background: rgba($highlight, 0.1);
   }
@@ -95,12 +100,19 @@ $boxshadow-main: none;
     fill: $navigation;
   }
 
-  .selectBoxElement-container:hover .item-icon {
-    // background-color: transparent;
-    border: 1px solid darken($highlight, 5%);
+  .selectBoxElement-container:hover {
+    .item-icon {
+      background-color: transparent;
+      border: 1px solid darken($highlight, 5%);
 
-    .item-icon-fakecheck-icon {
-      fill: darken($highlight, 5%);
+      .item-icon-fakecheck-icon {
+        fill: darken($highlight, 5%);
+      }
+    }
+
+   .item-checkbox:checked + .item-icon {
+      background-color: darken($highlight, 5%);
+      border-color: darken($highlight, 5%);
     }
   }
 }
@@ -150,6 +162,28 @@ a:active, a:focus, a:hover,
   color: darken($highlight, 10%);
 }
 
+// Buttons
+.pm-button {
+  &--primary {
+    background-color: $highlight;
+    border-color: $highlight;
+  }
+
+  &--link, &.pm-button--link {
+    color: $highlight;
+  }
+}
+
+.pm-button--error, .pm-button--error.pm-button--info, .pm-button--error.pm-button--redborder, .pm-button--primary, .pm-button--primary.pm-button--info, .pm-button--primary.pm-button--redborder, .pm-button--warning, .pm-button--warning.pm-button--info, .pm-button--warning.pm-button--redborder, .pm-button-blue, .pm-button-blue.pm-button--info, .pm-button-blue.pm-button--redborder, .pm-button.pm-button--error, .pm-button.pm-button--primary, .pm-button.pm-button--warning, .pm-button.pm-button-blue {
+  background-color: $highlight;
+  border-color: $highlight;
+}
+
+.is-hover.pm-button--error, .is-hover.pm-button--error.pm-button--info, .is-hover.pm-button--error.pm-button--redborder, .is-hover.pm-button--primary, .is-hover.pm-button--primary.pm-button--info, .is-hover.pm-button--primary.pm-button--redborder, .is-hover.pm-button--warning, .is-hover.pm-button--warning.pm-button--info, .is-hover.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info:focus, .pm-button--error.pm-button--info:focus-within, .pm-button--error.pm-button--info:hover, .pm-button--error.pm-button--redborder:focus, .pm-button--error.pm-button--redborder:focus-within, .pm-button--error.pm-button--redborder:hover, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary.pm-button--info:focus, .pm-button--primary.pm-button--info:focus-within, .pm-button--primary.pm-button--info:hover, .pm-button--primary.pm-button--redborder:focus, .pm-button--primary.pm-button--redborder:focus-within, .pm-button--primary.pm-button--redborder:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning.pm-button--info:focus, .pm-button--warning.pm-button--info:focus-within, .pm-button--warning.pm-button--info:hover, .pm-button--warning.pm-button--redborder:focus, .pm-button--warning.pm-button--redborder:focus-within, .pm-button--warning.pm-button--redborder:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue.is-hover.pm-button--info, .pm-button-blue.is-hover.pm-button--redborder, .pm-button-blue.pm-button--info:focus, .pm-button-blue.pm-button--info:focus-within, .pm-button-blue.pm-button--info:hover, .pm-button-blue.pm-button--redborder:focus, .pm-button-blue.pm-button--redborder:focus-within, .pm-button-blue.pm-button--redborder:hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover, .pm-button.is-hover.pm-button--error, .pm-button.is-hover.pm-button--primary, .pm-button.is-hover.pm-button--warning, .pm-button.pm-button--error:focus, .pm-button.pm-button--error:focus-within, .pm-button.pm-button--error:hover, .pm-button.pm-button--primary:focus, .pm-button.pm-button--primary:focus-within, .pm-button.pm-button--primary:hover, .pm-button.pm-button--warning:focus, .pm-button.pm-button--warning:focus-within, .pm-button.pm-button--warning:hover, .pm-button.pm-button-blue.is-hover, .pm-button.pm-button-blue:focus, .pm-button.pm-button-blue:focus-within, .pm-button.pm-button-blue:hover {
+  background: darken($highlight, 5%);
+  border: 1px solid darken($highlight, 5%);
+}
+
 // Settings toggle button
 .pm-toggle-checkbox:checked+.pm-toggle-label:before {
   background: $highlight;
@@ -178,6 +212,12 @@ a:active, a:focus, a:hover,
 .pm-table--highlight[data-plan-number="1"] tr th:nth-child(2),
 .pm-table--highlight[data-plan-number="1"] tr:last-child td:nth-child(2) {
   border-color: $highlight;
+}
+
+.pm-simple-table-row-th {
+  .fill-primary {
+    fill: $highlight;
+  }
 }
 
 // Contacts
