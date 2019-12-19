@@ -123,20 +123,9 @@ details:first-child {
 }
 
 // Email body background, text and links
-.email.message-body-container {
-  [bgcolor], [style*="background"] {
-    background-color: transparent !important;
-
-    * {
-      color: $text_color !important;
-    }
-    a, a * {
-      color: $highlight !important;
-    }
-    a:active, a:focus, a:hover, a:active *, a:focus *, a:hover * {
-      color: lighten($highlight, 5%) !important;
-    } 
-  }
+.message-content.frame.message-frame {
+  background: white;
+  color: black;
 }
 
 // Attachment button
