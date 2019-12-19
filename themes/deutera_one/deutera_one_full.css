@@ -60,6 +60,9 @@
 .conversation.marked::before {
   background: #ffed00; }
 
+.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
+  background: #fff; }
+
 .conversation.item-container.active, .conversation.item-is-selected {
   background: rgba(255, 237, 0, 0.1); }
 
@@ -74,9 +77,14 @@
   fill: #fff; }
 
 .conversation .selectBoxElement-container:hover .item-icon {
+  background-color: transparent;
   border: 1px solid #e6d500; }
   .conversation .selectBoxElement-container:hover .item-icon .item-icon-fakecheck-icon {
     fill: #e6d500; }
+
+.conversation .selectBoxElement-container:hover .item-checkbox:checked + .item-icon {
+  background-color: #e6d500;
+  border-color: #e6d500; }
 
 .starbutton {
   fill: #ffed00 !important;
@@ -109,6 +117,21 @@ a:active, a:focus, a:hover,
 .pm-button--link:hover {
   color: #ccbe00; }
 
+.pm-button--primary {
+  background-color: #ffed00;
+  border-color: #ffed00; }
+
+.pm-button--link, .pm-button.pm-button--link {
+  color: #ffed00; }
+
+.pm-button--error, .pm-button--error.pm-button--info, .pm-button--error.pm-button--redborder, .pm-button--primary, .pm-button--primary.pm-button--info, .pm-button--primary.pm-button--redborder, .pm-button--warning, .pm-button--warning.pm-button--info, .pm-button--warning.pm-button--redborder, .pm-button-blue, .pm-button-blue.pm-button--info, .pm-button-blue.pm-button--redborder, .pm-button.pm-button--error, .pm-button.pm-button--primary, .pm-button.pm-button--warning, .pm-button.pm-button-blue {
+  background-color: #ffed00;
+  border-color: #ffed00; }
+
+.is-hover.pm-button--error, .is-hover.pm-button--error.pm-button--info, .is-hover.pm-button--error.pm-button--redborder, .is-hover.pm-button--primary, .is-hover.pm-button--primary.pm-button--info, .is-hover.pm-button--primary.pm-button--redborder, .is-hover.pm-button--warning, .is-hover.pm-button--warning.pm-button--info, .is-hover.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info:focus, .pm-button--error.pm-button--info:focus-within, .pm-button--error.pm-button--info:hover, .pm-button--error.pm-button--redborder:focus, .pm-button--error.pm-button--redborder:focus-within, .pm-button--error.pm-button--redborder:hover, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary.pm-button--info:focus, .pm-button--primary.pm-button--info:focus-within, .pm-button--primary.pm-button--info:hover, .pm-button--primary.pm-button--redborder:focus, .pm-button--primary.pm-button--redborder:focus-within, .pm-button--primary.pm-button--redborder:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning.pm-button--info:focus, .pm-button--warning.pm-button--info:focus-within, .pm-button--warning.pm-button--info:hover, .pm-button--warning.pm-button--redborder:focus, .pm-button--warning.pm-button--redborder:focus-within, .pm-button--warning.pm-button--redborder:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue.is-hover.pm-button--info, .pm-button-blue.is-hover.pm-button--redborder, .pm-button-blue.pm-button--info:focus, .pm-button-blue.pm-button--info:focus-within, .pm-button-blue.pm-button--info:hover, .pm-button-blue.pm-button--redborder:focus, .pm-button-blue.pm-button--redborder:focus-within, .pm-button-blue.pm-button--redborder:hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover, .pm-button.is-hover.pm-button--error, .pm-button.is-hover.pm-button--primary, .pm-button.is-hover.pm-button--warning, .pm-button.pm-button--error:focus, .pm-button.pm-button--error:focus-within, .pm-button.pm-button--error:hover, .pm-button.pm-button--primary:focus, .pm-button.pm-button--primary:focus-within, .pm-button.pm-button--primary:hover, .pm-button.pm-button--warning:focus, .pm-button.pm-button--warning:focus-within, .pm-button.pm-button--warning:hover, .pm-button.pm-button-blue.is-hover, .pm-button.pm-button-blue:focus, .pm-button.pm-button-blue:focus-within, .pm-button.pm-button-blue:hover {
+  background: #e6d500;
+  border: 1px solid #e6d500; }
+
 .pm-toggle-checkbox:checked + .pm-toggle-label:before {
   background: #ffed00;
   border-color: #ffed00; }
@@ -127,6 +150,9 @@ a:active, a:focus, a:hover,
 .pm-table--highlight[data-plan-number="1"] tr th:nth-child(2),
 .pm-table--highlight[data-plan-number="1"] tr:last-child td:nth-child(2) {
   border-color: #ffed00; }
+
+.pm-simple-table-row-th .fill-primary {
+  fill: #ffed00; }
 
 .progress-contact {
   color: #ffed00; }
@@ -164,7 +190,7 @@ body {
 .bg-global-light, kbd {
   background: #000076; }
 
-.conversation.item-container:not(.item-contact):not(.read):not(.active),
+.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active),
 .conversation.item-container-row:not(.item-contact):not(.read):not(.active) {
   background: #000090; }
 
@@ -214,20 +240,15 @@ details:first-child {
   border-left: 1px solid #0000a9;
   background-color: #000090; }
 
-.bg-white {
+.message-infobox {
   background-color: #000076; }
 
 .bordered, .bordered-container, .breadcrumb-container {
   border-color: #0000a9; }
 
-.email.message-body-container [bgcolor], .email.message-body-container [style*="background"] {
-  background-color: transparent !important; }
-  .email.message-body-container [bgcolor] *, .email.message-body-container [style*="background"] * {
-    color: #e6eaf0 !important; }
-  .email.message-body-container [bgcolor] a, .email.message-body-container [bgcolor] a *, .email.message-body-container [style*="background"] a, .email.message-body-container [style*="background"] a * {
-    color: #ffed00 !important; }
-  .email.message-body-container [bgcolor] a:active, .email.message-body-container [bgcolor] a:focus, .email.message-body-container [bgcolor] a:hover, .email.message-body-container [bgcolor] a:active *, .email.message-body-container [bgcolor] a:focus *, .email.message-body-container [bgcolor] a:hover *, .email.message-body-container [style*="background"] a:active, .email.message-body-container [style*="background"] a:focus, .email.message-body-container [style*="background"] a:hover, .email.message-body-container [style*="background"] a:active *, .email.message-body-container [style*="background"] a:focus *, .email.message-body-container [style*="background"] a:hover * {
-    color: #ffef1a !important; }
+.message-content.frame.message-frame {
+  background: white;
+  color: black; }
 
 .pm-button, .pm-button--info, .pm-button--redborder {
   background: #000076;
@@ -378,6 +399,9 @@ select.pm-field, select.pm-field-icon-container {
     background: #000076; }
   .pm-toggle-label .pm-toggle-label-img {
     fill: #e6eaf0; }
+
+.pm-plans-table-row--highlighted {
+  background-color: #000076; }
 
 .pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
   color: #fff;
