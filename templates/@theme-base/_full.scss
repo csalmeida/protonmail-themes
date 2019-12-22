@@ -21,6 +21,10 @@ body {
 #pm_composer .composer,
 .composerInputMeta-overlay {
   background: $base;
+
+  .composerHeader-container {
+    background: lighten($base, 5%);
+  }
 }
 
 [class*="squireToolbar-row"] .squireToolbar-action-mode:active, [class*="squireToolbar-row"] .squireToolbar-action-mode:hover, [class*="squireToolbar-row"] [class*="squireToolbar-action-"]:active, [class*="squireToolbar-row"] [class*="squireToolbar-action-"]:hover {
