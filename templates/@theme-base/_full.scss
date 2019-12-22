@@ -23,6 +23,23 @@ body {
   background: $base;
 }
 
+[class*="squireToolbar-row"] .squireToolbar-action-mode:active, [class*="squireToolbar-row"] .squireToolbar-action-mode:hover, [class*="squireToolbar-row"] [class*="squireToolbar-action-"]:active, [class*="squireToolbar-row"] [class*="squireToolbar-action-"]:hover {
+  background: lighten($base, 2%) !important;
+}
+
+.squireToolbar-separator {
+  background: lighten($base, 5%);
+}
+
+.composerTime-container,
+[class*="composer-field"] {
+  color: $text_color;
+}
+
+.composerInputMeta-overlay-fakefield {
+  border-color: $text_color;
+}
+
 // Message items
 .conversation {
   border-color: lighten($base, 10%);
@@ -56,7 +73,7 @@ body {
 
 // Unread, not active
 .conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active),
-.conversation.item-container-row:not(.item-contact):not(.read):not(.active) {
+.conversation.item-container-row:not(.item-contact):not(.read):not(.active), .squireToolbar-container {
   background: lighten($base, 5%);
 }
 
@@ -129,7 +146,9 @@ details:first-child {
   background-color: $base;
 }
 
-.bordered, .bordered-container:not(.composerInputMeta-autocomplete), .breadcrumb-container {
+.bordered,
+.bordered-container:not([class*="composerInputMeta-"]),
+.breadcrumb-container {
   border-color: lighten($base, 10%);
 }
 
@@ -272,7 +291,8 @@ details:first-child {
 
 .link:active, .link:focus, .link:hover, 
 a:active, a:focus, a:hover,
-.pm-button--link:hover {
+.pm-button--link:hover,
+.composerInputMeta-label:hover {
   color: lighten($highlight, 5%);
 }
 
