@@ -17,6 +17,12 @@ body {
   }
 }
 
+// Compose window
+#pm_composer .composer,
+.composerInputMeta-overlay {
+  background: $base;
+}
+
 // Message items
 .conversation {
   border-color: lighten($base, 10%);
@@ -123,7 +129,7 @@ details:first-child {
   background-color: $base;
 }
 
-.bordered, .bordered-container, .breadcrumb-container {
+.bordered, .bordered-container:not(.composerInputMeta-autocomplete), .breadcrumb-container {
   border-color: lighten($base, 10%);
 }
 
@@ -304,7 +310,18 @@ a:active, a:focus, a:hover,
 .pm-field, .pm-field-icon-container,
 .focus.pm-field-icon-container, .pm-field-icon-container:focus,
 .pm-field-icon-container:focus-within, .pm-field.focus,
-.pm-field:focus, .pm-field:focus-within {
+.pm-field:focus, .pm-field:focus-within,
+.composerInputMeta-overlay-fakefield,
+.composerInputMeta-autocomplete {
+  color: $text_color;
+  background-color: lighten($base, 5%);
+
+  &::placeholder {
+    color: darken($text_color, 5%);
+  }
+}
+
+.composerInputMeta-autocomplete input {
   color: $text_color;
   background-color: lighten($base, 5%);
 
