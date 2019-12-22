@@ -17,6 +17,33 @@ body {
   }
 }
 
+// Compose window
+#pm_composer .composer,
+.composerInputMeta-overlay {
+  background: $base;
+
+  .composerHeader-container {
+    background: lighten($base, 5%);
+  }
+}
+
+[class*="squireToolbar-row"] .squireToolbar-action-mode:active, [class*="squireToolbar-row"] .squireToolbar-action-mode:hover, [class*="squireToolbar-row"] [class*="squireToolbar-action-"]:active, [class*="squireToolbar-row"] [class*="squireToolbar-action-"]:hover {
+  background: lighten($base, 2%) !important;
+}
+
+.squireToolbar-separator {
+  background: lighten($base, 5%);
+}
+
+.composerTime-container,
+[class*="composer-field"] {
+  color: $text_color;
+}
+
+.composerInputMeta-overlay-fakefield {
+  border-color: $text_color;
+}
+
 // Message items
 .conversation {
   border-color: lighten($base, 10%);
@@ -43,9 +70,14 @@ body {
   background: $base;
 }
 
+// Contacts items and header
+.item-container, .item-container-row, .contactsummary-container {
+  background: $base;
+}
+
 // Unread, not active
 .conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active),
-.conversation.item-container-row:not(.item-contact):not(.read):not(.active) {
+.conversation.item-container-row:not(.item-contact):not(.read):not(.active), .squireToolbar-container {
   background: lighten($base, 5%);
 }
 
@@ -118,7 +150,9 @@ details:first-child {
   background-color: $base;
 }
 
-.bordered, .bordered-container, .breadcrumb-container {
+.bordered,
+.bordered-container:not([class*="composerInputMeta-"]),
+.breadcrumb-container {
   border-color: lighten($base, 10%);
 }
 
@@ -261,7 +295,8 @@ details:first-child {
 
 .link:active, .link:focus, .link:hover, 
 a:active, a:focus, a:hover,
-.pm-button--link:hover {
+.pm-button--link:hover,
+.composerInputMeta-label:hover {
   color: lighten($highlight, 5%);
 }
 
@@ -299,7 +334,18 @@ a:active, a:focus, a:hover,
 .pm-field, .pm-field-icon-container,
 .focus.pm-field-icon-container, .pm-field-icon-container:focus,
 .pm-field-icon-container:focus-within, .pm-field.focus,
-.pm-field:focus, .pm-field:focus-within {
+.pm-field:focus, .pm-field:focus-within,
+.composerInputMeta-overlay-fakefield,
+.composerInputMeta-autocomplete {
+  color: $text_color;
+  background-color: lighten($base, 5%);
+
+  &::placeholder {
+    color: darken($text_color, 5%);
+  }
+}
+
+.composerInputMeta-autocomplete input {
   color: $text_color;
   background-color: lighten($base, 5%);
 
