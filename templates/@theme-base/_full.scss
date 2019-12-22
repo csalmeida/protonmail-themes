@@ -43,6 +43,11 @@ body {
   background: $base;
 }
 
+// Contacts items and header
+.item-container, .item-container-row, .contactsummary-container {
+  background: $base;
+}
+
 // Unread, not active
 .conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active),
 .conversation.item-container-row:not(.item-contact):not(.read):not(.active) {
