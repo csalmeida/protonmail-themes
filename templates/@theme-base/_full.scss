@@ -405,3 +405,18 @@ select.pm-field, select.pm-field-icon-container {
 .pm-plans-table-row--highlighted {
   background-color: $base;
 }
+
+// Calendar Weekdays
+.calendar-grid-heading, .calendar-monthgrid-day {
+  color: $text_color;
+}
+
+.calendar-grid-heading[aria-current="date"] {
+  color: white;
+}
+
+// Calendar checkbox
+.pm-checkbox-fakecheck {
+  border-color: $highlight;
+  background: transparent;
+}
