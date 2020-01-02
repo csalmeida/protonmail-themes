@@ -420,3 +420,13 @@ select.pm-field, select.pm-field-icon-container {
   border-color: $highlight;
   background: transparent;
 }
+
+// Calendar weekday (monthview)
+.calendar-daygrid-weeknumber {
+  // border-color: white;
+  // border-bottom: 1px solid #dde6ec;
+  // border-bottom: 1px solid var(--bordercolor-input,#dde6ec);
+  // border-right: 1px solid #dde6ec;
+  // border-right: 1px solid var(--bordercolor-input,#dde6ec);
+  background-color: darken($base, 10%); 
+}

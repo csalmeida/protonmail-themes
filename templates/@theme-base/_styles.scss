@@ -233,6 +233,7 @@ a:active, a:focus, a:hover,
 .calendar-grid-heading[aria-pressed="true"]
 .calendar-grid-heading-number, 
 .minicalendar-day[aria-pressed="true"],
-.minicalendar-day[aria-current="date"]::before {
+.minicalendar-day[aria-current="date"]::before,
+.calendar-monthgrid-day[aria-pressed="true"] .calendar-monthgrid-day-number {
   background: darken($highlight, 25%);
 }
