@@ -228,3 +228,11 @@ a:active, a:focus, a:hover,
     background: $highlight;
   }
 }
+
+// Calendar current day
+.calendar-grid-heading[aria-pressed="true"]
+.calendar-grid-heading-number, 
+.minicalendar-day[aria-pressed="true"],
+.minicalendar-day[aria-current="date"]::before {
+  background: darken($highlight, 25%);
+}
