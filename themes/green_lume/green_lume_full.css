@@ -159,6 +159,12 @@ a:active, a:focus, a:hover,
   .progress-contact::-moz-progress-bar {
     background: #2FBF71; }
 
+.calendar-grid-heading[aria-pressed="true"]
+.calendar-grid-heading-number,
+.minicalendar-day[aria-pressed="true"],
+.minicalendar-day[aria-current="date"]::before {
+  background: #165934; }
+
 body {
   scrollbar-color: #363636 #212121; }
 
@@ -438,3 +444,13 @@ select.pm-field, select.pm-field-icon-container {
 
 .pm-plans-table-row--highlighted {
   background-color: #1C1C1C; }
+
+.calendar-grid-heading, .calendar-monthgrid-day {
+  color: #d6d6d6; }
+
+.calendar-grid-heading[aria-current="date"] {
+  color: white; }
+
+.pm-checkbox-fakecheck {
+  border-color: #2FBF71;
+  background: transparent; }

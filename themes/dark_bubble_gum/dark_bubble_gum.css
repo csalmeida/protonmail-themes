@@ -158,3 +158,9 @@ a:active, a:focus, a:hover,
   color: #EF2D56; }
   .progress-contact::-moz-progress-bar {
     background: #EF2D56; }
+
+.calendar-grid-heading[aria-pressed="true"]
+.calendar-grid-heading-number,
+.minicalendar-day[aria-pressed="true"],
+.minicalendar-day[aria-current="date"]::before {
+  background: #910b27; }
