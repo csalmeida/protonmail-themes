@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/*! =========================================== *
+ * GRUVBOX THEME
+ * Version: 4.0.0
+ * Author: AntoineÐ 
+ * Website: www.antoined.fr
+ * Mastodon: @antoined@h.kher.nl
+ * Based: https://github.com/morhetz/gruvbox-contrib
+ * =========================================== */
+:root {
+  --main-bg-color: #282828;
+  --secondary-bg-color: #1b1b1b;
+  --bgcolor-searchbox-field: #32302f;
+  --bgcolor-spacebar: rgba(255, 255, 255, 0.1);
+  --bgcolor-aside-link: rgba(0, 0, 0, 0.3);
+  --bgcolor-toolbar: #353535;
+  --fillcolor-logo: #f6f7fa;
+  --fillcolor-icons: #fff;
+  --color-nav-link: #fbf1c7;
+  --color-nav-active: #689d6a;
+  --color-standard-text: #fff;
+  --boxshadow-main: none; }
+
+.pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
+  color: #fff;
+  background-color: #689d6a;
+  border: 1px solid #689d6a;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out; }
+
+.is-hover.pm-button--error, .is-hover.pm-button--primary, .is-hover.pm-button--warning, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover {
+  color: #fbf1c7;
+  box-shadow: 0 0 0.35714em 0 rgba(0, 0, 0, 0.2);
+  background: #5d8f5f;
+  border: 1px solid #5d8f5f; }
+
+.aside-link {
+  background: #1b1b1b; }
+
+.aside-link:active .aside-linkIcon, .aside-link:focus .aside-linkIcon, .aside-link:hover .aside-linkIcon, .aside-link[aria-current="true"] .aside-linkIcon {
+  fill: #1b1b1b;
+  background: none; }
+
+.circle-chart__circle {
+  stroke: #689d6a; }
+
+#global_search.searchbox-field[type="search"] {
+  background-color: #32302f;
+  color: #fbf1c7; }
+
+.topnav-link, .topnav-link > .topnav-icon {
+  color: #fbf1c7;
+  transition: color .2s ease-in-out; }
+
+.topnav-link:active, .topnav-link:focus,
+.topnav-link:hover, .topnav-link[aria-current="true"] {
+  color: #689d6a; }
+
+.topnav-link:active > .topnav-icon, .topnav-link:focus > .topnav-icon,
+.topnav-link:hover > .topnav-icon, .topnav-link[aria-current=true] > .topnav-icon {
+  color: #689d6a; }
+
+.conversation.marked::before {
+  background: #689d6a; }
+
+.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
+  background: #fff; }
+
+.conversation.item-container.active, .conversation.item-is-selected {
+  background: rgba(104, 157, 106, 0.1); }
+
+.conversation .item-checkbox:checked + .item-icon {
+  background-color: #689d6a;
+  border-color: #689d6a; }
+
+.conversation .item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
+  fill: #689d6a; }
+
+.conversation .item-checkbox:checked + .item-icon:hover .item-icon-fakecheck-icon {
+  fill: #fbf1c7; }
+
+.conversation .selectBoxElement-container:hover .item-icon {
+  background-color: transparent;
+  border: 1px solid #5d8f5f; }
+  .conversation .selectBoxElement-container:hover .item-icon .item-icon-fakecheck-icon {
+    fill: #5d8f5f; }
+
+.conversation .selectBoxElement-container:hover .item-checkbox:checked + .item-icon {
+  background-color: #5d8f5f;
+  border-color: #5d8f5f; }
+
+.starbutton {
+  fill: #689d6a !important;
+  opacity: 0.7; }
+
+.starbutton:focus, .starbutton:hover {
+  fill: #689d6a; }
+
+.color-pm-blue {
+  color: #689d6a; }
+
+.pm-radio:checked + .pm-radio-fakeradio::before {
+  background: #689d6a; }
+
+.block-info-standard {
+  border-color: #458588; }
+
+.block-info-standard-warning {
+  border-color: #d79921; }
+
+.block-info-standard-error {
+  border-color: #cc241d; }
+
+.link, a, .pm-button--link {
+  color: #282828;
+  transition: color .2s ease-in-out; }
+
+.link:active, .link:focus, .link:hover,
+a:active, a:focus, a:hover,
+.pm-button--link:hover {
+  color: #537f54; }
+
+.pm-button--primary {
+  background-color: #689d6a;
+  border-color: #689d6a; }
+
+.pm-button--link, .pm-button.pm-button--link {
+  color: #689d6a; }
+
+.pm-button--error, .pm-button--error.pm-button--info, .pm-button--error.pm-button--redborder, .pm-button--primary, .pm-button--primary.pm-button--info, .pm-button--primary.pm-button--redborder, .pm-button--warning, .pm-button--warning.pm-button--info, .pm-button--warning.pm-button--redborder, .pm-button-blue, .pm-button-blue.pm-button--info, .pm-button-blue.pm-button--redborder, .pm-button.pm-button--error, .pm-button.pm-button--primary, .pm-button.pm-button--warning, .pm-button.pm-button-blue {
+  background-color: #689d6a;
+  border-color: #689d6a; }
+
+.is-hover.pm-button--error, .is-hover.pm-button--error.pm-button--info, .is-hover.pm-button--error.pm-button--redborder, .is-hover.pm-button--primary, .is-hover.pm-button--primary.pm-button--info, .is-hover.pm-button--primary.pm-button--redborder, .is-hover.pm-button--warning, .is-hover.pm-button--warning.pm-button--info, .is-hover.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info:focus, .pm-button--error.pm-button--info:focus-within, .pm-button--error.pm-button--info:hover, .pm-button--error.pm-button--redborder:focus, .pm-button--error.pm-button--redborder:focus-within, .pm-button--error.pm-button--redborder:hover, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary.pm-button--info:focus, .pm-button--primary.pm-button--info:focus-within, .pm-button--primary.pm-button--info:hover, .pm-button--primary.pm-button--redborder:focus, .pm-button--primary.pm-button--redborder:focus-within, .pm-button--primary.pm-button--redborder:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning.pm-button--info:focus, .pm-button--warning.pm-button--info:focus-within, .pm-button--warning.pm-button--info:hover, .pm-button--warning.pm-button--redborder:focus, .pm-button--warning.pm-button--redborder:focus-within, .pm-button--warning.pm-button--redborder:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue.is-hover.pm-button--info, .pm-button-blue.is-hover.pm-button--redborder, .pm-button-blue.pm-button--info:focus, .pm-button-blue.pm-button--info:focus-within, .pm-button-blue.pm-button--info:hover, .pm-button-blue.pm-button--redborder:focus, .pm-button-blue.pm-button--redborder:focus-within, .pm-button-blue.pm-button--redborder:hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover, .pm-button.is-hover.pm-button--error, .pm-button.is-hover.pm-button--primary, .pm-button.is-hover.pm-button--warning, .pm-button.pm-button--error:focus, .pm-button.pm-button--error:focus-within, .pm-button.pm-button--error:hover, .pm-button.pm-button--primary:focus, .pm-button.pm-button--primary:focus-within, .pm-button.pm-button--primary:hover, .pm-button.pm-button--warning:focus, .pm-button.pm-button--warning:focus-within, .pm-button.pm-button--warning:hover, .pm-button.pm-button-blue.is-hover, .pm-button.pm-button-blue:focus, .pm-button.pm-button-blue:focus-within, .pm-button.pm-button-blue:hover {
+  background: #5d8f5f;
+  border: 1px solid #5d8f5f; }
+
+.pm-toggle-checkbox:checked + .pm-toggle-label:before {
+  background: #689d6a;
+  border-color: #689d6a; }
+
+.fill-pm-blue,
+.message-attachmentIcon .file-outer-icon.is-embedded {
+  fill: #689d6a; }
+
+.pm-table--highlight[data-plan-number="1"] tr th:nth-child(2) {
+  border-color: #689d6a;
+  color: #689d6a; }
+  .pm-table--highlight[data-plan-number="1"] tr th:nth-child(2)::before {
+    background-color: #689d6a; }
+
+.pm-table--highlight[data-plan-number="1"] tr td:nth-child(2),
+.pm-table--highlight[data-plan-number="1"] tr th:nth-child(2),
+.pm-table--highlight[data-plan-number="1"] tr:last-child td:nth-child(2) {
+  border-color: #689d6a; }
+
+.pm-simple-table-row-th .fill-primary {
+  fill: #689d6a; }
+
+.progress-contact {
+  color: #689d6a; }
+  .progress-contact::-moz-progress-bar {
+    background: #689d6a; }
+
+.calendar-grid-heading[aria-pressed="true"]
+.calendar-grid-heading-number,
+.minicalendar-day[aria-pressed="true"],
+.minicalendar-day[aria-current="date"]::before,
+.calendar-monthgrid-day[aria-pressed="true"] .calendar-monthgrid-day-number {
+  background: #355136; }
