@@ -68,14 +68,19 @@ Check out some of the available themes you can choose from.
 ![Screenshot of Dracula theme.](screenshots/dracula_full.png)
 
 #### [Monokai](themes/monokai)
-![Screenshot of Dracula theme.](screenshots/monokai.png)
+![Screenshot of Monokai theme.](screenshots/monokai.png)
 
-![Screenshot of Dracula theme.](screenshots/monokai_full.png)
+![Screenshot of Monokai theme.](screenshots/monokai_full.png)
 
 #### [Deutera One](themes/deutera_one)
-![Screenshot of Dracula theme.](screenshots/deutera_one.png)
+![Screenshot of Deutera One theme.](screenshots/deutera_one.png)
 
-![Screenshot of Dracula theme.](screenshots/deutera_one_full.png)
+![Screenshot of Deutera One theme.](screenshots/deutera_one_full.png)
+
+#### [Gruvbox](themes/gruvbox)
+![Screenshot of Gruvbox theme.](screenshots/gruvbox.png)
+
+![Screenshot of Gruvbox theme.](screenshots/gruvbox_full.png)
 </details>
 
 ### Do these themes compromise security?
