@@ -1,0 +1,23 @@
+/*! =========================================== *
+ * GRUVBOX THEME
+ * Version: 4.0.0
+ * Author: AntoineÐ 
+ * Website: www.antoined.fr
+ * Mastodon: @antoined@h.kher.nl
+ * Based: https://github.com/morhetz/gruvbox-contrib
+ * =========================================== */
+
+$base: #282828;
+$search: #32302f;
+$highlight: #689d6a;
+$navigation: #fbf1c7;
+
+$text_color: #fbf1c7;
+$extra_color: #1d2021;
+$danger_color: #cc241d;
+$warning_color: #d79921;
+$info_color: #458588;
+
+@import "../@theme-base/styles";
+// @import "../@theme-base/full";
+// Please do not remove the import above, add overrides and other partials below this line.
