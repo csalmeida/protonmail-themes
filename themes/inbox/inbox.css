@@ -1,0 +1,233 @@
+/*! =========================================== *
+ * INBOX
+ * Version: 4.0.0
+ * Author: Cristiano Almeida
+ * Website: https://www.csalmeida.com
+ * Twitter: @_csalmeida
+ * =========================================== */
+:root {
+  --main-bg-color: #F2F2F2;
+  --secondary-bg-color: #e5e5e5;
+  --bgcolor-searchbox-field: #7297C4;
+  --bgcolor-spacebar: rgba(255, 255, 255, 0.1);
+  --bgcolor-aside-link: rgba(0, 0, 0, 0.3);
+  --bgcolor-toolbar: white;
+  --fillcolor-logo: #f6f7fa;
+  --fillcolor-icons: #fff;
+  --color-nav-link: #616161;
+  --color-nav-active: #4285F4;
+  --color-standard-text: #fff;
+  --boxshadow-main: none; }
+
+.pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
+  color: #fff;
+  background-color: #4285F4;
+  border: 1px solid #4285F4;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out; }
+
+.is-hover.pm-button--error, .is-hover.pm-button--primary, .is-hover.pm-button--warning, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover {
+  color: #616161;
+  box-shadow: 0 0 0.35714em 0 rgba(0, 0, 0, 0.2);
+  background: #2a75f3;
+  border: 1px solid #2a75f3; }
+
+.aside-link {
+  background: #e5e5e5; }
+
+.aside-link:active .aside-linkIcon, .aside-link:focus .aside-linkIcon, .aside-link:hover .aside-linkIcon, .aside-link[aria-current="true"] .aside-linkIcon {
+  fill: #e5e5e5;
+  background: none; }
+
+.circle-chart__circle {
+  stroke: #4285F4; }
+
+#global_search.searchbox-field[type="search"] {
+  background-color: #7297C4;
+  color: #fff; }
+
+.topnav-link, .topnav-link > .topnav-icon {
+  color: #616161;
+  transition: color .2s ease-in-out; }
+
+.topnav-link:active, .topnav-link:focus,
+.topnav-link:hover, .topnav-link[aria-current="true"] {
+  color: #4285F4; }
+
+.topnav-link:active > .topnav-icon, .topnav-link:focus > .topnav-icon,
+.topnav-link:hover > .topnav-icon, .topnav-link[aria-current=true] > .topnav-icon {
+  color: #4285F4; }
+
+.conversation.marked::before {
+  background: #4285F4; }
+
+.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
+  background: #fff; }
+
+.conversation.item-container.active, .conversation.item-is-selected {
+  background: rgba(66, 133, 244, 0.1); }
+
+.conversation .item-checkbox:checked + .item-icon {
+  background-color: #4285F4;
+  border-color: #4285F4; }
+
+.conversation .item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
+  fill: #4285F4; }
+
+.conversation .item-checkbox:checked + .item-icon:hover .item-icon-fakecheck-icon {
+  fill: #616161; }
+
+.conversation .selectBoxElement-container:hover .item-icon {
+  background-color: transparent;
+  border: 1px solid #2a75f3; }
+  .conversation .selectBoxElement-container:hover .item-icon .item-icon-fakecheck-icon {
+    fill: #2a75f3; }
+
+.conversation .selectBoxElement-container:hover .item-checkbox:checked + .item-icon {
+  background-color: #2a75f3;
+  border-color: #2a75f3; }
+
+.starbutton {
+  fill: #4285F4 !important;
+  opacity: 0.7; }
+
+.starbutton:focus, .starbutton:hover {
+  fill: #4285F4; }
+
+.color-pm-blue {
+  color: #4285F4; }
+
+.pm-radio:checked + .pm-radio-fakeradio::before {
+  background: #4285F4; }
+
+.block-info-standard {
+  border-color: #1b68c6; }
+
+.block-info-standard-warning {
+  border-color: #ffaa00; }
+
+.block-info-standard-error {
+  border-color: #d62646; }
+
+.link, a, .pm-button--link {
+  color: #F2F2F2;
+  transition: color .2s ease-in-out; }
+
+.link:active, .link:focus, .link:hover,
+a:active, a:focus, a:hover,
+.pm-button--link:hover {
+  color: #1266f1; }
+
+.pm-button--primary {
+  background-color: #4285F4;
+  border-color: #4285F4; }
+
+.pm-button--link, .pm-button.pm-button--link {
+  color: #4285F4; }
+
+.pm-button--error, .pm-button--error.pm-button--info, .pm-button--error.pm-button--redborder, .pm-button--primary, .pm-button--primary.pm-button--info, .pm-button--primary.pm-button--redborder, .pm-button--warning, .pm-button--warning.pm-button--info, .pm-button--warning.pm-button--redborder, .pm-button-blue, .pm-button-blue.pm-button--info, .pm-button-blue.pm-button--redborder, .pm-button.pm-button--error, .pm-button.pm-button--primary, .pm-button.pm-button--warning, .pm-button.pm-button-blue {
+  background-color: #4285F4;
+  border-color: #4285F4; }
+
+.is-hover.pm-button--error, .is-hover.pm-button--error.pm-button--info, .is-hover.pm-button--error.pm-button--redborder, .is-hover.pm-button--primary, .is-hover.pm-button--primary.pm-button--info, .is-hover.pm-button--primary.pm-button--redborder, .is-hover.pm-button--warning, .is-hover.pm-button--warning.pm-button--info, .is-hover.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info:focus, .pm-button--error.pm-button--info:focus-within, .pm-button--error.pm-button--info:hover, .pm-button--error.pm-button--redborder:focus, .pm-button--error.pm-button--redborder:focus-within, .pm-button--error.pm-button--redborder:hover, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary.pm-button--info:focus, .pm-button--primary.pm-button--info:focus-within, .pm-button--primary.pm-button--info:hover, .pm-button--primary.pm-button--redborder:focus, .pm-button--primary.pm-button--redborder:focus-within, .pm-button--primary.pm-button--redborder:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning.pm-button--info:focus, .pm-button--warning.pm-button--info:focus-within, .pm-button--warning.pm-button--info:hover, .pm-button--warning.pm-button--redborder:focus, .pm-button--warning.pm-button--redborder:focus-within, .pm-button--warning.pm-button--redborder:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue.is-hover.pm-button--info, .pm-button-blue.is-hover.pm-button--redborder, .pm-button-blue.pm-button--info:focus, .pm-button-blue.pm-button--info:focus-within, .pm-button-blue.pm-button--info:hover, .pm-button-blue.pm-button--redborder:focus, .pm-button-blue.pm-button--redborder:focus-within, .pm-button-blue.pm-button--redborder:hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover, .pm-button.is-hover.pm-button--error, .pm-button.is-hover.pm-button--primary, .pm-button.is-hover.pm-button--warning, .pm-button.pm-button--error:focus, .pm-button.pm-button--error:focus-within, .pm-button.pm-button--error:hover, .pm-button.pm-button--primary:focus, .pm-button.pm-button--primary:focus-within, .pm-button.pm-button--primary:hover, .pm-button.pm-button--warning:focus, .pm-button.pm-button--warning:focus-within, .pm-button.pm-button--warning:hover, .pm-button.pm-button-blue.is-hover, .pm-button.pm-button-blue:focus, .pm-button.pm-button-blue:focus-within, .pm-button.pm-button-blue:hover {
+  background: #2a75f3;
+  border: 1px solid #2a75f3; }
+
+.pm-toggle-checkbox:checked + .pm-toggle-label:before {
+  background: #4285F4;
+  border-color: #4285F4; }
+
+.fill-pm-blue,
+.message-attachmentIcon .file-outer-icon.is-embedded {
+  fill: #4285F4; }
+
+.pm-table--highlight[data-plan-number="1"] tr th:nth-child(2) {
+  border-color: #4285F4;
+  color: #4285F4; }
+  .pm-table--highlight[data-plan-number="1"] tr th:nth-child(2)::before {
+    background-color: #4285F4; }
+
+.pm-table--highlight[data-plan-number="1"] tr td:nth-child(2),
+.pm-table--highlight[data-plan-number="1"] tr th:nth-child(2),
+.pm-table--highlight[data-plan-number="1"] tr:last-child td:nth-child(2) {
+  border-color: #4285F4; }
+
+.pm-simple-table-row-th .fill-primary {
+  fill: #4285F4; }
+
+.progress-contact {
+  color: #4285F4; }
+  .progress-contact::-moz-progress-bar {
+    background: #4285F4; }
+
+.calendar-grid-heading[aria-pressed="true"]
+.calendar-grid-heading-number,
+.minicalendar-day[aria-pressed="true"],
+.minicalendar-day[aria-current="date"]::before,
+.calendar-monthgrid-day[aria-pressed="true"] .calendar-monthgrid-day-number {
+  background: #0a47ac; }
+
+.pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
+  color: #FFF;
+  background-color: #D23F31;
+  border: 1px solid #D23F31; }
+
+.is-hover.pm-button--error, .is-hover.pm-button--primary, .is-hover.pm-button--warning, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover {
+  color: #FFF;
+  box-shadow: 0 0 0.35714em 0 rgba(0, 0, 0, 0.2);
+  background: #ab3125;
+  border: 1px solid #ab3125; }
+
+.header, .logo-container {
+  background-color: #4285F4; }
+
+.aside, .toolbar {
+  background-color: #1266f1; }
+
+.aside-link, .aside-link:active, .aside-link:focus, .aside-link[aria-current="true"] {
+  background: #0a47ac; }
+
+.aside-link:hover {
+  background: #D23F31; }
+
+.content-wrapper {
+  height: calc(100vh - 9.5rem);
+  max-height: calc(100vh - 9.5rem);
+  margin-top: 1.5rem; }
+
+.navigation__icon,
+.navigation__link:focus .navigation__icon, .navigation__link:hover .navigation__icon,
+.fill-global-light {
+  fill: #4285F4; }
+
+.navigationUser-button,
+.topnav-list,
+.topnav-link,
+.topnav-link:active, .topnav-link:focus,
+.topnav-link:hover,
+.topnav-link[aria-current="true"] {
+  color: #fff; }
+
+.topnav-link:active > .topnav-icon, .topnav-link:focus > .topnav-icon, .topnav-link:hover > .topnav-icon, .topnav-link[aria-current="true"] > .topnav-icon {
+  fill: #fff; }
+
+.dropDown-logout-button {
+  color: white; }
+
+.dropDown-logout-initials {
+  border-color: #1266f1; }
+
+.conversation.marked::before {
+  background: #D23F31; }
+
+.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
+  background: #F2F2F2;
+  border-left: 1px solid #616161; }
+
+.item-container, .item-container-row {
+  background: #fff; }
+
+.link, a, .pm-button--link {
+  color: #4285F4; }
+
+.link:active, .link:focus, .link:hover, a:active, a:focus, a:hover, .pm-button--link:hover {
+  color: #D23F31; }
