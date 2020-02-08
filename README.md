@@ -81,6 +81,9 @@ Check out some of the available themes you can choose from.
 ![Screenshot of Gruvbox theme.](screenshots/gruvbox.png)
 
 ![Screenshot of Gruvbox theme.](screenshots/gruvbox_full.png)
+
+#### [Inbox](themes/inbox)
+![Screenshot of Inbox theme.](screenshots/inbox.png)
 </details>
 
 ### Do these themes compromise security?

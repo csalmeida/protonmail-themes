@@ -1,0 +1,24 @@
+/*! =========================================== *
+ * INBOX
+ * Version: 4.0.0
+ * Author: Cristiano Almeida
+ * Website: https://www.csalmeida.com
+ * Twitter: @_csalmeida
+ * =========================================== */
+
+ $base: #F2F2F2;
+ $search: #7297C4;
+ $highlight: #4285F4;
+ $navigation: #616161;
+ $compose: #D23F31;
+ $compose_text: #FFF;
+ 
+ $text_color: #fff;
+ $extra_color: #0d0d0d;
+ $danger_color: #d62646;
+ $warning_color: #ffaa00;
+ $info_color: #1b68c6;
+ 
+ @import "../@theme-base/styles";
+ @import 'override';
+ 
