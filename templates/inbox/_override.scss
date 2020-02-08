@@ -16,8 +16,17 @@
   background-color: $highlight;
 }
 
-.aside, .toolbar {
+.toolbar {
   background-color: darken($highlight, 10%);
+}
+
+.aside {
+  background-color: darken($text_color, 5%);
+  box-shadow: 1px 0px 3px rgba(0,0,0,.3);
+
+  .navigation__icon, .navigation__link:focus .navigation__icon, .navigation__link:hover .navigation__icon, .fill-global-light {
+    fill: $text_color;
+  }
 }
 
 .aside-link, .aside-link:active, .aside-link:focus, .aside-link[aria-current="true"] {
@@ -26,6 +35,13 @@
 
 .aside-link:hover {
   background: $compose;
+}
+
+
+.sidebarApp-item {
+  [aria-current="page"].navigation__link {
+    background: lighten($navigation, 60%);
+  }
 }
 
 .content-wrapper {
@@ -54,7 +70,7 @@
 }
 
 .dropDown-logout-button {
-  color: white; 
+  color: $text_color; 
 }
 
 .dropDown-logout-initials {
@@ -80,4 +96,19 @@
 
 .link:active, .link:focus, .link:hover, a:active, a:focus, a:hover, .pm-button--link:hover {
   color: $compose;
+}
+
+#pm_composer .composer .composerHeader-container {
+  background-color: $highlight;
+}
+
+.storageProgress-dropdown {
+  .circle-chart__info .circle-chart__percent {
+    fill: $highlight;
+  }
+
+  span {
+    color: $highlight;
+    opacity: 1;
+  }
 }
