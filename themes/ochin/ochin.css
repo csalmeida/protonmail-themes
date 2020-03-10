@@ -60,10 +60,10 @@
 .conversation.marked::before {
   background: #A8E576; }
 
-.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
+.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active), .conversation.item-container-row:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
   background: #fff; }
 
-.conversation.item-container.active, .conversation.item-is-selected {
+.conversation.item-container.selected, .conversation.item-container-row.selected {
   background: rgba(168, 229, 118, 0.1); }
 
 .conversation .item-checkbox:checked + .item-icon {
