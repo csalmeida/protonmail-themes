@@ -77,13 +77,13 @@ $boxshadow-main: none;
     background: $highlight;
   }
 
-  &.item-container {
+  &.item-container, &.item-container-row  {
     &:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
       background: $color-standard-text;
     }
   }
 
-  &.item-container.active, &.item-is-selected {
+  &.item-container.selected, &.item-container-row.selected {
     background: rgba($highlight, 0.1);
   }
 
