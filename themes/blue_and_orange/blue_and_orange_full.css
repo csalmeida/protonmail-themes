@@ -60,10 +60,10 @@
 .conversation.marked::before {
   background: #ED7D3A; }
 
-.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
+.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active), .conversation.item-container-row:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
   background: #fff; }
 
-.conversation.item-container.active, .conversation.item-is-selected {
+.conversation.item-container.selected, .conversation.item-container-row.selected {
   background: rgba(237, 125, 58, 0.1); }
 
 .conversation .item-checkbox:checked + .item-icon {
@@ -221,7 +221,7 @@ body {
   background: #0F4C5C; }
 
 .conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active),
-.conversation.item-container-row:not(.item-contact):not(.read):not(.active), .squireToolbar-container {
+.conversation.item-container-row:not(.item-is-selected):not(.item-contact):not(.read):not(.active), .squireToolbar-container {
   background: #135e72; }
 
 .item-container.active, .item-is-selected {
