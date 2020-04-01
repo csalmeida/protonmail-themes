@@ -1,6 +1,6 @@
 {
   "name": "protonmail-themes",
-  "version": "3.16.0",
+  "version": "4.0.0-beta12",
   "description": "Customise ProtonMail with themes and enhance your encrypted email experience.",
   "main": "index.js",
   "scripts": {
