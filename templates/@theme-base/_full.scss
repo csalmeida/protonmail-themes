@@ -17,10 +17,27 @@ body {
   }
 }
 
+.bordered,
+.bordered-container:not([class*="composerInputMeta-"]),
+.breadcrumb-container {
+  border-color: lighten($base, 10%);
+}
+
 // Compose window
 #pm_composer .composer,
 .composerInputMeta-overlay {
   background: $base;
+}
+
+// Email tags present in new message window
+.autocompleteEmails-item {
+  background-color: darken($base, 2%);
+  border-color: darken($base, 2%);
+}
+
+.autocompleteEmails-label {
+  border-left: 1px solid lighten($base, 10%);
+  border-right: 1px solid lighten($base, 10%);
 }
 
 [class*="squireToolbar-row"] .squireToolbar-action-mode:active, [class*="squireToolbar-row"] .squireToolbar-action-mode:hover, [class*="squireToolbar-row"] [class*="squireToolbar-action-"]:active, [class*="squireToolbar-row"] [class*="squireToolbar-action-"]:hover {
@@ -144,12 +161,6 @@ details:first-child {
 // Mailing list block
 .message-infobox {
   background-color: $base;
-}
-
-.bordered,
-.bordered-container:not([class*="composerInputMeta-"]),
-.breadcrumb-container {
-  border-color: lighten($base, 10%);
 }
 
 // Email body background, text and links
