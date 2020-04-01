@@ -71,6 +71,14 @@ $boxshadow-main: none;
   color: $highlight;
 }
 
+// Compose window
+#pm_composer .composer,
+.composerInputMeta-overlay {
+  .composerHeader-container {
+    background: lighten($base, 5%);
+  }
+}
+
 // Conversation items
 .conversation {
   &.marked::before {
