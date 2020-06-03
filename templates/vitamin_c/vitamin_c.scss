@@ -1,6 +1,8 @@
+@import "../@theme-base/version";
+
 /*! =========================================== *
  * VITAMIN C THEME
- * Version: 4.0.0-beta12
+ * Version: #{$version}
  * Author: Cristiano Almeida
  * Website: www.csalmeida.com
  * Twitter: @_csalmeida
@@ -19,4 +21,4 @@ $info_color: #1b68c6;
 
 @import "../@theme-base/styles";
 // @import "../@theme-base/full";
-// Please do not remove the import above, add overrides and other partials below this line.
+// Please do not remove the import above. Add overrides and other partials below this line.
