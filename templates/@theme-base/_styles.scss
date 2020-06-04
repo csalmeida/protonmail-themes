@@ -56,6 +56,12 @@ $boxshadow-main: none;
   color: $text_color;
 }
 
+.searchbox-advanced-search-button:active,
+.searchbox-advanced-search-button:focus,
+.searchbox-advanced-search-button:hover {
+  background-color: $base;
+}
+
 .topnav-link, .topnav-link > .topnav-icon {
   color: $navigation;
   transition: color .2s ease-in-out;
@@ -69,6 +75,14 @@ $boxshadow-main: none;
 .topnav-link:active > .topnav-icon, .topnav-link:focus > .topnav-icon, 
 .topnav-link:hover > .topnav-icon, .topnav-link[aria-current=true] > .topnav-icon {
   color: $highlight;
+}
+
+.protonmail .text-purple {
+  color: $base !important;
+}
+
+.protonmail .text-purple:hover {
+  color: darken($highlight, 10%) !important;
 }
 
 // Compose window
@@ -192,6 +206,11 @@ a:active, a:focus, a:hover,
   border: 1px solid darken($highlight, 5%);
 }
 
+.is-active.pm-button--error, .is-active.pm-button--error.pm-button--info, .is-active.pm-button--error.pm-button--redborder, .is-active.pm-button--primary, .is-active.pm-button--primary.pm-button--info, .is-active.pm-button--primary.pm-button--redborder, .is-active.pm-button--warning, .is-active.pm-button--warning.pm-button--info, .is-active.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info:not(div):active, .pm-button--error.pm-button--redborder:not(div):active, .pm-button--error:not(div):active, .pm-button--primary.pm-button--info:not(div):active, .pm-button--primary.pm-button--redborder:not(div):active, .pm-button--primary:not(div):active, .pm-button--warning.pm-button--info:not(div):active, .pm-button--warning.pm-button--redborder:not(div):active, .pm-button--warning:not(div):active, .pm-button-blue.is-active, .pm-button-blue.is-active.pm-button--info, .pm-button-blue.is-active.pm-button--redborder, .pm-button-blue.pm-button--info:not(div):active, .pm-button-blue.pm-button--redborder:not(div):active, .pm-button-blue:not(div):active, .pm-button.is-active.pm-button--error, .pm-button.is-active.pm-button--primary, .pm-button.is-active.pm-button--warning, .pm-button.pm-button--error:not(div):active, .pm-button.pm-button--primary:not(div):active, .pm-button.pm-button--warning:not(div):active, .pm-button.pm-button-blue.is-active, .pm-button.pm-button-blue:not(div):active {
+  background: darken($highlight, 10%);
+  border-color: darken($highlight, 10%);
+}
+
 .pm-button-blueborder {
   box-shadow: none;
   border-color: $base;
@@ -203,6 +222,15 @@ a:active, a:focus, a:hover,
   box-shadow: none;
   border-color: darken($highlight, 10%);
   color: darken($highlight, 10%);
+}
+
+.is-active.pm-button--primaryborder,
+.pm-button--primaryborder:not(div):active,
+.pm-button-blueborder.is-active,
+.pm-button-blueborder:not(div):active {
+  border-color: darken($highlight, 10%);
+  color: darken($highlight, 10%);
+  background: transparent;
 }
 
 // Settings toggle button
@@ -239,6 +267,36 @@ a:active, a:focus, a:hover,
   .fill-primary {
     fill: $highlight;
   }
+}
+
+// Forms
+.pm-checkbox-fakecheck, .pm-radio-fakeradio {
+  border-color: $base;
+
+  [class*="icon-"] {
+    fill: $base;
+  }
+}
+
+[class*="icon-"].color-primary {
+  color: $base;
+
+  &:hover {
+    color: darken($highlight, 10%);
+  }
+}
+
+// Badges
+
+.badgeLabel, .badgeLabel-primary {
+  border-color: darken($highlight, 10%);
+}
+
+.badgeLabel,
+.badgeLabel-blue,
+.badgeLabel-primary,
+.bg-pm-blue {
+  background-color: darken($highlight, 10%);
 }
 
 // Contacts
