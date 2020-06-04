@@ -319,5 +319,9 @@ a:active, a:focus, a:hover,
 .minicalendar-day[aria-pressed="true"],
 .minicalendar-day[aria-current="date"]::before,
 .calendar-monthgrid-day[aria-pressed="true"] .calendar-monthgrid-day-number {
-  background: darken($highlight, 25%);
+  background: darken($highlight, 15%);
+}
+
+.minicalendar-day[aria-current="date"][aria-pressed="true"]::before {
+  background: $highlight;
 }
