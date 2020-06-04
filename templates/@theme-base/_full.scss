@@ -68,6 +68,16 @@ body {
   color: darken($base, 10%);
 }
 
+.pm-button-blueborder {
+  border-color: $highlight;
+  color: $highlight;
+}
+
+.pm-button-blueborder:hover {
+  border-color: lighten($highlight, 5%);
+  color: lighten($highlight, 5%);
+}
+
 [class*="squireToolbar-row"] .squireToolbar-action-mode:active, [class*="squireToolbar-row"] .squireToolbar-action-mode:hover, [class*="squireToolbar-row"] [class*="squireToolbar-action-"]:active, [class*="squireToolbar-row"] [class*="squireToolbar-action-"]:hover {
   background: lighten($base, 2%) !important;
 }

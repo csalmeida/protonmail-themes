@@ -192,6 +192,19 @@ a:active, a:focus, a:hover,
   border: 1px solid darken($highlight, 5%);
 }
 
+.pm-button-blueborder {
+  box-shadow: none;
+  border-color: $base;
+  color: $base;
+  transition: color .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+.pm-button-blueborder:hover {
+  box-shadow: none;
+  border-color: darken($highlight, 10%);
+  color: darken($highlight, 10%);
+}
+
 // Settings toggle button
 .pm-toggle-checkbox:checked+.pm-toggle-label:before {
   background: $highlight;
