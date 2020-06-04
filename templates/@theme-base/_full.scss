@@ -221,6 +221,10 @@ details:first-child {
   color: black;
 }
 
+.block-info-standard, .bodyDecrypted blockquote {
+  border-color: $highlight;
+}
+
 .squireDropdown-item-label {
   color: $text_color;
 }
