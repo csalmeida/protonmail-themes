@@ -126,9 +126,18 @@ body {
   background: $base;
 }
 
+.items-column-list-inner, .ReactVirtualized__Grid__innerScrollContainer {
+  border-color: lighten($base, 10%);
+
+  .item-container, .item-container-row {
+    border-color: lighten($base, 10%);
+  }
+}
+
 // Unread, not active
-.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active),
-.conversation.item-container-row:not(.item-is-selected):not(.item-contact):not(.read):not(.active), .squireToolbar-container {
+.item-container:not(.item-is-selected):not(.read):not(.active),
+.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active),
+.item-container-row:not(.item-is-selected):not(.item-contact):not(.read):not(.active), .squireToolbar-container {
   background: lighten($base, 5%);
 }
 

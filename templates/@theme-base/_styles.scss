@@ -98,32 +98,32 @@ $boxshadow-main: none;
   &.marked::before {
     background: $highlight;
   }
+}
 
-  &.item-container, &.item-container-row  {
-    &:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
-      background: $color-standard-text;
+.item-container, .item-container-row  {
+  &:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
+    background: $color-standard-text;
+  }
+}
+
+.item-container.selected, .item-container-row.selected,
+.item-container.active, .item-is-selected {
+  background: rgba($highlight, 0.1);
+}
+
+.selectBoxElement-container:hover {
+  .item-icon {
+    background-color: transparent;
+    border: 1px solid darken($highlight, 5%);
+
+    .item-icon-fakecheck-icon {
+      fill: darken($highlight, 5%);
     }
   }
 
-  &.item-container.selected, &.item-container-row.selected,
-  &.item-container.active, &.item-is-selected {
-    background: rgba($highlight, 0.1);
-  }
-
-  .selectBoxElement-container:hover {
-    .item-icon {
-      background-color: transparent;
-      border: 1px solid darken($highlight, 5%);
-
-      .item-icon-fakecheck-icon {
-        fill: darken($highlight, 5%);
-      }
-    }
-
-   .item-checkbox:checked + .item-icon {
-      background-color: darken($highlight, 5%);
-      border-color: darken($highlight, 5%);
-    }
+ .item-checkbox:checked + .item-icon {
+    background-color: darken($highlight, 5%);
+    border-color: darken($highlight, 5%);
   }
 }
 
@@ -132,8 +132,13 @@ $boxshadow-main: none;
   border-color: $highlight;
 }
 
+.item-checkbox + .item-icon:hover {
+  background-color: darken($highlight, 5%);
+  border-color: darken($highlight, 5%);
+}
+
 .item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
-  fill: $highlight;
+  fill: $navigation;
 }
 
 .item-checkbox:checked + .item-icon:hover .item-icon-fakecheck-icon {
