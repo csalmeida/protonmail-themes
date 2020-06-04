@@ -247,6 +247,12 @@ a:active, a:focus, a:hover,
 
 // Message panel
 
+.angular-squire-iframe body {
+  a {
+    color: $highlight;
+  }
+} 
+
 // Attachment icon
 .fill-pm-blue,
 .message-attachmentIcon .file-outer-icon.is-embedded {

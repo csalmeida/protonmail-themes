@@ -318,7 +318,8 @@ body {
   color: #fbf1c7; }
 
 [class*="block-info"] {
-  background-color: #424242; }
+  background-color: #424242;
+  color: #fbf1c7; }
 
 .fill-global-grey {
   fill: #689d6a; }
@@ -395,11 +396,23 @@ details:first-child {
   background: white;
   color: black; }
 
+.block-info-standard, .bodyDecrypted blockquote {
+  border-color: #689d6a; }
+
+.squireDropdown-item-label {
+  color: #fbf1c7; }
+
+.squireToolbar-action-color {
+  background: transparent; }
+
 .angular-squire-iframe body {
   color: #fbf1c7;
   background: #353535; }
   .angular-squire-iframe body a {
     color: #689d6a; }
+
+.plaintext-editor {
+  color: #fbf1c7; }
 
 .pm-button, .pm-button--info, .pm-button--redborder {
   background: #282828;
