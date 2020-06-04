@@ -17,14 +17,28 @@ Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), 
 - [Supporting and maintaining the project](#supporting-and-maintaining-the-project)
 - [Where can I find more themes?](#where-can-i-find-more-themes)
 - [Web References](#web-references)
+
+#### Documentation 📖
+
+- [Documentation](#documentation)
+  - [Quick Setup Guide](#quick-setup-guide)
+  - [Themes](#themes)
+  - [Templates](#templates)
+  - [Theme Compilation](#theme-compilation)
+  - [Contributing](#contributing)
+  - [Is there something missing?](#is-there-something-missing)
+- [Project's README](../README.md)
+- [Theme Template Guide](./theme-template-guide.md)
+- [Theme Versioning](./theme-versioning.md)
 </details>
+
 
 ### How to use a theme
 1. Pick one from the themes folder in the repository.
-2. Select the theme and select the raw view to see all the code.
-3. Select all and copy the code.
-4. At ProtonMail's website head over to **Settings**, click Themes under the **Appearance** section.
-5. Paste the code under the *Custom Theme* section and press save.
+1. Select the theme and select the raw view to see all the code.
+1. Select all and copy the code.
+1. At ProtonMail's website head over to **Settings**, click Themes under the **Appearance** section.
+1. Paste the code under the *Custom Theme* section and press save.
 > *In order to remove a theme, switch to default or remove Custom Theme contents and press save.*
 
 The theme should be applied and you should see the changes immediately.
@@ -32,7 +46,7 @@ The theme should be applied and you should see the changes immediately.
 ### Available themes
 Check out some of the available themes you can choose from.
 
-> There is also a `full` version available, that applies to the messages panel and more elements.
+> There is also a `full` version available, that applies theme colors to the messages panel and more elements.
 
 <details>
 <summary><b>Expand theme list</b> 👩🏻‍🎨</summary>

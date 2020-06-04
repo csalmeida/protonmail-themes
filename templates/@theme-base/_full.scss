@@ -68,6 +68,16 @@ body {
   color: darken($base, 10%);
 }
 
+.pm-button-blueborder {
+  border-color: $highlight;
+  color: $highlight;
+}
+
+.pm-button-blueborder:hover {
+  border-color: lighten($highlight, 5%);
+  color: lighten($highlight, 5%);
+}
+
 [class*="squireToolbar-row"] .squireToolbar-action-mode:active, [class*="squireToolbar-row"] .squireToolbar-action-mode:hover, [class*="squireToolbar-row"] [class*="squireToolbar-action-"]:active, [class*="squireToolbar-row"] [class*="squireToolbar-action-"]:hover {
   background: lighten($base, 2%) !important;
 }
@@ -98,6 +108,10 @@ body {
   color: $text_color;
 }
 
+[class*="block-info"] {
+  background-color: lighten($base, 10%);
+}
+
 .fill-global-grey {
   fill: $highlight;
 }
@@ -116,9 +130,18 @@ body {
   background: $base;
 }
 
+.items-column-list-inner, .ReactVirtualized__Grid__innerScrollContainer {
+  border-color: lighten($base, 10%);
+
+  .item-container, .item-container-row {
+    border-color: lighten($base, 10%);
+  }
+}
+
 // Unread, not active
-.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active),
-.conversation.item-container-row:not(.item-is-selected):not(.item-contact):not(.read):not(.active), .squireToolbar-container {
+.item-container:not(.item-is-selected):not(.read):not(.active),
+.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active),
+.item-container-row:not(.item-is-selected):not(.item-contact):not(.read):not(.active), .squireToolbar-container {
   background: lighten($base, 5%);
 }
 
@@ -441,6 +464,21 @@ select.pm-field, select.pm-field-icon-container {
   background-color: $base;
 }
 
+// Forms
+.pm-checkbox-fakecheck,
+.pm-radio-fakeradio {
+  border-color: $highlight;
+  background: transparent;
+}
+
+[class*="icon-"].color-primary {
+  color: $highlight;
+}
+
+.color-global-grey-dm {
+  color: $highlight;
+}
+
 // Calendar Weekdays
 .calendar-grid-heading, .calendar-monthgrid-day {
   color: $text_color;
@@ -448,12 +486,6 @@ select.pm-field, select.pm-field-icon-container {
 
 .calendar-grid-heading[aria-current="date"] {
   color: white;
-}
-
-// Calendar checkbox
-.pm-checkbox-fakecheck {
-  border-color: $highlight;
-  background: transparent;
 }
 
 // Calendar weekday (monthview)
