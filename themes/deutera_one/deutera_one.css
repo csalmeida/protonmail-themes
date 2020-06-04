@@ -1,6 +1,6 @@
 /*! =========================================== *
  * DEUTERA ONE THEME
- * Version: 4.0.0
+ * Version: v4.0.0-beta15
  * Author: Cristiano Almeida
  * Website: www.csalmeida.com
  * Twitter: @_csalmeida
@@ -45,6 +45,11 @@
   background-color: #08426b;
   color: #e6eaf0; }
 
+.searchbox-advanced-search-button:active,
+.searchbox-advanced-search-button:focus,
+.searchbox-advanced-search-button:hover {
+  background-color: #000076; }
+
 .topnav-link, .topnav-link > .topnav-icon {
   color: #fff;
   transition: color .2s ease-in-out; }
@@ -57,34 +62,49 @@
 .topnav-link:hover > .topnav-icon, .topnav-link[aria-current=true] > .topnav-icon {
   color: #ffed00; }
 
+.protonmail .text-purple {
+  color: #000076 !important; }
+
+.protonmail .text-purple:hover {
+  color: #ccbe00 !important; }
+
+#pm_composer .composer .composerHeader-container,
+.composerInputMeta-overlay .composerHeader-container {
+  background: #000090; }
+
 .conversation.marked::before {
   background: #ffed00; }
 
-.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active), .conversation.item-container-row:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
+.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active), .item-container-row:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
   background: #fff; }
 
-.conversation.item-container.selected, .conversation.item-container-row.selected {
+.item-container.selected, .item-container-row.selected,
+.item-container.active, .item-is-selected {
   background: rgba(255, 237, 0, 0.1); }
 
-.conversation .item-checkbox:checked + .item-icon {
+.selectBoxElement-container:hover .item-icon {
+  background-color: transparent;
+  border: 1px solid #e6d500; }
+  .selectBoxElement-container:hover .item-icon .item-icon-fakecheck-icon {
+    fill: #e6d500; }
+
+.selectBoxElement-container:hover .item-checkbox:checked + .item-icon {
+  background-color: #e6d500;
+  border-color: #e6d500; }
+
+.item-checkbox:checked + .item-icon {
   background-color: #ffed00;
   border-color: #ffed00; }
 
-.conversation .item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
-  fill: #ffed00; }
-
-.conversation .item-checkbox:checked + .item-icon:hover .item-icon-fakecheck-icon {
-  fill: #fff; }
-
-.conversation .selectBoxElement-container:hover .item-icon {
-  background-color: transparent;
-  border: 1px solid #e6d500; }
-  .conversation .selectBoxElement-container:hover .item-icon .item-icon-fakecheck-icon {
-    fill: #e6d500; }
-
-.conversation .selectBoxElement-container:hover .item-checkbox:checked + .item-icon {
+.item-checkbox + .item-icon:hover {
   background-color: #e6d500;
   border-color: #e6d500; }
+
+.item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
+  fill: #fff; }
+
+.item-checkbox:checked + .item-icon:hover .item-icon-fakecheck-icon {
+  fill: #fff; }
 
 .starbutton {
   fill: #ffed00 !important;
@@ -132,9 +152,35 @@ a:active, a:focus, a:hover,
   background: #e6d500;
   border: 1px solid #e6d500; }
 
+.is-active.pm-button--error, .is-active.pm-button--error.pm-button--info, .is-active.pm-button--error.pm-button--redborder, .is-active.pm-button--primary, .is-active.pm-button--primary.pm-button--info, .is-active.pm-button--primary.pm-button--redborder, .is-active.pm-button--warning, .is-active.pm-button--warning.pm-button--info, .is-active.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info:not(div):active, .pm-button--error.pm-button--redborder:not(div):active, .pm-button--error:not(div):active, .pm-button--primary.pm-button--info:not(div):active, .pm-button--primary.pm-button--redborder:not(div):active, .pm-button--primary:not(div):active, .pm-button--warning.pm-button--info:not(div):active, .pm-button--warning.pm-button--redborder:not(div):active, .pm-button--warning:not(div):active, .pm-button-blue.is-active, .pm-button-blue.is-active.pm-button--info, .pm-button-blue.is-active.pm-button--redborder, .pm-button-blue.pm-button--info:not(div):active, .pm-button-blue.pm-button--redborder:not(div):active, .pm-button-blue:not(div):active, .pm-button.is-active.pm-button--error, .pm-button.is-active.pm-button--primary, .pm-button.is-active.pm-button--warning, .pm-button.pm-button--error:not(div):active, .pm-button.pm-button--primary:not(div):active, .pm-button.pm-button--warning:not(div):active, .pm-button.pm-button-blue.is-active, .pm-button.pm-button-blue:not(div):active {
+  background: #ccbe00;
+  border-color: #ccbe00; }
+
+.pm-button-blueborder {
+  box-shadow: none;
+  border-color: #000076;
+  color: #000076;
+  transition: color .2s ease-in-out, border-color .2s ease-in-out; }
+
+.pm-button-blueborder:hover {
+  box-shadow: none;
+  border-color: #ccbe00;
+  color: #ccbe00; }
+
+.is-active.pm-button--primaryborder,
+.pm-button--primaryborder:not(div):active,
+.pm-button-blueborder.is-active,
+.pm-button-blueborder:not(div):active {
+  border-color: #ccbe00;
+  color: #ccbe00;
+  background: transparent; }
+
 .pm-toggle-checkbox:checked + .pm-toggle-label:before {
   background: #ffed00;
   border-color: #ffed00; }
+
+.angular-squire-iframe body a {
+  color: #ffed00; }
 
 .fill-pm-blue,
 .message-attachmentIcon .file-outer-icon.is-embedded {
@@ -154,6 +200,25 @@ a:active, a:focus, a:hover,
 .pm-simple-table-row-th .fill-primary {
   fill: #ffed00; }
 
+.pm-checkbox-fakecheck, .pm-radio-fakeradio {
+  border-color: #000076; }
+  .pm-checkbox-fakecheck [class*="icon-"], .pm-radio-fakeradio [class*="icon-"] {
+    fill: #000076; }
+
+[class*="icon-"].color-primary {
+  color: #000076; }
+  [class*="icon-"].color-primary:hover {
+    color: #ccbe00; }
+
+.badgeLabel, .badgeLabel-primary {
+  border-color: #ccbe00; }
+
+.badgeLabel,
+.badgeLabel-blue,
+.badgeLabel-primary,
+.bg-pm-blue {
+  background-color: #ccbe00; }
+
 .progress-contact {
   color: #ffed00; }
   .progress-contact::-moz-progress-bar {
@@ -164,7 +229,10 @@ a:active, a:focus, a:hover,
 .minicalendar-day[aria-pressed="true"],
 .minicalendar-day[aria-current="date"]::before,
 .calendar-monthgrid-day[aria-pressed="true"] .calendar-monthgrid-day-number {
-  background: #807700; }
+  background: #b3a600; }
+
+.minicalendar-day[aria-current="date"][aria-pressed="true"]::before {
+  background: #ffed00; }
 
 .pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
   color: #fff;

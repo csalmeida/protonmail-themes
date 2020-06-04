@@ -1,6 +1,6 @@
 /*! =========================================== *
  * MONOKAI THEME
- * Version: 4.0.0
+ * Version: v4.0.0-beta15
  * Author: tripscripts
  * Website: N/A
  * Twitter: N/A
@@ -45,6 +45,11 @@
   background-color: #5B26D6;
   color: #e6eaf0; }
 
+.searchbox-advanced-search-button:active,
+.searchbox-advanced-search-button:focus,
+.searchbox-advanced-search-button:hover {
+  background-color: #1D1E1A; }
+
 .topnav-link, .topnav-link > .topnav-icon {
   color: #FFF;
   transition: color .2s ease-in-out; }
@@ -57,34 +62,49 @@
 .topnav-link:hover > .topnav-icon, .topnav-link[aria-current=true] > .topnav-icon {
   color: #89C62A; }
 
+.protonmail .text-purple {
+  color: #1D1E1A !important; }
+
+.protonmail .text-purple:hover {
+  color: #6c9c21 !important; }
+
+#pm_composer .composer .composerHeader-container,
+.composerInputMeta-overlay .composerHeader-container {
+  background: #2a2c26; }
+
 .conversation.marked::before {
   background: #89C62A; }
 
-.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active), .conversation.item-container-row:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
+.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active), .item-container-row:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
   background: #fff; }
 
-.conversation.item-container.selected, .conversation.item-container-row.selected {
+.item-container.selected, .item-container-row.selected,
+.item-container.active, .item-is-selected {
   background: rgba(137, 198, 42, 0.1); }
 
-.conversation .item-checkbox:checked + .item-icon {
+.selectBoxElement-container:hover .item-icon {
+  background-color: transparent;
+  border: 1px solid #7ab126; }
+  .selectBoxElement-container:hover .item-icon .item-icon-fakecheck-icon {
+    fill: #7ab126; }
+
+.selectBoxElement-container:hover .item-checkbox:checked + .item-icon {
+  background-color: #7ab126;
+  border-color: #7ab126; }
+
+.item-checkbox:checked + .item-icon {
   background-color: #89C62A;
   border-color: #89C62A; }
 
-.conversation .item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
-  fill: #89C62A; }
-
-.conversation .item-checkbox:checked + .item-icon:hover .item-icon-fakecheck-icon {
-  fill: #FFF; }
-
-.conversation .selectBoxElement-container:hover .item-icon {
-  background-color: transparent;
-  border: 1px solid #7ab126; }
-  .conversation .selectBoxElement-container:hover .item-icon .item-icon-fakecheck-icon {
-    fill: #7ab126; }
-
-.conversation .selectBoxElement-container:hover .item-checkbox:checked + .item-icon {
+.item-checkbox + .item-icon:hover {
   background-color: #7ab126;
   border-color: #7ab126; }
+
+.item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
+  fill: #FFF; }
+
+.item-checkbox:checked + .item-icon:hover .item-icon-fakecheck-icon {
+  fill: #FFF; }
 
 .starbutton {
   fill: #89C62A !important;
@@ -132,9 +152,35 @@ a:active, a:focus, a:hover,
   background: #7ab126;
   border: 1px solid #7ab126; }
 
+.is-active.pm-button--error, .is-active.pm-button--error.pm-button--info, .is-active.pm-button--error.pm-button--redborder, .is-active.pm-button--primary, .is-active.pm-button--primary.pm-button--info, .is-active.pm-button--primary.pm-button--redborder, .is-active.pm-button--warning, .is-active.pm-button--warning.pm-button--info, .is-active.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info:not(div):active, .pm-button--error.pm-button--redborder:not(div):active, .pm-button--error:not(div):active, .pm-button--primary.pm-button--info:not(div):active, .pm-button--primary.pm-button--redborder:not(div):active, .pm-button--primary:not(div):active, .pm-button--warning.pm-button--info:not(div):active, .pm-button--warning.pm-button--redborder:not(div):active, .pm-button--warning:not(div):active, .pm-button-blue.is-active, .pm-button-blue.is-active.pm-button--info, .pm-button-blue.is-active.pm-button--redborder, .pm-button-blue.pm-button--info:not(div):active, .pm-button-blue.pm-button--redborder:not(div):active, .pm-button-blue:not(div):active, .pm-button.is-active.pm-button--error, .pm-button.is-active.pm-button--primary, .pm-button.is-active.pm-button--warning, .pm-button.pm-button--error:not(div):active, .pm-button.pm-button--primary:not(div):active, .pm-button.pm-button--warning:not(div):active, .pm-button.pm-button-blue.is-active, .pm-button.pm-button-blue:not(div):active {
+  background: #6c9c21;
+  border-color: #6c9c21; }
+
+.pm-button-blueborder {
+  box-shadow: none;
+  border-color: #1D1E1A;
+  color: #1D1E1A;
+  transition: color .2s ease-in-out, border-color .2s ease-in-out; }
+
+.pm-button-blueborder:hover {
+  box-shadow: none;
+  border-color: #6c9c21;
+  color: #6c9c21; }
+
+.is-active.pm-button--primaryborder,
+.pm-button--primaryborder:not(div):active,
+.pm-button-blueborder.is-active,
+.pm-button-blueborder:not(div):active {
+  border-color: #6c9c21;
+  color: #6c9c21;
+  background: transparent; }
+
 .pm-toggle-checkbox:checked + .pm-toggle-label:before {
   background: #89C62A;
   border-color: #89C62A; }
+
+.angular-squire-iframe body a {
+  color: #89C62A; }
 
 .fill-pm-blue,
 .message-attachmentIcon .file-outer-icon.is-embedded {
@@ -154,6 +200,25 @@ a:active, a:focus, a:hover,
 .pm-simple-table-row-th .fill-primary {
   fill: #89C62A; }
 
+.pm-checkbox-fakecheck, .pm-radio-fakeradio {
+  border-color: #1D1E1A; }
+  .pm-checkbox-fakecheck [class*="icon-"], .pm-radio-fakeradio [class*="icon-"] {
+    fill: #1D1E1A; }
+
+[class*="icon-"].color-primary {
+  color: #1D1E1A; }
+  [class*="icon-"].color-primary:hover {
+    color: #6c9c21; }
+
+.badgeLabel, .badgeLabel-primary {
+  border-color: #6c9c21; }
+
+.badgeLabel,
+.badgeLabel-blue,
+.badgeLabel-primary,
+.bg-pm-blue {
+  background-color: #6c9c21; }
+
 .progress-contact {
   color: #89C62A; }
   .progress-contact::-moz-progress-bar {
@@ -164,4 +229,7 @@ a:active, a:focus, a:hover,
 .minicalendar-day[aria-pressed="true"],
 .minicalendar-day[aria-current="date"]::before,
 .calendar-monthgrid-day[aria-pressed="true"] .calendar-monthgrid-day-number {
-  background: #405d14; }
+  background: #5d871d; }
+
+.minicalendar-day[aria-current="date"][aria-pressed="true"]::before {
+  background: #89C62A; }
