@@ -108,6 +108,10 @@ body {
   color: $text_color;
 }
 
+[class*="block-info"] {
+  background-color: lighten($base, 10%);
+}
+
 .fill-global-grey {
   fill: $highlight;
 }
