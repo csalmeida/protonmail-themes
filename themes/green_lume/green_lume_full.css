@@ -409,6 +409,9 @@ details:first-child {
   .angular-squire-iframe body a {
     color: #2FBF71; }
 
+.plaintext-editor {
+  color: #d6d6d6; }
+
 .pm-button, .pm-button--info, .pm-button--redborder {
   background: #1C1C1C;
   border-color: #363636;
