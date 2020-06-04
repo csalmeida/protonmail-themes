@@ -105,21 +105,9 @@ $boxshadow-main: none;
     }
   }
 
-  &.item-container.selected, &.item-container-row.selected {
+  &.item-container.selected, &.item-container-row.selected,
+  &.item-container.active, &.item-is-selected {
     background: rgba($highlight, 0.1);
-  }
-
-  .item-checkbox:checked + .item-icon {
-    background-color: $highlight;
-    border-color: $highlight;
-  }
-
-  .item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
-    fill: $highlight;
-  }
-
-  .item-checkbox:checked + .item-icon:hover .item-icon-fakecheck-icon {
-    fill: $navigation;
   }
 
   .selectBoxElement-container:hover {
@@ -137,6 +125,19 @@ $boxshadow-main: none;
       border-color: darken($highlight, 5%);
     }
   }
+}
+
+.item-checkbox:checked + .item-icon {
+  background-color: $highlight;
+  border-color: $highlight;
+}
+
+.item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
+  fill: $highlight;
+}
+
+.item-checkbox:checked + .item-icon:hover .item-icon-fakecheck-icon {
+  fill: $navigation;
 }
 
 // Star icon
@@ -287,7 +288,6 @@ a:active, a:focus, a:hover,
 }
 
 // Badges
-
 .badgeLabel, .badgeLabel-primary {
   border-color: darken($highlight, 10%);
 }
