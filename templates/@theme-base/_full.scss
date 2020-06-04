@@ -451,6 +451,21 @@ select.pm-field, select.pm-field-icon-container {
   background-color: $base;
 }
 
+// Forms
+.pm-checkbox-fakecheck,
+.pm-radio-fakeradio {
+  border-color: $highlight;
+  background: transparent;
+}
+
+[class*="icon-"].color-primary {
+  color: $highlight;
+}
+
+.color-global-grey-dm {
+  color: $highlight;
+}
+
 // Calendar Weekdays
 .calendar-grid-heading, .calendar-monthgrid-day {
   color: $text_color;
@@ -458,12 +473,6 @@ select.pm-field, select.pm-field-icon-container {
 
 .calendar-grid-heading[aria-current="date"] {
   color: white;
-}
-
-// Calendar checkbox
-.pm-checkbox-fakecheck {
-  border-color: $highlight;
-  background: transparent;
 }
 
 // Calendar weekday (monthview)
