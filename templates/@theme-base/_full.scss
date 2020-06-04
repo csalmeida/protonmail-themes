@@ -110,6 +110,7 @@ body {
 
 [class*="block-info"] {
   background-color: lighten($base, 10%);
+  color: $text_color;
 }
 
 .fill-global-grey {
@@ -219,6 +220,24 @@ details:first-child {
   background: white;
   color: black;
 }
+
+.squireDropdown-item-label {
+  color: $text_color;
+}
+
+.squireToolbar-action-color {
+  background: transparent;
+}
+
+// This forces the background of a new message to used the base color.
+.angular-squire-iframe body {
+  color: $text_color;
+  background: lighten($base, 5%);
+
+  a {
+    color: $highlight;
+  }
+} 
 
 // Attachment button
 .pm-button, .pm-button--info, .pm-button--redborder {
