@@ -241,7 +241,11 @@ details:first-child {
   a {
     color: $highlight;
   }
-} 
+}
+
+.plaintext-editor {
+  color: $text_color;
+}
 
 // Attachment button
 .pm-button, .pm-button--info, .pm-button--redborder {
