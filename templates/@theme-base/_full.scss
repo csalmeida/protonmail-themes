@@ -95,6 +95,11 @@ body {
   border-color: $text_color;
 }
 
+// Encryption icon
+.encryptionStatus .color-global-grey-dm:not(.color-pm-blue) svg {
+  color: white;
+}
+
 // Message items
 .conversation {
   border-color: lighten($base, 10%);

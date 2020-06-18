@@ -155,6 +155,20 @@ $boxshadow-main: none;
   fill: $highlight;
 }
 
+// Encryption icon
+.autocompleteEmailsItem-icon svg.encryptionIcon {
+  fill: darken($highlight, 5%);
+}
+
+.encryptionStatus .color-pm-blue svg {
+  color: darken($highlight, 5%);
+  fill: darken($highlight, 5%);
+}
+
+.encryptionStatus .color-global-grey-dm svg {
+  color: black;
+}
+
 // Highlighted text (seen when multiple messages are selected)
 .color-pm-blue {
   color: $highlight;
