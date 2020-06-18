@@ -113,6 +113,16 @@
 .starbutton:focus, .starbutton:hover {
   fill: #A8E576; }
 
+.autocompleteEmailsItem-icon svg.encryptionIcon {
+  fill: #9ae161; }
+
+.encryptionStatus .color-pm-blue svg {
+  color: #9ae161;
+  fill: #9ae161; }
+
+.encryptionStatus .color-global-grey-dm svg {
+  color: black; }
+
 .color-pm-blue {
   color: #A8E576; }
 
