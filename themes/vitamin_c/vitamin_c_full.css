@@ -113,6 +113,16 @@
 .starbutton:focus, .starbutton:hover {
   fill: #FD7400; }
 
+.autocompleteEmailsItem-icon svg.encryptionIcon {
+  fill: #e46800; }
+
+.encryptionStatus .color-pm-blue svg {
+  color: #e46800;
+  fill: #e46800; }
+
+.encryptionStatus .color-global-grey-dm svg {
+  color: black; }
+
 .color-pm-blue {
   color: #FD7400; }
 
@@ -304,6 +314,9 @@ body {
 
 .composerInputMeta-overlay-fakefield {
   border-color: #e6eaf0; }
+
+.encryptionStatus .color-global-grey-dm:not(.color-pm-blue) svg {
+  color: white; }
 
 .conversation {
   border-color: #006a8b; }
