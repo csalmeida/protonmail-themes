@@ -34,6 +34,19 @@ $boxshadow-main: none;
   border: 1px solid darken($highlight, 5%);
 }
 
+// Button classes
+.pm-button--primaryborder-dark, .pm-button-blueborder-dark {
+  background: $main-bg-color;
+  border-color: $highlight;
+  color: $highlight;
+}
+
+.is-active.pm-button--primaryborder-dark, .is-hover.pm-button--primaryborder-dark, .pm-button--primaryborder-dark:focus, .pm-button--primaryborder-dark:focus-within, .pm-button--primaryborder-dark:hover, .pm-button--primaryborder-dark:not(div):active, .pm-button-blueborder-dark.is-active, .pm-button-blueborder-dark.is-hover, .pm-button-blueborder-dark:focus, .pm-button-blueborder-dark:focus-within, .pm-button-blueborder-dark:hover, .pm-button-blueborder-dark:not(div):active {
+  background: $main-bg-color;
+  border-color: lighten($highlight, 5%);
+  color: lighten($highlight, 5%);
+}
+
 // Aside links (other products)
 .aside-link {
   background: $secondary-bg-color;
