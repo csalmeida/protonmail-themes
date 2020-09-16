@@ -82,8 +82,13 @@ $boxshadow-main: none;
   background: none;
 }
 
-// Storage indicator
+// Message numbers
+.navigation__counterItem {
+  background-color: darken($highlight, 10%);
+  color: lighten($text_color, 35%);
+}
 
+// Storage indicator
 .circle-chart__circle {
   stroke: $highlight;
 }
