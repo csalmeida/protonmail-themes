@@ -98,6 +98,11 @@ $boxshadow-main: none;
   color: darken($highlight, 10%) !important;
 }
 
+// Dropdown
+.dropDown-item-button:focus, .dropDown-item-button:hover, .dropDown-item-link:focus, .dropDown-item-link:hover {
+  color: $highlight;
+}
+
 // Compose window
 #pm_composer .composer,
 .composerInputMeta-overlay {
