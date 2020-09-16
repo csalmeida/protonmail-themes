@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*! =========================================== *
  * GRUVBOX THEME
- * Version: v4.0.0-beta15
+ * Version: v4.0.0-beta.20
  * Author: AntoineÐ 
  * Website: www.antoined.fr
  * Mastodon: @antoined@h.kher.nl
@@ -33,12 +33,45 @@
   background: #5d8f5f;
   border: 1px solid #5d8f5f; }
 
+.pm-button--primaryborder-dark, .pm-button-blueborder-dark {
+  background: #282828;
+  border-color: #689d6a;
+  color: #689d6a; }
+
+.is-active.pm-button--primaryborder-dark, .is-hover.pm-button--primaryborder-dark, .pm-button--primaryborder-dark:focus, .pm-button--primaryborder-dark:focus-within, .pm-button--primaryborder-dark:hover, .pm-button--primaryborder-dark:not(div):active, .pm-button-blueborder-dark.is-active, .pm-button-blueborder-dark.is-hover, .pm-button-blueborder-dark:focus, .pm-button-blueborder-dark:focus-within, .pm-button-blueborder-dark:hover, .pm-button-blueborder-dark:not(div):active {
+  background: #282828;
+  border-color: #77a779;
+  color: #77a779; }
+
+.pm-button--primaryborder, .pm-button-blueborder {
+  border-color: #5d8f5f;
+  color: #5d8f5f; }
+
+.is-hover.pm-button--primaryborder, .pm-button--primaryborder:focus, .pm-button--primaryborder:focus-within, .pm-button--primaryborder:hover, .pm-button-blueborder.is-hover, .pm-button-blueborder:focus, .pm-button-blueborder:focus-within, .pm-button-blueborder:hover {
+  border-color: #5d8f5f;
+  color: #5d8f5f; }
+
+.is-disabled.pm-button--error, .is-disabled.pm-button--error.pm-button--info, .is-disabled.pm-button--error.pm-button--redborder, .is-disabled.pm-button--primary, .is-disabled.pm-button--primary.pm-button--info, .is-disabled.pm-button--primary.pm-button--redborder, .is-disabled.pm-button--warning, .is-disabled.pm-button--warning.pm-button--info, .is-disabled.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info[disabled], .pm-button--error.pm-button--redborder[disabled], .pm-button--error[disabled], .pm-button--primary.pm-button--info[disabled], .pm-button--primary.pm-button--redborder[disabled], .pm-button--primary[disabled], .pm-button--warning.pm-button--info[disabled], .pm-button--warning.pm-button--redborder[disabled], .pm-button--warning[disabled], .pm-button-blue.is-disabled, .pm-button-blue.is-disabled.pm-button--info, .pm-button-blue.is-disabled.pm-button--redborder, .pm-button-blue.pm-button--info[disabled], .pm-button-blue.pm-button--redborder[disabled], .pm-button-blue[disabled], .pm-button.is-disabled.pm-button--error, .pm-button.is-disabled.pm-button--primary, .pm-button.is-disabled.pm-button--warning, .pm-button.pm-button--error[disabled], .pm-button.pm-button--primary[disabled], .pm-button.pm-button--warning[disabled], .pm-button.pm-button-blue.is-disabled, .pm-button.pm-button-blue[disabled] {
+  background-color: #e4ede4;
+  border-color: #77a779;
+  color: #537f54; }
+
+.bg-primary {
+  background-color: #353535; }
+
+.color-primary {
+  color: #689d6a; }
+
 .aside-link {
   background: #1b1b1b; }
 
 .aside-link:active .aside-linkIcon, .aside-link:focus .aside-linkIcon, .aside-link:hover .aside-linkIcon, .aside-link[aria-current="true"] .aside-linkIcon {
   fill: #1b1b1b;
   background: none; }
+
+.navigation__counterItem {
+  background-color: #537f54;
+  color: white; }
 
 .circle-chart__circle {
   stroke: #689d6a; }
@@ -70,9 +103,15 @@
 .protonmail .text-purple:hover {
   color: #537f54 !important; }
 
+.dropDown-item-button:focus, .dropDown-item-button:hover, .dropDown-item-link:focus, .dropDown-item-link:hover {
+  color: #689d6a; }
+
 #pm_composer .composer .composerHeader-container,
 .composerInputMeta-overlay .composerHeader-container {
   background: #353535; }
+
+#pm_composer .composer .fill {
+  background: #fff; }
 
 .conversation.marked::before {
   background: #689d6a; }
@@ -231,9 +270,9 @@ a:active, a:focus, a:hover,
 .bg-pm-blue {
   background-color: #537f54; }
 
-.progress-contact {
+.progress-contact, .progressbar {
   color: #689d6a; }
-  .progress-contact::-moz-progress-bar {
+  .progress-contact::-moz-progress-bar, .progressbar::-moz-progress-bar {
     background: #689d6a; }
 
 .calendar-grid-heading[aria-pressed="true"]
