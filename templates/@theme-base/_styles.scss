@@ -64,6 +64,10 @@ $boxshadow-main: none;
   color: darken($highlight, 10%);
 }
 
+.bg-primary {
+  background-color: lighten($main-bg-color, 5%);
+}
+
 .color-primary {
   color: $highlight;
 }
