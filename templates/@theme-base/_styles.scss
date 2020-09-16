@@ -325,7 +325,7 @@ a:active, a:focus, a:hover,
 }
 
 // Contacts
-.progress-contact {
+.progress-contact, .progressbar {
   color: $highlight;
 
   &::-moz-progress-bar {
