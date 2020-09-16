@@ -141,6 +141,10 @@ $boxshadow-main: none;
   }
 }
 
+#pm_composer .composer .fill {
+  background: $color-standard-text;
+}
+
 // Conversation items
 .conversation {
   &.marked::before {
