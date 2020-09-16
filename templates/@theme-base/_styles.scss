@@ -34,6 +34,44 @@ $boxshadow-main: none;
   border: 1px solid darken($highlight, 5%);
 }
 
+// Button classes
+.pm-button--primaryborder-dark, .pm-button-blueborder-dark {
+  background: $main-bg-color;
+  border-color: $highlight;
+  color: $highlight;
+}
+
+.is-active.pm-button--primaryborder-dark, .is-hover.pm-button--primaryborder-dark, .pm-button--primaryborder-dark:focus, .pm-button--primaryborder-dark:focus-within, .pm-button--primaryborder-dark:hover, .pm-button--primaryborder-dark:not(div):active, .pm-button-blueborder-dark.is-active, .pm-button-blueborder-dark.is-hover, .pm-button-blueborder-dark:focus, .pm-button-blueborder-dark:focus-within, .pm-button-blueborder-dark:hover, .pm-button-blueborder-dark:not(div):active {
+  background: $main-bg-color;
+  border-color: lighten($highlight, 5%);
+  color: lighten($highlight, 5%);
+}
+
+.pm-button--primaryborder, .pm-button-blueborder {
+  border-color: darken($highlight, 5%);
+  color: darken($highlight, 5%);
+}
+
+.is-hover.pm-button--primaryborder, .pm-button--primaryborder:focus, .pm-button--primaryborder:focus-within, .pm-button--primaryborder:hover, .pm-button-blueborder.is-hover, .pm-button-blueborder:focus, .pm-button-blueborder:focus-within, .pm-button-blueborder:hover {
+  border-color: darken($highlight, 5%);
+  color: darken($highlight, 5%);
+}
+
+// Disabled button
+.is-disabled.pm-button--error, .is-disabled.pm-button--error.pm-button--info, .is-disabled.pm-button--error.pm-button--redborder, .is-disabled.pm-button--primary, .is-disabled.pm-button--primary.pm-button--info, .is-disabled.pm-button--primary.pm-button--redborder, .is-disabled.pm-button--warning, .is-disabled.pm-button--warning.pm-button--info, .is-disabled.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info[disabled], .pm-button--error.pm-button--redborder[disabled], .pm-button--error[disabled], .pm-button--primary.pm-button--info[disabled], .pm-button--primary.pm-button--redborder[disabled], .pm-button--primary[disabled], .pm-button--warning.pm-button--info[disabled], .pm-button--warning.pm-button--redborder[disabled], .pm-button--warning[disabled], .pm-button-blue.is-disabled, .pm-button-blue.is-disabled.pm-button--info, .pm-button-blue.is-disabled.pm-button--redborder, .pm-button-blue.pm-button--info[disabled], .pm-button-blue.pm-button--redborder[disabled], .pm-button-blue[disabled], .pm-button.is-disabled.pm-button--error, .pm-button.is-disabled.pm-button--primary, .pm-button.is-disabled.pm-button--warning, .pm-button.pm-button--error[disabled], .pm-button.pm-button--primary[disabled], .pm-button.pm-button--warning[disabled], .pm-button.pm-button-blue.is-disabled, .pm-button.pm-button-blue[disabled] {
+  background-color: lighten($highlight, 40%);
+  border-color: lighten($highlight, 5%);
+  color: darken($highlight, 10%);
+}
+
+.bg-primary {
+  background-color: lighten($main-bg-color, 5%);
+}
+
+.color-primary {
+  color: $highlight;
+}
+
 // Aside links (other products)
 .aside-link {
   background: $secondary-bg-color;
@@ -44,8 +82,13 @@ $boxshadow-main: none;
   background: none;
 }
 
-// Storage indicator
+// Message numbers
+.navigation__counterItem {
+  background-color: darken($highlight, 10%);
+  color: lighten($text_color, 35%);
+}
 
+// Storage indicator
 .circle-chart__circle {
   stroke: $highlight;
 }
@@ -85,12 +128,21 @@ $boxshadow-main: none;
   color: darken($highlight, 10%) !important;
 }
 
+// Dropdown
+.dropDown-item-button:focus, .dropDown-item-button:hover, .dropDown-item-link:focus, .dropDown-item-link:hover {
+  color: $highlight;
+}
+
 // Compose window
 #pm_composer .composer,
 .composerInputMeta-overlay {
   .composerHeader-container {
     background: lighten($base, 5%);
   }
+}
+
+#pm_composer .composer .fill {
+  background: $color-standard-text;
 }
 
 // Conversation items
@@ -325,7 +377,7 @@ a:active, a:focus, a:hover,
 }
 
 // Contacts
-.progress-contact {
+.progress-contact, .progressbar {
   color: $highlight;
 
   &::-moz-progress-bar {

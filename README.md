@@ -109,8 +109,10 @@ At the time I created these themes I've received a few directions from ProtonMai
 > **Required for theme creation only**
 
 Install [NodeJS](https://nodejs.org/en/), after forking/cloning this repository install dependencies:
-```
+
+```bash
 cd protonmail-themes
+# Requires Node v13.0.1, run `nvm use` to set the correct version. 
 npm install
 ```
 

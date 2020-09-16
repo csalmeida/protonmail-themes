@@ -42,6 +42,10 @@ body {
   background: $base;
 }
 
+#pm_composer .composer .fill {
+  background: $base;
+}
+
 // Email tags present in new message window
 .autocompleteEmails-item {
   background-color: darken($base, 2%);

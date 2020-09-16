@@ -1,6 +1,6 @@
 /*! =========================================== *
  * OCHIN
- * Version: v4.0.0-beta15
+ * Version: v4.0.0-beta.20
  * Author: Cristiano Almeida
  * Website: https://www.csalmeida.com
  * Twitter: @_csalmeida
@@ -31,12 +31,45 @@
   background: #9ae161;
   border: 1px solid #9ae161; }
 
+.pm-button--primaryborder-dark, .pm-button-blueborder-dark {
+  background: #333E4C;
+  border-color: #A8E576;
+  color: #A8E576; }
+
+.is-active.pm-button--primaryborder-dark, .is-hover.pm-button--primaryborder-dark, .pm-button--primaryborder-dark:focus, .pm-button--primaryborder-dark:focus-within, .pm-button--primaryborder-dark:hover, .pm-button--primaryborder-dark:not(div):active, .pm-button-blueborder-dark.is-active, .pm-button-blueborder-dark.is-hover, .pm-button-blueborder-dark:focus, .pm-button-blueborder-dark:focus-within, .pm-button-blueborder-dark:hover, .pm-button-blueborder-dark:not(div):active {
+  background: #333E4C;
+  border-color: #b6e98b;
+  color: #b6e98b; }
+
+.pm-button--primaryborder, .pm-button-blueborder {
+  border-color: #9ae161;
+  color: #9ae161; }
+
+.is-hover.pm-button--primaryborder, .pm-button--primaryborder:focus, .pm-button--primaryborder:focus-within, .pm-button--primaryborder:hover, .pm-button-blueborder.is-hover, .pm-button-blueborder:focus, .pm-button-blueborder:focus-within, .pm-button-blueborder:hover {
+  border-color: #9ae161;
+  color: #9ae161; }
+
+.is-disabled.pm-button--error, .is-disabled.pm-button--error.pm-button--info, .is-disabled.pm-button--error.pm-button--redborder, .is-disabled.pm-button--primary, .is-disabled.pm-button--primary.pm-button--info, .is-disabled.pm-button--primary.pm-button--redborder, .is-disabled.pm-button--warning, .is-disabled.pm-button--warning.pm-button--info, .is-disabled.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info[disabled], .pm-button--error.pm-button--redborder[disabled], .pm-button--error[disabled], .pm-button--primary.pm-button--info[disabled], .pm-button--primary.pm-button--redborder[disabled], .pm-button--primary[disabled], .pm-button--warning.pm-button--info[disabled], .pm-button--warning.pm-button--redborder[disabled], .pm-button--warning[disabled], .pm-button-blue.is-disabled, .pm-button-blue.is-disabled.pm-button--info, .pm-button-blue.is-disabled.pm-button--redborder, .pm-button-blue.pm-button--info[disabled], .pm-button-blue.pm-button--redborder[disabled], .pm-button-blue[disabled], .pm-button.is-disabled.pm-button--error, .pm-button.is-disabled.pm-button--primary, .pm-button.is-disabled.pm-button--warning, .pm-button.pm-button--error[disabled], .pm-button.pm-button--primary[disabled], .pm-button.pm-button--warning[disabled], .pm-button.pm-button-blue.is-disabled, .pm-button.pm-button-blue[disabled] {
+  background-color: white;
+  border-color: #b6e98b;
+  color: #8ddd4b; }
+
+.bg-primary {
+  background-color: #3d4a5b; }
+
+.color-primary {
+  color: #A8E576; }
+
 .aside-link {
   background: #29323d; }
 
 .aside-link:active .aside-linkIcon, .aside-link:focus .aside-linkIcon, .aside-link:hover .aside-linkIcon, .aside-link[aria-current="true"] .aside-linkIcon {
   fill: #29323d;
   background: none; }
+
+.navigation__counterItem {
+  background-color: #8ddd4b;
+  color: white; }
 
 .circle-chart__circle {
   stroke: #A8E576; }
@@ -68,9 +101,15 @@
 .protonmail .text-purple:hover {
   color: #8ddd4b !important; }
 
+.dropDown-item-button:focus, .dropDown-item-button:hover, .dropDown-item-link:focus, .dropDown-item-link:hover {
+  color: #A8E576; }
+
 #pm_composer .composer .composerHeader-container,
 .composerInputMeta-overlay .composerHeader-container {
   background: #3d4a5b; }
+
+#pm_composer .composer .fill {
+  background: #fff; }
 
 .conversation.marked::before {
   background: #A8E576; }
@@ -229,9 +268,9 @@ a:active, a:focus, a:hover,
 .bg-pm-blue {
   background-color: #8ddd4b; }
 
-.progress-contact {
+.progress-contact, .progressbar {
   color: #A8E576; }
-  .progress-contact::-moz-progress-bar {
+  .progress-contact::-moz-progress-bar, .progressbar::-moz-progress-bar {
     background: #A8E576; }
 
 .calendar-grid-heading[aria-pressed="true"]
