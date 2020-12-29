@@ -24,6 +24,24 @@ body {
     border-color: lighten($base, 10%);
   }
 
+  .dropDown-content::after, .dropDown-content::before,
+  .dropDown:not(.dropDown--noCaret)::before,
+  .dropDown-content {
+    background: $base;
+    border: $base;
+  }
+
+  .dropDown-item-button:focus, .dropDown-item-button:focus-within, 
+  .dropDown-item-button:hover, .dropDown-item-link:focus, 
+  .dropDown-item-link:focus-within, .dropDown-item-link:hover {
+    background-color: darken($base, 5%);
+  }
+  
+  .dropDown-item-button.is-disabled, .dropDown-item-button[disabled],
+  .dropDown-item-link.is-disabled, .dropDown-item-link[disabled] {
+    background-color: darken($base, 2%);
+  }
+
   .squireToolbar-select-list {
     background: $base;
     color: $text_color;
@@ -71,6 +89,12 @@ body {
     background-color: darken($base, 2%);
     border-color: lighten($base, 10%);
     color: darken($base, 10%);
+  }
+
+  .pm-button:not(.pm-button-blue):not(.pv-button-green):not(.pm-button--primary):not(.pm-button--primaryborderEvenInDarkMode):not(.pm-button--link):not(.pm-button--error):not(.pm-button--warning):not(.pm-button--redborder):not(.pm-button--primaryborder), .pm-button--info {
+    color: $text_color;
+    background-color: $base;
+    border-color: lighten($base, 10%);
   }
 
   .pm-button-blueborder {
@@ -186,6 +210,11 @@ body {
   .selectBoxElement-container:hover .item-checkbox:checked + .item-icon {
     background-color: darken($highlight, 5%);
     border-color: darken($highlight, 5%);
+  }
+
+  .item-checkbox + .item-icon:hover,
+  .item-checkbox:hover + .item-icon {
+    background-color: darken($base, 5%);
   }
 
   // Message list background area
@@ -462,12 +491,32 @@ body {
   }
 
   // Settings panel
-  .main-area, .main-area-content {
-    background-color: $base;
+  .sticky-title {
+    background: lighten($base, 2%);
+  }
 
-    .p1 {
-      background-color: lighten($base, 5%);
-    }
+  .bg-global-highlight {
+    background-color: $base;
+  }
+
+  .bg-white-dm {
+    background-color: lighten($base, 5%);
+  }
+
+  .main-area, .main-area--noHeader, 
+  .main-area--withToolbar,
+  .main-area--withToolbar--noHeader, 
+  [class*="block-info-"] {
+    color: $text_color;
+  }
+
+  .main-area, .main-area--noHeader, 
+  .main-area--withToolbar, .main-area--withToolbar--noHeader {
+    background: $base;
+  }
+
+  .context-bar {
+    background: $base;
   }
 
   .subnav {
