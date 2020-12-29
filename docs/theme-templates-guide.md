@@ -58,8 +58,9 @@ Override styles will be scoped to your theme only. The [Ochin theme can be consu
 // Color variables here...
 
 @import "../@theme-base/styles";
-// @import "../@theme-base/full";
-// Please do not remove the import above, add overrides and other partials below this line.
+@import "../@theme-base/dark_mode";
+
+// Please do not remove the imports above, add overrides and other partials below this line.
 @import 'override';
 ```
 
