@@ -19,6 +19,12 @@ $boxshadow-main: none;
 
 // Theme template styles ->
 
+// Loading state
+body {
+  background: $base;
+  color: $text_color;
+}
+
 // Compose button
 .pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
   color: #fff;
@@ -103,6 +109,13 @@ $boxshadow-main: none;
   .dropDown-content {
     background: $base;
   }
+}
+
+.dropDown:not(.dropDown--noCaret)::before,
+.dropDown::after,
+.dropDown-logout-initials,
+.dropDown-item-hr {
+  border-color: lighten($base, 5%) !important; 
 }
 
 #global_search.searchbox-field[type="search"] {
@@ -314,6 +327,13 @@ a:active, a:focus, a:hover,
   border-color: darken($highlight, 10%);
   color: darken($highlight, 10%);
   background: transparent;
+}
+
+.bg-pm-blue-gradient {
+  .pm-button--transparent:hover {
+    color: $text_color;
+    border-color: $text_color;
+  }
 }
 
 // Settings toggle button
