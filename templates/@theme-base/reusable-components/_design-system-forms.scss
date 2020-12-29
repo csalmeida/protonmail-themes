@@ -16,6 +16,7 @@ input[type="submit"][disabled],
 input[type="button"][disabled],
 input[type="reset"][disabled] {
   cursor: default;
+  pointer-events: none;
 }
 
 /* for field texts */
@@ -26,6 +27,7 @@ input[type="reset"][disabled] {
 /* avoid dummy resize */
 textarea {
   resize: vertical;
+  cursor: auto; // fixes an issue on Chrome using CSS custom scroll
 }
 /* remove a Firefox difference on button tag */
 button::-moz-focus-inner { border: 0; padding: 0; }
@@ -34,6 +36,7 @@ label,
 button,
 input,
 select {
+  color: currentColor;
   vertical-align: middle;
 }
 
@@ -58,6 +61,15 @@ input[type="image"] {
   background-color: transparent;
   border: 0;
   width: auto;
+}
+// for components that rely on checkboxes
+input[type="radio"],
+input[type="checkbox"] {
+	opacity: 0;
+	// this is a crazy fix for Firefox - for having ::after stuff working on it for mail conversations
+	// to have increased area around checkbox for clicking
+	/* autoprefixer: ignore next */
+	-moz-appearance: initial;
 }
 
 /* to cancel input sizing or other if needed */

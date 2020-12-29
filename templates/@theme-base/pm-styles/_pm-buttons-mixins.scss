@@ -2,12 +2,29 @@
 @import "../reusable-components/design-system-config";
 
 
-@mixin button-disabled-state-dm {
-  opacity: .6;
-  background-color: $pm-global-grey;
-  color: rgba( $pm-global-muted, .6 );
-  border-color: rgba( $pm-global-muted, .6 );
+@mixin button-disabled-state ($color: null) {
   pointer-events: none;
+
+  @if $color == null {
+    background-color: $pm-global-muted;
+    border-color: $pm-global-border;
+    color: rgba( $pm-global-grey, .3 );
+  }
+  @else {
+    background-color: rgba($color, .2);
+    border-color: rgba($color, .25);
+    color: rgba($color, .5);
+  }
+}
+
+@mixin button-disabled-state-dm() {
+  background-color: $pm-global-grey;
+  color: rgba( $pm-global-muted, .3 );
+  pointer-events: none;
+  border-color: rgba( $pm-global-muted, .3 );
+  & svg {
+    fill: rgba( $pm-global-muted, .3 );
+  }
 }
 
 @mixin pm-button-dark {
@@ -23,7 +40,7 @@
   }
   &:not(div):active, // not(div) prevents active state in case of button groups with dropdowns
   &.is-active {
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   &[disabled],
   &.is-disabled {
@@ -47,13 +64,13 @@
   &.is-hover,
   &:not(div):active, // not(div) prevents active state in case of button groups with dropdowns
   &.is-active {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     border-color: $pm-primary-light;
     color: $pm-primary-dark;
   }
   &:not(div):active, // not(div) prevents active state in case of button groups with dropdowns
   &.is-active {
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   &[disabled],
   &.is-disabled {
@@ -78,7 +95,7 @@
   }
   &:not(div):active, // not(div) prevents active state in case of button groups with dropdowns
   &.is-active {
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   &[disabled],
   &.is-disabled {

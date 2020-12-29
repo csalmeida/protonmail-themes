@@ -35,9 +35,6 @@ $minicalendar-bg-color-range-selection: #51555F !default;
 .minicalendar-day {
     color: var(--color-main-area, $minicalendar-day-color);
 }
-.minicalendar-icon {
-    fill: $minicalendar-day-color;
-}
 .minicalendar-days {
     user-select: none;
 }
@@ -76,6 +73,7 @@ $minicalendar-bg-color-range-selection: #51555F !default;
     min-width: $minicalendar-cell-size;
     min-height: $minicalendar-cell-size;
 }
+
 .minicalendar-day[aria-current="date"]::before {
     content: attr(data-current-day);
     speak: none;
@@ -84,12 +82,20 @@ $minicalendar-bg-color-range-selection: #51555F !default;
     left: 0;
     right: 0;
     bottom: 0;
-    line-height: 2.3;  // check modifier below when no week displayed
-
-    color: $white;
     font-weight: bold;
-    background: $pm-primary-dark;
+    line-height: 2.3;  // check modifier below when no week displayed
+    color: $white;
+    background: $calendar-today-color;
     border-radius: 50%;
+}
+.minicalendar-day[aria-current="date"][aria-pressed=true]::before {
+    background: $calendar-selected-day-color;
+}
+// fix in case of range selection in responsive view
+$mini-calendar-currentDay-size: 2.5em !default;
+.minicalendar-day--range.minicalendar-day[aria-current="date"]::before {
+    left: calc(50% - #{$mini-calendar-currentDay-size/2});
+    max-width: $mini-calendar-currentDay-size;
 }
 
 .minicalendar-grid--displayWeekNumber .minicalendar-day {
@@ -106,15 +112,11 @@ $minicalendar-bg-color-range-selection: #51555F !default;
             background: rgba($minicalendar-bg-color-range-selection, .8);
         }
     }
-    .minicalendar-icon {
-        fill: $minicalendar-day-color-on-dark-background;
-    }
 }
 
 .minicalendar-day[aria-pressed=true] {
      color: $white;
-     font-weight: bold;
-     background: $pm-primary;
+     background: $calendar-selected-day-color;
      border-radius: 50%;
 }
 
@@ -139,6 +141,10 @@ $minicalendar-day-marker-size: 3px !default;
     }
 }
 
+.minicalendar-day--range {
+    width: 100%;
+}
+
 .minicalendar-day--range-bound {
     background: $pm-primary;
 }
@@ -154,7 +160,7 @@ $minicalendar-day-marker-size: 3px !default;
 .minicalendar {
     .minicalendar-day--range-bound-begin,
     .minicalendar-day--range-bound-begin:hover,
-    .minicalendar-day--range-bound-begin:focus  {
+    .minicalendar-day--range-bound-begin:focus {
         border-top-left-radius: 40%;
         border-bottom-left-radius: 40%;
     }

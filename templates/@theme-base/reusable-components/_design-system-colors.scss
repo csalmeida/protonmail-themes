@@ -12,10 +12,13 @@
   background-color: $pm-global-light;
 }
 .bg-global-border {
-  background-color: $pm-global-border;
+  background-color: var(--bordercolor-input, $pm-global-border);
 }
 .bg-global-muted {
   background-color: $pm-global-muted;
+}
+.bg-global-muted-dm {
+  background-color: var(--bgcolor-muted, $pm-global-muted);
 }
 .bg-global-success {
   background-color: $pm-global-success;
@@ -26,6 +29,9 @@
 .bg-global-attention {
   background-color: $pm-global-attention;
 }
+.bg-global-info {
+  background-color: $pm-global-info;
+}
 .bg-pm-blue {
   background-color: $pm-blue;
 }
@@ -35,9 +41,12 @@
 .bg-pm-blue-light {
   background-color: $pm-blue-light;
 }
+.bg-pm-blue-gradient {
+	background-image: $pm-blue-gradient;
+}
 
 .bg-global-highlight {
-  background-color: var(--bgcolor-input, $pm-global-light);
+  background-color: var(--bgcolor-highlight, $pm-global-light);
 }
 
 
@@ -83,6 +92,9 @@
 .bg-inherit {
   background: inherit;
 }
+.bg-currentColor {
+  background: currentColor;
+}
 
 .fill-global-grey {
   fill: $pm-global-grey;
@@ -92,6 +104,9 @@
 }
 .fill-global-light {
   fill: $pm-global-light;
+}
+.fill-global-highlight {
+  fill: var(--bgcolor-highlight, $pm-global-light);
 }
 .fill-global-border {
   fill: $pm-global-border;
@@ -130,6 +145,9 @@
 
 .fill-white {
   fill: $white;
+}
+.fill-white-dm {
+  fill: var(--bgcolor-main-area, $white);
 }
 .fill-black {
   fill: $black;
@@ -241,6 +259,9 @@
 .color-global-grey {
   color: $pm-global-grey;
 }
+.color-global-grey-dm {
+  color: var(--color-main-area, $pm-global-grey);
+}
 .color-global-altgrey {
   color: $pm-global-altgrey;
 }
@@ -262,6 +283,9 @@
 .color-global-attention {
   color: $pm-global-attention;
 }
+.color-global-info {
+  color: $pm-global-info;
+}
 .color-pm-blue {
   color: $pm-blue;
 }
@@ -270,6 +294,9 @@
 }
 .color-pm-blue-light {
   color: $pm-blue-light;
+}
+.color-subheader {
+  color: var(--bgcolor-subheader, $text-sub-header);
 }
 
 .color-pv-green {
