@@ -69,6 +69,22 @@ body {
     background: $base;
   }
 
+  .composer-addresses-item {
+    background: darken($base, 5%);
+  }
+  
+  
+  .composer-addresses-autocomplete {
+    ul {
+      background: darken($base, 5%);
+    }
+    
+    li[aria-selected="true"],
+    li:hover {
+      background: $base;
+    }
+  }
+
   // Email tags present in new message window
   .autocompleteEmails-item {
     background-color: darken($base, 2%);

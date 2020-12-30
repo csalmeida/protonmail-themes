@@ -27,7 +27,7 @@ html:not(.editor-squire-iframe) body {
 
 // Compose button
 .pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
-  color: #fff;
+  color: $text_color;
   background-color: $highlight;
   border: 1px solid $highlight;
   transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
@@ -405,6 +405,14 @@ a:active, a:focus, a:hover,
   &:hover {
     color: darken($highlight, 10%);
   }
+}
+
+.pm-field, .editor,
+.editor-toolbar,
+.border-bottom,
+.border-top,
+.message-container.is-opened > .message-header {
+  border-color: darken($base, 10%);
 }
 
 // Badges
