@@ -84,8 +84,9 @@ $danger_color: #d62646;
 $warning_color: #ffaa00;
 
 @import "../@theme-base/styles";
-// @import "../@theme-base/full";
-// Please do not remove the import above, add overrides and other partials below this line.
+@import "../@theme-base/dark_mode";
+
+// Please do not remove the imports above, add overrides and other partials below this line.
 ```
 
 The snippet will change the colors of the elements across the theme. However, you can extend or override the theme further by adding changes to `_override.scss`. Additionally, [custom partials can be added](https://sass-lang.com/guide). You can refer to [the guide on editing theme templates](./theme-templates-guide.md) for more information on customizing themes.

@@ -9,7 +9,7 @@
  * =========================================== */
 
 $base: #1C1C1C;
-$search: #000;
+$search: #131212;
 $highlight: #EF2D56;
 $navigation: #fff;
 
@@ -20,5 +20,6 @@ $warning_color: #ffaa00;
 $info_color: #1b68c6;
 
 @import "../@theme-base/styles";
-// @import "../@theme-base/full";
-// Please do not remove the import above, add overrides and other partials below this line.
+@import "../@theme-base/dark_mode";
+
+// Please do not remove the imports above, add overrides and other partials below this line.

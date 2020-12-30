@@ -13,20 +13,21 @@ Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), 
   - [Do these themes compromise security?](#do-these-themes-compromise-security)
 - [Quick setup guide](#quick-setup-guide)
 - [Feedback and fixes](#feedback-and-fixes)
-- [Contributors](#contributors)
 - [Supporting and maintaining the project](#supporting-and-maintaining-the-project)
+- [Frequently Asked Questions](#frequently-asked-questions)
 - [Where can I find more themes?](#where-can-i-find-more-themes)
 - [Web References](#web-references)
 
 #### Documentation 📖
 
 - [Documentation](#documentation)
-  - [Quick Setup Guide](#quick-setup-guide)
-  - [Themes](#themes)
-  - [Templates](#templates)
-  - [Theme Compilation](#theme-compilation)
-  - [Contributing](#contributing)
-  - [Is there something missing?](#is-there-something-missing)
+  - [Quick Setup Guide](docs/README.md#quick-setup-guide)
+  - [Creating a theme](docs/README.md#creating-a-theme)
+  - [Themes](docs/README.md#themes)
+  - [Templates](docs/README.md#templates)
+  - [Theme Compilation](docs/README.md#theme-compilation)
+  - [Contributing](docs/README.md#contributing)
+  - [Is there something missing?](docs/README.md#is-there-something-missing)
 - [Project's README](../README.md)
 - [Theme Template Guide](./theme-template-guide.md)
 - [Theme Versioning](./theme-versioning.md)
@@ -37,9 +38,12 @@ Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), 
 1. Pick one from the themes folder in the repository.
 1. Select the theme and select the raw view to see all the code.
 1. Select all and copy the code.
-1. At ProtonMail's website head over to **Settings**, click Themes under the **Appearance** section.
-1. Paste the code under the *Custom Theme* section and press save.
-> *In order to remove a theme, switch to default or remove Custom Theme contents and press save.*
+1. Install the [Stylus](https://github.com/openstyles/stylus#releases) browser if not done already.
+1. Add a new style in *Stylus* and paste the code in the text area.
+1. Below the text area select from the *Applies to* dropdown *"URLs on the domain"* and add `beta.protonmail.com` as a value and press save.
+1. Select the added theme in Stylus' Manage panel to enable it.
+
+> *In order to remove a theme, open Stylus, click Manage, and untick the box of the theme or remove it altogether by pressing `X`.*
 
 The theme should be applied and you should see the changes immediately.
 
@@ -100,10 +104,6 @@ Check out some of the available themes you can choose from.
 ![Screenshot of Inbox theme.](screenshots/inbox.png)
 </details>
 
-### Do these themes compromise security?
-In short, no. All themes listed here will always style existing elements from ProtonMail's UI and not import any third party files from anywhere.
-At the time I created these themes I've received a few directions from ProtonMail's co-founder [Jason Stockman](https://twitter.com/jasonstockman) in order to avoid breaking layout and security issues.
-
 ## Quick setup guide
 
 > **Required for theme creation only**
@@ -130,15 +130,23 @@ npm run build
 ### Feedback and fixes
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
 
-### Contributors
-[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/0)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/0)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/1)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/1)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/2)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/2)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/3)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/3)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/4)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/4)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/5)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/5)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/6)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/6)[![](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/images/7)](https://sourcerer.io/fame/csalmeida/csalmeida/protonmail-themes/links/7)
-
 ### Supporting and maintaining the project
 ProtonMail is a great email service, I enjoy working on the project and provide themes for all. Please consider making a small donation, just the price of a cup of coffee *goes a long way* to help me maintain it and keep adding color to your private email experience! Thank you 🙇🏻
 
 <a href='https://www.paypal.me/csalmeida/5'>
 <img src='https://getflywheel.com/wp-content/uploads/2015/10/paypal-donate-button-large.png' alt='PayPal Me' width='160' />
 </a>
+
+### Frequently Asked Questions
+
+#### Do these themes compromise security?
+In short, no. All themes listed here will always style existing elements from ProtonMail's UI and not import any third party files from anywhere.
+At the time I created these themes I've received a few directions from ProtonMail's co-founder [Jason Stockman](https://twitter.com/jasonstockman) in order to avoid breaking layout and security issues.
+#### Why is Stylus required to use custom themes?
+
+Support for custom themes in ProtonMail's appearance settings [seems to have been temporarily disabled in `~v4.0.0 beta 33`](https://www.reddit.com/r/ProtonMail/comments/j2l1im/protonmail_beta_41_removes_ability_to_use_and/g767k97/?context=3).
+
+To use custom themes an alternative needs to be used to load the stylesheet. [Stylus](https://github.com/openstyles/stylus#releases) has been recommended but any other alternative should work.
 
 #### Where can I find more themes?
 * [ProtonMail's Official Themes](http://protonmail.tumblr.com/)

@@ -1,7 +1,9 @@
 /* input design */
+.placeholder,
 ::placeholder {
   color: var(--color-input, rgba($pm-global-grey, .65));
-  font-style: italic;
+  font-style: normal;
+  opacity: .6;
 }
 
 // fix "autofill state"
@@ -24,6 +26,7 @@ $field-container: 26rem !default;
   width: $field-container;
   @extend .mw100;
   @extend .inbl;
+  @extend .relative;
   &.auto {
     @extend .auto;
   }
@@ -37,11 +40,17 @@ $field-container: 26rem !default;
   border-radius: $global-border-radius;
   color: var(--color-input, $pm-global-grey);
   outline: 0;
+  height: $default-height-fields;
+  &.pm-field--tiny,
+  &.pm-field--small,
+  &.pm-field--large {
+    height: auto;
+  }
   &:focus,
   &.focus,
   &:focus-within {
     background-color: var(--bgcolor-main-area, $white);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0 10px 0 $input-shadow-color;
   }
   &[aria-invalid="true"]:not(:focus),
   &[aria-invalid="true"]:not(.ng-pristine) {
@@ -53,10 +62,12 @@ $field-container: 26rem !default;
   }
   &[disabled] {
     color: rgba( $pm-global-grey, .3 );
-    font-style: italic;
   }
   &.w100 {
     width: 100%;
+  }
+  &.wauto {
+    width: auto;
   }
   &:-moz-ui-invalid { // fixes some Firefox issues with HTML5 validation
     box-shadow: none;
@@ -69,6 +80,10 @@ $field-container: 26rem !default;
     &::-webkit-search-cancel-button {
       display: none;
     }
+  }
+
+  &[type="number"] {
+      padding-right: .25em;
   }
 }
 @if $rtl-option == true {
@@ -85,12 +100,58 @@ select.pm-field {
   background: var(--bgcolor-input, $pm-input-background) url("#{$path-images}sprite-for-css-only.svg#css-caret") calc(100% - 6px) 50% no-repeat;
   background-size: 1.5rem;
   padding-left: 1em;
-  height: 3.5rem;
   padding-right: 20px;
   text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
   &::-ms-expand {
     display: none;
   }
+  > optgroup {
+	background-color: var(--bgcolor-highlight, $pm-global-light);
+  }
+  &.pm-field--linkSelect {
+		border: 1px solid transparent;
+		padding-left: 0;
+		width: auto;
+		color: $pm-primary;
+		padding-right: 2.5rem;
+		@if ($pm-primary == $pm-blue) {
+			background-image: url("#{$path-images}sprite-for-css-only.svg#css-caret-primary-blue");
+		}
+		@else {
+			background-image: url("#{$path-images}sprite-for-css-only.svg#css-caret-primary-green");
+		}
+		&,
+		&:focus,
+		&.focus,
+		&:focus-within,
+		&:hover {
+			background-color: transparent;
+			box-shadow: none;
+		}
+		&:focus,
+		&.focus,
+		&:focus-within,
+		&:hover {
+			background-image: url("#{$path-images}sprite-for-css-only.svg#css-caret");
+			border-color: transparent;
+			text-decoration: underline;
+			color: $color-hover;
+		}
+
+		> * {
+			color: $pm-primary;
+		}
+  }
+}
+
+
+textarea {
+	min-height: $default-height-fields; // Equals pm-field inputs height
+	&.pm-field {
+		height: auto;
+	}
 }
 
 /* firefox bug */
@@ -154,6 +215,10 @@ textarea[required].pm-field.field-pristine:invalid {
   height: 1.6rem;
   margin: auto .5rem auto 0;
 }
+.item-icon-compact .pm-checkbox-fakecheck {
+  margin: auto;
+  background: var(--bgcolor-input, $white);
+}
 .pm-checkbox-fakecheck-img {
   margin: auto;
   width: 1rem;
@@ -168,7 +233,7 @@ textarea[required].pm-field.field-pristine:invalid {
     }
   }
   &:focus + .pm-checkbox-fakecheck {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0 10px 0 $input-shadow-color;
   }
   &[disabled] + .pm-checkbox-fakecheck,
   &:indeterminate + .pm-checkbox-fakecheck {
@@ -200,6 +265,10 @@ textarea[required].pm-field.field-pristine:invalid {
   @extend .pm-checkbox-fakecheck;
   border-radius: 50%;
 }
+.pm-radio--onTop .pm-radio-fakeradio {
+  margin-top: .25em;
+}
+
 .pm-radio-fakeradio::before {
   content: '';
   margin: auto;
@@ -210,6 +279,7 @@ textarea[required].pm-field.field-pristine:invalid {
   transform: scale(0);
   transition: .15s transform linear;
 }
+
 .pm-radio {
   @extend .sr-only;
   &:checked + .pm-radio-fakeradio::before {
@@ -217,7 +287,7 @@ textarea[required].pm-field.field-pristine:invalid {
     transform: scale(1);
   }
   &:focus + .pm-radio-fakeradio {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0 10px 0 $input-shadow-color;
   }
   &[disabled] + .pm-radio-fakeradio {
     background: var(--bgcolor-disabled-checkboxes-radios, $pm-global-muted);
@@ -225,7 +295,7 @@ textarea[required].pm-field.field-pristine:invalid {
 }
 
 
-/* toogle */
+/* toggle */
 $width: 5.5em !default;
 .pm-toggle-label {
   margin-top: .15em;
@@ -233,17 +303,18 @@ $width: 5.5em !default;
   width: $width;
   display: inline-flex;
   border: 1px solid var(--bordercolor-input, $pm-global-border);
-  background: var(--bgcolor-input, #fcfdff);
+  background: var(--bgcolor-view-column-detail, $pm-input-background);
   border-radius: 2rem;
   padding: 2px;
   position: relative;
+  transition: border-color .15s ease-out;
   &::before {
     content: '';
     position: absolute;
     width: calc( #{$width/2} - 2px);
     transition: transform .25s ease, background-color .25s ease, border-color .25s linear;
     border-radius: 2rem;
-    background: var(--bgcolor-input, $pm-global-muted);
+    background: var(--bgcolor-context-bar, $pm-global-muted);
     top: 2px;
     left: 0;
     bottom: 2px;
@@ -259,8 +330,10 @@ $width: 5.5em !default;
     width: #{$width/2};
     position: relative;
     z-index: 2;
-    transition: fill .1s steps(1, end);
     display: inline-flex;
+    & .pm-toggle-label-img {
+      transition: fill .1s steps(1, end);
+    }
   }
 }
 @if $rtl-option == true {
@@ -275,10 +348,24 @@ $width: 5.5em !default;
   }
 }
 
+.pm-toggle-label-img {
+  margin: auto;
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: var(--bordercolor-input, $black);
+  .pm-toggle-label--theme-toggle & {
+    fill: black;
+  }
+}
+
+// checked state
 .pm-toggle-checkbox {
   @extend .invisible;
   &:checked + .pm-toggle-label {
-    & > .pm-toggle-label-text:last-child {
+    & > .pm-toggle-label-text:first-child .pm-toggle-label-img {
+      fill: var(--bordercolor-input, $black);
+    }
+    & > .pm-toggle-label-text:last-child .pm-toggle-label-img {
       fill: $white;
     }
     &::before {
@@ -288,8 +375,17 @@ $width: 5.5em !default;
       border-color: $pm-primary-dark;
     }
   }
+  &:checked + .pm-toggle-label--theme-toggle { // Theme toggle inside user dropdown
+    & > .pm-toggle-label-text:last-child .pm-toggle-label-img {
+      fill: #fce988;
+    }
+    &::before {
+      background: rgba(black, .75);
+      border-color: rgba(white, .25);
+    }
+  }
   &:focus + .pm-toggle-label {
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0 10px 0 $input-shadow-color;
   }
   &[disabled] + .pm-toggle-label  {
     background: rgba($pm-global-muted, .6);
@@ -327,11 +423,7 @@ $width: 5.5em !default;
     }
   }
 }
-.pm-toggle-label-img {
-  margin: auto;
-  width: 1.6rem;
-  height: 1.6rem;
-}
+
 
 .pm-toggle-label--small {
   margin-top: .25em;
@@ -345,21 +437,27 @@ $width: 5.5em !default;
 
 
 /* label */
-$pm-label-width: 18em !default;
+// $pm-label-width defined in global vars
 .pm-label {
   padding-top: .5em;
   width: var(--label-width, $pm-label-width);
   padding-right: .5em;
+  max-width: 100%;
+  flex-shrink: 0;
   &.pt0 {
     padding-top: 0;
   }
   &.auto {
     width: auto;
   }
+  &--small {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
 }
 
 // case for forms labelled only with icons (calendar popover, etc.)
-$pm-label-icon-width: 2em !default;
+$pm-label-icon-width: 2.4em !default;
 .pm-form--iconLabels .pm-label {
   width: $pm-label-icon-width;
 }
@@ -373,6 +471,7 @@ $pm-label-icon-width: 2em !default;
 /* field with icon */
 .pm-field-icon-container {
   @extend .pm-field; // added focus-within inside on pm-field for this fake-field :)
+  min-height: calc(#{$default-height-fields} + 2px);
   padding: 0;
   > .pm-field {
     border: 0;
@@ -393,25 +492,39 @@ $pm-label-icon-width: 2em !default;
   }
 }
 
+/* @protonmail.com field */
+.pm-field--username,
+.signLayout-container .pm-field--username.pm-field--username {
+	padding-right: var(--padding-right-field-above, 9em);
+}
+
 
 /* special case for very large inputs in modals, like rich text editor */
 .pm-modalContainer .pm-field-container--full {
   width: calc(100% - var(--label-width, #{$pm-label-width}));
 }
-@include respond-to(1360) { 
+@include respond-to(1360) {
   .pm-modalContainer .pm-field-container--full {
       width: $field-container;
   }
 }
-@include respond-to(830) { 
+@include respond-to(830) {
   .pm-modalContainer .pm-field-container--full {
       width: calc(100% - var(--label-width, #{$pm-label-width}));
   }
 }
 
-@include respond-to($breakpoint-small) { 
+@include respond-to($breakpoint-small) {
   .pm-modalContainer .pm-field-container--full {
       width: 100%;
   }
 }
 /* end special case */
+
+
+/* special stupid case for signup iframe challenge... not using same styles for the moment */
+.signLayout-container {
+	.pm-field--username {
+        padding: em(10) em(16); // design want 42px height (actually 41 to avoid .5px)
+    }
+}

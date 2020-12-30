@@ -19,9 +19,15 @@ $boxshadow-main: none;
 
 // Theme template styles ->
 
+// Loading state
+html:not(.editor-squire-iframe) body {
+  background: $base;
+  color: $text_color;
+}
+
 // Compose button
 .pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
-  color: #fff;
+  color: $text_color;
   background-color: $highlight;
   border: 1px solid $highlight;
   transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
@@ -72,20 +78,23 @@ $boxshadow-main: none;
   color: $highlight;
 }
 
-// Aside links (other products)
-.aside-link {
-  background: $secondary-bg-color;
-}
-
-.aside-link:active .aside-linkIcon, .aside-link:focus .aside-linkIcon, .aside-link:hover .aside-linkIcon, .aside-link[aria-current="true"] .aside-linkIcon {
-  fill: $secondary-bg-color;
-  background: none;
-}
-
 // Message numbers
 .navigation__counterItem {
-  background-color: darken($highlight, 10%);
+  background: darken($highlight, 10%);
   color: lighten($text_color, 35%);
+}
+
+// Message items
+.item-container-row:hover::before, .item-container:hover::before {
+  border-color: lighten($highlight, 10%);
+}
+
+.item-checkbox + .item-icon:hover, .item-checkbox:hover + .item-icon {
+  border-color: lighten($highlight, 25%);
+}
+
+.item-checkbox:hover:not(:checked) + .item-icon .item-icon-fakecheck-icon {
+  fill: darken($highlight, 10%);
 }
 
 // Storage indicator
@@ -94,6 +103,21 @@ $boxshadow-main: none;
 }
 
 // Top navigation
+#dropdown-0 {
+  .dropDown-content::after, .dropDown-content::before,
+  &.dropDown:not(.dropDown--noCaret)::before,
+  .dropDown-content {
+    background: $base;
+  }
+}
+
+.dropDown:not(.dropDown--noCaret)::before,
+.dropDown::after,
+.dropDown-logout-initials,
+.dropDown-item-hr {
+  border-color: lighten($base, 5%) !important; 
+}
+
 #global_search.searchbox-field[type="search"] {
   background-color: $search;
   color: $text_color;
@@ -246,7 +270,7 @@ $boxshadow-main: none;
 
 // Links across the site:
 .link, a, .pm-button--link {
-  color: $base;
+  color: darken($highlight, 10%);
   transition: color .2s ease-in-out;
 }
 
@@ -305,6 +329,17 @@ a:active, a:focus, a:hover,
   background: transparent;
 }
 
+.pm-group-buttons > .pm-group-button.pm-button--primary {
+  border-color: darken($highlight, 10%);
+}
+
+.bg-pm-blue-gradient {
+  .pm-button--transparent:hover {
+    color: $text_color;
+    border-color: $text_color;
+  }
+}
+
 // Settings toggle button
 .pm-toggle-checkbox:checked+.pm-toggle-label:before {
   background: $highlight;
@@ -312,6 +347,14 @@ a:active, a:focus, a:hover,
 }
 
 // Message panel
+
+.composer-title-bar {
+  background: $base;
+}
+
+.color-global-light {
+  color: $text_color;
+}
 
 .angular-squire-iframe body {
   a {
@@ -352,7 +395,7 @@ a:active, a:focus, a:hover,
   border-color: $base;
 
   [class*="icon-"] {
-    fill: $base;
+    fill: $highlight;
   }
 }
 
@@ -362,6 +405,14 @@ a:active, a:focus, a:hover,
   &:hover {
     color: darken($highlight, 10%);
   }
+}
+
+.pm-field, .editor,
+.editor-toolbar,
+.border-bottom,
+.border-top,
+.message-container.is-opened > .message-header {
+  border-color: darken($base, 10%);
 }
 
 // Badges
@@ -374,26 +425,4 @@ a:active, a:focus, a:hover,
 .badgeLabel-primary,
 .bg-pm-blue {
   background-color: darken($highlight, 10%);
-}
-
-// Contacts
-.progress-contact, .progressbar {
-  color: $highlight;
-
-  &::-moz-progress-bar {
-    background: $highlight;
-  }
-}
-
-// Calendar current day
-.calendar-grid-heading[aria-pressed="true"]
-.calendar-grid-heading-number, 
-.minicalendar-day[aria-pressed="true"],
-.minicalendar-day[aria-current="date"]::before,
-.calendar-monthgrid-day[aria-pressed="true"] .calendar-monthgrid-day-number {
-  background: darken($highlight, 15%);
-}
-
-.minicalendar-day[aria-current="date"][aria-pressed="true"]::before {
-  background: $highlight;
 }

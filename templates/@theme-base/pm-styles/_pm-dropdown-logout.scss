@@ -1,41 +1,56 @@
 .dropDown-logout-button {
-  color: var(--color-nav-link, $white);
-  .expand-caret {
-    display: none;
-  }
-  &:focus,
-  &:hover,
-  &[aria-expanded="true"] {
-    .expand-caret {
-      display: flex;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-    .dropDown-logout-text {
-      opacity: 0;
-    }
-  }
+	border-radius: $global-border-radius;
+	color: var(--color-nav-link, $white);
+
+	&:focus,
+	&:hover,
+	&[aria-expanded="true"] {
+		background-color: $navigation-hover-bg-color;
+
+	}
+
+	&:focus,
+	&:hover {
+		.dropDown-logout-initials {
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	&[aria-expanded="true"] {
+		.dropDown-logout-initials {
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+	}
 }
 
-.dropDown-logout-displayName {
-  max-width: 15em;
+.dropDown-logout-text {
+	margin-top: auto;
+	margin-bottom: auto;
 }
+
+// yes, but only on HUGE screens for looooooooooong accounts
+@include respond-to(1400, 'min') {
+	.dropDown-logout-button {
+		max-width: 18em;
+	}
+}
+
 .dropDown-logout-email {
-  font-size: 1rem;
+	font-size: 1rem;
 }
+
 .dropDown-logout-initials {
-  border-color: var(--color-nav-link, $pm-global-border);
-  min-width: 2.7em;
+	min-width: 2.5em;
+	min-height: 2.5em;
+	border: 1px solid var(--bordercolor-input, $pm-global-border);
+	color: $white;
 }
 
 @if $rtl-option == true {
-  [dir="rtl"] {
-    .dropDown-logout-button > span:first-child {
-      margin-left: .5em;
-      margin-right: 0;
-    }
-  }
+	[dir="rtl"] {
+		.dropDown-logout-button > span:first-child {
+			margin-left: .5em;
+			margin-right: 0;
+		}
+	}
 }

@@ -12,6 +12,10 @@ $size-h4               : 18 !default;
 $size-h5               : 17 !default;
 $size-h6               : 16 !default;
 
+// Use typo helpers on demand
+$use-other-typo-helpers       : true !default;
+$use-other-line-height-helpers: true !default;
+
 $size-smallest         : 9 !default;
 $size-smaller          : 10 !default;
 $size-small            : 12 !default;
@@ -21,20 +25,24 @@ $size-biggest          : 20 !default;
 
 // fonts
 $font-family           : -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif !default;
-
+$font-family-monospace : SFMono-Regular,Consolas,"Liberation Mono","Menlo",monospace,monospace !default;
+// explanation for double monospace http://code.iamkate.com/html-and-css/fixing-browsers-broken-monospace-font-handling/
 
 // project colors
 $pm-global-grey        : #262a33 !default;
 $pm-global-altgrey     : #3c414e !default;
+$bluish-grey           : #9799a6 !default;
 $pm-global-light       : #f6f7fa !default;
 $pm-global-border      : #dde6ec !default;
-$pm-global-muted       : #eeeff1 !default;
+$pm-global-muted       : #eeeff3 !default;
+$pm-global-info        : #008cff !default;
 $pm-global-success     : #5db039 !default;
 $pm-global-warning     : #ec5858 !default;
 $pm-global-attention   : #eac819 !default;
 $pm-blue               : #657ee4 !default;
 $pm-blue-dark          : #526ee0 !default;
 $pm-blue-light         : #788ee8 !default;
+$pm-blue-gradient      : linear-gradient(130deg, #657ee4 -7%, #7351d1 64%, #7350d1 127%);
 
 $white                 : #fff !default;
 $black                 : #000 !default;
@@ -58,11 +66,20 @@ $pm-primary-dark       : $pm-blue-dark !default;
 // not approved colors
 $pm-input-background   : #fcfdff !default;
 $plan-logo-color       : #8ed60f !default;
-$conversation-selected-bg: #e3e7f6 !default;
+$conversation-selected-bg: rgba($pm-blue, .5) !default;
+$input-shadow-color    : rgba(0, 0, 0, 0.16) !default;
+$autocomplete-bg-color-hover : #f4f4f4 !default;
+$text-sub-header       : #767676 !default;
 
 // needed for darkmode
 $pm-secondary-grey     : #2e323d !default;
-$pm-tertiary-grey      : #505560 !default; // border input 
+$pm-tertiary-grey      : #505560 !default; // border input
+
+// needed globally
+$calendar-selected-day-color: $pm-blue-light !default;
+$calendar-today-color: $pm-primary-dark !default;
+
+$navigation-hover-bg-color: rgba(white, .05) !default;
 
 // colors
 $color-links           : $pm-primary !default;
@@ -80,6 +97,7 @@ $input-defaut-border   : $pm-global-border !default;
 
 // main breakpoints
 $breakpoint-large      : 1500 !default;
+$breakpoint-medium-landscape : 1100 !default;
 $breakpoint-medium     : 910 !default;
 $breakpoint-small      : 680 !default;
 $breakpoint-tiny       : 450 !default;
@@ -90,6 +108,9 @@ $rtl-option            : false !default;
 // to adapt a website in a language that is written from right to left
 // designed for multilingual websites with LTR et RTL
 
+// Custom scrollbar everywhere
+$custom-scroll         : true !default;
+
 
 // hyphens
 $hyphenation           : false !default;
@@ -99,9 +120,14 @@ $use-clearleft_right   : false !default;
 $use-clearhidden       : false !default;
 $use-clearfix          : false !default;
 
-// vertical rythm
-// possible values     : 'double_top_single_bottom',  'single_top', 'single_bottom'
-$vertical-rythm        : 'single_bottom' !default;
+// color reset for mark tag
+$use-color-reset-mark  : true !default;
+$default-bgColor-mark  : #ff0 !default;
+
+
+// vertical rhythm
+// possible values     : 'double_top_single_bottom', 'single_top_single_bottom', 'single_top', 'single_bottom'
+$vertical-rhythm        : 'single_bottom' !default;
 
 // units for typo
 // possible values     : 'use_em',  'use_rem', 'use_rem_with_em_fallback'
@@ -114,23 +140,34 @@ $root-equiv-10-px      : true !default;
 // you should NEVER update this value, however… who can predict the future…
 $root-default-font-size: 16 !default;
 
+// applies main colors on body tag
+$apply-body-styles     : true !default;
+
 // others
 $use-reset-button      : true !default;
+$use-ie-calc-font-fallback: false !default;
 $use-old-ie-fallbacks  : true !default;
+$use-height-auto-img   : true !default;
+$use-height-auto-td    : true !default;
+$use-height-auto-table : true !default;
 
 // default config for webpack, can be overriden by "global config" in styles-pm.scss
 $path-images           : '../../assets/img/shared/' !default;
 
 
 // variables for global layouts, allowing you to use calc for components and adapt quickly if needed
-$aside-bar-width       : 4.5rem !default;
 $header-height         : 8rem !default;
-$width-sidebar         : 19rem !default; // main navigation
+$width-sidebar         : 24rem !default; // main navigation
 $toolbar-height        : 5rem !default;
-$subnav-width          : 25rem !default; // quick nav on the right
+$context-bar-width     : 25vw !default; // context bar on the right
+$context-bar-min-width : 30rem !default;
+$context-bar-max-width : 40rem !default;
+
+$default-height-fields : 3.5rem !default;
 
 $conversations-column-width: 35% !default;  // used also to align search bar on top
 
+$pm-label-width: 18em !default;
 
 
 // Sass functions: don’t touch if you are not sure ;)
@@ -176,27 +213,22 @@ $conversations-column-width: 35% !default;  // used also to align search bar on 
   @if $type-vr == 'double_top_single_bottom' {
      @return ( ($margin * $other_coef)*1em 0 ( ($margin/2) * $other_coef) *1em 0 );
   }
+  @if $type-vr == 'single_top_single_bottom' {
+	@return ( ( ($margin/2) * $other_coef) *1em 0 );
+  }
   @else if $type-vr == 'single_bottom' {
      @return ( 0 0 ( ($margin/2) * $other_coef) *1em 0 );
   }
   @else if $type-vr == 'single_top' {
      @return ( ( ($margin/2) * $other_coef) *1em 0 0 0 );
   }
+  @else if $type-vr == 'double_top_double_bottom_without_coef' {
+     @return (($margin *1em) 0);
+  }
 }
 
 
-@function margin-em-other ($font-size, $base-height, $base-font, $type-vr){
-
-  $coef: ceil(1 / ($base-height * $base-font / $font-size));
-  $height: ($base-font * $base-height / $font-size) ;
-  $margin: ($height * $coef );
-
-  @return ( ($margin)*1em 0 );
-
-}
-
-
-@mixin flow-hr( $value, $type-vr: $vertical-rythm, $type-unit: $typo-unit ){
+@mixin rhythm( $value, $type-vr: $vertical-rhythm, $type-unit: $typo-unit ){
 
   @if $type-unit == 'use_em' {
      font-size: em($value);
@@ -210,24 +242,6 @@ $conversations-column-width: 35% !default;  // used also to align search bar on 
   }
   line-height: line-height($value, $l-h, $base-font, $type-vr);
   margin: margin-em($value, $l-h, $base-font, $type-vr) ;
-
-}
-
-
-@mixin flow-other( $value, $type-vr: $vertical-rythm, $type-unit: $typo-unit ){
-
-  @if $type-unit == 'use_em' {
-     font-size: em($value);
-  }
-  @else if $type-unit == 'use_rem' {
-     font-size: rem($value);
-  }
-  @else if $type-unit == 'use_rem_with_em_fallback' {
-     font-size: em($value);
-     font-size: rem($value);
-  }
-  line-height: line-height($value, $l-h, $base-font, $type-vr);
-  margin: margin-em-other($value, $l-h, $base-font, $type-vr) ;
 
 }
 
@@ -377,7 +391,7 @@ $conversations-column-width: 35% !default;  // used also to align search bar on 
   }
 
   @else if $query-type == "min" {
-     @media (min-width: em($breakpoint, $root-default-font-size)) {
+     @media (min-width: em($breakpoint + 1, $root-default-font-size)) {
       @content;
     }
   }
@@ -387,6 +401,12 @@ $conversations-column-width: 35% !default;  // used also to align search bar on 
       @content;
      }
   }
+
+  @else if $query-type == "min-height" {
+	@media (min-height: em($breakpoint, $root-default-font-size)) {
+	 @content;
+	}
+ }
 
   @else  {
     @warn "Type non supported.";
@@ -410,4 +430,52 @@ $conversations-column-width: 35% !default;  // used also to align search bar on 
     @warn "$value-content not specified";
   }
 
+}
+
+
+//
+// Easing functions for transitions and animations
+// Learn more at http://easings.net/
+//
+
+@function easing($type: 'ease') {
+
+	$value: '';
+
+	@if      $type == 'linear'         { $value: '0, 0, 1, 1'; }
+	@else if $type == 'ease'           { $value: '0.25, 0.1, 0.25, 1'; }
+	@else if $type == 'easeIn'         { $value: '0.42, 0, 1, 1'; }
+	@else if $type == 'easeOut'        { $value: '0, 0, 0.58, 1'; }
+	@else if $type == 'easeInOut'      { $value: '0.42, 0, 0.58, 1'; }
+
+	@else if $type == 'easeInSine'     { $value: '0.12, 0, 0.39, 0'; }
+	@else if $type == 'easeInQuad'     { $value: '0.11, 0, 0.5, 0'; }
+	@else if $type == 'easeInCubic'    { $value: '0.32, 0, 0.67, 0'; }
+	@else if $type == 'easeInQuart'    { $value: '0.5 , 0, 0.75, 0'; }
+	@else if $type == 'easeInQuint'    { $value: '0.64, 0, 0.78, 0'; }
+	@else if $type == 'easeInExpo'     { $value: '0.7 , 0, 0.84, 0'; }
+	@else if $type == 'easeInCirc'     { $value: '0.55, 0, 1, 0.45'; }
+	@else if $type == 'easeInBack'     { $value: '0.36, 0, 0.66, -0.56'; }
+
+	@else if $type == 'easeOutSine'    { $value: '0.61, 1, 0.88, 1'; }
+	@else if $type == 'easeOutQuad'    { $value: '0.5, 1, 0.89, 1'; }
+	@else if $type == 'easeOutCubic'   { $value: '0.33, 1, 0.68, 1'; }
+	@else if $type == 'easeOutQuart'   { $value: '0.25, 1, 0.5, 1'; }
+	@else if $type == 'easeOutQuint'   { $value: '0.22, 1, 0.36, 1'; }
+	@else if $type == 'easeOutExpo'    { $value: '0.16, 1, 0.3, 1'; }
+	@else if $type == 'easeOutCirc'    { $value: '0, 0.55, 0.45, 1'; }
+	@else if $type == 'easeOutBack'    { $value: '0.34, 1.56, 0.64, 1'; }
+
+	@else if $type == 'easeInOutSine'  { $value: '0.37, 0, 0.63, 1'; }
+	@else if $type == 'easeInOutQuad'  { $value: '0.45, 0, 0.55, 1'; }
+	@else if $type == 'easeInOutCubic' { $value: '0.65, 0, 0.35, 1'; }
+	@else if $type == 'easeInOutQuart' { $value: '0.76, 0, 0.24, 1'; }
+	@else if $type == 'easeInOutQuint' { $value: '0.83, 0, 0.17, 1'; }
+	@else if $type == 'easeInOutExpo'  { $value: '0.87, 0, 0.13, 1'; }
+	@else if $type == 'easeInOutCirc'  { $value: '0.85, 0, 0.15, 1'; }
+	@else if $type == 'easeInOutBack'  { $value: '0.68, -0.6, 0.32, 1.6'; }
+
+	@else { @error "'#{$type}' is not a correct value for easing()."; }
+
+	@return cubic-bezier(unquote($value));
 }

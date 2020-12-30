@@ -6,6 +6,20 @@ dialog { border: 0; }
   border-collapse: collapse;
 }
 
+.unstyled {
+	padding-left: 0;
+	list-style-type: none;
+}
+
+@if $rtl-option == true {
+	/* RTL */
+	[dir="rtl"] {
+		.unstyled {
+			padding-right: 0;
+		}
+	}
+}
+
 /*
  * taken from http://tinytypo.tetue.net/ made by @tetue
  * tuned with the help of https://www.nicolas-hoffmann.net/utilitaires/codes-hexas-ascii-unicode-utf8-caracteres-usuels.php
@@ -28,21 +42,10 @@ q:after {
   content: close-quote;
 }
 
-/* avoid ugly line-height */
-sup,
-sub {
-  vertical-align: 0;
-  position: relative;
-}
-sup {
-  bottom: 1ex;
-}
-sub {
-  top: .5ex;
-}
+@import './_includes/_resets/typo-sub-sup';
 
 /* avoid margin problems */
-@if $vertical-rythm == 'single_top' or $vertical-rythm == 'double_top_single_bottom' {
+@if $vertical-rhythm == 'single_top' or $vertical-rhythm == 'double_top_single_bottom' {
   h1,.h1,
   h2,.h2,
   h3,.h3,
@@ -63,7 +66,7 @@ sub {
   table {
     &:last-child {
       margin-bottom: 0;
-    } 
+    }
   }
 }
 
@@ -87,7 +90,7 @@ li ul {
   p {
     word-break: break-word;
   }
-  @supports (-webkit-hyphens: auto) or (-ms-hyphens: auto) or (hyphens: auto) {
+  @supports (-webkit-hyphens: auto) or (hyphens: auto) {
     textarea,
     table,
     td,
@@ -98,7 +101,7 @@ li ul {
     div,
     p {
       word-break: normal;
-      @include vendor-prefix(hyphens, auto, webkit ms);
+      @include vendor-prefix(hyphens, auto, webkit);
     }
   }
 }
@@ -106,10 +109,10 @@ li ul {
   .cut {
     word-break: break-word;
   }
-  @supports (-webkit-hyphens: auto) or (-ms-hyphens: auto) or (hyphens: auto) {
+  @supports (-webkit-hyphens: auto) or (hyphens: auto) {
     .cut {
       word-break: normal;
-      @include vendor-prefix(hyphens, auto, webkit ms);
+      @include vendor-prefix(hyphens, auto, webkit);
     }
   }
 }
@@ -118,24 +121,19 @@ li ul {
 .nocut {
   word-wrap: normal;
 }
-@supports (-webkit-hyphens: auto) or (-ms-hyphens: auto) or (hyphens: auto) {
+@supports (-webkit-hyphens: auto) or (hyphens: auto) {
   .nocut {
-    @include vendor-prefix(hyphens, none, webkit ms);
+    @include vendor-prefix(hyphens, none, webkit);
   }
 }
 
 .break {
-  word-wrap: break-word;
+  word-break: break-word;
+}
+.hyphens {
+	@include vendor-prefix(hyphens, auto, webkit);
 }
 
-code,
-pre,
-samp {
-  white-space: pre-wrap;
-}
-code {
-  line-height: 1;
-}
 kbd {
   border: solid 1px;
   border-top-left-radius: .5em;
@@ -145,14 +143,6 @@ kbd {
 table {
   margin-bottom: 1.5em;
   table-layout: fixed;
-}
-/* important, abbr are good */
-/* only those with a title are shown */
-abbr[title] {
-  border-bottom: dotted 1px;
-  cursor: help;
-  text-decoration: none;
-  /* color inherited from text */
 }
 
 /* text aligns */
@@ -168,14 +158,20 @@ abbr[title] {
 
 .ellipsis {
   overflow: hidden;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
+.ellipsis-two-lines,
 .ellipsis-four-lines {
   display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;  
+  -webkit-box-orient: vertical;
   overflow: hidden;
+}
+.ellipsis-two-lines {
+  -webkit-line-clamp: 2;
+}
+.ellipsis-four-lines {
+  -webkit-line-clamp: 4;
 }
 
 .uppercase {
@@ -184,9 +180,22 @@ abbr[title] {
 .capitalize {
   text-transform: capitalize;
 }
+.capitalize-block {
+  text-transform: lowercase;
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
 
-b, strong, .strong, .bold {
-  font-weight: bold;
+.strong, .bold {
+	@extend %bold;
+}
+.nobold {
+	font-weight: normal;
+}
+
+.semibold {
+  font-weight: 600;
 }
 
 .italic {
@@ -196,3 +205,18 @@ b, strong, .strong, .bold {
 .no-outline {
   outline: 0;
 }
+
+.strike {
+	text-decoration: line-through;
+}
+
+.pre-wrap {
+	white-space: pre-wrap;
+}
+.no-wrap {
+  white-space: nowrap;
+}
+.pre {
+	white-space: pre;
+}
+
