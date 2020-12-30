@@ -20,7 +20,7 @@ $boxshadow-main: none;
 // Theme template styles ->
 
 // Loading state
-body {
+html:not(.editor-squire-iframe) body {
   background: $base;
   color: $text_color;
 }
@@ -329,6 +329,10 @@ a:active, a:focus, a:hover,
   background: transparent;
 }
 
+.pm-group-buttons > .pm-group-button.pm-button--primary {
+  border-color: darken($highlight, 10%);
+}
+
 .bg-pm-blue-gradient {
   .pm-button--transparent:hover {
     color: $text_color;
@@ -343,6 +347,14 @@ a:active, a:focus, a:hover,
 }
 
 // Message panel
+
+.composer-title-bar {
+  background: $base;
+}
+
+.color-global-light {
+  color: $text_color;
+}
 
 .angular-squire-iframe body {
   a {
@@ -383,7 +395,7 @@ a:active, a:focus, a:hover,
   border-color: $base;
 
   [class*="icon-"] {
-    fill: $base;
+    fill: $highlight;
   }
 }
 
