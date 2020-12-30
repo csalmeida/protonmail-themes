@@ -1,114 +1,29 @@
-// Compose button
-.pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
-  color: $compose_text;
-  background-color: $compose;
-  border: 1px solid $compose;
-}
-
-.is-hover.pm-button--error, .is-hover.pm-button--primary, .is-hover.pm-button--warning, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover {
-  color: $compose_text;
-  box-shadow: 0 0 .35714em 0 rgba(0,0,0,.2);
-  background: darken($compose, 10%);
-  border: 1px solid darken($compose, 10%);
-}
-
-.header, .logo-container {
-  background-color: $highlight;
-}
-
-.toolbar {
-  background-color: darken($highlight, 10%);
-}
-
-.aside {
-  background-color: darken($text_color, 5%);
-  box-shadow: 1px 0px 3px rgba(0,0,0,.3);
-
-  .navigation__icon, .navigation__link:focus .navigation__icon, .navigation__link:hover .navigation__icon, .fill-global-light {
-    fill: $text_color;
-  }
-}
-
-.aside-link, .aside-link:active, .aside-link:focus, .aside-link[aria-current="true"] {
-  background: darken($highlight, 25%);
-}
-
-.aside-link:hover {
-  background: $compose;
-}
-
-
-.sidebarApp-item {
-  [aria-current="page"].navigation__link {
-    background: lighten($navigation, 60%);
-  }
-}
-
-.content-wrapper {
-  height: calc(100vh - 9.5rem);
-  max-height: calc(100vh - 9.5rem);
-  margin-top: 1.5rem;
-}
-
-.navigation__icon,
-.navigation__link:focus .navigation__icon, .navigation__link:hover .navigation__icon,
-.fill-global-light {
-  fill: $highlight;
-}
-
-.navigationUser-button,
-.topnav-list,
-.topnav-link,
-.topnav-link:active, .topnav-link:focus,
-.topnav-link:hover,
-.topnav-link[aria-current="true"] {
+[aria-current="page"].navigation__link, [aria-current="page"].navigation__link .navigation__icon, [aria-current="page"].navigation__link:hover .navigation__icon:not(.navigation__icon--expand) {
   color: $text_color;
 }
 
-.topnav-link:active > .topnav-icon, .topnav-link:focus > .topnav-icon, .topnav-link:hover > .topnav-icon, .topnav-link[aria-current="true"] > .topnav-icon {
-  fill: $text_color;
+.toolbar {
+  background: darken($base, 5%);
 }
 
-.dropDown-logout-button {
-  color: $text_color; 
-}
-
-.dropDown-logout-initials {
-  border-color: darken($highlight, 10%);
-}
-
-.conversation.marked::before {
-  background: $compose;
-}
-
-.conversation.item-container:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
-  background: $base;
-  border-left: 1px solid $navigation;
-}
-
-.item-container, .item-container-row {
-  background: $text_color;
-}
-
-.link, a, .pm-button--link {
-  color: $highlight;
-}
-
-.link:active, .link:focus, .link:hover, a:active, a:focus, a:hover, .pm-button--link:hover {
-  color: $compose;
-}
-
-#pm_composer .composer .composerHeader-container {
-  background-color: $highlight;
-}
-
-.storageProgress-dropdown {
-  .circle-chart__info .circle-chart__percent {
-    fill: $highlight;
+// Dark Mode
+.isDarkMode {
+  .pm-button, .pm-button--info, .pm-button--redborder {
+    background: darken($highlight, 2%);
   }
-
-  span {
+  
+  .pm-button--primaryborder {
+    background: transparent;
+    border-color: $text_color;
+    color: $text_color;
+  }
+  
+  .pm-button--primaryborder:hover {
+    border-color: $text_color;
     color: $highlight;
-    opacity: 1;
+  }
+  
+  .composer-body-container textarea {
+    background: darken($base, 15%);
   }
 }
