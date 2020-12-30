@@ -1,10 +1,12 @@
 # Theme Template
 
-There's a template provided at [`/templates/theme_example`](`../templates/theme_example`) that allows anyone that knows a bit a about `SCSS` to quickly generate a theme.
+> This guide expands on theme creation. Please follow the [quick setup guide](README.md#quick-setup-guide) before proceeding.
+
+There's a template provided at [`/templates/theme_example`](`../templates/theme_example`) that allows anyone that knows a bit a about `SCSS` to generate a theme.
 
 This template does not style every single element of ProtonMail's UI and sticks to changing the `color` of elements rather than `position` or `font`. 
 
-Feel free to extend and adapt this template to your needs bu creating an `_override.scss` file and adding new styles there, those styles will be scoped to your theme only. The [Ochin theme can be consulted as an example](../templates/ochin) of using overrides can be used on a theme.
+Feel free to extend and adapt this template to your needs by creating an `_override.scss` file and adding new styles there, those styles will be scoped to your theme only. The [Ochin theme can be consulted as an example](../templates/ochin) of using overrides can be used on a theme.
 
 ## Creating a theme from the template
 
@@ -27,7 +29,7 @@ Each variable applies to a certain area of the UI. The `$base` color changes the
 #### (Optional) Changing other variables
 There is another set of variables available that will change elements that tend to fall out of the groups defined earlier. This could include content boxes, warnings, or elements that usually show up on the Settings part of the app. Feel free to experiment changing these if you are looking for a bit more customization (for adding more to the theme you can also extend the template, we'll get to this later).
 
-``` scss
+```scss
 $text_color: #0d0d0d;
 $extra_color: #e6eaf0;
 $danger_color: #d62646;
@@ -63,6 +65,20 @@ Override styles will be scoped to your theme only. The [Ochin theme can be consu
 // Please do not remove the imports above, add overrides and other partials below this line.
 @import 'override';
 ```
+
+In `_override.scss` add the styles specific to your theme:
+
+```scss
+.pm-button--primary {
+  background: peachpuff;
+}
+
+.isDarkMode .pm-button--primary {
+  background: darkgrey;
+}
+```
+
+Your theme will compile to CSS and can be found in `/themes/your_theme_name` by running the build task present in the [quick setup guide](README.md#quick-setup-guide), in the README.
 
 ### Final touches
 Test your theme on ProtonMail and re-iterate as needed. If you think your theme is ready and *cool* you can submit a pull request and add it to this repo so everyone can use it.
