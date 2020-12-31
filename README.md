@@ -112,7 +112,7 @@ Install [NodeJS](https://nodejs.org/en/), after forking/cloning this repository 
 
 ```bash
 cd protonmail-themes
-# Requires Node v13.0.1, run `nvm use` to set the correct version. 
+# Requires Node v15.2.1, run `nvm use` to set the correct version. 
 npm install
 ```
 
