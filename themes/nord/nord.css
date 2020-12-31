@@ -8,7 +8,7 @@
 :root {
   --main-bg-color: #2E3440;
   --secondary-bg-color: #232831;
-  --bgcolor-searchbox-field: #000;
+  --bgcolor-searchbox-field: #3B4252;
   --bgcolor-spacebar: rgba(255, 255, 255, 0.1);
   --bgcolor-aside-link: rgba(0, 0, 0, 0.3);
   --bgcolor-toolbar: #39404f;
@@ -91,7 +91,7 @@ html:not(.editor-squire-iframe) body {
   border-color: #39404f !important; }
 
 #global_search.searchbox-field[type="search"] {
-  background-color: #000;
+  background-color: #3B4252;
   color: #ECEFF4; }
 
 .searchbox-advanced-search-button:active,
