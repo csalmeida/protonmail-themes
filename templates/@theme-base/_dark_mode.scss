@@ -105,6 +105,17 @@ body {
     }
   }
 
+  .pm-button.pm-button--primary {
+    background: darken($highlight, 10%);
+    color: $text_color;
+    border-color: darken($highlight, 10%);
+  }
+
+  .pm-button.pm-button--primary:hover {
+    background: $highlight;
+    color: $text_color;
+  }
+
   .is-disabled.pm-button--error, .is-disabled.pm-button--error.pm-button--info, .is-disabled.pm-button--error.pm-button--redborder, .is-disabled.pm-button--primary, .is-disabled.pm-button--primary.pm-button--info, .is-disabled.pm-button--primary.pm-button--redborder, .is-disabled.pm-button--warning, .is-disabled.pm-button--warning.pm-button--info, .is-disabled.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info[disabled], .pm-button--error.pm-button--redborder[disabled], .pm-button--error[disabled], .pm-button--primary.pm-button--info[disabled], .pm-button--primary.pm-button--redborder[disabled], .pm-button--primary[disabled], .pm-button--warning.pm-button--info[disabled], .pm-button--warning.pm-button--redborder[disabled], .pm-button--warning[disabled], .pm-button-blue.is-disabled, .pm-button-blue.is-disabled.pm-button--info, .pm-button-blue.is-disabled.pm-button--redborder, .pm-button-blue.pm-button--info[disabled], .pm-button-blue.pm-button--redborder[disabled], .pm-button-blue[disabled], .pm-button.is-disabled.pm-button--error, .pm-button.is-disabled.pm-button--primary, .pm-button.is-disabled.pm-button--warning, .pm-button.pm-button--error[disabled], .pm-button.pm-button--primary[disabled], .pm-button.pm-button--warning[disabled], .pm-button.pm-button-blue.is-disabled, .pm-button.pm-button-blue[disabled] {
     background-color: darken($base, 2%);
     border-color: lighten($base, 10%);
