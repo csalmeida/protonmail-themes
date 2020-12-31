@@ -1,0 +1,29 @@
+[aria-current="page"].navigation__link, [aria-current="page"].navigation__link .navigation__icon, [aria-current="page"].navigation__link:hover .navigation__icon:not(.navigation__icon--expand) {
+  color: $text_color;
+}
+
+.toolbar {
+  background: darken($base, 5%);
+}
+
+// Dark Mode
+.isDarkMode {
+  .pm-button, .pm-button--info, .pm-button--redborder {
+    background: darken($highlight, 2%);
+  }
+  
+  .pm-button--primaryborder {
+    background: transparent;
+    border-color: $text_color;
+    color: $text_color;
+  }
+  
+  .pm-button--primaryborder:hover {
+    border-color: $text_color;
+    color: $highlight;
+  }
+  
+  .composer-body-container textarea {
+    background: darken($base, 15%);
+  }
+}

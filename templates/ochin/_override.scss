@@ -1,19 +1,13 @@
-// ================================= \\
-// ========== HORIZONTAL =========== \\
-// ========== NAVIGATION =========== \\
-// ============= BAR =============== \\
-// ================================= \\
+// Compose button
+.pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
+  color: $compose_text;
+  background-color: $compose;
+  border: 1px solid $compose;
+}
 
-.sidebar-btn-compose, .sidebar-btn-compose:active  {
-  color: $compose_text !important;
-  background: $compose !important;
-  border: none !important;
-} // compose button
-
-.sidebar-btn-compose:hover {
-  color: $compose_text !important;
-  background: darken($compose, 20%) !important;
-  border: none !important;
-  // Covers button with darker hue of highlight
-  box-shadow: inset 0 400px 400px rgba(0,0,0,0.1);
-} // compose button
+.is-hover.pm-button--error, .is-hover.pm-button--primary, .is-hover.pm-button--warning, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover {
+  color: $compose_text;
+  box-shadow: 0 0 .35714em 0 rgba(0,0,0,.2);
+  background: darken($compose, 20%);
+  border: 1px solid darken($compose, 20%);
+}

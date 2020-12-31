@@ -1,20 +1,25 @@
+@import "../@theme-base/version";
+
 /*! =========================================== *
  * DARK BUBBLE GUM THEME
- * Version: 3.16.0
+ * Version: #{$version}
  * Author: Cristiano Almeida
  * Website: www.csalmeida.com
- * Tweets @_csalmeida
+ * Twitter: @_csalmeida
  * =========================================== */
 
-// Change colors here and they will change everywhere.
 $base: #1C1C1C;
-$search: #000;
+$search: #131212;
 $highlight: #EF2D56;
 $navigation: #fff;
 
-$text_color: #0d0d0d;
-$extra_color: #e6eaf0;
+$text_color: #e6eaf0;
+$extra_color: #0d0d0d;
 $danger_color: #d62646;
 $warning_color: #ffaa00;
+$info_color: #1b68c6;
 
-@import '../styles';
+@import "../@theme-base/styles";
+@import "../@theme-base/dark_mode";
+
+// Please do not remove the imports above, add overrides and other partials below this line.

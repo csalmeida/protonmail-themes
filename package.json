@@ -1,14 +1,17 @@
 {
   "name": "protonmail-themes",
-  "version": "3.16.0",
+  "version": "4.0.0-beta12",
   "description": "Customise ProtonMail with themes and enhance your encrypted email experience.",
   "main": "index.js",
   "scripts": {
+    "start": "npm run watch",
     "watch": "gulp watch",
     "build": "gulp build"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2"
   },
   "repository": {
