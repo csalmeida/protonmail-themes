@@ -1,0 +1,25 @@
+@import "../@theme-base/version";
+
+/*! =========================================== *
+ * NORD Theme
+ * Version:  #{$version}
+ * Author:   ch1r0x
+ * Website:  github.com/ch1r0x
+ * Mastodon: @ch1r0x
+ * =========================================== */
+
+$base: #2E3440;
+$search: #3B4252;
+$highlight: #5E81AC;
+$navigation: #E5E9F0;
+
+$text_color: #ECEFF4;
+$extra_color: #88C0D0;
+$danger_color:  #BF616A;
+$warning_color: #D08770;
+$info_color: #A3BE8C;
+
+@import "../@theme-base/styles";
+@import "../@theme-base/dark_mode";
+
+// Please do not remove the imports above, add overrides and other partials below this line.

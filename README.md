@@ -102,6 +102,11 @@ Check out some of the available themes you can choose from.
 
 #### [Inbox](themes/inbox)
 ![Screenshot of Inbox theme.](screenshots/inbox.png)
+
+### [Nord](themes/nord)
+![Screenshot of Nord theme.](screenshots/nord.png)
+
+![Screenshot of Nord theme.](screenshots/nord_full.png)
 </details>
 
 ## Quick setup guide
