@@ -1,7 +1,5 @@
 const gulp = require('gulp')
-const sass = require('gulp-sass')
-const replace = require('gulp-replace');
-const rename = require('gulp-rename');
+const { sass } = require("@mr-hope/gulp-sass");
 
 
 const themesPath = './templates/*/*.scss'
