@@ -11,7 +11,6 @@
   "devDependencies": {
     "@mr-hope/gulp-sass": "^2.0.0",
     "gulp": "^4.0.2",
-    "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0"
   },
   "repository": {
