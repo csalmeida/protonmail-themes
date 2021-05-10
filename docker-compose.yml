@@ -1,0 +1,7 @@
+version: "3"
+services:
+  proton:
+    build: ./ # The path to protonmail-themes Dockerfile
+    volumes:
+      # Allows changes made to project directory to be accessed by the container and persist 
+      - ${PROJECT_PATH}:/var/projects/protonmail-themes 
