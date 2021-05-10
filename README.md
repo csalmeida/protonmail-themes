@@ -132,6 +132,18 @@ npm run watch
 npm run build
 ```
 
+## Container Setup with Docker
+
+1. [Install Docker](https://docs.docker.com/engine/install/). For MacOS and Windows, [Docker Desktop](https://docs.docker.com/engine/install/#desktop) is recommended instead.
+1. Rename to `.env.example` to `.env` and add the project directory to `PROJECT_PATH`. When unsure what this might be cd into the `protonmail-themes` folder and run `pwd`, this will give you the project directory.
+1. Run `docker compose up -d`. This will run the development environment.
+
+**Additional notes:**
+
+- To examine the container run `docker ps`.
+- To stop the container run `docker compose down`.
+- The container will run a Node image with the version this project supports along with the dependencies. Then it will run the watch command so themes can be compiled as changes are made.
+
 ### Feedback and fixes
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
 
