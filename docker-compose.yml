@@ -1,7 +1,11 @@
 version: "3"
 services:
   proton:
-    build: ./ # The path to protonmail-themes Dockerfile
+    # Building a custom image described in a docker file.
+    build:
+      # Setting a context and dockerfile paths allows for Dockerfiles to be stored away in a sub-directory.
+      context: . # Context of build, this is where the project files are stored.
+      dockerfile: ./docker/node.dockerfile # The path to protonmail-themes Dockerfile and name of the dockerfile to be built
     volumes:
       # Allows changes made to project directory to be accessed by the container and persist 
       - ${PROJECT_PATH}:/var/projects/protonmail-themes 
