@@ -8,6 +8,11 @@ services:
       dockerfile: ./docker/node.dockerfile # The path to protonmail-themes Dockerfile and name of the dockerfile to be built
     # Setting an image name avoids the same image being built multiple times.
     image: csalmeida/protonmail-themes:latest
+    # Specified the name of the container, commented out to avoid name conflicts when running multiple instances of the image.
+    # container_name: protonmail_themes
+    restart: always
     volumes:
-      # Allows changes made to project directory to be accessed by the container and persist 
-      - ${PROJECT_PATH}:/var/projects/protonmail-themes 
+      # Allows changes made to project directory to be accessed by the container and persist.
+      - .:/var/projects/protonmail-themes 
+      # Adds a volume to store node dependencies.
+      - /var/projects/protonmail-themes/node_modules
