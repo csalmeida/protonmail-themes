@@ -1,2 +1,14 @@
-Dockerfile
+# Application Files
 node_modules
+docs
+screenshots
+.nvmrc
+.gitignore
+.gitattributes
+.nojekyll
+LICENSE
+README.md
+
+# Docker
+docker
+docker-compose.yml
