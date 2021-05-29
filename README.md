@@ -132,6 +132,18 @@ npm run watch
 npm run build
 ```
 
+## Container Setup with Docker
+
+1. [Install Docker](https://docs.docker.com/engine/install/). For MacOS and Windows, [Docker Desktop](https://docs.docker.com/engine/install/#desktop) is recommended instead.
+1. Run `docker compose up -d`. This will run the development environment.
+
+**Additional notes:**
+
+- To examine the container run `docker ps`.
+- To stop the container run `docker compose down`.
+- The container will run a Node image with the version this project supports along with the dependencies. Then it will run the watch command so themes can be compiled as changes are made.
+- When using **Windows Subsystem Linux**, cloning the repo into a folder inside `/home/` directory of you distro of choice is reccomended since mounted drivers and folders (i.e `/mnt/c`) won't issue a file change event.
+
 ### Feedback and fixes
 If you notice something's missing feel free to make a pull request. If you have no time to fix it please open an issue.
 
