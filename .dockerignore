@@ -3,6 +3,8 @@ node_modules
 docs
 screenshots
 .nvmrc
+.git
+.github
 .gitignore
 .gitattributes
 .nojekyll
@@ -12,3 +14,4 @@ README.md
 # Docker
 docker
 docker-compose.yml
+.dockerignore
