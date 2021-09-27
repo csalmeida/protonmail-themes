@@ -137,6 +137,20 @@ npm run build
 1. [Install Docker](https://docs.docker.com/engine/install/). For MacOS and Windows, [Docker Desktop](https://docs.docker.com/engine/install/#desktop) is recommended instead.
 1. Run `docker compose up -d`. This will run the development environment.
 
+Rebuild and run Docker container from a clean slate with with:
+
+```bash
+# Change directory into the project.
+cd protonmail-themes
+```
+
+```bash
+docker compose rm &&
+docker compose pull &&
+docker compose build --no-cache &&
+docker compose up -d --force-recreate
+```
+
 **Additional notes:**
 
 - To examine the container run `docker ps`.
