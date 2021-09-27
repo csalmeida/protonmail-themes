@@ -3,6 +3,8 @@ node_modules
 docs
 screenshots
 .nvmrc
+.git
+.github
 .gitignore
 .gitattributes
 .nojekyll
@@ -12,3 +14,29 @@ README.md
 # Docker
 docker
 docker-compose.yml
+.dockerignore
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
