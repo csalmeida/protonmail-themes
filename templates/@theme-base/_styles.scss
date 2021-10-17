@@ -1,428 +1,258 @@
-// Styles defined by Protonmail see https://design-system-beta.netlify.com/sass-variables/ ->
-
-@import "../@theme-base/reusable-components/design-system-config";
-
-$main-bg-color: $base;
-$secondary-bg-color: darken($base, 5%);
-$bgcolor-searchbox-field: $search;
-$bgcolor-spacebar: rgba(255, 255, 255, 0.1);
-$bgcolor-aside-link: rgba(0, 0, 0, 0.3);
-$bgcolor-toolbar: lighten($base, 5%);
-$fillcolor-logo: $pm-global-light;
-$fillcolor-icons: $white;
-$color-nav-link: $navigation;
-$color-nav-active: $highlight;
-$color-standard-text: $white;
-$boxshadow-main: none; 
-
-@import "../@theme-base/pm-styles/pm-theme-config";
-
-// Theme template styles ->
-
-// Loading state
-html:not(.editor-squire-iframe) body {
-  background: $base;
-  color: $text_color;
-}
-
-// Compose button
-.pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
-  color: $text_color;
-  background-color: $highlight;
-  border: 1px solid $highlight;
-  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
-}
-
-.is-hover.pm-button--error, .is-hover.pm-button--primary, .is-hover.pm-button--warning, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover {
-  color: $navigation;
-  box-shadow: 0 0 .35714em 0 rgba(0,0,0,.2);
-  background: darken($highlight, 5%);
-  border: 1px solid darken($highlight, 5%);
-}
-
-// Button classes
-.pm-button--primaryborder-dark, .pm-button-blueborder-dark {
-  background: $main-bg-color;
-  border-color: $highlight;
-  color: $highlight;
-}
-
-.is-active.pm-button--primaryborder-dark, .is-hover.pm-button--primaryborder-dark, .pm-button--primaryborder-dark:focus, .pm-button--primaryborder-dark:focus-within, .pm-button--primaryborder-dark:hover, .pm-button--primaryborder-dark:not(div):active, .pm-button-blueborder-dark.is-active, .pm-button-blueborder-dark.is-hover, .pm-button-blueborder-dark:focus, .pm-button-blueborder-dark:focus-within, .pm-button-blueborder-dark:hover, .pm-button-blueborder-dark:not(div):active {
-  background: $main-bg-color;
-  border-color: lighten($highlight, 5%);
-  color: lighten($highlight, 5%);
-}
-
-.pm-button--primaryborder, .pm-button-blueborder {
-  border-color: darken($highlight, 5%);
-  color: darken($highlight, 5%);
-}
-
-.is-hover.pm-button--primaryborder, .pm-button--primaryborder:focus, .pm-button--primaryborder:focus-within, .pm-button--primaryborder:hover, .pm-button-blueborder.is-hover, .pm-button-blueborder:focus, .pm-button-blueborder:focus-within, .pm-button-blueborder:hover {
-  border-color: darken($highlight, 5%);
-  color: darken($highlight, 5%);
-}
-
-// Disabled button
-.is-disabled.pm-button--error, .is-disabled.pm-button--error.pm-button--info, .is-disabled.pm-button--error.pm-button--redborder, .is-disabled.pm-button--primary, .is-disabled.pm-button--primary.pm-button--info, .is-disabled.pm-button--primary.pm-button--redborder, .is-disabled.pm-button--warning, .is-disabled.pm-button--warning.pm-button--info, .is-disabled.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info[disabled], .pm-button--error.pm-button--redborder[disabled], .pm-button--error[disabled], .pm-button--primary.pm-button--info[disabled], .pm-button--primary.pm-button--redborder[disabled], .pm-button--primary[disabled], .pm-button--warning.pm-button--info[disabled], .pm-button--warning.pm-button--redborder[disabled], .pm-button--warning[disabled], .pm-button-blue.is-disabled, .pm-button-blue.is-disabled.pm-button--info, .pm-button-blue.is-disabled.pm-button--redborder, .pm-button-blue.pm-button--info[disabled], .pm-button-blue.pm-button--redborder[disabled], .pm-button-blue[disabled], .pm-button.is-disabled.pm-button--error, .pm-button.is-disabled.pm-button--primary, .pm-button.is-disabled.pm-button--warning, .pm-button.pm-button--error[disabled], .pm-button.pm-button--primary[disabled], .pm-button.pm-button--warning[disabled], .pm-button.pm-button-blue.is-disabled, .pm-button.pm-button-blue[disabled] {
-  background-color: lighten($highlight, 40%);
-  border-color: lighten($highlight, 5%);
-  color: darken($highlight, 10%);
-}
-
-.bg-primary {
-  background-color: lighten($main-bg-color, 5%);
-}
-
-.color-primary {
-  color: $highlight;
-}
-
-// Message numbers
-.navigation__counterItem {
-  background: darken($highlight, 10%);
-  color: lighten($text_color, 35%);
-}
-
-// Message items
-.item-container-row:hover::before, .item-container:hover::before {
-  border-color: lighten($highlight, 10%);
-}
-
-.item-checkbox + .item-icon:hover, .item-checkbox:hover + .item-icon {
-  border-color: lighten($highlight, 25%);
-}
-
-.item-checkbox:hover:not(:checked) + .item-icon .item-icon-fakecheck-icon {
-  fill: darken($highlight, 10%);
-}
-
-// Storage indicator
-.circle-chart__circle {
-  stroke: $highlight;
-}
-
-// Top navigation
-#dropdown-0 {
-  .dropDown-content::after, .dropDown-content::before,
-  &.dropDown:not(.dropDown--noCaret)::before,
-  .dropDown-content {
-    background: $base;
-  }
-}
-
-.dropDown:not(.dropDown--noCaret)::before,
-.dropDown::after,
-.dropDown-logout-initials,
-.dropDown-item-hr {
-  border-color: lighten($base, 5%) !important; 
-}
-
-#global_search.searchbox-field[type="search"] {
-  background-color: $search;
-  color: $text_color;
-}
-
-.searchbox-advanced-search-button:active,
-.searchbox-advanced-search-button:focus,
-.searchbox-advanced-search-button:hover {
-  background-color: $base;
-}
-
-.topnav-link, .topnav-link > .topnav-icon {
-  color: $navigation;
-  transition: color .2s ease-in-out;
-}
-
-.topnav-link:active, .topnav-link:focus, 
-.topnav-link:hover, .topnav-link[aria-current="true"] {
-  color: $highlight;
-}
-
-.topnav-link:active > .topnav-icon, .topnav-link:focus > .topnav-icon, 
-.topnav-link:hover > .topnav-icon, .topnav-link[aria-current=true] > .topnav-icon {
-  color: $highlight;
-}
-
-.protonmail .text-purple {
-  color: $base !important;
-}
-
-.protonmail .text-purple:hover {
-  color: darken($highlight, 10%) !important;
-}
-
-// Dropdown
-.dropDown-item-button:focus, .dropDown-item-button:hover, .dropDown-item-link:focus, .dropDown-item-link:hover {
-  color: $highlight;
-}
-
-// Compose window
-#pm_composer .composer,
-.composerInputMeta-overlay {
-  .composerHeader-container {
-    background: lighten($base, 5%);
-  }
-}
-
-#pm_composer .composer .fill {
-  background: $color-standard-text;
-}
-
-// Conversation items
-.conversation {
-  &.marked::before {
-    background: $highlight;
-  }
-}
-
-.item-container, .item-container-row  {
-  &:not(.item-is-selected):not(.item-contact):not(.read):not(.active) {
-    background: $color-standard-text;
-  }
-}
-
-.item-container.selected, .item-container-row.selected,
-.item-container.active, .item-is-selected {
-  background: rgba($highlight, 0.1);
-}
-
-.selectBoxElement-container:hover {
-  .item-icon {
-    background-color: transparent;
-    border: 1px solid darken($highlight, 5%);
-
-    .item-icon-fakecheck-icon {
-      fill: darken($highlight, 5%);
-    }
-  }
-
- .item-checkbox:checked + .item-icon {
-    background-color: darken($highlight, 5%);
-    border-color: darken($highlight, 5%);
-  }
-}
-
-.item-checkbox:checked + .item-icon {
-  background-color: $highlight;
-  border-color: $highlight;
-}
-
-.item-checkbox + .item-icon:hover {
-  background-color: darken($highlight, 5%);
-  border-color: darken($highlight, 5%);
-}
-
-.item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
-  fill: $navigation;
-}
-
-.item-checkbox:checked + .item-icon:hover .item-icon-fakecheck-icon {
-  fill: $navigation;
-}
-
-// Star icon
-.starbutton {
-  fill: $highlight !important;
-  opacity: 0.7;
-}
-
-.starbutton:focus, .starbutton:hover {
-  fill: $highlight;
-}
-
-// Encryption icon
-.autocompleteEmailsItem-icon svg.encryptionIcon {
-  fill: darken($highlight, 5%);
-}
-
-.encryptionStatus .color-pm-blue svg {
-  color: darken($highlight, 5%);
-  fill: darken($highlight, 5%);
-}
-
-.encryptionStatus .color-global-grey-dm svg {
-  color: black;
-}
-
-// Highlighted text (seen when multiple messages are selected)
-.color-pm-blue {
-  color: $highlight;
-}
-
-// Radio buttons
-.pm-radio:checked + .pm-radio-fakeradio::before {
-  background: $highlight;
-}
-
-// Information blocks
-.block-info-standard {
-  border-color: $info_color;
-}
-
-.block-info-standard-warning {
-  border-color: $warning_color;
-}
-
-.block-info-standard-error {
-  border-color: $danger_color;
-}
-
-// Links across the site:
-.link, a, .pm-button--link {
-  color: darken($highlight, 10%);
-  transition: color .2s ease-in-out;
-}
-
-.link:active, .link:focus, .link:hover, 
-a:active, a:focus, a:hover,
-.pm-button--link:hover {
-  color: darken($highlight, 10%);
-}
-
-// Buttons
-.pm-button {
-  &--primary {
-    background-color: $highlight;
-    border-color: $highlight;
-  }
-
-  &--link, &.pm-button--link {
-    color: $highlight;
-  }
-}
-
-.pm-button--error, .pm-button--error.pm-button--info, .pm-button--error.pm-button--redborder, .pm-button--primary, .pm-button--primary.pm-button--info, .pm-button--primary.pm-button--redborder, .pm-button--warning, .pm-button--warning.pm-button--info, .pm-button--warning.pm-button--redborder, .pm-button-blue, .pm-button-blue.pm-button--info, .pm-button-blue.pm-button--redborder, .pm-button.pm-button--error, .pm-button.pm-button--primary, .pm-button.pm-button--warning, .pm-button.pm-button-blue {
-  background-color: $highlight;
-  border-color: $highlight;
-}
-
-.is-hover.pm-button--error, .is-hover.pm-button--error.pm-button--info, .is-hover.pm-button--error.pm-button--redborder, .is-hover.pm-button--primary, .is-hover.pm-button--primary.pm-button--info, .is-hover.pm-button--primary.pm-button--redborder, .is-hover.pm-button--warning, .is-hover.pm-button--warning.pm-button--info, .is-hover.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info:focus, .pm-button--error.pm-button--info:focus-within, .pm-button--error.pm-button--info:hover, .pm-button--error.pm-button--redborder:focus, .pm-button--error.pm-button--redborder:focus-within, .pm-button--error.pm-button--redborder:hover, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary.pm-button--info:focus, .pm-button--primary.pm-button--info:focus-within, .pm-button--primary.pm-button--info:hover, .pm-button--primary.pm-button--redborder:focus, .pm-button--primary.pm-button--redborder:focus-within, .pm-button--primary.pm-button--redborder:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning.pm-button--info:focus, .pm-button--warning.pm-button--info:focus-within, .pm-button--warning.pm-button--info:hover, .pm-button--warning.pm-button--redborder:focus, .pm-button--warning.pm-button--redborder:focus-within, .pm-button--warning.pm-button--redborder:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue.is-hover.pm-button--info, .pm-button-blue.is-hover.pm-button--redborder, .pm-button-blue.pm-button--info:focus, .pm-button-blue.pm-button--info:focus-within, .pm-button-blue.pm-button--info:hover, .pm-button-blue.pm-button--redborder:focus, .pm-button-blue.pm-button--redborder:focus-within, .pm-button-blue.pm-button--redborder:hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover, .pm-button.is-hover.pm-button--error, .pm-button.is-hover.pm-button--primary, .pm-button.is-hover.pm-button--warning, .pm-button.pm-button--error:focus, .pm-button.pm-button--error:focus-within, .pm-button.pm-button--error:hover, .pm-button.pm-button--primary:focus, .pm-button.pm-button--primary:focus-within, .pm-button.pm-button--primary:hover, .pm-button.pm-button--warning:focus, .pm-button.pm-button--warning:focus-within, .pm-button.pm-button--warning:hover, .pm-button.pm-button-blue.is-hover, .pm-button.pm-button-blue:focus, .pm-button.pm-button-blue:focus-within, .pm-button.pm-button-blue:hover {
-  background: darken($highlight, 5%);
-  border: 1px solid darken($highlight, 5%);
-}
-
-.is-active.pm-button--error, .is-active.pm-button--error.pm-button--info, .is-active.pm-button--error.pm-button--redborder, .is-active.pm-button--primary, .is-active.pm-button--primary.pm-button--info, .is-active.pm-button--primary.pm-button--redborder, .is-active.pm-button--warning, .is-active.pm-button--warning.pm-button--info, .is-active.pm-button--warning.pm-button--redborder, .pm-button--error.pm-button--info:not(div):active, .pm-button--error.pm-button--redborder:not(div):active, .pm-button--error:not(div):active, .pm-button--primary.pm-button--info:not(div):active, .pm-button--primary.pm-button--redborder:not(div):active, .pm-button--primary:not(div):active, .pm-button--warning.pm-button--info:not(div):active, .pm-button--warning.pm-button--redborder:not(div):active, .pm-button--warning:not(div):active, .pm-button-blue.is-active, .pm-button-blue.is-active.pm-button--info, .pm-button-blue.is-active.pm-button--redborder, .pm-button-blue.pm-button--info:not(div):active, .pm-button-blue.pm-button--redborder:not(div):active, .pm-button-blue:not(div):active, .pm-button.is-active.pm-button--error, .pm-button.is-active.pm-button--primary, .pm-button.is-active.pm-button--warning, .pm-button.pm-button--error:not(div):active, .pm-button.pm-button--primary:not(div):active, .pm-button.pm-button--warning:not(div):active, .pm-button.pm-button-blue.is-active, .pm-button.pm-button-blue:not(div):active {
-  background: darken($highlight, 10%);
-  border-color: darken($highlight, 10%);
-}
-
-.pm-button-blueborder {
-  box-shadow: none;
-  border-color: $base;
-  color: $base;
-  transition: color .2s ease-in-out, border-color .2s ease-in-out;
-}
-
-.pm-button-blueborder:hover {
-  box-shadow: none;
-  border-color: darken($highlight, 10%);
-  color: darken($highlight, 10%);
-}
-
-.is-active.pm-button--primaryborder,
-.pm-button--primaryborder:not(div):active,
-.pm-button-blueborder.is-active,
-.pm-button-blueborder:not(div):active {
-  border-color: darken($highlight, 10%);
-  color: darken($highlight, 10%);
-  background: transparent;
-}
-
-.pm-group-buttons > .pm-group-button.pm-button--primary {
-  border-color: darken($highlight, 10%);
-}
-
-.bg-pm-blue-gradient {
-  .pm-button--transparent:hover {
-    color: $text_color;
-    border-color: $text_color;
-  }
-}
-
-// Settings toggle button
-.pm-toggle-checkbox:checked+.pm-toggle-label:before {
-  background: $highlight;
-  border-color: $highlight;
-}
-
-// Message panel
-
-.composer-title-bar {
-  background: $base;
-}
-
-.color-global-light {
-  color: $text_color;
-}
-
-.angular-squire-iframe body {
-  a {
-    color: $highlight;
-  }
-} 
-
-// Attachment icon
-.fill-pm-blue,
-.message-attachmentIcon .file-outer-icon.is-embedded {
-  fill: $highlight;
-}
-
-// Subscription plans
-.pm-table--highlight[data-plan-number="1"] tr th:nth-child(2) {
-  border-color: $highlight;
-  color: $highlight;
-
-  &::before {
-    background-color: $highlight;
-  }
-}
-
-.pm-table--highlight[data-plan-number="1"] tr td:nth-child(2), 
-.pm-table--highlight[data-plan-number="1"] tr th:nth-child(2),
-.pm-table--highlight[data-plan-number="1"] tr:last-child td:nth-child(2) {
-  border-color: $highlight;
-}
-
-.pm-simple-table-row-th {
-  .fill-primary {
-    fill: $highlight;
-  }
-}
-
-// Forms
-.pm-checkbox-fakecheck, .pm-radio-fakeradio {
-  border-color: $base;
-
-  [class*="icon-"] {
-    fill: $highlight;
-  }
-}
-
-[class*="icon-"].color-primary {
-  color: $base;
-
-  &:hover {
-    color: darken($highlight, 10%);
-  }
-}
-
-.pm-field, .editor,
-.editor-toolbar,
-.border-bottom,
-.border-top,
-.message-container.is-opened > .message-header {
-  border-color: darken($base, 10%);
-}
-
-// Badges
-.badgeLabel, .badgeLabel-primary {
-  border-color: darken($highlight, 10%);
-}
-
-.badgeLabel,
-.badgeLabel-blue,
-.badgeLabel-primary,
-.bg-pm-blue {
-  background-color: darken($highlight, 10%);
+@use "sass:meta";
+@use "sass:color";
+
+:root,
+.ui-standard {
+  --primary: #{$highlight};
+  --primary-contrast: white;
+  --signal-danger: #ed4c51;
+  --signal-danger-hover: #f7595e;
+  --signal-danger-active: #ff666b;
+  --signal-danger-contrast: white;
+  --signal-warning: #f5930a;
+  --signal-warning-hover: #f5a716;
+  --signal-warning-active: #f5b922;
+  --signal-warning-contrast: black;
+  --signal-success: #349172;
+  --signal-success-hover: #339c79;
+  --signal-success-active: #31a67f;
+  --signal-success-contrast: white;
+  --signal-info: #2c89db;
+  --signal-info-hover: #3491e3;
+  --signal-info-active: #3d99eb;
+  --signal-info-contrast: white;
+  --text-norm: white;
+  --text-weak: #a4a9b5;
+  --text-hint: #696f7d;
+  --text-disabled: #575d6b;
+  --text-invert: #262a33;
+  --field-norm: #{$text_color};
+  --field-hover: #{darken($highlight, 5%)};
+  --field-disabled: #464b58;
+  --border-norm: #{darken($base, 8%)};
+  --border-weak: #{darken($base, 5%)};
+  --background-norm: #{$base} !important;
+  --background-weak: #{lighten($base, 5%)};
+  --background-strong: #{darken($base, 10%)};
+  --interaction-norm: #{$highlight};
+  --interaction-norm-hover: #{color.scale($highlight, $lightness: 5%)};
+  --interaction-norm-active: #{color.scale($highlight, $lightness: 10%)};
+  --interaction-norm-contrast: white;
+  --interaction-weak: #{darken($base, 3%)} !important;
+  --interaction-weak-hover: #{darken($base, 5%)};
+  --interaction-weak-active: #696f7d;
+  --interaction-default: transparent;
+  --interaction-default-hover: rgba(87, 93, 107, 0.2);
+  --interaction-default-active: rgba(87, 93, 107, 0.3);
+  --shadow-norm-opacity: 0.32;
+  --shadow-lifted-opacity: 0.4;
+  --backdrop-norm: rgba(0, 0, 0, 0.32);
+  --optional-scrollbar-thumb-color: #464b58;
+  --optional-scrollbar-thumb-hover-color: #575d6b;
+  --optional-email-item-read-background-color: #1a1d24;
+  --optional-email-item-read-text-color: var(--text-weak);
+}
+
+.ui-prominent,
+.ui-standard,
+:root {
+  --selection-background-color: var(
+    --optional-selection-background-color,
+    var(--primary)
+  );
+  --selection-text-color: var(
+    --optional-selection-text-color,
+    var(--primary-contrast)
+  );
+  --header-background-color: #{$base} !important;
+  --sidebar-background-color: var(
+    --optional-sidebar-background-color,
+    var(--background-norm)
+  );
+  --navigation-current-item-marker-color: var(
+    --optional-navigation-current-item-marker-color,
+    var(--interaction-norm)
+  );
+  --navigation-current-item-background-color: var(
+    --optional-navigation-current-item-background-color,
+    var(--interaction-default-hover)
+  );
+  --navigation-current-item-text-color: var(
+    --optional-navigation-current-item-text-color,
+    var(--text-norm)
+  );
+  --main-box-shadow: var(--optional-main-box-shadow, none);
+  --main-border-color: var(--optional-main-border-color, var(--border-norm));
+  --navigation-item-count-background-color: var(
+    --optional-navigation-item-count-background-color,
+    var(--primary)
+  );
+  --navigation-item-count-text-color: var(
+    --optional-navigation-item-count-text-color,
+    var(--primary-contrast)
+  );
+  --toolbar-background-color: var(
+    --optional-toolbar-background-color,
+    var(--background-weak)
+  );
+  --toolbar-border-bottom-color: var(
+    --optional-toolbar-border-bottom-color,
+    var(--border-norm)
+  );
+  --toolbar-text-color: var(--optional-toolbar-text-color, var(--text-norm));
+  --toolbar-separator-color: var(
+    --optional-toolbar-separator-color,
+    var(--border-norm)
+  );
+  --scrollbar-thumb-color: var(
+    --optional-scrollbar-thumb-color,
+    hsla(0, 0%, 50%, 0.25)
+  );
+  --scrollbar-thumb-hover-color: var(
+    --optional-scrollbar-thumb-hover-color,
+    hsla(0, 0%, 50%, 0.5)
+  );
+  --tooltip-background-color: var(--optional-tooltip-background-color, #000);
+  --tooltip-text-color: var(--optional-tooltip-text-color, #fff);
+  --email-item-unread-background-color: var(
+    --optional-email-item-unread-background-color,
+    var(--background-norm)
+  );
+  --email-item-unread-text-color: var(
+    --optional-email-item-unread-text-color,
+    var(--text-norm)
+  );
+  --email-item-unread-icon-background-color: var(
+    --optional-email-item-unread-icon-background-color,
+    var(--background-strong)
+  );
+  --email-item-unread-icon-text-color: var(
+    --optional-email-item-unread-icon-text-color,
+    inherit
+  );
+  --email-item-read-background-color: #{lighten($base, 5%)};
+  --email-item-read-text-color: #{$text_color};
+  --email-item-read-icon-background-color: var(
+    --optional-email-item-read-icon-background-color,
+    var(--background-strong)
+  );
+  --email-item-read-icon-text-color: var(
+    --optional-email-item-read-icon-text-color,
+    inherit
+  );
+  --email-item-selected-background-color: var(
+    --optional-email-item-selected-background-color,
+    var(--interaction-norm)
+  );
+  --email-item-selected-text-color: var(
+    --optional-email-item-selected-text-color,
+    var(--interaction-norm-contrast)
+  );
+  --email-item-selected-icon-background-color: var(
+    --optional-email-item-selected-icon-background-color,
+    var(--interaction-norm-hover)
+  );
+  --email-item-selected-icon-text-color: var(
+    --optional-email-item-selected-icon-text-color,
+    inherit
+  );
+  --email-item-focus-marker-color: var(
+    --optional-email-item-focus-marker-color,
+    var(--interaction-norm)
+  );
+  --email-item-selected-focus-marker-color: var(
+    --optional-email-item-selected-focus-marker-color,
+    var(--interaction-norm-hover)
+  );
+  --email-message-view-background-color: var(
+    --optional-email-message-view-background-color,
+    var(--background-norm)
+  );
+  --field-background-color: var(
+    --optional-field-background-color,
+    var(--background-norm)
+  );
+  --field-text-color: var(--optional-field-text-color, var(--text-norm));
+  --field-placeholder-color: var(
+    --optional-field-placeholder-color,
+    var(--text-hint)
+  );
+  --field-hover-background-color: var(
+    --optional-field-hover-background-color,
+    var(--background-norm)
+  );
+  --field-hover-text-color: var(
+    --optional-field-hover-text-color,
+    var(--text-norm)
+  );
+  --field-focus-background-color: var(
+    --optional-field-focus-background-color,
+    var(--background-norm)
+  );
+  --field-focus-text-color: var(
+    --optional-field-focus-text-color,
+    var(--text-norm)
+  );
+  --field-disabled-background-color: var(
+    --optional-field-disabled-background-color,
+    var(--background-norm)
+  );
+  --field-disabled-text-color: var(
+    --optional-field-disabled-text-color,
+    var(--text-disabled)
+  );
+  --select-background-color: var(
+    --optional-select-background-color,
+    var(--field-background-color)
+  );
+  --favorite-icon-color: var(--optional-favorite-icon-color, orange);
+  --mark-background-color: var(--optional-mark-background-color, #ff0);
+  --mark-text-color: var(--optional-mark-text-color, #000);
+  --mark-font-weight: var(--optional-mark-font-weight, normal);
+  --modal-background-color: var(--optional-modal-background-color);
+  --modal-text-color: var(--optional-modal-text-color);
+  --file-preview-text-color: var(
+    --optional-file-preview-text-color,
+    var(--text-norm)
+  );
+  --file-preview-background-color: var(
+    --optional-file-preview-background-color,
+    var(--background-norm)
+  );
+  --border-radius: var(--optional-border-radius, 3);
+  --font-family: var(
+    --optional-font-family,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    Helvetica Neue,
+    sans-serif
+  );
+}
+
+.button-solid-norm {
+  --button-default-background-color: #{$highlight};
+  --button-hover-background-color: #{color.scale($highlight, $lightness: 5%)};
+  --button-active-background-color: #{color.scale($highlight, $lightness: 10%)};
+  --button-default-text-color: #{lighten($highlight, 20%)};
+  --button-hover-text-color: var(--interaction-norm-contrast);
+  --button-active-text-color: var(--interaction-norm-contrast);
+}
+
+// Search Element
+:root {
+  --searchbox-background-color: #{$search};
+  --searchbox-text-color: #{$text_color} !important;
+  --optional-sidebar-background-color: #{$base};
+  --optional-email-item-unread-icon-background-color: #{darken($base, 8%)};
+  --optional-email-item-unread-icon-text-color: #{$text_color};
+}
+
+// Storage Bar
+.meter-bar-thumb, .used-space{
+  --signal-success: #{$highlight};
 }
