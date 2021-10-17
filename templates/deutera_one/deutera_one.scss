@@ -1,8 +1,8 @@
-@import "../@theme-base/version";
+@use "../@theme-base/version" as info;
 
 /*! =========================================== *
  * DEUTERA ONE THEME
- * Version: #{$version}
+ * Version: #{info.$version}
  * Author: Cristiano Almeida
  * Website: www.csalmeida.com
  * Twitter: @_csalmeida
@@ -20,7 +20,6 @@ $warning_color: #ffaa00;
 $info_color: #1b68c6;
 
 @import "../@theme-base/styles";
-@import "../@theme-base/dark_mode";
 
 // Please do not remove the imports above, add overrides and other partials below this line.
-@import 'override';
+@import "override";
