@@ -51,6 +51,7 @@
   --optional-scrollbar-thumb-hover-color: #575d6b;
   --optional-email-item-read-background-color: #1a1d24;
   --optional-email-item-read-text-color: var(--text-weak);
+  --optional-email-item-selected-background-color: #{color.scale($highlight, $blackness: 20%)};
 }
 
 .ui-prominent,
@@ -236,9 +237,9 @@
 
 .button-solid-norm {
   --button-default-background-color: #{$highlight};
-  --button-hover-background-color: #{color.scale($highlight, $lightness: 5%)};
+  --button-hover-background-color: #{color.scale($highlight, $lightness: 10%)};
   --button-active-background-color: #{color.scale($highlight, $lightness: 10%)};
-  --button-default-text-color: #{lighten($highlight, 20%)};
+  --button-default-text-color: #{$text_color};
   --button-hover-text-color: var(--interaction-norm-contrast);
   --button-active-text-color: var(--interaction-norm-contrast);
 }
