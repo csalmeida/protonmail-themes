@@ -100,9 +100,6 @@ Check out some of the available themes you can choose from.
 
 ![Screenshot of Gruvbox theme.](screenshots/gruvbox_full.png)
 
-#### [Inbox](themes/inbox)
-![Screenshot of Inbox theme.](screenshots/inbox.png)
-
 ### [Nord](themes/nord)
 ![Screenshot of Nord theme.](screenshots/nord.png)
 
