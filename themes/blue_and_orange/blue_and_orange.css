@@ -55,6 +55,7 @@
   --optional-scrollbar-thumb-hover-color: #575d6b;
   --optional-email-item-read-background-color: #1a1d24;
   --optional-email-item-read-text-color: var(--text-weak);
+  --optional-email-item-selected-background-color: #be6b3a;
 }
 
 .ui-prominent,
@@ -240,9 +241,9 @@
 
 .button-solid-norm {
   --button-default-background-color: #ed7d3a;
-  --button-hover-background-color: #ee8444;
+  --button-hover-background-color: #ef8a4e;
   --button-active-background-color: #ef8a4e;
-  --button-default-text-color: #f6bb97;
+  --button-default-text-color: #f5f7fa;
   --button-hover-text-color: var(--interaction-norm-contrast);
   --button-active-text-color: var(--interaction-norm-contrast);
 }
