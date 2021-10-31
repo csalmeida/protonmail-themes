@@ -260,15 +260,15 @@
   --signal-success: #a8e576;
 }
 
-.pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
-  color: #fff;
-  background-color: #7297c4;
-  border: 1px solid #7297c4;
+:root,
+.ui-standard {
+  --primary-contrast: #1a2533;
+  --email-item-selected-text-color: #1a2533;
+  --email-item-selected-icon-text-color: #1a2533;
 }
 
-.is-hover.pm-button--error, .is-hover.pm-button--primary, .is-hover.pm-button--warning, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover {
-  color: #fff;
-  box-shadow: 0 0 0.35714em 0 rgba(0, 0, 0, 0.2);
-  background: #3d6493;
-  border: 1px solid #3d6493;
+.button-solid-norm {
+  --button-default-text-color: #1a2533;
+  --button-hover-text-color: #1a2533;
+  --button-active-text-color: #1a2533;
 }

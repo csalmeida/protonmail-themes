@@ -1,13 +1,12 @@
-// Compose button
-.pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
-  color: $compose_text;
-  background-color: $compose;
-  border: 1px solid $compose;
+:root,
+.ui-standard {
+  --primary-contrast: #{$search};
+  --email-item-selected-text-color: #{$search};
+  --email-item-selected-icon-text-color: #{$search};
 }
 
-.is-hover.pm-button--error, .is-hover.pm-button--primary, .is-hover.pm-button--warning, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover {
-  color: $compose_text;
-  box-shadow: 0 0 .35714em 0 rgba(0,0,0,.2);
-  background: darken($compose, 20%);
-  border: 1px solid darken($compose, 20%);
+.button-solid-norm {
+  --button-default-text-color: #{$search};
+  --button-hover-text-color: #{$search};
+  --button-active-text-color: #{$search};
 }
