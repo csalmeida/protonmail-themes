@@ -1,88 +1,12 @@
-// Compose button
-.pm-button--error, .pm-button--primary, .pm-button--warning, .pm-button-blue {
-  color: #fff;
-  background-color: $search;
-  border: 1px solid $search;
-  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+:root,
+.ui-standard {
+  --primary-contrast: #{$search};
+  --email-item-selected-text-color: #{$search};
+  --email-item-selected-icon-text-color: #{$search};
 }
 
-.is-hover.pm-button--error, .is-hover.pm-button--primary, .is-hover.pm-button--warning, .pm-button--error:focus, .pm-button--error:focus-within, .pm-button--error:hover, .pm-button--primary:focus, .pm-button--primary:focus-within, .pm-button--primary:hover, .pm-button--warning:focus, .pm-button--warning:focus-within, .pm-button--warning:hover, .pm-button-blue.is-hover, .pm-button-blue:focus, .pm-button-blue:focus-within, .pm-button-blue:hover {
-  color: $navigation;
-  box-shadow: 0 0 .35714em 0 rgba(0,0,0,.2);
-  background: darken($search, 5%);
-  border: 1px solid darken($search, 5%);
-}
-
-// Conversation items
-.conversation {
-  &.marked::before {
-    background: $search;
-  }
-
-  .item-checkbox:checked + .item-icon {
-    background-color: $base;
-    border-color: $base;
-  }
-
-  .item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
-    fill: $base;
-  }
-
-  .item-checkbox:checked + .item-icon:hover .item-icon-fakecheck-icon {
-    fill: #fff;
-  }
-}
-
-// Highlighted text (seen when multiple messages are selected)
-.color-pm-blue {
-  color: $base;
-}
-
-// Radio buttons
-.pm-radio:checked + .pm-radio-fakeradio::before {
-  background: $search;
-}
-
-// Information blocks
-.block-info-standard {
-  border-color: $info_color;
-}
-
-.block-info-standard-warning {
-  border-color: darken($info_color, 10%);
-}
-
-.block-info-standard-error {
-  border-color: black;
-}
-
-// Links
-.link:active, .link:focus, .link:hover, a:active, a:focus, a:hover {
-  color: darken($highlight, 30%);
-}
-
-// Top notifications
-.notification-success {
-  background: $search;
-  color: #fff;
-}
-
-.notification-warning {
-  background: $highlight;
-  color: $base;
-}
-
-.notification-info {
-  background: $base;
-  color: #fff;
-}
-
-// Toggle button
-.pm-toggle-checkbox:checked+.pm-toggle-label:before {
-  background: $base;
-  border-color: $base;
-}
-
-.pm-toggle-checkbox:checked+.pm-toggle-label>.pm-toggle-label-text:last-child {
-  fill: #fff;
+.button-solid-norm {
+  --button-default-text-color: #{$search};
+  --button-hover-text-color: #{$search};
+  --button-active-text-color: #{$search};
 }

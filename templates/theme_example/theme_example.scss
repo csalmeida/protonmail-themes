@@ -1,17 +1,17 @@
-@import "../@theme-base/version";
+@use "../@theme-base/version" as info;
 
 /*! =========================================== *
  * Template THEME
- * Version: #{$version}
+ * Version: #{info.$version}
  * Author: You name here
  * Website: Your website here
  * Twitter: Your twitter handle
  * =========================================== */
 
 // Change colors here and they will change everywhere.
-$base: #1C1C1C;
+$base: #1c1c1c;
 $search: #000;
-$highlight: #2FBF71;
+$highlight: #2fbf71;
 $navigation: #fff;
 
 $text_color: #0d0d0d;
@@ -21,6 +21,5 @@ $warning_color: #ffaa00;
 $info_color: #1b68c6;
 
 @import "../@theme-base/styles";
-@import "../@theme-base/dark_mode";
 
 // Please do not remove the imports above, add overrides and other partials below this line.

@@ -13,6 +13,7 @@ services:
     restart: always
     volumes:
       # Allows changes made to project directory to be accessed by the container and persist.
-      - .:/var/projects/protonmail-themes 
+      - ./templates:/var/projects/protonmail-themes/templates
+      - ./themes:/var/projects/protonmail-themes/themes
       # Adds a volume to store node dependencies.
       - /var/projects/protonmail-themes/node_modules

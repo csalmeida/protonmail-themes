@@ -1,25 +1,24 @@
-@import "../@theme-base/version";
+@use "../@theme-base/version" as info;
 
 /*! =========================================== *
  * BLUE AND ORANGE THEME
- * Version: #{$version}
+ * Version: #{info.$version}
  * Author: Cristiano Almeida
  * Website: www.csalmeida.com
  * Twitter: @_csalmeida
  * =========================================== */
 
-$base: #0F4C5C;
-$search: #0A353F;
-$highlight: #ED7D3A;
+$base: #0f4c5c;
+$search: #0a353f;
+$highlight: #ed7d3a;
 $navigation: #fff;
 
-$text_color: #e6eaf0;
+$text_color: #f5f7fa;
 $extra_color: #0d0d0d;
 $danger_color: #d62646;
 $warning_color: #ffaa00;
 $info_color: #1b68c6;
 
 @import "../@theme-base/styles";
-@import "../@theme-base/dark_mode";
 
 // Please do not remove the imports above, add overrides and other partials below this line.

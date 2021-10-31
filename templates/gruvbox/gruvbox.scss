@@ -1,8 +1,8 @@
-@import "../@theme-base/version";
+@use "../@theme-base/version" as info;
 
 /*! =========================================== *
  * GRUVBOX THEME
- * Version: #{$version}
+ * Version: #{info.$version}
  * Author: AntoineÐ 
  * Website: www.antoined.fr
  * Mastodon: @antoined@h.kher.nl
@@ -21,6 +21,5 @@ $warning_color: #d79921;
 $info_color: #458588;
 
 @import "../@theme-base/styles";
-@import "../@theme-base/dark_mode";
 
 // Please do not remove the imports above, add overrides and other partials below this line.
