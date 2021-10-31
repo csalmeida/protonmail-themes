@@ -56,54 +56,47 @@ Check out some of the available themes you can choose from.
 <summary><b>Expand theme list</b> 👩🏻‍🎨</summary>
 
 #### [Green Lume](themes/green_lume)
+
 ![Screenshot of Green Lume theme.](screenshots/green_lume.png)
 
-![Screenshot of Green Lume theme.](screenshots/green_lume_full.png)
-
 #### [Vitamin C](themes/vitamin_c)
+
 ![Screenshot of Vitamin C theme.](screenshots/vitamin_c.png)
 
-![Screenshot of Vitamin C theme.](screenshots/vitamin_c_full.png)
-
 #### [Dark Bubble Gum](themes/dark_bubble_gum)
+
 ![Screenshot of Dark Bubble Gum theme.](screenshots/dark_bubble_gum.png)
 
-![Screenshot of Dark Bubble Gum theme.](screenshots/dark_bubble_gum_full.png)
 
 #### [Blue and Orange](themes/blue_and_orange)
+
 ![Screenshot of Blue and Orange theme.](screenshots/blue_and_orange.png)
 
-![Screenshot of Blue and Orange theme.](screenshots/blue_and_orange_full.png)
-
 #### [Ochin](themes/ochin)
+
 ![Screenshot of Ochin theme.](screenshots/ochin.png)
 
-![Screenshot of Ochin theme.](screenshots/ochin_full.png)
-
 #### [Dracula](themes/dracula)
+
 ![Screenshot of Dracula theme.](screenshots/dracula.png)
 
-![Screenshot of Dracula theme.](screenshots/dracula_full.png)
-
 #### [Monokai](themes/monokai)
+
 ![Screenshot of Monokai theme.](screenshots/monokai.png)
 
-![Screenshot of Monokai theme.](screenshots/monokai_full.png)
-
 #### [Deutera One](themes/deutera_one)
+
 ![Screenshot of Deutera One theme.](screenshots/deutera_one.png)
 
-![Screenshot of Deutera One theme.](screenshots/deutera_one_full.png)
-
 #### [Gruvbox](themes/gruvbox)
+
 ![Screenshot of Gruvbox theme.](screenshots/gruvbox.png)
 
-![Screenshot of Gruvbox theme.](screenshots/gruvbox_full.png)
 
 ### [Nord](themes/nord)
+
 ![Screenshot of Nord theme.](screenshots/nord.png)
 
-![Screenshot of Nord theme.](screenshots/nord_full.png)
 </details>
 
 ## Quick setup guide
