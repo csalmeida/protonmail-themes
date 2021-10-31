@@ -2,7 +2,7 @@
 Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), the encrypted mail service allows the use of themes with Cascading Style Sheets. You can pick a theme from the [Themes](themes/) folder or create a custom one yourself using CSS. Feel free to [use the theme template provided](templates/theme_example) as a starting point.
 
 > These themes were developed for **[v4.0.x](https://github.com/csalmeida/protonmail-themes/releases)** of ProtonMail.
-> Themes for **`v3.0.x`** can be used by [downloading the `v3.15.30` release](https://github.com/csalmeida/protonmail-themes/releases/tag/v3.15.30).
+
 ## Table of contents
 
 <details>
@@ -40,7 +40,7 @@ Since [v1.16](https://blog.protonmail.ch/protonmail-beta-v1-16-release-notes/), 
 1. Select all and copy the code.
 1. Install the [Stylus](https://github.com/openstyles/stylus#releases) browser if not done already.
 1. Add a new style in *Stylus* and paste the code in the text area.
-1. Below the text area select from the *Applies to* dropdown *"URLs on the domain"* and add `beta.protonmail.com` as a value and press save.
+1. Below the text area select from the *Applies to* dropdown *"URLs on the domain"* and add `protonmail.com` as a value and press save.
 1. Select the added theme in Stylus' Manage panel to enable it.
 
 > *In order to remove a theme, open Stylus, click Manage, and untick the box of the theme or remove it altogether by pressing `X`.*
@@ -50,60 +50,51 @@ The theme should be applied and you should see the changes immediately.
 ### Available themes
 Check out some of the available themes you can choose from.
 
-> There is also a `full` version available, that applies theme colors to the messages panel and more elements.
-
 <details>
 <summary><b>Expand theme list</b> 👩🏻‍🎨</summary>
 
 #### [Green Lume](themes/green_lume)
+
 ![Screenshot of Green Lume theme.](screenshots/green_lume.png)
 
-![Screenshot of Green Lume theme.](screenshots/green_lume_full.png)
-
 #### [Vitamin C](themes/vitamin_c)
+
 ![Screenshot of Vitamin C theme.](screenshots/vitamin_c.png)
 
-![Screenshot of Vitamin C theme.](screenshots/vitamin_c_full.png)
-
 #### [Dark Bubble Gum](themes/dark_bubble_gum)
+
 ![Screenshot of Dark Bubble Gum theme.](screenshots/dark_bubble_gum.png)
 
-![Screenshot of Dark Bubble Gum theme.](screenshots/dark_bubble_gum_full.png)
 
 #### [Blue and Orange](themes/blue_and_orange)
+
 ![Screenshot of Blue and Orange theme.](screenshots/blue_and_orange.png)
 
-![Screenshot of Blue and Orange theme.](screenshots/blue_and_orange_full.png)
-
 #### [Ochin](themes/ochin)
+
 ![Screenshot of Ochin theme.](screenshots/ochin.png)
 
-![Screenshot of Ochin theme.](screenshots/ochin_full.png)
-
 #### [Dracula](themes/dracula)
+
 ![Screenshot of Dracula theme.](screenshots/dracula.png)
 
-![Screenshot of Dracula theme.](screenshots/dracula_full.png)
-
 #### [Monokai](themes/monokai)
+
 ![Screenshot of Monokai theme.](screenshots/monokai.png)
 
-![Screenshot of Monokai theme.](screenshots/monokai_full.png)
-
 #### [Deutera One](themes/deutera_one)
+
 ![Screenshot of Deutera One theme.](screenshots/deutera_one.png)
 
-![Screenshot of Deutera One theme.](screenshots/deutera_one_full.png)
-
 #### [Gruvbox](themes/gruvbox)
+
 ![Screenshot of Gruvbox theme.](screenshots/gruvbox.png)
 
-![Screenshot of Gruvbox theme.](screenshots/gruvbox_full.png)
 
 ### [Nord](themes/nord)
+
 ![Screenshot of Nord theme.](screenshots/nord.png)
 
-![Screenshot of Nord theme.](screenshots/nord_full.png)
 </details>
 
 ## Quick setup guide
@@ -172,7 +163,7 @@ In short, no. All themes listed here will always style existing elements from Pr
 At the time I created these themes I've received a few directions from ProtonMail's co-founder [Jason Stockman](https://twitter.com/jasonstockman) in order to avoid breaking layout and security issues.
 #### Why is Stylus required to use custom themes?
 
-Support for custom themes in ProtonMail's appearance settings [seems to have been temporarily disabled in `~v4.0.0 beta 33`](https://www.reddit.com/r/ProtonMail/comments/j2l1im/protonmail_beta_41_removes_ability_to_use_and/g767k97/?context=3).
+Support for custom themes in ProtonMail's appearance settings [seems to have been disabled in `~v4.0.0 beta 33`](https://www.reddit.com/r/ProtonMail/comments/j2l1im/protonmail_beta_41_removes_ability_to_use_and/g767k97/?context=3).
 
 To use custom themes an alternative needs to be used to load the stylesheet. [Stylus](https://github.com/openstyles/stylus#releases) has been recommended but any other alternative should work.
 
@@ -183,4 +174,4 @@ To use custom themes an alternative needs to be used to load the stylesheet. [St
 * [Quark, a theme creator for ProtonMail](https://github.com/csalmeida/quark)
 
 #### Web References
-* [The Greenlume theme got featured on ProtonMail's website](https://protonmail.com/blog/protonmail-themes/)
+* [The Green Lume theme got featured on ProtonMail's website](https://protonmail.com/blog/protonmail-themes/)
